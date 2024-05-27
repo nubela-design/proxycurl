@@ -1,0 +1,1471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Company profile page</title>
+
+  </head>
+
+  <body>
+
+    <!--Modal-->
+    <div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <h2 class="font-weight-bold h3">
+              Get the list of employees for Google
+            </h2>
+
+            <p class="text-muted mb-6">
+              Proxycurl is a developer's tool to integrate People/Company related data into their applcations
+            </p>
+
+            <div class="highlight-block">
+              <div class="d-flex">
+                <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+              </div>
+            <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+response = requests.get(api_endpoint,
+                json=payload,
+                headers=header_dic)
+</code>
+</pre>
+            </div>
+
+          </div>
+
+          <div class="modal-footer py-4">
+
+            <button type="button" class="btn btn-secondary-soft mr-2" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Get API Key and run code</button>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+     <!-- ANNOUNCEMENT
+    ================================================== -->
+    <section class="bg-dark">
+
+      <div class="container">
+
+        <div class="row justify-content-center align-items-center pt-4">
+
+          <div class="col-12 text-center">
+
+            <!-- Text -->
+            <p class="font-size-md text-white">
+              Enrich companies with funding, categories, emails, exits/acquisitions data 
+              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
+                Learn more <i class="neu-arrow"></i> 
+              </a>
+            </p>
+            
+          </div>
+
+        </div> <!-- / .row -->
+
+      </div>
+
+    </section>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link" id="navbarPages">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Public LinkedIn Profile Dataset
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                          Sapiengraph - B2B Enrichment <br class="d-block">
+                          in Google Sheets
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="#!">
+                          Profile Picture API
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker API
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                          See all products <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
+
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright mt-4">
+                          <a class="text-primary font-weight-bold" href="use-cases.html">
+                            See all use-cases <i class="fe fe-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Track Job Changes
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Reverse Email Lookup
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
+          </div>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- COMPANY DIRECTORY
+    ================================================== -->
+    <section class="pt-8 pb-8 bg-light">
+
+      <div class="container">
+
+        <div class="row justify-content-center align-items-top mb-4">
+
+          <!--Company-->
+          <div class="col-12 col-lg-7 text-center text-md-left d-flex">
+
+            <div class="card shadow-light-lg">
+
+              <div class="card-body">
+                
+                <!--Company name and logo-->
+                <div class="d-flex align-items-center">
+                  <div class="mr-2">
+                    <img class="rounded-circle" width="112" alt="google logo" src="assets/img/logos/google logo.jpeg">
+                  </div>
+    
+                  <h1 class="display-3 font-weight-bold mb-0">
+                    Google
+                  </h1>
+                </div>
+
+                <!--Company description-->
+                <div class="mt-4">
+    
+                  <div class="row align-items-top mb-4">
+
+                    <div class="col-12">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        About
+                      </h3>
+      
+                      <p class="text-muted">
+                        A problem isn't truly solved until it's solved for all. 
+                        Googlers build products that help create opportunities for everyone, whether down the street or across the globe. 
+                        Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you
+
+                        <a type="button" class="text-black font-weight-bold" data-toggle="modal" data-target="#moreModal">
+                          ...more
+                        </a>
+
+                      </p>
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="row align-items-top mb-4">
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Total employees
+                      </h3>
+      
+                      <p class="text-info">
+                        10,001+ employees
+                      </p>
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="row align-items-top mb-6">
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Country
+                      </h3>
+      
+                      <a class="text-info" href="#!">
+                        United States
+                      </a>
+                    </div>
+      
+                  </div>
+    
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!--Similar companies-->
+          <div class="col-12 col-md-5">
+
+            <div class="card shadow-light-lg">
+
+              <div class="card-body">
+
+                <h2 class="lead font-weight-bold mb-6">
+                  Similar Companies
+                </h2>
+
+                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link small active" id="similar-company-tab" data-toggle="tab" href="#similarcompany" role="tab" aria-controls="similarcompany" aria-selected="false">Similar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary small" data-toggle="modal" data-target="#moreModal">Affiliated Companies</a>
+                  </li>
+                </ul>
+
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-3">
+                    <img class="rounded-circle" width="48" src="assets/img/logos/microsoft logo.jpeg" alt="microsoft logo">
+                  </div>
+
+                  <div class="col-12 col-md-9">
+                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                      Microsoft
+                    </a>
+                    <p class="text-truncate text-muted">
+                      Software Development
+                  </div>
+                </div>
+
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-3">
+                    <img class="rounded-circle" width="48" src="assets/img/logos/apple logo.jpeg" alt="apple logo">
+                  </div>
+
+                  <div class="col-12 col-md-9">
+                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                      Apple
+                    </a>
+                    <p class="text-truncate  text-muted">
+                      Computers and Electronics Manufacturing
+                  </div>
+                </div>
+                
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-3">
+                    <img class="rounded-circle" width="48" src="assets/img/logos/amazon logo.jpeg" alt="amazon logo">
+                  </div>
+
+                  <div class="col-12 col-md-9">
+                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                      Amazon
+                    </a>
+                    <p class="text-truncate text-muted">
+                      Technology, Information and Internet
+                  </div>
+                </div>
+                
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-3">
+                    <img class="rounded-circle" width="48" src="assets/img/logos/meta logo.jpeg" alt="meta logo">
+                  </div>
+
+                  <div class="col-12 col-md-9">
+                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                      Meta
+                    </a>
+                    <p class="text-truncate text-muted">
+                      Software Development
+                  </div>
+                </div>
+
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-3">
+                    <img class="rounded-circle" width="48" src="assets/img/logos/ibm logo.jpeg" alt="ibm logo">
+                  </div>
+
+                  <div class="col-12 col-md-9">
+                    <a class="font-weight-bold text-primary" href="#!" target="_blank">
+                      IBM
+                    </a>
+                    <p class="text-truncate text-muted">
+                      IT Services and IT Consulting
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- TABS
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 bg-light border-bottom">
+
+      <div class="container">
+
+        <div class="row align-items-top">
+
+          <div class="col-12 col-md-7 mb-6">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="employee-tab" data-toggle="tab" href="#employee" role="tab" aria-controls="employee" aria-selected="false">Employees (10,001+)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3.8/5)</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+              <!--Profile Details-->
+              <div class="tab-pane show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="mt-6">
+
+                  <!--Website-->
+                  <div class="row align-items-top mb-6">
+
+                    <div class="col-1 d-none d-sm-block">
+                      <span class="neu-globe text-gray-700" style="font-size: 24px;"></span>
+                    </div>
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Website
+                      </h3>
+      
+                      <a class="text-primary" href="https://goo.gle/3m1IN7m" target="_blank">
+                        https://goo.gle/3m1IN7m
+                      </a>
+                    </div>
+      
+                  </div>
+
+                  <!--Industry-->
+                  <div class="row align-items-top mb-4">
+
+                    <div class="col-1 d-none d-sm-block">
+                      <span class="neu-factory text-gray-700" style="font-size: 24px;"></span>
+                    </div>
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Industry
+                      </h3>
+      
+                      <p class="text-gray-700">
+                        Technology, Information and Internet
+                      </p>
+                    </div>
+      
+                  </div>
+
+                  <!--Headquarters-->
+                  <div class="row align-items-top mb-4">
+
+                    <div class="col-1 d-none d-sm-block">
+                      <span class="neu-gps text-gray-700" style="font-size: 24px;"></span>
+                    </div>
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Headquarters
+                      </h3>
+      
+                      <p class="text-gray-700">
+                        Mountain View, CA
+                      </p>
+                    </div>
+      
+                  </div>
+
+                  <!--Founded-->
+                  <div class="row align-items-top mb-4">
+
+                    <div class="col-1 d-none d-sm-block">
+                      <span class="neu-flag-2 text-gray-700" style="font-size: 24px;"></span>
+                    </div>
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Founded in
+                      </h3>
+      
+                      <p class="text-gray-700">
+                        1998
+                      </p>
+                    </div>
+      
+                  </div>
+
+                  <!--Specialties-->
+                  <div class="row align-items-top">
+
+                    <div class="col-1 d-none d-sm-block">
+                      <span class="neu-price-tag-rotate text-gray-700" style="font-size: 24px;"></span>
+                    </div>
+      
+                    <div class="col-11">
+                      <h3 class="h6 font-weight-bold text-uppercase mb-0">
+                        Specialties
+                      </h3>
+      
+                      <span class="badge badge-secondary-soft">search</span>
+                      <span class="badge badge-secondary-soft">ads</span>
+                      <span class="badge badge-secondary-soft">mobile</span>
+                      <span class="badge badge-secondary-soft">android</span>
+                      <span class="badge badge-secondary-soft">online video</span>
+                      <span class="badge badge-secondary-soft">apps</span>
+                      <span class="badge badge-secondary-soft">machine learning</span>
+                      <span class="badge badge-secondary-soft">virtual reality</span>
+                      <span class="badge badge-secondary-soft">cloud</span>
+                      <span class="badge badge-secondary-soft">hardware</span>
+                      <span class="badge badge-secondary-soft">artificial intelligence</span>
+                      <span class="badge badge-secondary-soft">youtube</span>
+                      <span class="badge badge-secondary-soft">software</span>
+                    </div>
+      
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!--Employees-->
+              <div class="tab-pane fade" id="employee" role="tabpanel" aria-labelledby="employee-tab">
+
+                <!--Avatars-->
+                <div class="list-group list-group-flush mt-6">
+
+                  <div class="list-group-item bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+  
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                        </div>
+  
+                      </div>
+                      <div class="col-6 ms-n5">
+  
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Ab Hadley
+                        </p>
+  
+                        <!-- Text -->
+                        <a class="d-block small text-truncate text-gray-700">
+                          Software engineer
+                        </a>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+  
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
+                        </div>
+  
+                      </div>
+                      <div class="col-6 ms-n5">
+  
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Adolfo Hess
+                        </p>
+  
+                        <!-- Text -->
+                        <a class="d-block small text-truncate text-gray-700">
+                          Head of design
+                        </a>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+  
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="...">
+                        </div>
+  
+                      </div>
+                      <div class="col-6 ms-n5">
+  
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Dianna Smiley
+                        </p>
+  
+                        <!-- Text -->
+                        <a class="d-block small text-truncate text-gray-700">
+                          CFO
+                        </a>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+  
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
+                        </div>
+  
+                      </div>
+                      <div class="col-6 ms-n5">
+  
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Daniela Dewitt
+                        </p>
+  
+                        <!-- Text -->
+                        <a class="d-block small text-truncate text-gray-700">
+                          Marketing strategist
+                        </a>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-group-item bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+  
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
+                        </div>
+  
+                      </div>
+                      <div class="col-6 ms-n5">
+  
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Miyah Myles
+                        </p>
+  
+                        <!-- Text -->
+                        <a class="d-block small text-truncate text-gray-700">
+                          Mobile developer
+                        </a>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-sm mt-6">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">2</a></li>
+                      <li class="page-item"><a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" type="button" data-target="#moreModal" data-toggle="modal">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+
+              </div>
+
+              <!--Employees-->
+              <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+
+                <div class="mt-6">
+
+                  <div class="row align-items-top border-bottom pb-8">
+
+                    <div class="col-12 col-md-1">
+                      <img class="rounded-circle" width="48" src="assets/img/logos/Google__G__Logo.svg" alt="microsoft logo">
+                    </div>
+  
+                    <div class="col-12 col-md-11 pl-8">
+                      <h2 class="h3 font-weight-bold mb-0">
+                        Give a rating to Google
+                      </h2>
+  
+                      <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+
+                      <form>
+
+                        <input class="form-control" placeholder="Your name" type="text" id="nameReview">
+
+                        <textarea class="form-control mt-4" id="textarea" placeholder="Write a review" rows="5" maxlength="500"></textarea>
+
+                        <div class="row">
+
+                          <div class="col-6">  
+                            <button class="btn btn-sm btn-primary mt-4" disabled>
+                              Post a review
+                            </button>
+                          </div>
+                          
+                          <div class="col-6">
+                            <h6 class="text-muted text-right mt-2">
+                              0/500
+                            </h6>
+                          </div>
+                          
+                        </div>
+                        
+                      </form>
+
+                    </div>
+
+                  </div>
+
+                  <div class="row align-items-top mt-6">
+  
+                    <div class="col-12">
+                      <h2 class="h3 font-weight-bold mb-4">
+                        Ratings and reviews
+                      </h2>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                      <div class="row align-items-end">
+
+                        <div class="col-6">
+                          <h3 class="display-2 font-weight-bold">
+                            3.8 <span class="h4 text-gray-700 font-weight-normal">out of 5</span>
+                          </h3>
+                        </div>
+  
+                        <div class="col-6">
+                          <p class="text-gray-700 text-right">
+                            420 total ratings
+                          </p>
+                        </div>
+  
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            magewati
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 4/5
+                            <span class="ml-2 font-weight-bold text-muted small">15 December 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Anak rock bangun pagi, bersiap untuk nikmati hari<br>
+                            Anak rock bangun pagi dan tetap berjuang, sampai hari ini
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            happydentwhitegaenak
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              Thank you! Your vote will be counted and appear on this site shortly.
+                            </span>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            indracirebon
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              0 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            batagorwareg
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="card shadow-light mb-6">
+
+                        <div class="card-body">
+
+                          <h4 class="font-weight-bold">
+                            langitkesembilan
+                          </h4>
+
+                          <h3 class="h4 font-weight-bold mb-2">
+                            <i class="neu-so-stars text-warning"></i> 3/5
+                            <span class="ml-2 font-weight-bold text-muted small">10 November 2022</span>
+                          </h3>
+
+                          <p class="text-gray-700 pb-4 border-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          </p>
+
+                          <div class="d-flex align-items-center">
+
+                            <span class="small text-muted">
+                              7 out of 11 found this helpful. Was this review helpful?
+                            </span>
+
+                            <div class="btn-group ml-2">
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                Yes
+                              </button>
+
+                              <button class="btn btn-outline-secondary btn-xs">
+                                No
+                              </button>
+      
+                            </div>
+      
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-5">
+
+            <h2 class="font-weight-bold h3">
+              Get the list of employees for Google
+            </h2>
+
+            <p class="text-muted mb-6">
+              Proxycurl is a developer's tool to integrate People/Company related data into their applcations
+            </p>
+
+            <div class="highlight-block mb-4">
+              <div class="d-flex">
+                <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
+                <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
+                <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
+              </div>
+            <pre><code class="language-python">
+<span class="text-hl">import</span> requests
+api_endpoint = <span class="text-python-hl">'https://nubela.co/proxycurl/api'</span>
+api_key = <span class="text-python-hl">'YOUR_API_KEY'</span>
+header_dic = <span class="text-python-hl">{'Authorization': 'Bearer ' + api_key}</span>
+payload = <span class="text-python-hl">{'url': 'https://api.ipify.org?format=json'}</span>
+response = requests.get(api_endpoint,
+                json=payload,
+                headers=header_dic)
+</code>
+</pre>
+            </div>
+
+            <a type="button" href="#" class="btn w-100 btn-primary btn-md text-center">
+              Get API Key and run code
+            </a>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  School API
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl LLC
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Our team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS PeopleDataLabs (PDL)
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS CoreSignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS BrightData
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog Blogposts
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <hr class="my-8">
+
+        <div class="text-center mb-4">
+
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Follow us
+          </h6>
+
+          <div class="mr-2">
+            <a href="https://twitter.com/proxycurl" target="_blank">
+              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+            </a>
+  
+            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+            </a>
+  
+            <a href="https://github.com/nubelaco/" target="_blank">
+              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>

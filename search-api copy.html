@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="qube.css" type="text/css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl's Search API: Search People and Companies</title>
+
+  </head>
+
+  <body>
+
+     <!-- ANNOUNCEMENT
+    ================================================== -->
+    <section class="bg-dark">
+
+      <div class="container">
+
+        <div class="row justify-content-center align-items-center pt-4">
+
+          <div class="col-12 text-center">
+
+            <!-- Text -->
+            <p class="font-size-md text-white">
+              Enrich companies with funding, categories, emails, exits/acquisitions data 
+              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
+                Learn more <i class="neu-arrow"></i> 
+              </a>
+            </p>
+            
+          </div>
+
+        </div> <!-- / .row -->
+
+      </div>
+
+    </section>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Database of public <br>
+                          LinkedIn profiles
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Freebies
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item mb-5" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API Pricing
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB Pricing
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+
+              <!-- Heading -->
+              <h6 class="dropdown-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg>
+                Solutions
+              </h6>
+
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    Accelerating growth-stage startups
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    Sales and Marketing automation
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    Investment signals
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    Talent identification
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkedIn Scraper API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    Clearbit alternative
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    PeopleDataLabs alternative
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
+          </div>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- FIRST FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-10 pb-md-12 border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-lg-12 col-xl-11 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold">
+              <span class="text-primary">Search People and Companies</span> with Proxycurl's Search API
+            </h1>
+
+            <h4 class="lead text-gray-700 mb-8">
+              Advanced searches for people and companies with RegEx
+            </h4>
+
+            <div class="row mb-6 mb-md-7">
+
+              <div class="col-12">
+    
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+    
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/img/illustrations/Identifying talent with specific skillsets.png" alt="Identifying talent with specific skillsets illustration">
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/img/illustrations/Targeting your ideal customer profiles for sales pitches.png" alt="Targeting your ideal customer profiles for sales pitches illustration">
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/img/illustrations/Identifying early-stage startups.png" alt="Identifying early-stage startups illustration">
+                    </div>
+    
+                  </div>
+    
+                  <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <button class="flickity-button bg-primary flickity-prev-next-button previous" type="button" aria-label="Previous">
+                      <svg class="flickity-button-icon" viewBox="0 0 100 100">
+                        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow">
+                        </path>
+                      </svg>
+                    </button>
+                  </a>
+                  
+                  <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <button class="flickity-button bg-primary flickity-prev-next-button next" type="button" aria-label="Previous">
+                      <svg class="flickity-button-icon" viewBox="0 0 100 100">
+                        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow">
+                        </path>
+                      </svg>
+                    </button>
+                  </a>
+    
+                </div>
+    
+              </div>
+    
+            </div>
+
+            <div class="dropdown">
+
+              <button class="btn btn-primary shadow-lg lift dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Read Search API Docs
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">
+                  Person Search API Docs
+                </a>
+                <a class="dropdown-item" href="#">
+                  Company Search API Docs
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- SECOND FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-10 pb-md-12 bg-light border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-lg-10">
+
+            <h2 class="display-4 font-weight-bold mb-2 text-center">
+              Find the right people from a <span class="text-primary">database of 462M people</span>
+            </h2>
+
+            <p class="text-muted lead text-center mb-8">
+              Search for people in LinkDB using 46 data attributes with regular expressions
+            </p>
+
+            <img class="img img-fluid rounded mb-4" alt="Database illustration" src="assets/img/illustrations/Database of people.png">
+
+            <div class="text-center mt-6">
+              <button class="btn btn-primary lift mr-md-4 mr-2">
+                Get Trial API Key
+              </button>
+  
+              <a class="btn btn-primary-soft lift" href="#!">
+                Read API Docs for Person Search Endpoint
+              </a>
+            </div>
+            
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- THIRD FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-10 pb-md-12 border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-lg-10">
+
+            <h2 class="display-4 font-weight-bold mb-2 text-center">
+              Find the right people from a <span class="text-primary">database of 18+M companies</span>
+            </h2>
+
+            <p class="text-muted lead text-center mb-8">
+              Search for people in LinkDB using 46 data attributes with regular expressions
+            </p>
+
+            <img class="img img-fluid rounded mb-8" alt="ooo" src="assets/img/illustrations/Database of company.png">
+
+            <div class="text-center mt-6">
+              <button class="btn btn-primary lift mr-md-4 mr-2">
+                Get Trial API Key
+              </button>
+  
+              <a class="btn btn-primary-soft lift" href="#!">
+                Read API Docs for Person Search Endpoint
+              </a>
+            </div>
+            
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Pricing
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="mt-n8 mt-md-n14 pb-10 pb-md-13 border-bottom">
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 text-center">
+            
+            <!-- Card -->
+            <div class="card shadow-lg mb-6 mb-md-0">
+              <div class="card-body">
+
+                <img class="icon mb-6" alt="ooo" src="assets/icons/Pricing.svg">
+
+                <!-- Price -->
+                <div class="text-center justify-content-center">
+                  <span class="price font-weight-bold text-primary h1 mb-0">
+                    35 credits + 3 credits
+                  </span>
+                  <p class="lead mb-6">
+                    / result returned
+                  </p>
+                  <small class="text-muted mb-0">
+                    <span class="text-danger">*</span>For example: 1000 profiles returned via Search API<br>
+                    will cost $36.42 (on the $299/mo plan)
+                  </small>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>        
+
+        </div>
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FIFTH FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-10 pb-md-12 bg-light border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-lg-10">
+
+            <h2 class="display-4 mb-2 text-center">
+              Updates on Search API
+            </h2>
+
+            <p class="text-muted lead text-center mb-8">
+              Read our latest updates about Search API
+            </p>
+
+            <div id="carouselBlog" class="carousel slide" data-ride="carousel">
+
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <a href="#!" target="_blank">
+                    <img class="d-block w-100" src="assets/img/illustrations/TLC_Proxycurl Announces Search!_cover.png" alt="First slide">
+                    <p class="h2 text-center mt-2 font-weight-bold">
+                      Proxycurl Announces Search!
+                    </p>
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="#!" target="_blank">
+                    <img class="d-block w-100" src="assets/img/illustrations/TLC_Proxycurl Search May 2023.png" alt="Second slide">
+                    <p class="h2 text-center mt-2 font-weight-bold">
+                      Proxycurl Search May 2023 - Results Now 67% Cheaper & More
+                    </p>
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="#!" target="_blank">
+                    <img class="d-block w-100" src="assets/img/illustrations/TLC_ex-Googlers_cover.png" alt="Third slide">
+                    <p class="h2 text-center mt-2 font-weight-bold">
+                      1 in 3 Ex-Google Employees In $15 Billion Worth Of Startups [2023 Layoffs]
+                    </p>
+                  </a>
+                </div>
+
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselBlog" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+
+              <a class="carousel-control-next" href="#carouselBlog" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+            
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  School API
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl LLC
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Our team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS PeopleDataLabs (PDL)
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS CoreSignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS BrightData
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog Blogposts
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div> <!-- / .row -->
+        <br>
+
+        <hr>
+        <br>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

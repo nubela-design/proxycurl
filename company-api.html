@@ -1,0 +1,2296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="qube.css" type="text/css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl's Company API: Employees, Funding, Profile Enrichment and Lookup</title>
+
+  </head>
+
+  <body>
+
+     <!-- ANNOUNCEMENT
+    ================================================== -->
+    <section class="bg-dark">
+
+      <div class="container">
+
+        <div class="row justify-content-center align-items-center pt-4">
+
+          <div class="col-12 text-center">
+
+            <!-- Text -->
+            <p class="font-size-md text-white">
+              Enrich companies with funding, categories, emails, exits/acquisitions data 
+              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
+                Learn more <i class="neu-arrow"></i> 
+              </a>
+            </p>
+            
+          </div>
+
+        </div> <!-- / .row -->
+
+      </div>
+
+    </section>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link" id="navbarPages">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Public LinkedIn Profile Dataset
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                          Sapiengraph - B2B Enrichment <br class="d-block">
+                          in Google Sheets
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="#!">
+                          Profile Picture API
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker API
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                          See all products <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
+
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright mt-4">
+                          <a class="text-primary font-weight-bold" href="use-cases.html">
+                            See all use-cases <i class="fe fe-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Track Job Changes
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Reverse Email Lookup
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
+          </div>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- FIRST FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-10 pb-10 pb-md-12 border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+
+          <div class="col-12 col-md-9 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-primary">
+              Company API
+            </h1>
+
+            <h4 class="h3 text-muted mb-6 mb-md-3">
+                Enrich LinkedIn company profiles; get funding data, list and search employees, identify companies, get employee count.
+            </h4>
+          </div>
+
+          <div class="col-12 col-md-12 text-center">
+
+            <img class="img img-fluid rounded mb-2" alt="ooo" src="assets/img/illustrations/Company-api_1_1_.png">
+
+            <div>
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
+              Read API Docs for Company API
+            </a>
+            </div>
+
+          </div>
+
+          <p class="small text-center text-muted mt-6 mt-md-8" data-aos="fade-up">Not a developer?
+            <a href="https://sapiengraph.com/" target="_blank" class="font-weight-bold text-success">
+              Try Sapiengraph<i class="neu-arrow"></i>
+            </a>.
+            Sapiengraph integrates Proxycurl APIs within Google Sheets.
+          </p>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- SECOND FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-11 pb-md-14 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-md-8 mb-6">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Company Lookup Endpoint
+            </h2>
+    
+            <p class="text-muted lead text-center">
+              Identify a company by a name or domain
+            </p>
+    
+          </div>
+    
+        </div>
+    
+        <div class="row justify-content-between">
+    
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+    
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>apple.com</div>
+                </div>
+    
+                <!--arrow-->
+                <div class="text-center mt-n4">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2 mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+                                        <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/company/resolve' \
+    --data-urlencode 'company_domain=http://apple.com' \    
+                                    </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div> <!-- input-->
+    
+    
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div> <!-- arrow-->
+    
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div> <!-- arrow-->
+    
+    
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-light-lg">
+              <div class="card-body">
+              
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+                        
+                <div class="card shadow shadow-light-lg mb-5">
+              
+                  <div class="card-body">
+              
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 border-bottom text-center text-md-left">
+              
+                      <div class="col-12 col-md-3">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img rounded-circle" src="assets/img/Misc/apple-round.png" alt="company logo">
+                        </div>
+                      </div>
+              
+                      <div class="col-12 col-md-9">
+                        <h2 class="font-weight-bold mb-0">
+                          Apple
+                        </h2>
+                        <p class="text-gray-700 mb-0 small">
+                          Electronics, hardware, and software
+                        </p>
+                      </div>
+              
+                    </div>
+              
+                    <div class="row">
+              
+                      <div class="col-12">
+              
+                        <p class="mb-2">
+                          <i class="neu-br-linkedin-sq text-primary h3"></i> LinkedIn URL
+                        </p>
+              
+                        <p class="text-primary py-2 px-4 border border-primary rounded mb-0">
+                          linkedin.com/company/apple
+                        </p>
+              
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+  "url": "https://linkedin.com/company/apple"
+}
+                                      </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div> <!-- output-->
+    
+        </div>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+    
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
+              Read API Docs for Company Lookup Endpoint
+            </a>
+          </div>
+    
+        </div>
+    
+      </div> <!-- container Company Lookup Endpoint-->
+    </section> <!-- Company Lookup Endpoint Fold-->
+
+    <section class="pb-11 pb-md-14 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-md-8 md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Company Profile Endpoint
+            </h2>
+    
+            <p class="text-muted lead text-center">
+              Enrich a company profile with structured data
+            </p>
+    
+          </div>
+    
+        </div>
+    
+        <div class="row justify-content-between">
+    
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+    
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 text-truncate d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>linkedin.com<span class="text-muted">/company/apple</span></div>
+                </div>
+    
+                <!--arrow-->
+                <div class="text-center mt-n4">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2 mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+                                      <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/company' \
+    --data-urlencode 'url=https://www.linkedin.com/company/apple/' \
+    --data-urlencode 'resolve_numeric_id=true' \
+    --data-urlencode 'categories=include' \
+    --data-urlencode 'funding_data=include' \
+    --data-urlencode 'extra=include' \
+    --data-urlencode 'exit_data=include' \
+    --data-urlencode 'acquisitions=include' \
+    --data-urlencode 'use_cache=if-present'
+                                  </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+    
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div>
+    
+    
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-light-lg">
+              <div class="card-body">
+    
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+                <div class="card shadow shadow-light-lg mb-5">
+              
+                  <div class="card-body">
+              
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 text-center text-md-left border-bottom">
+              
+                      <div class="col-12 col-md-4">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img rounded-circle" src="assets/img/Misc/apple-round.png" alt="company logo">
+                        </div>
+                      </div>
+              
+                      <div class="col-12 col-md-8">
+                        <h2 class="font-weight-bold mb-0">
+                          Apple
+                        </h2>
+                        <p class="text-gray-700 mb-0 small">
+                          Electronics, hardware, and software
+                        </p>
+                      </div>
+              
+                    </div>
+              
+                    <div class="row text-center">
+
+                      <div class="col-6 col-md-6">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m19,5v14c0,1.10455-.89545,2-2,2H7c-1.10455,0-2-.89545-2-2V5c0-1.10461.89545-2,2-2h10c1.10455,0,2,.89539,2,2Z" fill="#93c5fd"/><path d="m14,19v2h-4v-2c0-1.10461.89545-2,2-2s2,.89539,2,2Z" fill="#3b82f6"/><path d="m17,2.5H7c-1.37891,0-2.5,1.12158-2.5,2.5v14c0,1.37891,1.12109,2.5,2.5,2.5h10c1.37891,0,2.5-1.12109,2.5-2.5V5c0-1.37842-1.12109-2.5-2.5-2.5Zm-3.5,18h-3v-1.5c0-.82715.67285-1.5,1.5-1.5s1.5.67285,1.5,1.5v1.5Zm5-1.5c0,.82715-.67285,1.5-1.5,1.5h-2.5v-1.5c0-1.37891-1.12109-2.5-2.5-2.5s-2.5,1.12109-2.5,2.5v1.5h-2.5c-.82715,0-1.5-.67285-1.5-1.5V5c0-.82715.67285-1.5,1.5-1.5h10c.82715,0,1.5.67285,1.5,1.5v14Zm-3.5-14h2v2h-2v-2Zm0,4h2v2h-2v-2Zm0,4h2v2h-2v-2Zm-4-8h2v2h-2v-2Zm0,4h2v2h-2v-2Zm0,4h2v2h-2v-2ZM7,5h2v2h-2v-2Zm0,4h2v2h-2v-2Zm0,4h2v2h-2v-2Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Company Type
+                        </p>
+                      </div>
+
+                      <div class="col-6 col-md-6">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#93c5fd"/><path d="m12,1.5C6.20996,1.5,1.5,6.21045,1.5,12c0,5.79004,4.70996,10.5,10.5,10.5s10.5-4.70996,10.5-10.5c0-5.78955-4.70996-10.5-10.5-10.5Zm0,20c-5.23828,0-9.5-4.26172-9.5-9.5S6.76172,2.5,12,2.5s9.5,4.26172,9.5,9.5-4.26172,9.5-9.5,9.5Zm3.5-7.75c0,1.24023-1.00977,2.25-2.25,2.25h-.75v1c0,.27637-.22363.5-.5.5s-.5-.22363-.5-.5v-1h-2c-.27637,0-.5-.22363-.5-.5s.22363-.5.5-.5h3.75c.68945,0,1.25-.56055,1.25-1.25s-.56055-1.25-1.25-1.25h-2.5c-1.24023,0-2.25-1.00928-2.25-2.25s1.00977-2.25,2.25-2.25h.75v-1c0-.27637.22363-.5.5-.5s.5.22363.5.5v1h2c.27637,0,.5.22363.5.5s-.22363.5-.5.5h-3.75c-.68945,0-1.25.56055-1.25,1.25s.56055,1.25,1.25,1.25h2.5c1.24023,0,2.25,1.00928,2.25,2.25Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Funding Data
+                        </p>
+                      </div>
+  
+                      <div class="col-6 col-md-6">
+                        <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m20,3h-2c-.55231,0-1,.44769-1,1v7h-4v-2l-5,2v-2l-3.7428,1.49707c-.75928.30377-1.2572,1.03918-1.2572,1.85699v6.64594c0,1.10455.89545,2,2,2h14c1.10455,0,2-.89545,2-2V4c0-.55231-.44769-1-1-1Z" fill="#93c5fd"/><path d="m20,2.5h-2c-.82715,0-1.5.67285-1.5,1.5v6.5h-3v-1.5c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.3125-.1123-.46582-.05029l-4.31445,1.72607v-1.26172c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.31348-.1123-.46582-.05029l-3.74316,1.49707c-.95508.38232-1.57129,1.29346-1.57129,2.32129v6.646c0,1.37891,1.12109,2.5,2.5,2.5h14c1.37891,0,2.5-1.12109,2.5-2.5V4c0-.82715-.67285-1.5-1.5-1.5Zm.5,16.5c0,.82715-.67285,1.5-1.5,1.5H5c-.82715,0-1.5-.67285-1.5-1.5v-6.646c0-.6167.37012-1.16357.94238-1.39258l3.05762-1.22314v1.26172c0,.16602.08203.3208.21973.41406.13672.09277.31152.11133.46582.05029l4.31445-1.72607v1.26172c0,.27637.22363.5.5.5h4c.27637,0,.5-.22363.5-.5v-3.5h3v11.5Zm0-12.5h-3v-2.5c0-.27588.22461-.5.5-.5h2c.27539,0,.5.22412.5.5v2.5Zm-11.5,8.5h-4v-2h4v2Zm0,2h-4v2h4v-2Zm6-4h-4v2h4v-2Zm0,4h-4v2h4v-2Zm4-4h-2v2h2v-2Zm0,4h-2v2h2v-2Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Industry
+                        </p>
+                      </div>
+  
+                      <div class="col-6 col-md-6">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m21,5v4c0,1.10455-.89545,2-2,2h-4c-1.10455,0-2-.89545-2-2v-4c0-1.10461.89545-2,2-2h4c1.10455,0,2,.89539,2,2Zm-12,8h-4c-1.10455,0-2,.89539-2,2v4c0,1.10455.89545,2,2,2h4c1.10455,0,2-.89545,2-2v-4c0-1.10461-.89545-2-2-2Z" fill="#93c5fd"/><path d="m11,5v4c0,1.10455-.89545,2-2,2h-4c-1.10455,0-2-.89545-2-2v-4c0-1.10461.89545-2,2-2h4c1.10455,0,2,.89539,2,2Zm8,8h-4c-1.10455,0-2,.89539-2,2v4c0,1.10455.89545,2,2,2h4c1.10455,0,2-.89545,2-2v-4c0-1.10461-.89545-2-2-2Z" fill="#3b82f6"/><path d="m9,11.5h-4c-1.37891,0-2.5-1.12158-2.5-2.5v-4c0-1.37842,1.12109-2.5,2.5-2.5h4c1.37891,0,2.5,1.12158,2.5,2.5v4c0,1.37842-1.12109,2.5-2.5,2.5ZM5,3.5c-.82715,0-1.5.67285-1.5,1.5v4c0,.82715.67285,1.5,1.5,1.5h4c.82715,0,1.5-.67285,1.5-1.5v-4c0-.82715-.67285-1.5-1.5-1.5h-4Zm14,8h-4c-1.37891,0-2.5-1.12158-2.5-2.5v-4c0-1.37842,1.12109-2.5,2.5-2.5h4c1.37891,0,2.5,1.12158,2.5,2.5v4c0,1.37842-1.12109,2.5-2.5,2.5ZM15,3.5c-.82715,0-1.5.67285-1.5,1.5v4c0,.82715.67285,1.5,1.5,1.5h4c.82715,0,1.5-.67285,1.5-1.5v-4c0-.82715-.67285-1.5-1.5-1.5h-4Zm-6,18h-4c-1.37891,0-2.5-1.12109-2.5-2.5v-4c0-1.37891,1.12109-2.5,2.5-2.5h4c1.37891,0,2.5,1.12109,2.5,2.5v4c0,1.37891-1.12109,2.5-2.5,2.5Zm-4-8c-.82715,0-1.5.67285-1.5,1.5v4c0,.82715.67285,1.5,1.5,1.5h4c.82715,0,1.5-.67285,1.5-1.5v-4c0-.82715-.67285-1.5-1.5-1.5h-4Zm14,8h-4c-1.37891,0-2.5-1.12109-2.5-2.5v-4c0-1.37891,1.12109-2.5,2.5-2.5h4c1.37891,0,2.5,1.12109,2.5,2.5v4c0,1.37891-1.12109,2.5-2.5,2.5Zm-4-8c-.82715,0-1.5.67285-1.5,1.5v4c0,.82715.67285,1.5,1.5,1.5h4c.82715,0,1.5-.67285,1.5-1.5v-4c0-.82715-.67285-1.5-1.5-1.5h-4Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Categories
+                        </p>
+                      </div>
+  
+                      <div class="col-6 col-md-6">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m17.90729,10.85129h-4.91589l1.75549-7.26337c.28937-1.19727-.95044-2.09656-1.7663-1.28125l-7.60345,7.59882c-.76111.76068-.29303,2.19916.71552,2.19916h4.71765l-1.81104,8.32568c-.26514,1.21912,1.02167,2.07831,1.81171,1.20978l7.8501-8.62976c.71057-.78119.22949-2.15906-.75378-2.15906Z" fill="#93c5fd"/><path d="m10.0625,22.49219c-.22754,0-.45801-.05469-.67578-.16699-.69434-.35742-1.05469-1.18066-.87598-2.00098l1.67969-7.71973h-4.09766c-.63086,0-1.18457-.39062-1.44531-1.01953-.29492-.71191-.14746-1.51025.37598-2.0332L12.62695,1.95312c.49512-.49414,1.19531-.59717,1.78809-.26611.67676.37988,1.01367,1.20996.81836,2.01807l-1.60645,6.646h4.28027c.61328,0,1.16113.37549,1.42871.97998.30371.68701.18359,1.47852-.30469,2.01562l-7.85059,8.62988c-.30859.33789-.70898.51562-1.11816.51562ZM13.68945,2.49268c-.1084,0-.23047.04297-.35547.16797l-7.60352,7.59814c-.26855.26855-.27344.66748-.15918.94336.0498.12109.20117.40234.52148.40234h4.71777c.15137,0,.29395.06836.38965.18604.09473.11816.13086.27246.09863.42041l-1.81152,8.32617c-.0957.44141.11816.77637.35742.89941.14844.0752.37109.1123.5957-.13281l7.85059-8.62939c.25391-.27832.24805-.67236.12988-.93896-.05078-.11572-.20312-.38428-.51367-.38428h-4.91602c-.15332,0-.29785-.07031-.39258-.19092-.09473-.12012-.12988-.27734-.09375-.42676l1.75586-7.26318c.10547-.43701-.09961-.77881-.33594-.91113-.06445-.03662-.14551-.06641-.23535-.06641Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Extra
+                        </p>
+                      </div>
+  
+                      <div class="col-6 col-md-6">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="#3b82f6"/><circle cx="20" cy="12" r="2" fill="#3b82f6"/><circle cx="4" cy="12" r="2" fill="#3b82f6"/><path d="m12,9.5c-1.37891,0-2.5,1.12158-2.5,2.5s1.12109,2.5,2.5,2.5,2.5-1.12158,2.5-2.5-1.12109-2.5-2.5-2.5Zm0,4c-.82715,0-1.5-.67285-1.5-1.5s.67285-1.5,1.5-1.5,1.5.67285,1.5,1.5-.67285,1.5-1.5,1.5Z" fill="#1e40af"/><path d="m20,9.5c-1.37891,0-2.5,1.12158-2.5,2.5s1.12109,2.5,2.5,2.5,2.5-1.12158,2.5-2.5-1.12109-2.5-2.5-2.5Zm0,4c-.82715,0-1.5-.67285-1.5-1.5s.67285-1.5,1.5-1.5,1.5.67285,1.5,1.5-.67285,1.5-1.5,1.5Z" fill="#1e40af"/><path d="m4,9.5c-1.37891,0-2.5,1.12158-2.5,2.5s1.12109,2.5,2.5,2.5,2.5-1.12158,2.5-2.5-1.12109-2.5-2.5-2.5Zm0,4c-.82715,0-1.5-.67285-1.5-1.5s.67285-1.5,1.5-1.5,1.5.67285,1.5,1.5-.67285,1.5-1.5,1.5Z" fill="#1e40af"/></svg>
+                        <p class="small font-weight-bold mt-1">
+                          Other
+                        </p>
+                      </div>
+  
+                    </div>
+              
+                  </div>
+              
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+  "linkedin_internal_id": "162479",
+  "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
+  "website": "http://www.apple.com/careers",
+  "industry": "Consumer Electronics",
+  "company_size": [
+    10001,
+    null
+  ],
+  "company_size_on_linkedin": 567686,
+  "hq": {
+    "country": "US",
+    "city": "Cupertino",
+    "postal_code": "95014",
+    "line_1": "1 Apple Park Way",
+    "is_hq": true,
+    "state": "California"
+  },
+  "company_type": "PUBLIC_COMPANY",
+  "founded_year": 1976,
+  "specialities": [
+    "Innovative Product Development",
+    "World-Class Operations",
+    "Retail",
+    "Telephone Support"
+  ],
+  "locations": [
+    {
+      "country": "US",
+      "city": "Cupertino",
+      "postal_code": "95014",
+      "line_1": "1 Apple Park Way",
+      "is_hq": true,
+      "state": "California"
+    }
+  ],
+  "name": "Apple",
+  "tagline": null,
+  "universal_name_id": "apple",
+  "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
+  "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
+  "search_id": "162479",
+  "similar_companies": [],
+  "updates": [],
+  "follower_count": 17494129,
+  "acquisitions": {
+    "acquired": [
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
+        "announced_date": {
+          "day": 7,
+          "month": 2,
+          "year": 2022
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
+        "announced_date": {
+          "day": 23,
+          "month": 3,
+          "year": 2022
+        },
+        "price": 150000000
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
+        "announced_date": {
+          "day": 24,
+          "month": 6,
+          "year": 2020
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": null,
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
+        "announced_date": {
+          "day": 27,
+          "month": 5,
+          "year": 2020
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
+        "announced_date": {
+          "day": 1,
+          "month": 4,
+          "year": 2022
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
+        "announced_date": {
+          "day": 1,
+          "month": 8,
+          "year": 2020
+        },
+        "price": 100000000
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
+        "announced_date": {
+          "day": 4,
+          "month": 4,
+          "year": 2020
+        },
+        "price": 100000000
+      },
+      {
+        "linkedin_profile_url": null,
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
+        "announced_date": {
+          "day": 30,
+          "month": 8,
+          "year": 2021
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": null,
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
+        "announced_date": {
+          "day": 24,
+          "month": 9,
+          "year": 2020
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
+        "announced_date": {
+          "day": 6,
+          "month": 5,
+          "year": 2021
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
+        "announced_date": {
+          "day": 24,
+          "month": 8,
+          "year": 2020
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
+        "announced_date": {
+          "day": 31,
+          "month": 3,
+          "year": 2020
+        },
+        "price": null
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
+        "announced_date": {
+          "day": 27,
+          "month": 10,
+          "year": 2020
+        },
+        "price": 50000000
+      },
+      {
+        "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
+        "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
+        "announced_date": {
+          "day": 3,
+          "month": 4,
+          "year": 2020
+        },
+        "price": null
+      }
+    ],
+    "acquired_by": null
+  },
+  "exit_data": [
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
+      "name": "Adobe"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
+      "name": "Apple"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/3678",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
+      "name": "Corning"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
+      "name": "Didi"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
+      "name": "ELAN Microelectronics"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
+      "name": "eMagin"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/163813",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
+      "name": "Finisar"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
+      "name": "God-i"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
+      "name": "II-VI"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
+      "name": "Imagination Technologies"
+    },
+    {
+      "linkedin_profile_url": null,
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
+      "name": "Kanisa"
+    },
+    {
+      "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
+      "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
+      "name": "Zomato"
+    }
+  ],
+  "extra": {
+    "ipo_status": "Public",
+    "crunchbase_rank": 23,
+    "founding_date": {
+      "day": 1,
+      "month": 4,
+      "year": 1976
+    },
+    "operating_status": "Active",
+    "company_type": "For Profit",
+    "contact_email": null,
+    "phone_number": "408-996-1010",
+    "facebook_id": "apple",
+    "twitter_id": "apple",
+    "number_of_funding_rounds": null,
+    "total_funding_amount": 6200000000,
+    "stock_symbol": "NASDAQ:AAPL",
+    "ipo_date": null,
+    "number_of_lead_investors": 3,
+    "number_of_investors": 7,
+    "total_fund_raised": 375000000,
+    "number_of_investments": null,
+    "number_of_lead_investments": null,
+    "number_of_exits": null,
+    "number_of_acquisitions": null
+  },
+  "funding_data": [
+    {
+      "funding_type": "Post-IPO Debt",
+      "money_raised": 5000000000,
+      "announced_date": {
+        "day": 6,
+        "month": 9,
+        "year": 2017
+      },
+      "number_of_investor": null,
+      "investor_list": []
+    },
+    {
+      "funding_type": "Post-IPO Equity",
+      "money_raised": 1000000000,
+      "announced_date": {
+        "day": 16,
+        "month": 5,
+        "year": 2016
+      },
+      "number_of_investor": 1,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
+          "name": "Berkshire Hathaway",
+          "type": "organization"
+        }
+      ]
+    },
+    {
+      "funding_type": "Post-IPO Equity",
+      "money_raised": 150000000,
+      "announced_date": {
+        "day": 1,
+        "month": 8,
+        "year": 1997
+      },
+      "number_of_investor": 1,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+          "name": "Microsoft",
+          "type": "organization"
+        }
+      ]
+    },
+    {
+      "funding_type": "Pre Seed Round",
+      "money_raised": 150000,
+      "announced_date": {
+        "day": 1,
+        "month": 1,
+        "year": 2022
+      },
+      "number_of_investor": 2,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+          "name": "Apple",
+          "type": "organization"
+        },
+        {
+          "linkedin_profile_url": null,
+          "name": "Confidential Confidential",
+          "type": "person"
+        }
+      ]
+    },
+    {
+      "funding_type": "Private Equity Round",
+      "money_raised": 30000000,
+      "announced_date": {
+        "day": 15,
+        "month": 6,
+        "year": 2022
+      },
+      "number_of_investor": 1,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
+          "name": "Interscope Records",
+          "type": "organization"
+        }
+      ]
+    },
+    {
+      "funding_type": "Private Equity Round",
+      "money_raised": null,
+      "announced_date": {
+        "day": 12,
+        "month": 7,
+        "year": 2017
+      },
+      "number_of_investor": null,
+      "investor_list": []
+    },
+    {
+      "funding_type": "Seed Round",
+      "money_raised": 80000,
+      "announced_date": {
+        "day": 15,
+        "month": 5,
+        "year": 1977
+      },
+      "number_of_investor": 2,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
+          "name": "Matrix Partners",
+          "type": "organization"
+        },
+        {
+          "linkedin_profile_url": null,
+          "name": "Mike Markkula",
+          "type": "person"
+        }
+      ]
+    },
+    {
+      "funding_type": "Seed Round",
+      "money_raised": 150000,
+      "announced_date": {
+        "day": 4,
+        "month": 5,
+        "year": 1978
+      },
+      "number_of_investor": 2,
+      "investor_list": [
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
+          "name": "Sequoia Capital",
+          "type": "organization"
+        },
+        {
+          "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
+          "name": "Venrock",
+          "type": "organization"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "consumer-electronics",
+    "electronics",
+    "hardware",
+    "mobile-devices",
+    "operating-systems",
+    "retail",
+    "software",
+    "wearables"
+  ]
+}
+                  
+                                    </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+    
+            <a class="btn btn-primary-soft lift" href="#!">
+              Read API Docs for Company Profile Endpoint
+            </a>
+          </div>
+    
+        </div>
+    
+      </div> <!-- container Company Profile Endpoint-->
+    </section> <!-- Company Profile Endpoint Fold-->
+
+    <section class="pb-11 pb-md-14 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-6 mb-md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Employee Listing Endpoint
+            </h2>
+    
+            <p class="text-muted lead text-center">
+              List past or present employees of any target company
+            </p>
+    
+          </div>
+    
+        </div>
+    
+        <div class="row justify-content-between">
+    
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+    
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 text-truncate d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>linkedin.com<span class="text-muted">/company/apple</span></div>
+                </div>
+    
+                <!--arrow-->
+                <div class="text-center mt-n4">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2 mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+                                      <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/company/employees/' \
+    --data-urlencode 'url=https://www.linkedin.com/company/apple' \
+    --data-urlencode 'country=us' \
+    --data-urlencode 'enrich_profiles=enrich' \
+    --data-urlencode 'role_search=(co)?-?founder' \
+    --data-urlencode 'page_size=100' \
+    --data-urlencode 'employment_status=current' \
+    --data-urlencode 'sort_by=recently-joined' \
+    --data-urlencode 'resolve_numeric_id=false'
+                                  </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+    
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div>
+    
+    
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-light-lg">
+              <div class="card-body">
+    
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+                <div class="card shadow shadow-light-lg mb-5">
+              
+                  <div class="card-body">
+              
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 text-center text-md-left border-bottom">
+              
+                      <div class="col-12 col-md-4">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img rounded-circle" src="assets/img/Misc/apple-round.png" alt="company logo">
+                        </div>
+                      </div>
+              
+                      <div class="col-12 col-md-8">
+                        <h2 class="font-weight-bold mb-0">
+                          Apple
+                        </h2>
+                        <p class="text-gray-700 mb-0 small">
+                          Electronics, hardware, and software
+                        </p>
+                      </div>
+              
+                    </div>
+              
+                    <div class="row">
+              
+                      <div class="col-12">
+              
+                        <p class="mb-1 pl-2">
+                          <svg class="mb-2 mr-1" id="a" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="m20,7c0,2.76141-2.23859,5-5,5-.34479,0-.68042-.03796-1.00555-.10443,1.23859-1.26337,2.00555-2.99084,2.00555-4.89557s-.76703-3.63226-2.00562-4.89563c.32513-.06641.66083-.10437,1.00562-.10437,2.76141,0,5,2.23859,5,5Zm-2,9h-1.54047c.95428,1.06281,1.54047,2.46246,1.54047,4v1c0,.35236-.0722.68567-.18427,1h3.18427c.55231,0,1-.44775,1-1v-1c0-2.20917-1.79083-4-4-4Z" fill="#3b82f6"/><circle cx="9" cy="7" r="5" fill="#93c5fd"/><path d="m12,16h-6c-2.20917,0-4,1.79083-4,4v1c0,.55225.44769,1,1,1h12c.55231,0,1-.44775,1-1v-1c0-2.20917-1.79083-4-4-4Z" fill="#93c5fd"/><path d="m9,12.5c3.03223,0,5.5-2.46729,5.5-5.5S12.03223,1.5,9,1.5,3.5,3.96729,3.5,7s2.46777,5.5,5.5,5.5Zm0-10c2.48145,0,4.5,2.01855,4.5,4.5s-2.01855,4.5-4.5,4.5-4.5-2.01855-4.5-4.5,2.01855-4.5,4.5-4.5Zm3,13h-6c-2.48145,0-4.5,2.01855-4.5,4.5v1c0,.82715.67285,1.5,1.5,1.5h12c.82715,0,1.5-.67285,1.5-1.5v-1c0-2.48145-2.01855-4.5-4.5-4.5Zm3.5,5.5c0,.27539-.22461.5-.5.5H3c-.27539,0-.5-.22461-.5-.5v-1c0-1.92969,1.57031-3.5,3.5-3.5h6c1.92969,0,3.5,1.57031,3.5,3.5v1Zm-1.09265-18.43958c-.2569-.31238-.54352-.59851-.84998-.86224.46759-.1272.94916-.19818,1.44263-.19818,3.03223,0,5.5,2.46729,5.5,5.5s-2.46777,5.5-5.5,5.5c-.49347,0-.97504-.07098-1.44263-.19818.30646-.26373.59308-.54987.84998-.86224.19653.02588.39136.06042.59265.06042,2.48145,0,4.5-2.01855,4.5-4.5s-2.01855-4.5-4.5-4.5c-.20129,0-.39612.03455-.59265.06042Zm8.09265,17.43958v1c0,.82715-.67285,1.5-1.5,1.5h-3.41724c.17773-.30487.30566-.63947.3667-1h3.05054c.27539,0,.5-.22461.5-.5v-1c0-1.92969-1.57031-3.5-3.5-3.5h-1.13647c-.26251-.36377-.56433-.69623-.89996-.99268.0127-.00098.0235-.00732.03644-.00732h2c2.48145,0,4.5,2.01855,4.5,4.5Z" fill="#1e40af"/></svg>
+                           List of employees
+                        </p>
+              
+                        <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                          <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                              <div class="avatar avatar-lg">
+                                <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="company logo">
+                              </div>
+                            </div>
+                        
+                            <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                              <p class="text-black mb-0">David King</p>
+                              <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                            </div>
+                        
+                          </div>
+                        </div>
+
+                        <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                          <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                              <div class="avatar avatar-lg">
+                                <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="avatar">
+                              </div>
+                            </div>
+                        
+                            <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                              <p class="text-black mb-0">Karim Paul</p>
+                              <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                            </div>
+                        
+                          </div>
+                        </div>
+
+                        <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                          <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                              <div class="avatar avatar-lg">
+                                <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="avatar">
+                              </div>
+                            </div>
+                        
+                            <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                              <p class="text-black mb-0">Patricia Well</p>
+                              <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                            </div>
+                        
+                          </div>
+                        </div>
+
+                        <div class="text-primary py-2 px-4 border border-muted rounded mb-4 shadow-light">
+                          <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                              <div class="avatar avatar-lg">
+                                <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="avatar">
+                              </div>
+                            </div>
+                        
+                            <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                              <p class="text-black mb-0">Lily Kimber</p>
+                              <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                            </div>
+                        
+                          </div>
+                        </div>
+
+                        <div class="text-center text-md-left">
+                          <span class="badge text-uppercase badge-secondary-soft badge-lg"> 287,725 more</span>
+                        </div> 
+
+
+              
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+  "employees": [
+    {
+      "profile_url": "https://www.linkedin.com/in/amanda-chew-jia-ying-9aa06426",
+      "profile": null
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/cathy-tan-883197b6",
+      "profile": null
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/charmaine-wee-hospitality-director",
+      "profile": null
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/jacky-n-24713822",
+      "profile": null
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/joven-sim-976721a1",
+      "profile": null
+    }
+  ],
+  "next_page": "https://nubela.co/proxycurl/api/linkedin/company/employees/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F8m-real-estate-singapore%2F&use_cache=if-present&page_size=5&employment_status=current&resolve_numeric_id=false&after=lautianwei"
+}         
+                  
+                                    </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+    
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Read API Docs for Employee Listing Endpoint
+            </a>
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
+              Read API Docs for Employee Search Endpoint
+            </a>
+          </div>
+    
+        </div>
+    
+      </div> <!-- container Employee Listing Endpoint-->
+    </section> <!-- Employee Listing Endpoint Fold-->
+
+    <section class="pb-11 pb-md-14 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-6 mb-md-8">
+    
+          <div class="col-9 col-md-8 col-lg-10">
+    
+            <p class="h2 mb-2 text-center">
+              <span class="display-3 pr-3">Company Profile Picture Endpoint</span> <span
+                class="badge badge-pill badge-success badge-float">FREE</span>
+            </p>
+    
+            <p class="text-muted lead text-center">
+              Get the logo of a company
+            </p>
+    
+          </div>
+    
+        </div>
+    
+        <div class="row justify-content-between">
+    
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="card shadow-light">
+              <div class="card-body">
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+    
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 text-truncate d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>linkedin.com<span class="text-muted">/company/apple</span></div>
+                </div>
+    
+                <!--arrow-->
+                <div class="text-center mt-n4">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2 mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+                                      <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/company/profile-picture' \
+    --data-urlencode 'linkedin_company_profile_url=https://www.linkedin.com/company/apple/'
+                                  </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div> <!-- input-->
+    
+    
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+    
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div> 
+    
+    
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-light">
+              <div class="card-body">
+    
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+
+                <div class="card shadow shadow-light-lg mb-5">
+              
+                  <div class="card-body">
+              
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 text-center text-md-left border-bottom">
+              
+                      <div class="col-12 col-md-4">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img rounded-circle" src="assets/img/Misc/apple-round.png" alt="company logo">
+                        </div>
+                      </div>
+              
+                      <div class="col-12 col-md-8">
+                        <h2 class="font-weight-bold mb-0">
+                          Apple
+                        </h2>
+                        <p class="text-gray-700 mb-0 small">
+                          Electronics, hardware, and software
+                        </p>
+                      </div>
+              
+                    </div>
+              
+                    <div class="row">
+              
+                      <div class="col-12">
+              
+                        <p class="mb-1 pl-0 pl-md-2">
+                          <svg class="mb-2 mr-1" id="a" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 19 19"><g id="c"><rect x=".5" y=".5" width="18" height="18" rx="1" ry="1" fill="#3b82f6"/><path d="m17.5.5H1.5c-.27,0-.52.11-.71.29-.19.19-.29.44-.29.71v16c0,.27.11.52.29.71.19.19.44.29.71.29h16c.27,0,.52-.11.71-.29s.29-.44.29-.71V1.5c0-.27-.11-.52-.29-.71-.19-.19-.44-.29-.71-.29ZM5.5,3.5c.4,0,.78.12,1.11.34.33.22.59.53.74.9.15.37.19.77.11,1.16-.08.39-.27.74-.55,1.02-.28.28-.64.47-1.02.55-.39.08-.79.04-1.16-.11-.37-.15-.68-.41-.9-.74-.22-.33-.34-.72-.34-1.11,0-.53.21-1.04.59-1.41.38-.38.88-.59,1.41-.59Zm11,13H2.5v-3.6l3-2.4,3,3,5-5,3,2.4v5.6Z" fill="#93c5fd"/><rect x=".5" y=".5" width="18" height="18" rx="1" ry="1" fill="none" stroke="#1e40af"/></g></svg>
+                           Company profile picture
+                        </p>
+                        
+                        <div class="text-center text-md-left">
+                        <img width="128px" class="img img-fluid py-2 px-2 border border-primary rounded mt-3" alt="Profile picture" src="assets/img/Misc/apple-round.png">
+                          </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+  "tmp_profile_pic_url": "http://localhost:4566/proxycurl-web-dev/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=%2F20220912%2F%2Fs3%2Faws4_request\u0026X-Amz-Date=20220912T065816Z\u0026X-Amz-Expires=1800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=40e484b7b1a9c4fd712d99b658d68efb115d8b20be227c8d5c49fc62dfd4d480"
+}
+                                    </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div> <!-- output-->
+    
+        </div>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+    
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="#!">
+              Read API Docs for Company Profile Picture Endpoint
+            </a>
+          </div>
+    
+        </div>
+    
+      </div> <!-- container Company Profile Picture Endpoint-->
+    </section> <!--Company Profile Picture Endpoint Fold-->
+
+    <section class=" pb-6 pb-md-11 bg-light border-bottom">
+      <div class="container">
+        <div class="row justify-content-center mb-6 mb-md-8">
+    
+          <div class="col-12 col-md-8 col-lg-10">
+    
+            <h2 class="display-4 mb-2 text-center">
+              Employee Count Endpoint
+            </h2>
+    
+            <p class="text-muted lead text-center">
+              Get the number of total employees of a company
+            </p>
+    
+          </div>
+    
+        </div>
+    
+        <div class="row justify-content-between">
+    
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
+    
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 text-truncate d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>linkedin.com<span class="text-muted">/company/apple</span></div>
+                </div>
+    
+                <!--arrow-->
+                <div class="text-center mt-n4">
+                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                    <i class="fe fe-arrow-down"></i>
+                  </span>
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mt-n2 mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+                                      <code class="language-python">
+curl \
+    -G \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    'https://nubela.co/proxycurl/api/linkedin/company/employees/count' \
+    --data-urlencode 'url=https://www.linkedin.com/company/apple/' \
+    --data-urlencode 'use_cache=if-present' \
+    --data-urlencode 'linkedin_employee_count=include' \
+    --data-urlencode 'employment_status=current'
+                                  </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-right"></i>
+            </h1>
+          </div>
+    
+          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="display-3 mb-0">
+              <i class="fe fe-arrow-down"></i>
+            </h1>
+          </div> <!-- input-->
+    
+    
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shadow-light">
+              <div class="card-body">
+    
+                <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase"> Output </span>
+
+
+                <div class="card shadow shadow-light-lg mb-5">
+              
+                  <div class="card-body">
+              
+                    <div class="row align-items-center justify-content-center mb-4 pb-6 text-center text-md-left border-bottom">
+              
+                      <div class="col-12 col-md-4">
+                        <div class="avatar avatar-xxl">
+                          <img class="avatar-img rounded-circle" src="assets/img/Misc/apple-round.png" alt="company logo">
+                        </div>
+                      </div>
+              
+                      <div class="col-12 col-md-8">
+                        <h2 class="font-weight-bold mb-0">
+                          Apple
+                        </h2>
+                        <p class="text-gray-700 mb-0 small">
+                          Electronics, hardware, and software
+                        </p>
+                      </div>
+              
+                    </div>
+              
+                    <div class="row">
+              
+                      <div class="col-12 mb-4">
+              
+                        <p class="mb-2">
+                          <i class="neu-br-linkedin-sq text-primary h3"></i> LinkedIn's employee count
+                        </p>
+              
+                        <p class="py-2 px-4 border border-primary rounded mb-0">
+                          289,515 employees
+                        </p>
+              
+                      </div>
+
+                      <div class="col-12">
+              
+                        <p class="mb-1">
+                          <svg class="mb-2 ml-2 ml-md-2 mr-2" id="b" xmlns="http://www.w3.org/2000/svg"  height="18" viewBox="0 0 14.21 18"><g id="c"><path d="m.95,15.63V2.84c3.79-4.17,9.79-2.05,12.32-.47v13.26s-5.21,3.79-12.32,0Z" fill="#93c5fd"/><path d="m13.46,2.65c-.35.18-1.91.74-5.29,1.59-3.39.85-6-.71-6.88-1.59C2.34.53,3.4,1.59,7.11,1.06c2.96-.42,5.47.88,6.35,1.59Z" fill="#3b82f6"/><path d="m0,2.45v13.09c0,2.34,5.92,2.45,7.11,2.45s7.11-.12,7.11-2.45V2.45C14.21.12,8.29,0,7.11,0S0,.12,0,2.45Zm7.11,2.45c1.87.04,3.74-.22,5.53-.78v4.73c-.89.77-4.36.96-5.53.96-1.32,0-4.72-.25-5.53-.96v-4.73c1.79.56,3.66.83,5.53.78Zm5.53,10.5c-.41.35-2.35.96-5.53.96s-5.12-.6-5.53-.96v-4.73c1.79.56,3.66.83,5.53.78,1.87.04,3.74-.22,5.53-.78v4.73Zm-.22-12.95c-1.2.62-3.83.82-5.31.82-1.39,0-4.08-.18-5.31-.82,1.7-.63,3.51-.91,5.31-.82,1.8-.09,3.61.19,5.31.82Z" fill="#1e40af"/><path d="m12.63,4.13c-1.79.56-3.66.82-5.53.78-1.87.05-3.74-.22-5.53-.78v4.73c.81.71,4.2.96,5.53.96,1.17,0,4.64-.18,5.53-.96v-4.73Zm-5.53,12.23c3.18,0,5.12-.6,5.53-.96v-4.73c-1.79.56-3.66.82-5.53.78-1.87.05-3.74-.22-5.53-.78v4.73c.41.35,2.35.96,5.53.96Zm0-13.09c1.48,0,4.11-.2,5.31-.82-1.7-.63-3.51-1.04-5.31-.95-1.8-.09-3.61.32-5.31.95,1.23.64,3.92.82,5.31.82Z" fill="#93c5fd" fill-rule="evenodd"/><path d="m7.11,4.91v-.25s0,0,0,0v.25Zm5.53-.78h.25v-.34l-.32.1.07.24Zm-11.05,0l.08-.24-.33-.1v.34h.25Zm0,4.73h-.25v.11l.08.07.17-.19Zm11.05,0l.16.19.09-.07v-.11h-.25Zm0,6.55l.16.19.09-.07v-.11h-.25Zm0-4.73h.25v-.34l-.32.1.07.24Zm-5.53.78v-.25s0,0,0,0v.25Zm-5.53-.78l.08-.24-.33-.1v.34h.25Zm0,4.73h-.25v.11l.09.07.16-.19ZM12.42,2.45l.11.22.5-.26-.53-.2-.09.23Zm-5.31-.95v.25s0,0,0,0h.01s-.01-.25-.01-.25Zm-5.31.95l-.09-.23-.53.2.5.26.11-.22Zm5.3,2.7c1.9.04,3.79-.22,5.61-.79l-.15-.48c-1.77.55-3.6.81-5.45.77v.5Zm-5.6-.79c1.82.57,3.71.84,5.61.79v-.5c-1.86.05-3.69-.21-5.46-.77l-.15.48Zm.33,4.49v-4.73h-.5v4.73h.5Zm5.28.71c-.65,0-1.82-.06-2.92-.21-.55-.07-1.08-.17-1.52-.29-.45-.12-.76-.26-.92-.4l-.33.38c.25.22.66.38,1.12.5.47.13,1.02.23,1.58.3,1.13.15,2.32.21,2.99.21v-.5Zm5.36-.9c-.18.15-.51.3-.97.42-.45.12-.99.22-1.55.29-1.11.14-2.26.19-2.84.19v.5c.59,0,1.76-.05,2.9-.19.57-.07,1.13-.17,1.62-.3.47-.13.9-.3,1.17-.53l-.33-.38Zm-.09-4.54v4.73h.5v-4.73h-.5Zm.09,11.09c-.07.06-.23.15-.51.25-.27.1-.64.21-1.1.3-.91.19-2.18.34-3.75.34v.5c1.61,0,2.9-.15,3.85-.35.48-.1.87-.21,1.17-.32.29-.11.53-.22.67-.34l-.33-.38Zm-.09-4.54v4.73h.5v-4.73h-.5Zm-5.28,1.03c1.9.04,3.79-.22,5.61-.79l-.15-.48c-1.77.55-3.6.81-5.45.77v.5Zm-5.6-.79c1.82.57,3.71.84,5.61.79v-.5c-1.86.05-3.69-.21-5.46-.77l-.15.48Zm.33,4.49v-4.73h-.5v4.73h.5Zm5.28.71c-1.58,0-2.84-.15-3.75-.34-.46-.1-.83-.2-1.1-.3-.28-.1-.45-.2-.51-.25l-.33.38c.14.12.37.23.67.34.3.11.69.22,1.17.32.95.2,2.25.35,3.85.35v-.5ZM12.3,2.23c-.56.29-1.48.49-2.47.62-.98.13-2,.17-2.73.17v.5c.75,0,1.79-.05,2.79-.18.99-.13,1.99-.34,2.63-.67l-.23-.44Zm-5.18-.48c1.76-.09,3.53.32,5.21.94l.17-.47c-1.72-.64-3.56-1.06-5.41-.97l.02.5Zm-5.24.94c1.68-.62,3.45-1.03,5.21-.94l.02-.5c-1.85-.09-3.69.33-5.41.97l.17.47Zm5.22.33c-.68,0-1.69-.04-2.68-.17-1-.12-1.94-.33-2.51-.62l-.23.44c.66.34,1.68.55,2.68.67,1.01.13,2.04.17,2.74.17v-.5Z" fill="#93c5fd"/></g></svg>
+                           LinkDB's employee count
+                        </p>
+              
+                        <p class="py-2 px-4 border border-primary rounded mb-0">
+                          145,212 employees
+                        </p>
+              
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+    
+                <!-- Code block -->
+                <div class="highlight-block text-left mb-3">
+    
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+    
+                  <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+  "total_employee": 145212,
+  "linkedin_employee_count": 289515,
+  "linkdb_employee_count": 145212,
+}
+                                    </code></pre>
+    
+                </div>
+              </div>
+            </div>
+          </div> <!-- output-->
+    
+        </div>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mt-6">
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+    
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-md-2" href="#!">
+              Read API Docs for Employee Count Endpoint
+            </a>
+          </div>
+    
+        </div>
+    
+      </div> <!-- container Employee Count Endpoint-->
+    </section> <!--Employee Count Endpoint Fold-->
+
+    <!-- THIRD FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-8 pb-md-12 border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center mb-6 mb-md-8">
+
+          <div class="col-12 col-md-8 col-lg-10">
+
+            <h2 class="display-4 mb-2 text-center">
+              Other Endpoints related to Companies
+            </h2>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+          <!-- API Card -->
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+  
+            <!-- Card -->
+            <div class="card shadow-light-lg lift lift-lg">
+  
+              <!-- Body -->
+              <div class="card-body my-auto">
+  
+                <img alt="company search icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company-search.svg">
+  
+                <!-- Heading -->
+                <h3 class="mt-auto">
+                  Company Search Endpoint
+                </h3>
+  
+                <div class="row justify-content-center">
+  
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Input
+                    </h4>
+  
+                    <!-- Text -->
+                    <p class="mb-0">
+                      Company Profile URL
+                    </p>
+                  </div>
+  
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Output
+                    </h4>
+  
+                    <!-- Text -->
+                    <p class="mb-0">
+                      List companies that meet a set of criteria
+                    </p>
+                  </div>
+  
+  
+              <!-- Sample code -->
+              <div class="col-12 mt-4">
+  
+                <div class="highlight-block">
+  
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+  
+                  <pre><code class="language-python">
+  curl \
+      -X GET \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      https://nubela.co/proxycurl/api/find/company/role?role=ceo&company_name=nubela
+    </code></pre>
+                </div>
+  
+              </div>                
+  
+                </div>
+  
+              </div>
+  
+  
+            </div>
+  
+          </div>
+  
+          <!-- API Card -->
+          <div class="col-12 col-lg-6 mb-6 d-flex">
+  
+            <!-- Card -->
+            <div class="card shadow-light-lg lift lift-lg">
+  
+              <!-- Body -->
+              <div class="card-body my-auto">
+  
+                <img alt="job search icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/job-search.svg">
+  
+                <!-- Heading -->
+                <h3 class="mt-auto">
+                  Job Search Endpoint
+                </h3>
+  
+                <div class="row justify-content-center">
+  
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Input
+                    </h4>
+  
+                    <!-- Text -->
+                    <p class="mb-0">
+                      Company Profile URL
+                    </p>
+                  </div>
+  
+                  <div class="col-6">
+                    <!-- Input -->
+                    <h4 class="mb-0 text-info">
+                      Output
+                    </h4>
+  
+                    <!-- Text -->
+                    <p class="mb-0">
+                      List jobs posted by a company on LinkedIn
+                    </p>
+                  </div>
+  
+  
+              <!-- Sample code -->
+              <div class="col-12 mt-4">
+  
+                <div class="highlight-block">
+  
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>
+  
+                  <pre><code class="language-python">
+  curl \
+      -X GET \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      https://nubela.co/proxycurl/api/find/company/role?role=ceo&company_name=nubela
+    </code></pre>
+                </div>
+  
+              </div>                
+  
+                </div>
+  
+              </div>
+  
+  
+            </div>
+  
+          </div>
+  
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+    <!-- FOURTH FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-12 pb-8 pb-md-10 bg-light border-bottom">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-lg-10">
+
+            <h2 class="display-4 mb-2 text-center mb-6 mb-md-9">
+              Insights built with Company API
+            </h2>
+
+            <div id="carouselBlog" class="carousel slide" data-ride="carousel">
+
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <a href="#!" target="_blank">
+                    <img class="d-block w-100 rounded" src="assets/img/illustrations/TLC_The_VC_s_Guide_to_Uncovering_Stealth_Startups.png" alt="First slide">
+                    <p class="h2 text-center mt-4 font-weight-bold"> The VC's Guide to Uncovering Stealth Startups</p>
+
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="#!" target="_blank">
+                    <img class="d-block w-100 rounded" src="assets/img/illustrations/TLC_Using_Proxycurl_Historic_LinkedIn_Employee_Count_Tool_for_Investment_Research_cover-1.png" alt="Second slide">
+                    <p class="h2 text-center mt-4 font-weight-bold"> Using Proxycurl's Historic LinkedIn Employee Count Tool for Investment Research</p>
+
+                  </a>
+                </div>
+
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselBlog" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+
+              <a class="carousel-control-next" href="#carouselBlog" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+            
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- container heading--> 
+
+    </section>
+
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  School API
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl LLC
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Our team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS PeopleDataLabs (PDL)
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS CoreSignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS BrightData
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog Blogposts
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <hr class="my-8">
+
+        <div class="text-center mb-4">
+
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Follow us
+          </h6>
+
+          <div class="mr-2">
+            <a href="https://twitter.com/proxycurl" target="_blank">
+              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+            </a>
+  
+            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+            </a>
+  
+            <a href="https://github.com/nubelaco/" target="_blank">
+              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

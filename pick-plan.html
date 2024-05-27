@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />   
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Pick Your Plan</title>
+
+  </head>
+  <body>
+    
+    <!-- CONTENT
+    ================================================== -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+
+          <div class="col-12 mt-10">  
+            <hr>        
+
+          <div class="row">
+
+            <div class="col-4 py-6">
+              <span class="badge badge-pill badge-success-soft ml-10">
+                <h5 class="font-weight-bold mb-0 text-center">Plan</h5>          
+              </span>
+            </div>        
+
+            <div class="col-4 py-6">
+              <span class="badge badge-pill badge-disable-soft ml-10">
+              <h5 class="text-muted mb-0 text-center">Review</h5>
+              </span>
+            </div>
+
+            <div class="col-4 py-6">
+              <span class="badge badge-pill badge-disable-soft ml-10">
+              <h5 class="text-muted mb-0 text-center">Pay</h5>
+              </span>
+            </div>
+
+          </div>
+          
+          </div>          
+
+          <div class="col-12 col-lg-6 py-8 py-md-11">
+
+            <!--Email-->
+            <div class="form-group">
+              <label for="email">
+                Email
+              </label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+
+            <!-- Dropdown Select -->
+            <div class="form-group mb-5 mb-md-0">
+
+              <!-- Label -->
+              <label for="plans" class="mt-4">Pick plan</label>
+
+              <!-- Select -->
+              <select class="custom-select">
+                <option selected>Plans</option>
+                <option value="lite">Lite</option>
+                <option value="startup">Startup</option>
+                <option value="pro">Pro</option>
+                <option value="xl">XL</option>
+              </select>
+
+            </div>
+
+            <!--Radio Button-->
+            <div class="mt-4 mb-4 plans startup">
+
+              <div class="row">
+              <div class="col-sm-10">
+
+                <!-- Paid monthly -->
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="time" id="month" value="monthly">
+                  <label class="form-check-label" for="month"> Paid monthly</label>
+                </div>                      
+
+                <!-- Paid annually -->
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="time" id="annual" value="annually" checked="checked">
+                  <label class="form-check-label" for="annual"> Paid annually</label> 
+
+                  <span class="badge badge-pill badge-success-soft ml-4">
+                    <span class="h6 text-uppercase">Best Value</span>
+                  </span>
+                </div>
+  
+              </div>
+              </div>             
+
+            </div>  
+
+            <!--Lite-->
+            <div class="col-12 py-6 plans lite">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                  <span class="h3">Lite</span>
+              </div>
+
+              <!-- Price -->
+              <div class="d-flex">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="h1 font-weight-bold mb-0">9.9</span>
+                <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+
+                <!-- Text -->
+                <h5 class="font-weight-bold text-muted">
+                  Paid monthly
+                </h5>
+                
+              </div>                
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  1000 credits / $0.01 per request
+                </p>
+                
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  API access
+                </p>
+                
+              </div>                 
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                  <i class="fe fe-x"></i>
+                </div>
+
+                <!-- Text -->
+                <p">
+                  Access to LinkDB
+                </p>               
+
+              </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Get Magic Login Link
+              </button>
+
+            </div>
+
+            <!--Startup Annual-->
+            <div class="col-12 py-6 plans startup timepick annually">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                  <span class="h3">Startup Annual Plans</span>
+              </div>             
+
+              <!-- Price -->
+              <div class="d-flex">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="h1 font-weight-bold mb-0">166</span>
+                <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+
+                <!-- Text -->
+                <h5 class="font-weight-bold text-muted">
+                  Paid annually
+                </h5>
+                
+              </div>                
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  20000 credits / $0.0083 per request
+                </p>
+                
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  API access
+                </p>
+                
+              </div>                 
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                  <i class="fe fe-x"></i>
+                </div>
+
+                <!-- Text -->
+                <p">
+                  Access to LinkDB
+                </p>               
+
+              </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Get Magic Login Link
+              </button>               
+
+            </div>            
+
+            <!--Startup Monthly-->
+            <div class="col-12 py-6 plans timepick monthly">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                <span class="h3">Startup Month Plans</span>
+            </div> 
+
+              <!-- Price -->
+              <div class="d-flex">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="h1 font-weight-bold mb-0">199</span>
+                <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+
+                <!-- Text -->
+                <h5 class="font-weight-bold text-muted">
+                  Paid monthly
+                </h5>
+                
+              </div>                
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  20000 credits / $0.01 per request
+                </p>
+                
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  API access
+                </p>
+                
+              </div>                 
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                  <i class="fe fe-x"></i>
+                </div>
+
+                <!-- Text -->
+                <p">
+                  Access to LinkDB
+                </p>               
+
+              </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Get Magic Login Link
+              </button>               
+
+            </div>
+
+            <!--Pro-->
+            <div class="col-12 py-6 plans pro">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                  <span class="h3">Pro</span>
+              </div>
+
+              <!-- Price -->
+              <div class="d-flex">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="h1 font-weight-bold mb-0">1499</span>
+                <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+
+                <!-- Text -->
+                <h5 class="font-weight-bold text-muted">
+                  Paid every 3 months
+                </h5>
+                
+              </div>                
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  200000 credits / $0.0075 per request
+                </p>
+                
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  API access
+                </p>
+                
+              </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Get Magic Login Link
+              </button>
+
+            </div>
+            
+            <!--XL-->
+            <div class="col-12 py-6 plans xl">
+
+              <!-- Preheading -->
+              <div class="mb-3">
+                  <span class="h3">XL</span>
+              </div>
+
+              <!-- Price -->
+              <div class="d-flex">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="h1 font-weight-bold mb-0">7999</span>
+                <span class="h3 mb-0 mt-2 text-muted">/mo</span>
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+
+                <!-- Text -->
+                <h5 class="font-weight-bold text-muted">
+                  Paid monthly
+                </h5>
+                
+              </div>                
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  1250000 credits / $0.0063 per request
+                </p>
+                
+              </div>
+
+              <!-- List -->
+              <div class="d-flex">
+                
+                <!-- Badge -->
+                <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  API access
+                </p>
+                
+              </div>                 
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                Access to LinkDB
+              </p>
+              
+            </div>  
+
+            <!-- List -->
+            <div class="d-flex">
+              
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p>
+                No-question-asked first 30 days refund policy.
+              </p>
+              
+            </div>
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Get Magic Login Link
+              </button>
+
+            </div>             
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./pickplan.js"></script>
+
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

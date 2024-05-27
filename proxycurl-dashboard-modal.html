@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->    
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl Dashboard</title>
+
+  </head>
+  <body class="bg-light">
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Account
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Pricing and Quota
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalPassword" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-2 font-weight-bold text-center" id="modalPassword">
+                Input Password
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Set up your password
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label for="modalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalPassword" placeholder="input password">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label for="modalPassword">
+                    Re-type password
+                  </label>
+                  <input type="password" class="form-control" id="modalPassword" placeholder="re-type password">
+                </div>                
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Finish
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Form will be closed once you finish set up your password.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms of use popup  -->
+    <div class="modal fade" id="modalTerms" tabindex="-1" role="dialog" aria-labelledby="modalTermsOfUse" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-2 font-weight-bold" id="modalTerms">
+                Terms of use
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-4 text-muted">
+                Updated 3/15/2019
+              </p>
+
+              <!-- Terms -->
+              <div class="py-4 px-4 badge-secondary-soft rounded mb-6" style="height: 460px; box-shadow: none; overflow: scroll;">
+
+                <!-- Text -->
+                <p class="font-size-lg text-gray-800 mb-6 mb-md-8">
+                  Below are our Terms of use, which outline a lot of legal goodies, but the bottom line is it’s our aim to always take care of both you, as a customer, or as a seller on our platform. 
+                </p>
+            
+                <!-- Heading -->
+                <h3 class="mb-5">
+                  Licensing Terms
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-800">
+                  By visiting and/or taking any action on Bootstrap Themes, you confirm that you are in agreement with and bound by the terms outlined below. These terms apply to the website, emails, or any other communication.
+                </p>
+
+                <!-- Text -->
+                <p>
+                  Here are terms of our Standard License:
+                </p>
+
+                <!-- List -->
+                <div class="d-flex">
+                
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    The Standard License grants you a non-exclusive right to make use of Theme you have purchased.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    You are licensed to use the Item to create one End Product for yourself or for one client (a “single application”), and the End Product can be distributed for Free.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                    
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    If a Theme contains code, images, or content sourced from elsewhere under a different license, that item retains its original license. The license for the code, images, or content will be noted by the Theme author. You are responsible for adhering to the original license or clearing it with the author of the code, image, or content.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                    
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    This license can be terminated if you breach it and you lose the right to distribute the End Product until the Theme has been fully removed from the End Product.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                    
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    The author of the Theme retains ownership of the Theme, but grants you the license on these terms. This license is between the author of the Theme and you. Be Colossal LLC (Bootstrap Themes) are not a party to this license or the one granting you the license.
+                  </p>
+    
+                </div>
+
+                <!-- Text -->
+                <p>
+                  If you opt for an Extended License:
+                </p>
+            
+                <!-- List -->
+                <div class="d-flex">
+                
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800 mb-6 mb-md-8">
+                    You are licensed to use the Item to create one End Product for yourself or for one client (a “single application”), and the End Product maybe sold or distributed for free.
+                  </p>
+    
+                </div>
+
+                <!-- Heading -->
+                <h3 class="mb-5">
+                  Additional Terms
+                </h3>
+  
+                <!-- Text -->
+                <p class="text-gray-800">
+                  By visiting and/or taking any action on Bootstrap Themes, you confirm that you are in agreement with and bound by the terms outlined below. These terms apply to the website, emails, or any other communication.
+                </p>
+
+                <!-- List -->
+                <div class="d-flex">
+                
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    All payments are processed securely through PayPal or Stripe. Bootstrap Themes does not directly process payments through the website.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                    
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800">
+                    You have 14 days to evaluate your purchase. If your purchase fails to meet expectations set by the seller, or is critically flawed in some way, contact Bootstrap Themes and we will issue a full refund pending a review.
+                  </p>
+    
+                </div>
+                <div class="d-flex">
+                    
+                  <!-- Badge -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+    
+                  <!-- Text -->
+                  <p class="text-gray-800 mb-6 mb-md-0">
+                    Membership is a benefit for those who follow our terms and policies. We may at any time suspend or terminate your account.
+                  </p>
+    
+                </div>
+
+              </div>
+
+              <!-- Button -->
+              <a class="btn btn-block btn-primary lift" href="#!">
+                Accept Terms of Use
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER
+    ================================================== -->
+    <header class="bg-dark pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white mb-2">
+              Proxycurl Web Scraping API
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-white-75 mb-0">
+              Dashboard for <a class="text-reset" href="mailto:dhgamache@gmail.com">example@nubela.co</a>
+            </p>
+
+            <a class="btn btn-sm btn-primary" data-toggle="modal" href="#modalPassword">
+              Modal
+            </a>
+
+            <a class="btn btn-sm btn-primary" data-toggle="modal" href="#modalTerms">
+              Terms of use
+            </a>            
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <button class="btn btn-sm btn-gray-300-20">
+              Log Out
+            </button>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+    ================================================== -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    Account
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard.html">
+                        Api Key and Billing
+                      </a>
+                    </li>
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="proxycurl-dashboard-pricing-quota.html">
+                        Pricing and Quota
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#">
+                        Documentation
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard-invoices.html">
+                        Invoices
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          
+          <div class="col-12 col-md-9">
+
+            <!-- Information -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  API Key
+                </h4>
+
+              </div>
+
+              <div class="card-body">
+
+                <!-- Form -->
+                <form>
+                  <div class="row">                
+
+                    <!-- Token -->
+                    <form>
+
+                    <!--Forms-->
+                    <div class="col-12">                    
+
+                      <fieldset disabled>
+                      <!-- Token API -->
+                      <div class="form-group">
+                        <label for="disabledTextInput">Bearer Token (API Key)</label>
+                        <input type="text" id="name" class="form-control" value="23837419">
+                      </div>
+                      </fieldset>
+
+                      <fieldset disabled>
+                        <!-- Token API -->
+                        <div class="form-group mb-0">
+                          <label for="disabledTextInput">
+                            LinkDB SQL Connection String</label>
+                            <span class="badge badge-warning">
+                              beta
+                            </span>
+                          <input type="text" id="name" class="form-control" value="23837419">
+                        </div>
+                        </fieldset>
+
+                    </div>
+
+                    <div class="col-12 col-md-auto">
+
+                      <a href="/proxycurl-staging/docs#linkdb">
+                        <small class="form-text text-muted">
+                        View LinkDB documentation
+                        </small>
+                      </a>
+
+                    </div>
+
+                    </form>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+            <!-- Credits -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+                <h4 class="mb-0">
+                  Credits
+                </h4>
+              </div>
+
+              <div class="card-body">
+
+                <form data-parsley-validate="" action="/proxycurl-staging/dashboard/payment/charge" method="GET" novalidate="">
+                  
+                  <div class="row">
+
+                    <div class="col-12">
+
+                      <div class="form-group mb-6">
+                        <label for="name">
+                          <i class="neu-wallet"></i> Balance
+                        </label>
+                        <input id="name" type="text" value="184005" readonly="" class="form-control">
+
+                        <small class="form-text text-muted">
+                          Your current balance will be added once you made a top-up
+                        </small>
+                      </div>
+
+                    </div>
+
+                    <div class="container">
+                      <div class="row mb-2">
+                        <div class="col-5">
+  
+                          <div class="form-group">
+                            <label>
+                              <i class="neu-dollar"></i> Top-up amount
+                            </label>
+                            <input id="name" type="text" placeholder="10" data-parsley-min="10" name="amount" required="" class="form-control">
+                          </div>
+    
+                        </div>
+
+                        <div class="col-2">
+
+                          <div class="text-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center mt-7">
+                              <i class="neu-compare text-primary" style="font-size: 24px;"></i>
+                            </div>
+                          </div>
+
+                        </div>
+  
+                        <div class="col-5">
+  
+                          <div class="form-group">
+                            <label for="name">
+                              <i class="neu-coin"></i> Top-up Credits
+                            </label>
+                            <input id="name" type="text" value="0" readonly="" class="form-control">
+                          </div>
+    
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-block btn-primary">
+                        Top up
+                      </button>
+                    </div>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+            
+            <!-- Auto top up ON-->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Auto Top Up
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Switch -->
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="switchON" checked>
+                      <label class="custom-control-label" for="switchON"></label>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-12 mb-6">
+
+                    <form class="form-inline">
+
+                      <div class="form-group">
+                        <label>
+                          Top up
+                        </label>
+
+                        <div class="input-group mx-sm-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text text-primary bg-light">$</span>
+                          </div>
+                          <input style="max-width: 128px;" type="input" placeholder="10" class="form-control">
+                        </div>
+
+                        <label>
+                          (USD) when my credits fall below
+                        </label>
+                        <input style="max-width: 156px" type="input" placeholder="1000" class="form-control mx-sm-3">
+                      </div>
+
+                    </form>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Auto top up OFF -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Auto Top Up
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Switch -->
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="switchOFF" checked>
+                      <label class="custom-control-label" for="switchOFF"></label>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-12 mb-6">
+
+                    <form class="form-inline">
+
+                      <div class="form-group">
+                        <label>
+                          Top up
+                        </label>
+
+                        <div class="input-group mx-sm-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text text-muted bg-light">$</span>
+                          </div>
+                          <input style="max-width: 128px;" type="input" readonly placeholder="10" class="form-control">
+                        </div>
+
+                        <label>
+                          (USD) when my credits fall below
+                        </label>
+                        <input style="max-width: 156px" type="input" readonly placeholder="1000" class="form-control mx-sm-3">
+                      </div>
+
+                    </form>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Payment methods -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Payment Methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <button class="btn btn-xs btn-primary" data-bs-toggle="modal" data-bs-target="#modalPayment">
+                      Add new
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/visa.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Visa ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 03/2024
+                        </small>
+
+                      </div>
+                      <div class="col-auto me-n5">
+
+                        <!-- Badge -->
+                        <span class="badge badge-pill badge-secondary-soft">
+                          <span class="h6 text-uppercase font-weight-bold">
+                            Default
+                          </span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/mastercard.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Mastercard ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 07/2026
+                        </small>
+
+                      </div>
+
+                      <div class="col-auto me-n5">
+
+                        <!-- Badge -->
+                        <a href="#" class="btn btn-xs btn-secondary">
+                          Make default
+                        </a>
+
+                      </div>                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>

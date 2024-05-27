@@ -1,0 +1,25 @@
+
+<svg width="1440px" height="547px" viewBox="0 0 1440 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="93.4532821%" x2="3.8816746%" y2="93.4532821%" id="linearGradient-1">
+            <stop stop-color="#F9FCFF" offset="0%"></stop>
+            <stop stop-color="#E5F0FD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="93.4532821%" x2="3.8816746%" y2="93.4532821%" id="linearGradient-2">
+            <stop stop-color="#F4F8FE" offset="0%"></stop>
+            <stop stop-color="#D1E4FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="clearbit-connect" transform="translate(0.000000, -2423.000000)">
+            <g id="know-contacts" transform="translate(0.000000, 2386.000000)">
+                <g id="bg" transform="translate(0.000000, 37.000000)">
+                    <path d="M1.13686838e-13,486 C239,425.54987 989,7.59114993e-15 1175,0 C1361,0 1440,142 1440,142 L1440,547 L1.13686838e-13,547 C1.13686838e-13,547 2.36477504e-13,500.507372 1.13686838e-13,486 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
+                    <path d="M0,495 C134,477.212121 1020,77 1206,77 C1392,77 1440,187 1440,187 L1440,547 L0,547 C0,547 1.0658141e-13,509.494949 0,495 Z" id="Path-2" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

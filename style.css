@@ -1,0 +1,195 @@
+@media only screen and (max-width: 768px) {
+  .mobile-block {
+      display: block !important;
+      margin-bottom: 10px; /* Add some spacing between blocks */
+  }
+}
+.rounded-16 {
+  border-radius: 16px !important;  
+}
+
+.border-zinc-200 {
+  border: 1px solid #e4e4e7 !important;
+}
+
+.bg-zinc-100 {
+  background-color: #f4f4f5 !important;
+}
+
+.bg-yellow-50 {
+  background-color: #fefce8 !important;
+}
+
+/* Select the element you want to underline */
+.text-underline {
+  /* Set the text-decoration property to underline */
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+  display:block !important;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  font-size: 48px;
+  font-weight: 300;
+  color: #42BA96;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
+
+.hover{
+  opacity: 0.5;
+}
+
+.hover:hover{
+  opacity: 1;
+}
+
+.hover-parent:hover > .hover{
+  opacity: 1;
+}
+
+.hover-active .hover{
+  opacity: 1;
+}
+
+.contact-img{
+  margin-bottom: -48px;
+}
+
+.bg-wave{
+  background-image: url(/assets/bg/waves.d598c38e.svg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+.blur{
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+  
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 0.5rem !important;
+}
+  
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 0.5rem !important;
+}
+  
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem !important;
+}
+  
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.text-python{
+    color: #3FB422;
+}
+.text-python-hl{
+    color: #acc267;
+}
+.text-hl{
+    color: #f92672;
+}
+.text-hl-yellow{
+  color: #FBBF24;
+}
+.caption{
+    color: #869ab8!important;
+    font-size: 12px;
+}
+.highlight-block{
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px 1px rgba(0,0,0,.25);
+}
+
+.highlight-block pre,
+.highlight-block table {
+    background: #1e1e1e;
+    color: white;
+}
+pre {
+    overflow: auto;
+    -ms-word-wrap: normal;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

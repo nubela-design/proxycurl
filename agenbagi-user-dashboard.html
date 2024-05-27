@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Agen dashboard</title>
+
+  </head>
+  <body class="bg-light">
+
+    <!-- HEADER
+    ================================================== -->
+    <header class="bg-dark pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white mb-2">
+              Agen dashboard
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-white-75 mb-0">
+              Dashboard for agen1@email.com
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <button class="btn btn-sm btn-gray-300-20">
+              Log Out
+            </button>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </header>    
+
+    <!-- CONTENT
+    ================================================== -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    General
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700">
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="agenbagi-user-dashboard.html">
+                        Reports
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="agenbagi-dashboard-comparison.html">
+                        Agens comparison
+                      </a>
+                    </li>                     
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-9">
+
+            <!-- Competition rank -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <span class="price display-2 text-primary">3</span>
+                <span class="h2 align-self-end">/50</span>
+                <p class="h3 text-gray-700">You ranked <span class="text-primary">3rd</span> out of 50th</p>
+                <span class="font-size-sm text-gray-700">PS: Smaller number is better than a higher number, for example, rank-1st > rank-30th.</span>
+
+              </div>
+
+              <div class="card-body">
+
+                <p class="font-size-lg">
+                  Add <span class="text-info">2 more installs</span> to get to the next rank.<br>
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Unique link -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h3 class="display-5">
+                  Unique link
+                </h3>
+
+              </div>
+
+              <div class="card-body">
+
+                <div class="form-row">
+                  <div class="col-12 col-lg">
+                      
+                    <!-- Search -->
+                    <div class="form-group mb-0">
+                      <fieldset disabled>
+                        <div class="form-group form">
+                          <input type="text" id="disabledTextInput" class="form-control" placeholder="UniqueLinkForThisAgen">
+                        </div>
+                      </fieldset>
+                    </div>
+    
+                  </div>
+                  <div class="col-12 col-lg-auto">
+                      
+                    <!-- Button -->
+                    <button href="#!" class="btn btn-block btn-primary">
+                      Copy url
+                    </button>
+    
+                  </div>
+                </div> <!-- / .form-row -->                   
+
+              </div>
+
+            </div>            
+            
+            <!-- Progress report -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <div class="row align-items-center">
+                  <div class="col">
+                    <!-- Heading -->
+                    <h3 class="display-5">
+                      Progress report
+                    </h3>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+
+                <h2 class="font-weight-bold">You are <span class="text-danger">NOT on track</span> to meet your quota at the end of the month</h2>
+                <h3 class="mb-8 text-gray-700">Maintain an average of <span class="text-info">15 extension installs</span> till the end of the month to qualify for payout</h3>
+
+                <!-- Progress bar -->
+                <div class="mb-8">
+                  <p class="mb-0 text-muted">Here's what you earned from activating the app at <span class="text-black font-weight-bold font-size-lg">5th June 2021</span>.</p>
+                  <div class="row">
+                    <div class="col text-left small text-muted mb-2">0%</div>
+                    <div class="col text-right small text-muted mb-2">100%</div>
+                  </div>
+        
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar progress-bar-striped small progress-bar-animated" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">3 hours</div>
+                  </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="mb-8">
+                  <p class="mb-0 text-muted">Here's what you earned from activating the app at <span class="text-black font-weight-bold font-size-lg">4th June 2021</span>.</p>
+                  <div class="row">
+                    <div class="col text-left small text-muted mb-2">0%</div>
+                    <div class="col text-right small text-muted mb-2">100%</div>
+                  </div>
+        
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar bg-secondary progress-bar-striped small" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">7 hours</div>
+                  </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="mb-8">
+                  <p class="mb-0 text-muted">Here's what you earned from activating the app at <span class="text-black font-weight-bold font-size-lg">3rd June 2021</span>.</p>
+                  <div class="row">
+                    <div class="col text-left small text-muted mb-2">0%</div>
+                    <div class="col text-right small text-muted mb-2">100%</div>
+                  </div>
+        
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar bg-success progress-bar-striped small" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">60 hours</div>
+                  </div>                 
+  
+                  <div class="row">
+                    <div class="col mt-2"></div>
+                    <div class="col-auto mt-2 text-info">
+                      <i class="neu-clock"></i>Extra of 5 agents with 50 work hours
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="mb-8">
+                  <p class="mb-0 text-muted">Here's what you earned from activating the app at <span class="text-black font-weight-bold font-size-lg">2nd June 2021</span>.</p>
+                  <div class="row">
+                    <div class="col text-left small text-muted mb-2">0%</div>
+                    <div class="col text-right small text-muted mb-2">100%</div>
+                  </div>
+        
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar bg-secondary progress-bar-striped small" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1 hours</div>
+                  </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="mb-8">
+                  <p class="mb-0 text-muted">Here's what you earned from activating the app at <span class="text-black font-weight-bold font-size-lg">1st June 2021</span>.</p>
+                  <div class="row">
+                    <div class="col text-left small text-muted mb-2">0%</div>
+                    <div class="col text-right small text-muted mb-2">100%</div>
+                  </div>
+        
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar bg-success progress-bar-striped small" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">10 hours</div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary-soft lift lift-lg btn-block btn-sm text-uppercase">Show more</button>
+
+              </div>
+
+            </div>
+            
+            <!-- Users report -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h3 class="display-5">
+                  Users report
+                </h3>
+
+              </div>
+
+              <div class="card-body">
+
+                <p class="mb-6 text-muted">Here's the current data of how many hours of your invited users get by activating the app that started on <span class="text-black font-weight-bold">1st March</span> up to the end of <span class="text-black font-weight-bold">31st March 2021</span>.</p>
+
+                <div class="table-responsive mb-0">
+                  <table class="table table-align-middle thead-dark">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th class="h6 text-uppercase font-weight-bold">
+                          index
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            status
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            name
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            email
+                          </span>
+                        </th>
+                        <th>
+                          <span class="h6 text-uppercase font-weight-bold">
+                            total hours
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            1.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Active
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Son Goku
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                           <p class="font-size-sm mb-0">
+                            songoku@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            2 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            2.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            Active
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 font-size-sm">
+                            Monke D Luffy
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            mugiwara@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0">
+                            1 hour
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-muted">
+                            3.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="text-muted mb-1 font-size-sm">
+                            Invited
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-muted font-size-sm">
+                            Morgan Freeman
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            morganfreeman@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            0 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm">
+                            4.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-success">
+                            Completed
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-success font-size-sm">
+                            Slim Shady
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-success">
+                            slimshady@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-success">
+                            10 hours
+                          </p>
+      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+      
+                          <p class="mb-1 font-size-sm text-muted">
+                            5.
+                          </p>
+      
+                        </td>
+                        <td>
+      
+                          <p class="text-muted mb-1 font-size-sm">
+                            Invited
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="mb-1 text-muted font-size-sm">
+                            Isaac Newton
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            isaacnewton@email.com
+                          </p>
+      
+                        </td>
+                        <td>
+                          
+                          <p class="font-size-sm mb-0 text-muted">
+                            0 hours
+                          </p>
+      
+                        </td>
+                      </tr>                
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+            </div>            
+
+          </div>
+
+        </div> <!-- row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

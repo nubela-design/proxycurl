@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl Dashboard</title>
+
+  </head>
+  <body class="bg-light">
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="bg-dark d-md-none">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Account
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Api Key and Billing
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- HEADER
+    ================================================== -->
+    <header class="bg-dark pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center mb-4">
+          <div class="col">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white mb-2">
+              Proxycurl Web Scraping API
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-white-75 mb-0">
+              Dashboard for <a class="text-reset" href="mailto:dhgamache@gmail.com">example@nubela.co</a>
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <button class="btn btn-sm btn-gray-300-20">
+              Log Out
+            </button>
+
+          </div>
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </header>
+
+    <!-- MAIN
+    ================================================== -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+
+            <!-- Card -->
+            <div class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg">
+
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    Proxycurl API
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-6">
+                    <li class="list-item active">
+                      <a class="list-link text-reset" href="proxycurl-dashboard.html">
+                        API Key and Billing
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="proxycurl-dashboard-work-logs.html">
+                        Work Email Lookup Logs
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        Docs
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase mb-3">
+                    Dwarf API
+                  </h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-0">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        API Key and Billing
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        Docs
+                      </a>
+                    </li>
+                  </ul>
+
+                  <hr class="my-3">
+
+                  <div class="custom-control custom-switch mb-0 mt-6">
+                    <input type="checkbox" class="custom-control-input" id="dashboardSwitch">
+                    <label class="custom-control-label" for="dashboardSwitch">
+                      Switch to new dashboard
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          
+          <div class="col-12 col-md-9">
+
+            <!-- Information -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+
+                <!-- Heading -->
+                <h4 class="mb-0">
+                  API Key
+                </h4>
+
+              </div>
+
+              <div class="card-body">
+
+                <!-- Form -->
+                <form>
+                  <div class="row">                
+
+                    <!-- Token -->
+                    <form>
+
+                    <!--Forms-->
+                    <div class="col-12">                    
+
+                      <fieldset disabled>
+                      <!-- Token API -->
+                      <div class="form-group">
+                        <label for="disabledTextInput">Bearer Token (API Key)</label>
+                        <input type="text" id="name" class="form-control" value="23837419">
+                      </div>
+                      </fieldset>
+
+                      <fieldset disabled>
+                        <!-- Token API -->
+                        <div class="form-group mb-0">
+                          <label for="disabledTextInput">
+                            LinkDB SQL Connection String</label>
+                            <span class="badge badge-warning">
+                              beta
+                            </span>
+                          <input type="text" id="name" class="form-control" value="23837419">
+                        </div>
+                        </fieldset>
+
+                    </div>
+
+                    <div class="col-12 col-md-auto">
+
+                      <a href="/proxycurl-staging/docs#linkdb">
+                        <small class="form-text text-muted">
+                        View LinkDB documentation
+                        </small>
+                      </a>
+
+                    </div>
+
+                    </form>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+            <!-- Credits -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+
+              <div class="card-header">
+                <h4 class="mb-0">
+                  Credits
+                </h4>
+              </div>
+
+              <div class="card-body">
+
+                <form data-parsley-validate="" action="/proxycurl-staging/dashboard/payment/charge" method="GET" novalidate="">
+                  
+                  <div class="row">
+
+                    <div class="col-12">
+
+                      <div class="form-group mb-6">
+                        <label for="name">
+                          <i class="neu-wallet"></i> Balance
+                        </label>
+                        <input id="name" type="text" value="184005" readonly="" class="form-control">
+
+                        <small class="form-text text-muted">
+                          Your current balance will be added once you made a top-up
+                        </small>
+                      </div>
+
+                    </div>
+
+                    <div class="container">
+                      <div class="row mb-2">
+                        <div class="col-5">
+  
+                          <div class="form-group">
+                            <label>
+                              <i class="neu-dollar"></i> Top-up amount
+                            </label>
+                            <input id="name" type="text" placeholder="10" data-parsley-min="10" name="amount" required="" class="form-control">
+                          </div>
+    
+                        </div>
+
+                        <div class="col-2">
+
+                          <div class="text-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center mt-7">
+                              <i class="neu-compare text-primary" style="font-size: 24px;"></i>
+                            </div>
+                          </div>
+
+                        </div>
+  
+                        <div class="col-5">
+  
+                          <div class="form-group">
+                            <label for="name">
+                              <i class="neu-coin"></i> Top-up Credits
+                            </label>
+                            <input id="name" type="text" value="0" readonly="" class="form-control">
+                          </div>
+    
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-block btn-secondary-soft" disabled>
+                        Buy credits on the new dashboard
+                      </button>
+                    </div>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+            
+            <!-- Auto top up ON-->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Auto Top Up
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Switch -->
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="switchON">
+                      <label class="custom-control-label" for="switchON"></label>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-12 mb-6">
+
+                    <form class="form-inline">
+
+                      <div class="form-group">
+                        <label>
+                          Top up
+                        </label>
+
+                        <div class="input-group mx-sm-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text text-primary bg-light">$</span>
+                          </div>
+                          <input style="max-width: 128px;" type="input" placeholder="10" class="form-control">
+                        </div>
+
+                        <label>
+                          (USD) when my credits fall below
+                        </label>
+                        <input style="max-width: 156px" type="input" placeholder="1000" class="form-control mx-sm-3">
+                      </div>
+
+                    </form>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Auto top up OFF -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Auto Top Up
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Switch -->
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="switchOFF" checked>
+                      <label class="custom-control-label" for="switchOFF"></label>
+                    </div>
+
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-12 mb-6">
+
+                    <form class="form-inline">
+
+                      <div class="form-group">
+                        <label>
+                          Top up
+                        </label>
+
+                        <div class="input-group mx-sm-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text text-muted bg-light">$</span>
+                          </div>
+                          <input style="max-width: 128px;" type="input" readonly placeholder="10" class="form-control">
+                        </div>
+
+                        <label>
+                          (USD) when my credits fall below
+                        </label>
+                        <input style="max-width: 156px" type="input" readonly placeholder="1000" class="form-control mx-sm-3">
+                      </div>
+
+                    </form>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Payment methods -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Heading -->
+                    <h4 class="mb-0">
+                      Payment Methods
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Button -->
+                    <button class="btn btn-xs btn-secondary-soft" disabled data-bs-toggle="modal" data-bs-target="#modalPayment">
+                      Add new card on the new dashboard
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/visa.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Visa ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 03/2024
+                        </small>
+
+                      </div>
+                      <div class="col-auto me-n5">
+
+                        <!-- Badge -->
+                        <span class="badge badge-pill badge-secondary-soft">
+                          <span class="h6 text-uppercase font-weight-bold">
+                            Default
+                          </span>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <img class="img-fluid" src="assets/img/icons/payment-methods/mastercard.svg" alt="..." style="max-width: 40px;">
+
+                      </div>
+                      <div class="col ms-n5">
+
+                        <!-- Heading -->
+                        <p class="mb-0">
+                          Mastercard ending in 1234
+                        </p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700">
+                          Expires 07/2026
+                        </small>
+
+                      </div>
+
+                      <div class="col-auto me-n5">
+
+                        <!-- Badge -->
+                        <a href="#" class="btn btn-xs btn-secondary">
+                          Make default
+                        </a>
+
+                      </div>                      
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </main>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>

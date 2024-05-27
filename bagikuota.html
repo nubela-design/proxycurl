@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Bagi Kuota</title>
+
+  </head>
+  <body>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="bagikuota.html">
+          <img src="./assets/img/BagiKuota_Logo horizontal.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">           
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="agenbagi.html">
+                AgenBagi
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="bagikuota-faq.html">
+                FAQ
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Download APK
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" target="blank" href="https://www.instagram.com/bagikuota.id">
+                Instagram <i class="neu-arrow"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-10 pb-md-14 bg-primary" id="welcome">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">          
+
+            <div class="col-12 text-center">
+              <img src="assets/img/illustrations/BagiKuota_Logo horizontal_White.svg"
+              alt="BagiKuota_Logo" class="mb-8 d-inline-block mx-auto" style="width: 144px; height: auto;">
+            </div>
+
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <h6 class="text-uppercase font-weight-bold text-gray-300">
+              DAPATKAN MINIMAL 50.000 IDR/bulan
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold text-white">
+              Hasilkan Rp 500.000 setiap bulan hanya dengan membuka aplikasi Bagikuota setiap hari
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white mb-8">
+              Bagikuota adalah platform bagi siapa saja untuk menghasilkan uang dengan akun media sosial mereka
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center text-center">
+
+          <div class="col-12 col-md-4 mb-4">
+
+            <!-- Image -->
+            <img class="screenshot img-fluid rounded" src="./assets/img/BagiKuota SS/install app.png" alt="BagiKuota app">
+            
+            <p class="text-white font-size-lg mt-4">
+              Install aplikasi BagiKuota
+            </p>
+
+          </div>
+
+          <div class="col-12 col-md-4 mb-4">
+
+            <!-- Image -->
+            <img class="screenshot img-fluid" src="./assets/img/BagiKuota SS/mystery boxes.png" alt="BagiKuota app">         
+
+            <p class="text-white font-size-lg mt-4">
+              Dapatkan bayaran karena aktifkan BagiKuota - Dapatkan kotak misteri setiap 3 jam senilai Rp 3000-9000
+            </p>
+
+          </div>
+
+          <div class="col-12 col-md-4">
+
+            <!-- Image -->
+            <img class="screenshot img-fluid" src="./assets/img/BagiKuota SS/social media ads.png" alt="BagiKuota app">         
+
+            <p class="text-white font-size-lg mt-4">
+              (Opsional) Dapatkan bayaran lebih banyak untuk posting - Posting di media sosial dan hasilkan lebih banyak uang
+            </p>
+            
+          </div>
+
+          <div class="col-12 mt-6">
+            <a href="#!" class="btn btn-white btn-lg shadow lift mr-md-4 mb-4">
+              <i class="neu-download-bracket"></i> Download APK
+            </a>
+  
+            <a href="bagikuota-faq.html" class="btn btn-white-soft btn-lg shadow lift mb-4">
+              Baca FAQ
+            </a>
+
+            <p class="text-gray-300">
+              <span class="text-danger">*</span> Gunakan Download APK untuk mendapatkan update aplikasi yang lebih terbaru
+            </p>
+          </div>
+
+          <div class="col-12 mt-8">
+            <p class="lead text-white font-weight-bold">
+              Tersedia juga di
+            </p>
+            <a href="#!" class="btn btn-black btn-xs shadow py-2 lift mr-md-4 mb-4" target="_blank">
+              <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="m22.81501,23.1029L6.25798,40.67609c.00098.00353.00161.00721.00259.01075.50799,1.90789,2.25042,3.31316,4.31922,3.31316.82647,0,1.60294-.22369,2.26886-.6158l.05263-.03158,18.63682-10.75332-8.72309-9.49641Z" fill="#ea4335"/><path d="m39.56536,20.11052l-.01579-.01052-8.04587-4.66495-9.06465,8.06688,9.09662,9.09492,8.00338-4.6179c1.40288-.7579,2.35569-2.23684,2.35569-3.9421,0-1.69474-.93963-3.1658-2.32938-3.92633Z" fill="#fbbc04"/><path d="m6.2569,7.3228c-.09928.36711-.15164.75243-.15164,1.15088v31.05263c0,.39875.05199.78449.1527,1.14976l17.12645-17.12326L6.2569,7.3228Z" fill="#4285f4"/><path d="m22.93715,24l8.56901-8.56741L12.89075,4.63947c-.67644-.40526-1.46607-.63947-2.31097-.63947-2.0688,0-3.81387,1.40789-4.32186,3.31842-.0004.00146-.00064.00297-.00104.00443l16.68026,16.67715Z" fill="#34a853"/></svg> 
+              Google Play Store
+            </a>
+            <a href="#!" class="btn btn-black btn-xs shadow py-2 lift mr-md-4 mb-4" target="_blank">
+              <?xml version="1.0" encoding="UTF-8"?><svg id="b" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="m14,4h20c5.5,0,10,4.5,10,10v20c0,5.5-4.5,10-10,10H14c-5.5,0-10-4.5-10-10V14c0-5.5,4.5-10,10-10Z" fill="#62c9a9"/><path d="m27.7,22.6h0c-1.6,0-2.9,1.3-2.9,2.9v2.9h2.9c1.6,0,2.9-1.3,2.9-2.9h0c0-1.6-1.3-2.9-2.9-2.9Z" fill="#fff"/><path d="m27.7,30h-2.9v2.9c0,1.6,1.3,2.9,2.9,2.9h0c1.6,0,2.9-1.3,2.9-2.9h0c0-1.6-1.3-2.9-2.9-2.9h0Z" fill="#dff4ed"/><path d="m17.4,32.9h0c0,1.6,1.3,2.9,2.9,2.9h0c1.6,0,2.9-1.3,2.9-2.9v-2.9h-2.9c-1.6,0-2.9,1.3-2.9,2.9h0Z" fill="#c0e9dc"/><path d="m20.3,22.6h0c-1.6,0-2.9,1.3-2.9,2.9h0c0,1.6,1.3,2.9,2.9,2.9h2.9v-2.9c0-1.6-1.3-2.9-2.9-2.9Z" fill="#a0decb"/><path d="m24,18.3c-4.9,0-8.6-4-8.8-4.1-.5-.5-.4-1.3.1-1.8s1.3-.4,1.8.1c0,0,3.1,3.3,6.9,3.3s6.9-3.3,6.9-3.3c.5-.5,1.3-.5,1.8-.1.5.5.5,1.3.1,1.8-.2.2-3.9,4.1-8.8,4.1h0Z" fill="#fff"/></svg>
+              Oppo App Market
+            </a>
+            <a href="https://global.app.mi.com/details?lo=ID&la=in_ID&id=co.nubela.bagikuota" class="btn btn-black btn-xs shadow py-2 lift mr-md-4 mb-4" target="_blank">
+              <?xml version="1.0" encoding="UTF-8"?><svg id="b" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="16.18833" ry="16.18833" fill="#ff6900"/><path d="m30.34231,22.13408v9.89184c0,.24301-.19699.44-.44.44h-3.52c-.24301,0-.44-.19699-.44-.44v-9.89184c0-1.21503-.98497-2.2-2.2-2.2h-8.5637c-.1215,0-.22.0985-.22.22v11.87184c0,.24301-.19699.44-.44.44h-3.52c-.24301,0-.44-.19699-.44-.44V15.97408c0-.24301.19699-.44.44-.44h12.7437c3.64508,0,6.6,2.95492,6.6,6.6Zm-8.13186,0h-3.52c-.24301,0-.44.19699-.44.44v9.45184c0,.24301.19699.44.44.44h3.52c.24301,0,.44-.19699.44-.44v-9.45184c0-.24301-.19699-.44-.44-.44Zm14.79094-6.6h-3.52c-.24301,0-.44.19699-.44.44v16.05184c0,.24301.19699.44.44.44h3.52c.24301,0,.44-.19699.44-.44V15.97408c0-.24301-.19699-.44-.44-.44Z" fill="#fff"/></svg>
+              Xiaomi App Store
+            </a>
+            <a href="#!" class="btn btn-black btn-xs shadow py-2 lift mr-md-4 mb-4" target="_blank">
+              <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="48" height="48" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"><defs><linearGradient id="b" x1="13.66919" y1="18.0539" x2="34.33081" y2="18.0539" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#773fe1"/><stop offset="1" stop-color="#e50577"/></linearGradient></defs><rect x="4" y="4" width="40" height="40" rx="10" ry="10" fill="#fff"/><path d="m24,21.86272c-6.67542,0-12.10632-5.43091-12.10632-12.10632,0-.69031.55969-1.25,1.25-1.25s1.25.55969,1.25,1.25c0,5.29694,4.30908,9.60632,9.60632,9.60632s9.60632-4.30939,9.60632-9.60632c0-.69031.55969-1.25,1.25-1.25s1.25.55969,1.25,1.25c0,6.67542-5.43091,12.10632-12.10632,12.10632Z" fill="#e2e2e2"/><path d="m24,20.96747c-6.67542,0-12.10632-5.43091-12.10632-12.10632,0-.69031.55969-1.25,1.25-1.25s1.25.55969,1.25,1.25c0,5.29694,4.30908,9.60632,9.60632,9.60632s9.60632-4.30939,9.60632-9.60632c0-.69031.55969-1.25,1.25-1.25s1.25.55969,1.25,1.25c0,6.67542-5.43091,12.10632-12.10632,12.10632Z" fill="#65c8d0"/><path d="m34.33081,15.14033c-.3233.25692-5.03605,3.9291-10.33081,3.9291s-10.00751-3.67218-10.33081-3.9291c2.12742,3.48675,5.956,5.82714,10.33081,5.82714s8.20339-2.34039,10.33081-5.82714Z" fill="url(#b)"/><path d="m19.95973,33.59827c-.0041.00057-.00818.00121-.01226.00191-.17893.05676-.32286.19095-.39199.36546-.21515.31536-.40673.59241-.61893.9225-.21221.3301-.40673.58946-.61893.88419-.10905.15621-.20042.29473-.29473.45388-.07123.18608-.24876.30988-.44799.31241-.17366-.07514-.31259-.21301-.38904-.38609-.50988-.72798-1.04039-1.52669-1.54438-2.27236-.07182-.19135-.26199-.31172-.46567-.29473-.21187.02411-.36407.21541-.33996.42728.00101.00891.00234.01779.00397.02661.07165.1759.17117.33911.29473.48336l1.23491,1.81553c.29473.45978.58946,1.00797,1.30565.98439.6484-.02358.91661-.56588,1.2467-1.05513l.9284-1.36165c.09726-.14736.20336-.29473.30946-.45388.13963-.14048.22343-.32693.23578-.52462-.02946-.21119-.22454-.35852-.43573-.32906Z" fill="#9c9c9c"/><path d="m21.539,33.75934c-.08414-.12706-.23647-.19101-.38609-.1621l-.00589.00589c-.37725.07958-.31536.40083-.31536.80166v2.25173c-.02712.16908-.00353.34241.06779.49809.12019.17613.36041.22148.53654.10128.07113-.04854.12398-.11946.15017-.20149.03537-.11789.01768-1.47364.01768-1.67111v-1.12881c.02641-.16785.0039-.33975-.06484-.49514Z" fill="#9c9c9c"/><path d="m32.50586,33.96565c-.22582-.19147-.49492-.32501-.78398-.38904-.37331-.04735-.7502-.06017-1.12586-.03831h-1.17892c-.32781-.00762-.65129.07606-.93429.24168-.90885.55117-1.19881,1.73474-.64764,2.64359.10322.1702.23221.32336.38239.45401.58946.50399,1.16123.4303,1.90689.4303h1.17892c.9565.01313,1.76178-.71252,1.84795-1.66522.08094-.63202-.16166-1.26234-.64546-1.67701Zm-1.00208,2.61719c-.18273.03242-1.32628,0-1.60332,0-.25977.01737-.52066.0065-.77808-.03242-.62459-.18388-.98186-.83928-.79798-1.46387.0077-.02614.0163-.05201.02579-.07756.13227-.3937.47357-.68039.88419-.74272l-.0059.00295c.168-.03242,1.33218,0,1.60038,0,.25965-.01911.52062-.00922.77808.02947,1.1347.29473,1.12586,2.0631-.10315,2.28415Z" fill="#9c9c9c"/><path d="m21.36216,32.31517c-.03819-.06882-.11905-.10189-.19452-.07958-.05515.03623-.10229.08338-.13852.13852l-.29473.27705c-.17684.17389-.02947.25347.19747.46862l.13852.13852c.17978.17978.24757.04716.48336-.18863.3301-.31536.31831-.24463-.19157-.75451Z" fill="#9c9c9c"/><path d="m27.4437,33.67753c-.0865-.06684-.19728-.09387-.30485-.0744-.17611.0636-.31732.19839-.38904.37136l-.61598.91366c-.20336.29473-.40967.61009-.61598.90776-.1061.15326-.20042.29473-.29473.45388-.09431.15915-.22399.35367-.45683.29473-.16699-.08166-.30112-.21786-.3802-.38609l-.29473-.45388c-.20631-.29473-.40378-.58946-.61893-.90776-.21515-.31831-.40083-.58946-.61598-.90776-.07042-.19385-.26339-.31521-.46862-.29473-.21187.02411-.36407.21541-.33996.42728.00101.00891.00234.01779.00397.02661.07481.17429.17405.33704.29473.48336l.9284,1.36165c.17094.2682.40673.6543.60714.91071.22304.3363.60467.5327,1.00797.51872.38562-.03314.7304-.25345.9225-.58946.20042-.29473.40378-.58946.61598-.90776l1.0846-1.60627c.13038-.16873.09928-.41121-.06945-.54159Z" fill="#9c9c9c"/></svg>
+              Vivo App Store
+            </a>
+            <a href="#!" class="btn btn-black btn-xs shadow py-2 lift mb-4" target="_blank">
+              <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="16.21053" ry="16.21053" fill="#db1cb1"/><path d="m29.78947,18.21053v-1.15789c0-3.19213-2.59735-5.78947-5.78947-5.78947s-5.78947,2.59735-5.78947,5.78947v1.15789h-5.78947l1.68186,13.45494c.3622,2.89721,2.82498,5.07137,5.74481,5.07137h8.30456c2.91983,0,5.38261-2.17416,5.74481-5.07137l1.68186-13.45494h-5.78947Zm-9.26316-1.15789c0-1.9155,1.55818-3.47368,3.47368-3.47368s3.47368,1.55818,3.47368,3.47368v1.15789h-6.94737v-1.15789Z" fill="#fff"/></svg>
+              Samsung App Store
+            </a>
+          </div>
+
+        </div>
+
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- 2ND FOLD
+    ================================================== -->
+    <section class="py-8 pb-8 py-md-10 border-bottom">
+
+      <div class="container">
+
+        <h1 class="display-3 text-center mb-8">
+          Bagaimana caranya?
+        </h1> 
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6">
+
+            <img class="img img-fluid rounded mb-6" alt="..." src="assets/img/illustrations/Get paid as an active Bagikuota user.png">
+
+            <p class="lead mb-4">
+              Dapatkan bayaran sebagai pengguna aktif Bagikuota
+            </p>
+
+            <div class="row">
+
+              <div class="col-12">
+                
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <span>1</span>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
+                    Buka aplikasi setiap 3 jam sekali untuk menukarkan kotak misteri senilai Rp 3000-9000.
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <span>2</span>
+                  </div>
+                  
+                  <p>
+                    Semakin banyak Anda membukanya, semakin banyak kotak misteri yang Anda kumpulkan.
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <span>3</span>
+                  </div>
+                  
+                  <p>
+                    Tarik uang saat saldo Anda mencapai Rp 50000.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6">
+
+            <img class="img img-fluid rounded mb-6" alt="bagikuota influencer illustration" src="assets/img/illustrations/Instagram illustration.png">
+
+            <p class="lead mb-4">
+              <span class="badge badge-info-soft">Opsional</span> Dapatkan bayaran sebagai influencer di platform Bagikuota
+            </p>
+
+            <div class="row">
+
+              <div class="col-12">
+                
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
+                    Posting di Instagram tentang Bagikuota dan dapatkan uang. Semakin banyak followers yang Anda miliki, semakin banyak yang Anda hasilkan.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 3RD FOLD IG TESTTI
+    ================================================== -->
+    <section class="pt-10 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft mb-3">
+              <span class="h6 text-uppercase">Testimoni</span>
+            </span>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Apa kata mereka
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700">
+              Pengalaman yang mereka rasakan ketika menggunakan aplikasi BagiKuota
+            </p>
+
+            <p class="small text-muted mb-9">
+              Geser gambar ke kiri/kanan untuk melihat lebih banyak
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- 3RD FOLD CAROUSEL
+    ================================================== -->
+    <section class="bg-light border-bottom pb-10">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            
+            <!-- Flickity -->
+            <div class="flickity-viewport-visible pt-2 pb-9" data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-1.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-2.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-3.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-4.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-5.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-6.jpeg">
+
+              </div>
+              
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-7.jpeg">
+
+              </div>
+              
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-8.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-9.jpeg">
+
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                
+                <img class="img img-fluid rounded" alt="bagikuota testimoni" src="assets/img/testimoni/testi-10.jpeg">
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center text-center">
+          <div class="col-12">
+            <a class="btn btn-primary lift mr-md-3 mb-4 mb-md-0" href="https://www.instagram.com/bagikuota.id/" target="blank">
+              Lihat testimoni di Instagram
+            </a>
+            <a class="btn btn-primary-soft lift" href="#!" target="blank">
+              Gabung komunitas BagiKuota di Telegram
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- INSTALL BAGIKUOTA
+    ================================================== -->
+    <section class="py-8 pb-8 py-md-10 border-bottom">
+      <div class="container">  
+
+        <div class="row justify-content-center">
+          <div class="col-12" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center">
+              Bagaimana cara install BagiKuota App
+            </h1>           
+
+          </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-3">
+            
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0">
+              
+              <!-- Image -->
+              <img src="assets/img/illustrations/download apk.png" class="card-img-top">
+
+              <!-- Body -->
+              <div class="card-body position-relative">
+
+                <!-- Text -->
+                <p class="text-center">
+                  <span class="badge badge-pill badge-primary-soft mb-3">
+                    <span class="h6 text-uppercase">Langkah pertama</span>
+                  </span>
+                  <br>
+                  Download BagiKuota apk yang akan diinstall
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-3">
+            
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0">
+              
+              <!-- Image -->
+              <img src="assets/img/illustrations/navigate phone settings.png" class="card-img-top">
+
+              <!-- Body -->
+              <div class="card-body position-relative">
+
+                <!-- Text -->
+                <p class="text-center">
+                  <span class="badge badge-pill badge-primary-soft mb-3">
+                    <span class="h6 text-uppercase">Langkah kedua</span>
+                  </span>
+                  <br>
+                  Masuk ke settingan smartphone kamu, kemudian arahkan ke pengaturan keamanan. Ijinkan install aplikasi dari "Sumber Tidak Dikenal"
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          
+          <div class="col-12 col-md-3">
+            
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0">
+              
+              <!-- Image -->
+              <img src="assets/img/illustrations/navigate folder.png" class="card-img-top">
+
+              <!-- Body -->
+              <div class="card-body position-relative">
+
+                <!-- Text -->
+                <p class="text-center">
+                  <span class="badge badge-pill badge-primary-soft mb-3">
+                    <span class="h6 text-uppercase">Langkah ketiga</span>
+                  </span>
+                  <br>
+                  Gunakan berkas dari browser dan arahkan ke folder download
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          
+          <div class="col-12 col-md-3">
+            
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0">
+              
+              <!-- Image -->
+              <img src="assets/img/illustrations/safely install.png" class="card-img-top">
+
+              <!-- Body -->
+              <div class="card-body position-relative">
+
+                <!-- Text -->
+                <p class="text-center">
+                  <span class="badge badge-pill badge-primary-soft mb-3">
+                    <span class="h6 text-uppercase">Langkah terakhir</span>
+                  </span>
+                  <br>
+                  Aplikasi siap untuk dijalankan
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-primary shadow lift mb-4">
+              <i class="neu-download-bracket"></i> Download APK
+            </a>
+
+        </div>
+
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </section> 
+
+    <!-- FOOTER
+    ================================================== -->    
+    <footer class="py-8 py-md-11 bg-dark border-top border-gray-800-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-6">
+      
+            <!-- Brand -->
+            <img style="width: 128px; height: auto;" src="assets/img//BagiKuota_Logo horizontal_White.png" alt="bagikuota logo" class="img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              Bagikuota, an offering by Sapiengraph Inc
+            </p>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-6 text-right">
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="agenbagi.html" class="text-reset">
+                  AgenBagi
+                </a>
+              </li>              
+              <li class="mb-3">
+                <a href="bagikuota-faq.html" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Download APK
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://www.instagram.com/bagikuota.id" target="blank" class="text-reset">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

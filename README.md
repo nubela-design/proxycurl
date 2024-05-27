@@ -1,2 +1,1 @@
-# proxycurl
-Proxycurl main landing page
+Proxycurl website revamp

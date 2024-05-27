@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Proxycurl API Reference</title>
+
+  </head>
+  <body class="pt-10">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Linkedin API
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="people-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-user-circle" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        People Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl people information
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="company-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-company" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Company Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl company information
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="jobs-linkedin-profile.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <i class="neu-bag" style="font-size: 24px;"></i>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Jobs Linkedin Profile
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Crawl jobs information
+                      </p>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarPages" href="pricing.html">
+                Pricing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Documentation
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="login.html" target="_blank">
+            Log in
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- WELCOME
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="pt-10 pb-11 py-md-14 overlay overlay-black overlay-60 jarallax" style="background-image: url(assets/img/covers/cover-4.jpg);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-white">
+              Proxycurl API Reference
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-0">
+              We're here to help you better use Proxycurl. First, let's figure out if we have a solution in our documentation.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- CATEGORIES
+    ================================================== -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            
+            <!-- Form -->
+            <form class="rounded shadow mt-n6 mb-4">
+              <div class="input-group input-group-lg">
+
+                <!-- Prepend -->
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0 pr-1">
+                    <i class="fe fe-search"></i>
+                  </span>
+                </div>
+
+                <!-- Input -->
+                <input type="text" class="form-control border-0 px-1" aria-label="Search for your issue..." placeholder="Search for your issue...">
+
+                <!-- Append -->
+                <div class="input-group-append">
+                  <span class="input-group-text border-0 py-0 pl-1 pr-3">
+                    <button type="submit" class="btn btn-sm btn-primary">
+                      Search
+                    </button>
+                  </span>
+                </div>
+
+              </div>
+            </form>
+            
+            <!-- Text -->
+            <div class="row align-items-center mb-6 mb-md-8">
+              <div class="col-auto">
+                
+                <!-- Heading -->
+                <h6 class="font-weight-bold text-uppercase text-muted mb-0">
+                  Common searches:
+                </h6>
+
+              </div>
+              <div class="col ml-n5">
+                
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  linkedin api, linkedin profile, linkedin jobs, linkedin
+                </p>
+
+              </div>
+
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+        
+    <!-- CONTENT
+    ================================================== -->
+    <section class="pt-6 pt-md-8 pb-8 mb-md-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="row mb-6 mb-md-8 col-auto">
+
+              <div class="col ml-n4">
+                
+                <!-- Heading -->
+                <h2 class="font-weight-bold mb-0">
+                  Proxycurl
+                </h2>
+
+                <!-- Text -->
+                <p class="font-size-lg text-gray-700 mb-0">
+                  Proxycurl is a distributed crawling service that helps to circumvent most (if not all) rate-limiting techniques employed by complex websites.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Card -->
+            <div class="card shadow-light-lg accordion mb-5 mb-md-6" id="helpAccordionOne">
+              <div class="list-group">
+                <div class="list-group-item">
+                  
+                  <!-- Header -->
+                  <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold mb-0">
+                        Introduction to Proxycurl's API
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Lorem ipsum blabla
+                      </p>
+
+                    </div>
+                      
+                    <!-- Badge -->
+                    <span class="badge badge-pill badge-success-soft ml-4">
+                      <span class="h6 text-uppercase">
+                        3 answers
+                      </span>
+                    </span>
+
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+                  
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpOne" role="button" aria-expanded="false" aria-controls="helpOne">
+                      
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Rate limit
+                    </span>
+                    
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+                      
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpOne" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        There is no rate limit to our API.
+                      </p>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+                  
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpTwo" role="button" aria-expanded="false" aria-controls="helpTwo">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Authentication
+                    </span>
+                    
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+                      
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+                      
+                    </div>
+
+                  </a> <!-- / .row -->
+                  
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpTwo" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Proxycurl's API uses bearer tokens to authenticate users. 
+                        Each user is assigned a randomly generated secret key under the <a href="https://nubela.co/proxycurl/todo">API section in the dashboard</a>.
+                        <br>
+                        <br>
+                        The bearer token is injected in the <code>Authorization</code> header
+                      </p>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+                  
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpThree" role="button" aria-expanded="false" aria-controls="helpThree">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Credits
+                    </span>
+                    
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+                      
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+                      
+                    </div>
+
+                  </a> <!-- / .row -->
+                  
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpThree" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Each valid request requires at least <code>1</code> credit to be processed. A credit is consumed if and only if the request returns successfully.
+                        <br>
+                        <br>
+                        A success request is a request that returns with a <code>200</code> HTTP status code.
+                      </p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card shadow-light-lg accordion" id="helpAccordionTwo">
+              <div class="list-group">
+                <div class="list-group-item">
+                  
+                  <!-- Header -->
+                  <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                      
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold mb-0">
+                        Linkedin API
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Lorem ipsum blabla
+                      </p>
+
+                    </div>
+                      
+                    <!-- Badge -->
+                    <span class="badge badge-pill badge-success-soft ml-4">
+                      <span class="h6 text-uppercase">
+                        5 answers
+                      </span>
+                    </span>
+
+                  </div> <!-- / .row -->
+
+                </div>
+                <div class="list-group-item">
+                  
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpFive" role="button" aria-expanded="false" aria-controls="helpFive">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Crawling People Profile
+                    </span>
+                    
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+                      
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+                      
+                    </div>
+
+                  </a> <!-- / .row -->
+                  
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpFive" data-parent="#helpAccordionTwo">
+                    <div class="py-5" style="overflow: auto;">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        <code>GET https://nubela.co/proxycurl/api/linkedin</code>
+                        <br>
+                        <br>
+                      </p>                   
+
+                      <h5>URL Parameters</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Parameter</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Input</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Default value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><code>url</code></th>
+                            <td>yes</td>
+                            <td>URL of the Linkedin Profile to crawl. URL should be in the format of<br>
+                              <code>https://www.linkedin.com/in/&lt;unique_li_id&gt;</code>
+                              <td>Linkedin Profile URL</td>
+                              <td><code>"https://www.linkedin.com/in/williamhgates"</code></td>
+                              <td></td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><code>src</code></th>
+                            <td>no</td>
+                            <td>Includes the raw HTML source code that is fetched and parsed</td>
+                            <td>The string "include"</td>
+                            <td>include</td>
+                            <td>N/A</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <br>
+
+                      <h5>People Profile Response</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>public_identifier</th>
+                            <td>The public id of the profile</td>
+                            <td><code>"williamhgates"</code></td>
+                          </tr>
+                          <tr>
+                            <th>profile_pic_url</th>
+                            <td>URL to the user's profile picture</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=QN-3KjvC5KHvT3joe12sE3mlGLEwiBU0KSi2OJSap_U"</code></td>
+                          </tr>
+                          <tr>
+                            <th>first_name</th>
+                            <td>First name of the user</td>
+                            <td><code>"Bill"</code></td>
+                          </tr>
+                          <tr>
+                            <th>last_name</th>
+                            <td>Last name of the user</td>
+                            <td><code>"Gates"</code></td>
+                          </tr>
+                          <tr>
+                            <th>occupation</th>
+                            <td>Self declared occupation of the user</td>
+                            <td><code>"Co-chair, Bill & Melinda Gates Foundation"</code></td>
+                          </tr>
+                          <tr>
+                            <th>headline</th>
+                            <td>Self declared headline of the user</td>
+                            <td><code>"Co-chair, Bill & Melinda Gates Foundation"</code></td>
+                          </tr>
+                          <tr>
+                            <th>summary</th>
+                            <td>Self declared summary of the user</td>
+                            <td><code>"Co-chair of the Bill & Melinda Gates Foundation. Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger."</code></td>
+                          </tr>
+                          <tr>
+                            <th>country</th>
+                            <td>Country that the user is based in</td>
+                            <td><code>"us"</code></td>
+                          </tr>
+                          <tr>
+                            <th>experiences</th>
+                            <td>List of work experiences</td>
+                            <td><code>[{"company":"Bill & Melinda Gates Foundation","title":"Co-chair","starts_at":{"month":null,"year":2000},"ends_at":null},{"company":"Microsoft","title":"Co-founder","starts_at":{"month":null,"year":1975},"ends_at":null}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>education</th>
+                            <td>List of education background</td>
+                            <td><code>[{"school":"Lakeside School, Seattle","degree_name":null,"field_of_study":null},{"school":"Harvard University","degree_name":null,"field_of_study":null}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>languages</th>
+                            <td>List of languages that the user is versatile in</td>
+                            <td><code>["English","Hindi"]</code></td>
+                          </tr>
+                          <tr>
+                            <th>organisations</th>
+                            <td>List of organisations that the user is a member of</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>birth_date</th>
+                            <td>Month and year of the user's birthday (Dependent on profile's privacy settings)</td>
+                            <td><code>{"month":12,"day":13}</code></td>
+                          </tr>
+                          <tr>
+                            <th>address</th>
+                            <td>Physical address of the user (Dependent on profile's privacy settings)</td>
+                            <td>"123 Acme Road"</td>
+                          </tr>
+                          <tr>
+                            <th>wechat_contact_info</th>
+                            <td>	Wechat contact information (Dependent on profile's privacy settings)</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>primary_twitter_handle</th>
+                            <td>	Primary Twitter Handle (Dependent on profile's privacy settings)</td>
+                            <td>"nubela"</td>
+                          </tr>
+                          <tr>
+                            <th>twitter_handles</th>
+                            <td>List of Twitter handles of this user (Dependent on profile's privacy settings)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th>phone_numbers</th>
+                            <td>Phone number of this user (Dependent on profile's privacy settings)</td>
+                            <td><code>{"type":"MOBILE","number":"12345678","$type":"com.linkedin.voyager.identity.profile.PhoneNumber"}</code></td>
+                          </tr>
+                          <tr>
+                            <th>email_address</th>
+                            <td>Email address of this user (Dependent on profile's privacy settings)</td>
+                            <td><code>"steven@proxycurl.com"</code></td>
+                          </tr>
+                          <tr>
+                            <th>websites</th>
+                            <td>List of websites managed by this user (Dependent on profile's privacy settings)</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>html_src</th>
+                            <td>(Optional) HTML source of this Linkedin Profile. To have this value shown, please include src=include in the Proxycurl request</td>
+                            <td><code>&lt;html&gt;....&lt;/html&gt;</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="list-group-item">
+                  
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpEight" role="button" aria-expanded="false" aria-controls="helpEight">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Crawling Company Profile
+                    </span>
+                    
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+                      
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+                      
+                    </div>
+
+                  </a> <!-- / .row -->
+                  
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpEight" data-parent="#helpAccordionTwo">
+                    <div class="py-5" style="overflow: auto;">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        <code>GET https://nubela.co/proxycurl/api/linkedin/company</code>
+                        <br>
+                        <br>
+                      </p>
+
+                      <h5>URL Parameters</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Parameter</th>
+                            <th scope="col">Required</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Input</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Default value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><code>url</code></th>
+                            <td>yes</td>
+                            <td>URL of the Linkedin Profile to crawl. URL should be in the format of<br>
+                              <code>https://www.linkedin.com/company/&lt;unique_li_id&gt;</code>
+                              <td>Linkedin Company Profile URL</td>
+                              <td><code>"https://www.linkedin.com/company/8m-real-estate-singapore/about"</code></td>
+                              <td></td>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><code>src</code></th>
+                            <td>no</td>
+                            <td>Includes the raw HTML source code that is fetched and parsed</td>
+                            <td>The string "include"</td>
+                            <td>include</td>
+                            <td>N/A</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <br>
+
+                      <h5>Company Profile Response</h5>
+
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>description</th>
+                            <td>The overview section in the About page</td>
+                            <td><code>"8M is a specialized real estate investment & operating company with more than S$700M AUM. We employ creative, repositioning strategies across multiple asset classes in Singapore to unlock long-term value & build community."</code></td>
+                          </tr>
+                          <tr>
+                            <th>website</th>
+                            <td>The listed website on the profile</td>
+                            <td><code>"http://8mrealestate.com"</code></td>
+                          </tr>
+                          <tr>
+                            <th>industry</th>
+                            <td>Industry of the company</td>
+                            <td><code>"Real Estate"</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_size</th>
+                            <td>Listed range of company headcount</td>
+                            <td><code>[11, 50]</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_size_on_linkedin</th>
+                            <td>Total employees on Linkedin that declared themselves to be staff of said company</td>
+                            <td><code>39</code></td>
+                          </tr>
+                          <tr>
+                            <th>hq</th>
+                            <td>Address of company's headquarters</td>
+                            <td><code>`"[{'city': 'Singapore',
+                              'country': 'SG',
+                              'geographic_area': None,
+                              'is_hq': True,
+                              'line_1': '88a Amoy St',
+                              'postal_code': '069907'}]"</code></td>
+                          </tr>
+                          <tr>
+                            <th>company_type</th>
+                            <td>Enumerator of company type. Could be PUBLICLY_HELD or PRIVATELY_HELD</td>
+                            <td><code>"PUBLICLY_HELD"</code></td>
+                          </tr>
+                          <tr>
+                            <th>founded_year</th>
+                            <td>The year that this company is founded in</td>
+                            <td><code>1996</code></td>
+                          </tr>
+                          <tr>
+                            <th>specialities</th>
+                            <td>List of specialities</td>
+                            <td><code>["Acquisitions", "Asset Management"]</code></td>
+                          </tr>
+                          <tr>
+                            <th>locations</th>
+                            <td>List of locations</td>
+                            <td><code>[{"city":"Singapore","country":"SG","geographic_area":null,"is_hq":true,"line_1":"88a Amoy St","postal_code":"069907"}]</code></td>
+                          </tr>
+                          <tr>
+                            <th>name</th>
+                            <td>Name of the company</td>
+                            <td><code>"8M"</code></td>
+                          </tr>
+                          <tr>
+                            <th>tagline</th>
+                            <td>Tagline of the company</td>
+                            <td><code>"A SPECIALIZED REAL ESTATE INVESTMENT & OPERATING CO"</code></td>
+                          </tr>
+                          <tr>
+                            <th>universal_name_id</th>
+                            <td>Month and year of the user's birthday (Dependent on profile's privacy settings)</td>
+                            <td><code>"8m"</code></td>
+                          </tr>
+                          <tr>
+                            <th>profile_pic_url</th>
+                            <td>Profile picture of the</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C510BAQGSRz4mjWcjxg/company-logo_400_400/0?e=1603929600&v=beta&t=yJgQGG-jGRnP1IkFjMF_wJv4fdYlp5o6SaAbtXkFBQo"</code>></td>
+                          </tr>
+                          <tr>
+                            <th>background_cover_image_url</th>
+                            <td>Wechat contact information (Dependent on profile's privacy settings)</td>
+                            <td><code>"https://media-exp1.licdn.com/dms/image/C510BAQGSRz4mjWcjxg/company-logo_400_400/0?e=1603929600&v=beta&t=yJgQGG-jGRnP1IkFjMF_wJv4fdYlp5o6SaAbtXkFBQo"</code></td>
+                          </tr>
+                          <tr>
+                            <th>funding_data</th>
+                            <td>Crunchbase data of said company's funding data</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <th>phone</th>
+                            <td>Phone number</td>
+                            <td><code>"+65 1234 1234"</code></td>
+                          </tr>
+                            <th>html_src</th>
+                            <td>	(Optional) HTML source of this Linkedin Profile. To have this value shown, please include src=include in the Proxycurl request</td>
+                            <td><code>&lt;html&gt;....&lt;/html&gt;</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FORM
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Can't find the answer you need?
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              Contact us and we'll get back to you as soon as possible with a solution to whatever issues you're having with Landkit.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row mb-7 mb-md-9">
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Message us
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="#!" class="h4 text-primary">
+                Start a chat!
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-left-md border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Call anytime
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="#!" class="h4">
+                (555) 123-4567
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-left-md border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email us
+            </h6>
+
+            <!-- Link -->
+            <a href="#!" class="h4">
+              support@goodthemes.co
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    
+                    <!-- Label -->
+                    <label for="contactName">
+                      Full name
+                    </label>
+
+                    <!-- Input -->
+                    <input type="text" class="form-control" id="contactName" placeholder="Full name">
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    
+                    <!-- Label -->
+                    <label for="contactEmail">
+                      Email
+                    </label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control" id="contactEmail" placeholder="hello@domain.com">
+
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-7 mb-md-9">
+                    
+                    <!-- Label -->
+                    <label for="contactMessage">
+                      What can we help you with?
+                    </label>
+
+                    <!-- Input -->
+                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what we can help you with!"></textarea>
+
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-primary lift">
+                    Submit request
+                  </button>
+
+                </div>
+              </div> <!-- / .row -->
+            </form>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              A better way to build.
+            </p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Products
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Services
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Connect
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>

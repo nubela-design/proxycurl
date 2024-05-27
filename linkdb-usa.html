@@ -1,0 +1,1980 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons/css/neu.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>LinkDB - Buy an exhaustive database of a United States LinkedIn profiles</title>
+
+  </head>
+
+  <body>
+
+     <!-- ANNOUNCEMENT
+    ================================================== -->
+    <section class="bg-dark">
+
+      <div class="container">
+
+        <div class="row justify-content-center align-items-center pt-4">
+
+          <div class="col-12 text-center">
+
+            <!-- Text -->
+            <p class="font-size-md text-white">
+              Enrich companies with funding, categories, emails, exits/acquisitions data 
+              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
+                Learn more <i class="neu-arrow"></i> 
+              </a>
+            </p>
+            
+          </div>
+
+        </div> <!-- / .row -->
+
+      </div>
+
+    </section>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link" id="navbarPages">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Public LinkedIn Profile Dataset
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                          Sapiengraph - B2B Enrichment <br class="d-block">
+                          in Google Sheets
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="#!">
+                          Profile Picture API
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker API
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                          See all products <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
+
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright mt-4">
+                          <a class="text-primary font-weight-bold" href="use-cases.html">
+                            See all use-cases <i class="fe fe-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Track Job Changes
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Reverse Email Lookup
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
+          </div>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-8 pb-11 pt-md-9 pb-md-12 bg-light bg-between border-bottom" style="background-image: url(./assets/img/illustrations/linkdb-left.png), url(./assets/img/illustrations/linkdb-right.png);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8" data-aos="fade-up">
+ 
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold text-center px-lg-4">
+              Meet LinkDB:
+              <span class="d-block">United States LinkedIn Dataset Containing <span class="text-primary">258,123,123 People Profiles</span></span>
+            </h1>
+
+            <h2 class="font-size-lg text-muted mb-6 text-center">
+              Get this exhaustive dataset of United States public LinkedIn people profiles to power your applications, surface interesting profiles, accelerate your recruitment process, discover investment gems, and more.
+            </h2>
+
+            <div class="row justify-content-center">
+
+              <div class="col-12">
+
+                <div class="highlight-block mb-8">
+
+                  <!-- Controls -->
+                  <div class="d-flex">
+                    <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  </div>               
+    
+                  <pre>
+                    <code class="language-python">
+[
+  {<span class="text-info">"public_identifier"</span>: <span class="text-warning">"timferriss"</span>, <span class="text-info">"first_name"</span> : <span class="text-warning">"Tim"</span>, ...}
+  {<span class="text-info">"public_identifier"</span>: <span class="text-warning">"williamhgates"</span>, <span class="text-info">"first_name"</span> : <span class="text-warning">"Bill"</span>, ...}
+  {<span class="text-info">"public_identifier"</span>: <span class="text-warning">"ejbfriedman"</span>, <span class="text-info">"first_name"</span> : <span class="text-warning">"Elizabeth"</span>, ...}
+  {<span class="text-info">"public_identifier"</span>: <span class="text-warning">"jeremiah-driansky-18911724"</span>, <span class="text-info">"first_name"</span> : <span class="text-warning">"</span>, ...}
+  {<span class="text-info">"public_identifier"</span>: <span class="text-warning">"sodiq-ayilara-md-76b25b156"</span>, <span class="text-info">"first_name"</span> : <span class="text-warning">"</span>, ...}
+]</code></pre>
+
+                </div>
+                
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+              <!-- Buttons -->
+              <button type="button" class="btn btn-primary lift btn-md text-center mr-lg-4 mb-2">
+                Download sample data
+              </button>  
+                
+              <!-- Buttons -->
+              <button type="button" class="btn btn-primary-soft lift btn-md text-center mb-2">
+                Pricing
+              </button>             
+    
+            </div> <!-- row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECOND FOLD
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-12">
+
+      <div class="container">
+  
+        <div class="row justify-content-center mb-md-8 mb-6">
+      
+          <div class="col-12 col-md-8 col-lg-10">
+  
+              <h2 class="display-4 mb-2 text-center">
+                Sample Of A United States Person Profile
+              </h2>
+  
+              <p class="text-muted lead text-center px-lg-10 mb-6">
+                LinkDB is often used alongside Proxycurl API. Utilize LinkDB to identify profiles of interest, then employ Proxycurl API to extract detailed and updated data on these profiles.
+              </p>
+
+              <div class="highlight-block mb-8">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>               
+  
+                <pre style="max-height: 400px;">
+                  <code class="language-python">
+{
+  "public_identifier": "aaron-burtz",
+  "profile_pic_url": "https://media-exp1.licdn.com/dms/image/C4E03AQHBltu3k5VxLg/profile-displayphoto-shrink_200_200/0/1586819692055?e=1652918400&v=beta&t=p60gZ_mySrXKoONMX5EaenSRQOc3ZguultE966U9dHk",
+  "background_cover_image_url": "https://static-exp1.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82",
+  "first_name": "Aaron",
+  "last_name": "Burtz",
+  "full_name": "Aaron Burtz",
+  "occupation": "Tech Arch Delivery Senior Analyst at Accenture",
+  "headline": "Consulting Development Senior Analyst at Accenture",
+  "summary": null,
+  "country": "US",
+  "country_full_name": "United States of America",
+  "city": "Denver",
+  "state": "Colorado",
+  "experiences": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 12,
+        "year": 2021
+      },
+      "ends_at": null,
+      "company": "Accenture",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/accenture",
+      "title": "Tech Arch Delivery Senior Analyst",
+      "description": null,
+      "location": "Denver, Colorado, United States",
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQHjvfNL_2AXIw/company-logo_100_100/0/1628018657141?e=1655942400&v=beta&t=X1Na4U8_Mqq9Vclubz2t-Wi5aomAsz_saSSRlpDjupU"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 10,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2021
+      },
+      "company": "Accenture",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/accenture",
+      "title": "Workday Software Engineer Analyst",
+      "description": null,
+      "location": "Atlanta, Georgia, United States",
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQHjvfNL_2AXIw/company-logo_100_100/0/1628018657141?e=1655942400&v=beta&t=X1Na4U8_Mqq9Vclubz2t-Wi5aomAsz_saSSRlpDjupU"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 5,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 10,
+        "year": 2020
+      },
+      "company": "ReINVENTory",
+      "company_linkedin_profile_url": null,
+      "title": "Co-Founder",
+      "description": null,
+      "location": "Atlanta, Georgia, United States",
+      "logo_url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 8,
+        "year": 2015
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 5,
+        "year": 2020
+      },
+      "company": "Georgia Institute of Technology",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/georgia-institute-of-technology",
+      "title": "Building Supervisor",
+      "description": null,
+      "location": "Atlanta, Georgia",
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQFuhLQoh5_7yA/company-logo_100_100/0/1640110531895?e=1655942400&v=beta&t=t6hv3VkTbxBHi3miWHi47DnWfnM2XkyFZLiRy8WZdnI"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 8,
+        "year": 2015
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 5,
+        "year": 2020
+      },
+      "company": "Georgia Institute of Technology",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/georgia-institute-of-technology",
+      "title": "Student",
+      "description": null,
+      "location": null,
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQFuhLQoh5_7yA/company-logo_100_100/0/1640110531895?e=1655942400&v=beta&t=t6hv3VkTbxBHi3miWHi47DnWfnM2XkyFZLiRy8WZdnI"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 4,
+        "year": 2018
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 6,
+        "year": 2019
+      },
+      "company": "Campus Recreation Center",
+      "company_linkedin_profile_url": null,
+      "title": "Facility Manager",
+      "description": "",
+      "location": "Greater Atlanta Area",
+      "logo_url": null
+    }
+  ],
+  "education": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2015
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2020
+      },
+      "field_of_study": "Mechanical Engineering with a Minor in Chemistry",
+      "degree_name": "Bachelor’s Degree",
+      "school": "Georgia Institute of Technology",
+      "school_linkedin_profile_url": "https://www.linkedin.com/school/georgia-institute-of-technology/",
+      "description": null,
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQFuhLQoh5_7yA/company-logo_100_100/0/1640110531895?e=1655942400&v=beta&t=t6hv3VkTbxBHi3miWHi47DnWfnM2XkyFZLiRy8WZdnI"
+    }
+  ],
+  "languages": [],
+  "accomplishment_organisations": [],
+  "accomplishment_publications": [],
+  "accomplishment_honors_awards": [],
+  "accomplishment_patents": [],
+  "accomplishment_courses": [],
+  "accomplishment_projects": [],
+  "accomplishment_test_scores": [],
+  "volunteer_work": [],
+  "certifications": [],
+  "connections": 500,
+  "people_also_viewed": [
+    {
+      "link": "https://www.linkedin.com/in/alexpate",
+      "name": "Alex Pate",
+      "summary": "Software Engineer at BlueChip Financial",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/joseph-chalmers-melton-22887779",
+      "name": "Joseph Chalmers Melton",
+      "summary": "Software Engineer II at BlueChip Financial",
+      "location": "Atlanta Metropolitan Area"
+    },
+    {
+      "link": "https://www.linkedin.com/in/tyra-owens-18535b156",
+      "name": "Tyra Owens",
+      "summary": "Software Engineer at Boeing",
+      "location": "St Louis, MO"
+    },
+    {
+      "link": "https://www.linkedin.com/in/timothybess",
+      "name": "Timothy Bess",
+      "summary": "Software Architect at BlueChip Financial",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/patricia-ray",
+      "name": "Patricia Ray",
+      "summary": "Security Software Engineer at Cisco",
+      "location": "Raleigh, NC"
+    },
+    {
+      "link": "https://www.linkedin.com/in/bobbyhinsdale",
+      "name": "Bobby Hinsdale",
+      "summary": "Sales Engineer at Onspring",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/weimzhu",
+      "name": "Weiming Zhu",
+      "summary": "Software Development Engineer at Amazon Web Services (AWS)",
+      "location": "College Park, MD"
+    },
+    {
+      "link": "https://www.linkedin.com/in/neelnavo-kar",
+      "name": "Neelnavo Kar",
+      "summary": "Software Development Engineer II - AWS Lambda",
+      "location": "Seattle, WA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/hassen-hussen-453178106",
+      "name": "Hassen Hussen",
+      "summary": "Passionate about people, cybersecurity, cloud computing, and new technologies",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/liz-wiggins",
+      "name": "Liz Wiggins",
+      "summary": "Machine Learning Engineer at Spotify",
+      "location": "Brooklyn, NY"
+    },
+    {
+      "link": "https://www.linkedin.com/in/dmarriner",
+      "name": "Dylan Marriner",
+      "summary": "Principal Engineer working on AWS Lambda",
+      "location": "United States"
+    },
+    {
+      "link": "https://www.linkedin.com/in/wqfan",
+      "name": "Qingfan Wu",
+      "summary": "Software Engineer @ Stripe",
+      "location": "Greater Seattle Area"
+    },
+    {
+      "link": "https://www.linkedin.com/in/slevine111",
+      "name": "Seth Levine",
+      "summary": "Software Engineer at Amazon Web Services (AWS)",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/anindyabd",
+      "name": "Anindya Guha",
+      "summary": "Software Engineer at Meta",
+      "location": "Greater Seattle Area"
+    },
+    {
+      "link": "https://www.linkedin.com/in/william-gaul-5078b179",
+      "name": "William Gaul",
+      "summary": "Senior SDE, AWS",
+      "location": "Seattle, WA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/parmararun",
+      "name": "Arun Parmar",
+      "summary": "Lead Software Engineer at Salesforce",
+      "location": "Greater Seattle Area"
+    },
+    {
+      "link": "https://www.linkedin.com/in/petercasanova",
+      "name": "Peter Casanova",
+      "summary": "Sr Staff Software Engineer at Jvion",
+      "location": "Lilburn, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/nicholas-benoit",
+      "name": "Nick Benoit",
+      "summary": "Full Stack Engineer at Priority Technology Holdings, Inc.",
+      "location": "Atlanta Metropolitan Area"
+    },
+    {
+      "link": "https://www.linkedin.com/in/sofia-villegas",
+      "name": "Sofia Villegas",
+      "summary": "Industrial and Systems Engineering Student at Georgia Institute of Technology",
+      "location": "Atlanta, GA"
+    },
+    {
+      "link": "https://www.linkedin.com/in/aliyah-smith",
+      "name": "Aliyah Smith",
+      "summary": "Product Management Trainee at The Responsive Auto Insurance Company | Entrepreneur | Design Thinking",
+      "location": "New York City Metropolitan Area"
+    }
+  ],
+  "recommendations": [],
+  "activities": [
+    {
+      "title": "Since we don’t have a LinkedIn office in Atlanta (yet), I decided to bring the office aesthetic into my home. The ball is in your court Ryan…",
+      "link": "https://www.linkedin.com/signup/cold-join",
+      "activity_status": "Liked by Aaron Burtz"
+    },
+    {
+      "title": "Bert Reeves is not only a Georgia Tech graduate, he served as our mascot, Buzz. After getting elected to the state legislature, Reeves has returned…",
+      "link": "https://www.linkedin.com/signup/cold-join",
+      "activity_status": "Liked by Aaron Burtz"
+    },
+    {
+      "title": "I'm proud to share that ActionIQ has been recognized as one of the best mid-sized companies in NYC after already being recognized at the…",
+      "link": "https://www.linkedin.com/signup/cold-join",
+      "activity_status": "Liked by Aaron Burtz"
+    }
+  ],
+  "similarly_named_profiles": [],
+  "articles": [],
+  "groups": [
+    {
+      "profile_pic_url": "https://media-exp1.licdn.com/dms/image/C4D07AQHnXTx0VguKAw/group-logo_image-shrink_92x92/0/1631003479762?e=1647694800&v=beta&t=5kdt6LS7ni_4Bv_y_F9gCX0a93eDRXBIrGrEUFfNj_Q",
+      "name": "Georgia Tech Cheer Alumni",
+      "url": "https://www.linkedin.com/groups/9032713"
+    },
+    {
+      "profile_pic_url": "https://media-exp1.licdn.com/dms/image/C4E07AQG1FNYncteKcA/group-logo_image-shrink_92x92/0/1630997190650?e=1647694800&v=beta&t=quXevTz24s-arKxo2Nj09cUrLMaygjA9nmAdKfrWoIE",
+      "name": "Pi Kappa Phi - Iota Chapter - Alumni Group",
+      "url": "https://www.linkedin.com/groups/12244374"
+    }
+  ],
+  "skills": null,
+  "inferred_salary": null,
+  "github": null,
+  "facebook": null,
+  "gender": null,
+  "birth_date": null,
+  "industry": null,
+  "interests": null
+}
+</code></pre>
+              </div>
+  
+          </div>
+          
+        </div>
+      
+        <div class="row justify-content-center">
+          
+        <div class="col-12 col-md-6" data-aos="fade-up">
+
+          <div class="card shadow-lg">
+
+            <div class="card-body">
+
+              <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase">
+                Input
+              </span>
+
+              <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 d-flex">
+                <div class="fe fe-lock pr-3 pt-1"></div>
+                <div>bill, gates, gatesfoundation</div>
+              </div>
+      
+              <!--arrow-->
+              <div class="text-center mt-n4">
+                <span class="badge badge-lg badge-rounded-circle bg-info text-white">
+                  <i class="fe fe-arrow-down"></i>
+                </span>
+              </div>
+      
+              <!-- Code block -->
+              <div class="highlight-block text-left mt-n2">
+      
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+      
+                <pre>
+<code class="language-python">
+  curl \
+  -G \
+  -H "Authorization: Bearer API_KEY_HERE" \
+  'https://nubela.co/proxycurl/api/linkedin/profile/resolve' \
+  --data-urlencode 'company_domain=gatesfoundation.org' \
+  --data-urlencode 'first_name=Bill' \
+  --data-urlencode 'similarity_checks=include' \
+  --data-urlencode 'enrich_profile=enrich' \
+  --data-urlencode 'location=Seattle' \
+  --data-urlencode 'title=Co-chair' \
+  --data-urlencode 'last_name=Gates'
+</code></pre>
+      
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+          
+          <h1 class="display-3 mb-0">
+            <i class="fe fe-arrow-right"></i>
+          </h1>
+
+        </div>
+
+        <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+          
+          <h1 class="display-3 mb-0">
+            <i class="fe fe-arrow-down"></i>
+          </h1>
+
+        </div>
+      
+        <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="card shadow-light-lg">
+
+            <div class="card-body">
+        
+              <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
+                Output
+              </span>
+              
+              <div class="row mb-0">
+                
+                <div class="col-1">
+                  <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
+                </div>
+                
+                <div class="col-10 pl-3 h5 font-weight-bold">
+                  LinkedIn URL
+                </div>
+
+              </div>
+
+              <div class="text-primary py-3 px-4 mb-4 border border-primary rounded shadow-lg">
+                linkedin.com/in/williamhgates
+              </div>
+
+              <!-- Code block -->
+              <div class="highlight-block text-left">
+        
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+        
+                <pre style="max-height: 230px;">
+<code class="language-python">                        
+{
+   "url":"https://www.linkedin.com/in/williamhgates",
+   "name_similarity_score":1.0,
+   "company_similarity_score":1.0,
+   "title_similarity_score":1.0,
+   "location_similarity_score":1.0,
+   "profile":{
+      "public_identifier":"williamhgates",
+      "profile_pic_url":"https://s3.us-west-000.backblazeb2.com/proxycurl/person/williamhgates/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20240507%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20240507T162744Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=61b45925e91dfebfe0987edcc6f920ba155eb27172c4aeb91ae5d0eb23c5c04f",
+      "background_cover_image_url":null,
+      "first_name":"Bill",
+      "last_name":"Gates",
+      "full_name":"Bill Gates",
+      "follower_count":35259376,
+      "occupation":"Co-chair at Bill & Melinda Gates Foundation",
+      "headline":"Co-chair, Bill & Melinda Gates Foundation",
+      "summary":"Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.",
+      "country":"US",
+      "country_full_name":"United States of America",
+      "city":"Seattle",
+      "state":"Washington",
+      "experiences":[
+         {
+            "starts_at":{
+               "day":1,
+               "month":1,
+               "year":2000
+            },
+            "ends_at":null,
+            "company":"Bill & Melinda Gates Foundation",
+            "company_linkedin_profile_url":"https://www.linkedin.com/company/bill-&-melinda-gates-foundation",
+            "company_facebook_profile_url":null,
+            "title":"Co-chair",
+            "description":null,
+            "location":null,
+            "logo_url":"https://media.licdn.com/dms/image/C4E0BAQE7Na_mKQhIJg/company-logo_400_400/0/1633731811337/bill__melinda_gates_foundation_logo?e=1723075200&v=beta&t=_-LnE04CkLdyw2VpvLfchmrXnjhetfMhU0Bd_LVfFHo"
+         },
+         {
+            "starts_at":{
+               "day":1,
+               "month":1,
+               "year":2015
+            },
+            "ends_at":null,
+            "company":"Breakthrough Energy",
+            "company_linkedin_profile_url":"https://www.linkedin.com/company/breakthrough-energy",
+            "company_facebook_profile_url":null,
+            "title":"Founder",
+            "description":null,
+            "location":null,
+            "logo_url":"https://media.licdn.com/dms/image/C4D0BAQGwD9vNu044FA/company-logo_400_400/0/1630531940051/breakthrough_energy_ventures_logo?e=1723075200&v=beta&t=peWrdABUByJRCFcmevVlpP3B1zTV4jmyocq-okSNC1E"
+         },
+         {
+            "starts_at":{
+               "day":1,
+               "month":1,
+               "year":1975
+            },
+            "ends_at":null,
+            "company":"Microsoft",
+            "company_linkedin_profile_url":"https://www.linkedin.com/company/microsoft",
+            "company_facebook_profile_url":null,
+            "title":"Co-founder",
+            "description":null,
+            "location":null,
+            "logo_url":"https://media.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_400_400/0/1630652622688/microsoft_logo?e=1723075200&v=beta&t=l8_ywexTapdsn4SwzPzH7MIW8NZainkYj3VZXGZEaeg"
+         }
+      ],
+      "education":[
+         {
+            "starts_at":{
+               "day":1,
+               "month":1,
+               "year":1973
+            },
+            "ends_at":{
+               "day":31,
+               "month":12,
+               "year":1975
+            },
+            "field_of_study":null,
+            "degree_name":null,
+            "school":"Harvard University",
+            "school_linkedin_profile_url":"https://www.linkedin.com/company/1646/",
+            "school_facebook_profile_url":null,
+            "description":null,
+            "logo_url":"https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_400_400/0/1631318058235?e=1723075200&v=beta&t=r3YyIppOqHi94rc_AU8JcMJQuQDt7XJlX0rA1im9DJQ",
+            "grade":null,
+            "activities_and_societies":null
+         },
+         {
+            "starts_at":null,
+            "ends_at":null,
+            "field_of_study":null,
+            "degree_name":null,
+            "school":"Lakeside School",
+            "school_linkedin_profile_url":"https://www.linkedin.com/company/30288/",
+            "school_facebook_profile_url":null,
+            "description":null,
+            "logo_url":"https://media.licdn.com/dms/image/D560BAQGFmOQmzpxg9A/company-logo_400_400/0/1683732883164/lakeside_school_logo?e=1723075200&v=beta&t=bVsQWMFNGFXTAjXmRyCQOE6pqQYXSmsd8S4jUIxkbb0",
+            "grade":null,
+            "activities_and_societies":null
+         }
+      ],
+      "languages":[
+         
+      ],
+      "accomplishment_organisations":[
+         
+      ],
+      "accomplishment_publications":[
+         
+      ],
+      "accomplishment_honors_awards":[
+         
+      ],
+      "accomplishment_patents":[
+         
+      ],
+      "accomplishment_courses":[
+         
+      ],
+      "accomplishment_projects":[
+         
+      ],
+      "accomplishment_test_scores":[
+         
+      ],
+      "volunteer_work":[
+         
+      ],
+      "certifications":[
+         
+      ],
+      "connections":9,
+      "people_also_viewed":[
+         {
+            "link":"https://www.linkedin.com/in/sethberkley?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAABP0AMBxTT-IKvJJmR1hsrWl5SeJjUvi10",
+            "name":"Seth Berkley",
+            "summary":"Health Consultant",
+            "location":null
+         },
+         {
+            "link":"https://www.linkedin.com/in/jkevinscott?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAACK3usBrG5QSCrPcFkuMIIzmWv0AsQyMFc",
+            "name":"Kevin Scott",
+            "summary":"CTO Microsoft, Author of \"Reprogramming the American Dream\"",
+            "location":null
+         },
+         {
+            "link":"https://www.linkedin.com/in/satyanadella?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
+            "name":"Satya Nadella",
+            "summary":"Chairman and CEO at Microsoft",
+            "location":null
+         },
+         {
+            "link":"https://www.linkedin.com/in/rbranson?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAwp1RMBxG26M3Qkhm4klqLNr1bIplo6GhY",
+            "name":"Richard Branson",
+            "summary":"Founder at Virgin Group",
+            "location":null
+         },
+         {
+            "link":"https://www.linkedin.com/in/rishi-sunak?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC_m1aoBCuAl3tCOFJZho4TVOR6w9XqnbH4",
+            "name":"Rishi Sunak",
+            "summary":"Prime Minister of the United Kingdom. Leader of the Conservative Party. Member of Parliament for Richmond (Yorks).",
+            "location":null
+         }
+      ],
+      "recommendations":[
+         
+      ],
+      "activities":[
+         
+      ],
+      "similarly_named_profiles":[
+         {
+            "name":"Bill Gates",
+            "link":"https://www.linkedin.com/in/bill-gates-610",
+            "summary":"Looking for connections within the IT field.",
+            "location":"Whitehall, PA"
+         },
+         {
+            "name":"Bill Gates",
+            "link":"https://www.linkedin.com/in/bill-gates-50939b1a1",
+            "summary":"Janitor at Bill Gates Associates",
+            "location":"Tompkins County, NY"
+         },
+         {
+            "name":"Bill Gates",
+            "link":"https://www.linkedin.com/in/bill-gates-b3320919",
+            "summary":"GATES Solid Gold Investments ,Inc  LLC",
+            "location":"Santa Rosa, CA"
+         },
+         {
+            "name":"Bill Gates",
+            "link":"https://www.linkedin.com/in/bill-gates-03935451",
+            "summary":"President & CEO at Bedford Materials, AIM Global Logistics",
+            "location":"Boca Raton, FL"
+         }
+      ],
+      "articles":[
+         
+      ],
+      "groups":[
+         
+      ],
+      "skills":[
+         
+      ],
+      "inferred_salary":null,
+      "gender":null,
+      "birth_date":null,
+      "industry":null,
+      "extra":null,
+      "interests":[
+         
+      ],
+      "personal_emails":[
+         
+      ],
+      "personal_numbers":[
+         
+      ]
+   },
+   "last_updated":"\"2024-05-07T05:00:36Z”}%"
+</code></pre>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      
+        </div>
+  
+        <div class="row justify-content-center">
+
+          <div class="col-12 text-center mt-6">
+
+            <a class="btn btn-primary d-block d-md-inline-block lift mr-1 mr-md-4 mb-3 mb-md-2" href="#!">
+              Get Trial API Key
+            </a>
+  
+            <a class="btn btn-primary-soft d-block d-md-inline-block lift mr-1 mb-3 mb-md-2" href="https://nubela.co/proxycurl/docs?shell#people-api-person-lookup-endpoint" target="_blank">
+              Read API Docs for Person Lookup Endpoint
+            </a>
+
+          </div>
+  
+        </div>
+  
+      </div>
+
+    </section>
+
+    <!-- 3RD FOLD
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-gray-200">
+      <div class="container">     
+
+        <!-- Contents -->
+        <div class="row align-items-center mb-6">
+          
+          <div class="col-12 col-md-6 col-lg-6">
+
+            <!--img-->
+            <div class="col-12 justify-content-center">
+              <img src="./assets/img/photos/postgreSQL.png" class="img-fluid" alt="PostgreSQL">
+            </div>
+
+            <!-- Heading -->
+            <h3 class="text-center">
+              LinkedinDB is a PostgresSQL database
+            </h3>
+                      
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6">
+
+            <!--img-->
+            <div class="col-12 justify-content-center">
+              <img src="./assets/img/photos/complex queries.png" class="img-fluid" alt="complex queries">
+              </div>            
+
+            <!-- Heading -->
+            <h3 class="text-center">
+              Run complex queries with SQL
+            </h3>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <!-- Button -->
+        <div class="row justify-content-center">
+
+          <!-- Buttons -->
+          <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
+            Get Postgresql Connection String
+          </button>
+          
+          <!-- Buttons -->
+          <button type="button" class="btn btn-primary-soft btn-md text-center mb-2">
+            Read the Docs
+          </button>           
+
+        </div> <!-- row -->     
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- PERFORM 4TH FOLD
+    ================================================== -->
+    <section class="bg-white py-8 py-md-13">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold mb-8">
+              Perform these queries with LinkDB
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-6 text-center">
+
+              <!-- Icon -->
+              <div class="icon text-primary">
+                <i class="neu-all-out" style="font-size: 40px;"></i>
+              </div>            
+  
+              <!-- Heading -->
+              <h3 class="mb-4">
+                "Find me all software engineers in San Francisco"
+              </h3>
+  
+              <div class="highlight-block mb-8">
+              
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>              
+  
+                <pre class="text-left">
+                  <code class="language-python">
+  
+SELECT
+    id,
+    parsed_data->>'first_name' AS first_name,
+    parsed_data->'last_name' AS last_name,
+    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
+FROM profile
+WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
+  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
+              
+                  </code>
+                </pre>
+
+              </div>
+
+            </div>
+
+        </div> <!-- / .row -->        
+        
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-6 text-center">
+
+              <!-- Icon -->
+              <div class="icon text-primary">
+                <i class="neu-groups" style="font-size: 40px;"></i>
+              </div>            
+  
+              <!-- Heading -->
+              <h3 class="mb-4">
+                "Find me all employees working in Apple"
+              </h3>
+  
+              <div class="highlight-block mb-8">
+              
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>              
+  
+                <pre class="text-left">
+                  <code class="language-python">
+  
+SELECT
+    id,
+    parsed_data->>'first_name' AS first_name,
+    parsed_data->'last_name' AS last_name,
+    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
+FROM profile
+WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
+  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
+              
+                  </code>
+                </pre>
+
+              </div>
+
+            </div>
+
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-6 text-center">
+
+              <!-- Icon -->
+              <div class="icon text-primary">
+                <i class="neu-mathematical-anchor" style="font-size: 40px;"></i>
+              </div>            
+  
+              <!-- Heading -->
+              <h3 class="mb-4">
+                "Find me everyone who studied Computer Science in Stanford"
+              </h3>
+  
+              <div class="highlight-block mb-8">
+              
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>              
+  
+                <pre class="text-left">
+                  <code class="language-python">
+  
+SELECT
+    id,
+    parsed_data->>'first_name' AS first_name,
+    parsed_data->'last_name' AS last_name,
+    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
+FROM profile
+WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
+  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
+              
+                  </code>
+                </pre>
+
+              </div>
+
+            </div>
+
+        </div> <!-- / .row --> 
+        
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6 text-center">
+
+            <!-- Icon -->
+            <div class="icon text-primary">
+              <i class="neu-achievement" style="font-size: 40px;"></i>
+            </div>            
+
+            <!-- Heading -->
+            <h3 class="mb-4">
+              "Employees of a company by name (Example: Electronic Arts)"
+            </h3>
+
+            <div class="highlight-block mb-8">
+            
+              <!-- Controls -->
+              <div class="d-flex">
+                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+              </div>              
+
+              <pre class="text-left">
+                <code class="language-python">
+
+SELECT
+  id,
+  parsed_data->>'first_name' AS first_name,
+  parsed_data->'last_name' AS last_name,
+  jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
+FROM profile
+WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
+AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
+            
+                </code>
+              </pre>
+
+            </div>
+
+          </div>
+
+      </div> <!-- / .row -->         
+
+      </div> <!-- / .container -->
+    </section>    
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Pricing
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="mt-n8 mt-md-n14">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6 mb-12">
+
+            <!-- Card -->
+            <div class="card shadow-lg mb-6 mb-md-0">
+              <div class="card-body">
+
+                <!-- Price -->
+                <div class="d-flex justify-content-center">
+                  <span class="h2 mb-0 mt-2">US$</span>
+                  <span class="price display-2 mb-0">0.01</span>
+                </div>
+
+                <p class="text-center text-muted mb-5">
+                  per credit
+                </p>
+
+                <!-- List -->
+                <div class="d-flex">
+                  
+                  <!-- Badge -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    <span class="text-info">3 credits</span> per profile
+                  </p>
+                  
+                </div>
+
+                <!-- List -->
+                <div class="d-flex">
+
+                  <!-- Text -->
+                  <small class="caption mb-4 text-muted">
+                    <span class="text-danger">*</span> We charge 3 credits for every 5053 bytes of data returned. The median profile is 5053 bytes in size.
+                  </small>
+                  
+                </div>                
+
+                <!-- Button -->
+                <a href="#!" class="btn btn-block btn-primary">
+                  Get Postgresql Connection String <i class="fe fe-arrow-right ml-3"></i>
+                </a>
+                
+              </div>
+            </div>
+
+          </div>    
+
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="bg-black">
+      <div class="container py-6 py-md-8 border-top border-bottom border-gray-900-50">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white mb-1">
+              Access to LinkDB is free
+            </h3>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-5 mb-md-0">
+              Get your connection string in the dashboard now
+            </p>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-primary lift">
+              Get LinkDB Connection String
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ARTICLES
+    ================================================== -->
+    <section class="py-7 pb-md-10 pt-md-10 bg-light">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-0">
+              Latest Articles
+            </h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">
+              Here’s what we've been up to recently.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <a href="https://nubela.co/blog/" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline" target="_blank">
+              View all
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+
+                <!-- Image -->
+                <img src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="#!">
+
+                <!-- Heading -->
+                <h3>
+                  Enrich companies with funding, categories, emails, exits/acquisitions data
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm mr-2">
+                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                  Ab Hadley
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <time datetime="2019-05-02">May 02</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+
+                <!-- Image -->
+                <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="#!">
+
+                <!-- Heading -->
+                <h3>
+                  How stable is Proxycurl for scraping LinkedIn?
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm mr-2">
+                  <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                  Adolfo Hess
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <time datetime="2019-05-02">May 02</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="#!">
+
+                <!-- Image -->
+                <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="#!">
+
+                <!-- Heading -->
+                <h3>
+                  Introducing Role Lookup API endpoint
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm mr-2">
+                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted mr-2 mb-0">
+                  Ab Hadley
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                  <time datetime="2019-05-02">May 02</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Proxycurl
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              API
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  School API
+                </a>
+              </li> 
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Company
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl LLC
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Our team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS PeopleDataLabs (PDL)
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS CoreSignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS BrightData
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog Blogposts
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Help
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@proxycurl.com" class="text-reset">
+                  Email us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <hr class="my-8">
+
+        <div class="text-center mb-4">
+
+          <h6 class="font-weight-bold text-uppercase text-gray-700">
+            Follow us
+          </h6>
+
+          <div class="mr-2">
+            <a href="https://twitter.com/proxycurl" target="_blank">
+              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+            </a>
+  
+            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+            </a>
+  
+            <a href="https://github.com/nubelaco/" target="_blank">
+              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>
