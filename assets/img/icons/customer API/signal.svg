@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="c" x1="4.61" y1="-714.72" x2="36.62" y2="-746.73" gradientTransform="translate(0 -710.11) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f99ff"/>
+      <stop offset=".25" stop-color="#618eff"/>
+      <stop offset=".55" stop-color="#4382ff"/>
+      <stop offset=".81" stop-color="#317bff"/>
+      <stop offset="1" stop-color="#2a79ff"/>
+    </linearGradient>
+  </defs>
+  <g id="b" data-name="Layer 1">
+    <path d="m10,0h20c5.5,0,10,4.5,10,10v20c0,5.5-4.5,10-10,10H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0Z" fill="url(#c)" stroke-width="0"/>
+  </g>
+  <g>
+    <path d="m30.01,20.59h-2.04c0-4.72-3.83-8.55-8.55-8.55v-2.04c5.85,0,10.59,4.74,10.59,10.59Z" fill="#fff" isolation="isolate" opacity=".9" stroke-width="0"/>
+    <path d="m26.97,20.59h-2.63c0-2.71-2.21-4.92-4.92-4.92v-2.63c4.16,0,7.55,3.39,7.55,7.55Z" fill="#fff" isolation="isolate" opacity=".9" stroke-width="0"/>
+    <path d="m23.34,20.59h-3.92v-3.92c2.16,0,3.92,1.76,3.92,3.92Z" fill="#fff" isolation="isolate" opacity=".9" stroke-width="0"/>
+    <path d="m17.42,22.59v-9.13c-3.94,1.1-6.24,5.19-5.14,9.13s5.19,6.24,9.13,5.14c2.5-.7,4.45-2.65,5.14-5.14,0,0-9.13,0-9.13,0Z" fill="#fff" isolation="isolate" opacity=".5" stroke-width="0"/>
+  </g>
+</svg>
