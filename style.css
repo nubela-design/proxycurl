@@ -193,3 +193,7 @@ pre {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.u-hover:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
