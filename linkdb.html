@@ -25,7 +25,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Proxycurl Database</title>
+    <title>LinkDB - Buy an exhaustive dataset of LinkedIn profiles</title>
 
   </head>
 
@@ -43,8 +43,8 @@
 
             <!-- Text -->
             <p class="font-size-md text-white">
-              Enrich companies with funding, categories, emails, exits/acquisitions data 
-              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
+              Search employees with Employee Listing API
+              <a class="text-warning font-weight-bold ml-2" href="#" target="_blank">
                 Learn more <i class="neu-arrow"></i> 
               </a>
             </p>
@@ -64,7 +64,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
         </a>
 
         <!-- Toggler -->
@@ -85,12 +85,9 @@
 
             <!-- Products -->
             <li class="nav-item dropdown">
-              <a href="products.html" class="nav-link" id="navbarPages">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
                 Products <i class="fe fe-chevron-down"></i>
               </a>
-              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
               <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
                 <div class="row no-gutters">
                   <div class="col-12">
@@ -162,11 +159,8 @@
                         <a class="dropdown-item" href="#!">
                           Jobs API
                         </a>
-                        <a class="dropdown-item" href="#!">
+                        <a class="dropdown-item mb-5 font-weight-bold" href="#!">
                           API Documentation <i class="fe fe-arrow-right"></i>
-                        </a>
-                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
-                          See all products <i class="fe fe-arrow-right"></i>
                         </a>
 
                       </div>
@@ -250,11 +244,6 @@
                             People Data Labs Alternative
                           </a>
                         </div>
-                        <div class="dropdown-item dropright mt-4">
-                          <a class="text-primary font-weight-bold" href="use-cases.html">
-                            See all use-cases <i class="fe fe-arrow-right"></i>
-                          </a>
-                        </div>
                       </div>
 
                       <div class="col-12 col-lg-6">
@@ -265,13 +254,8 @@
                         </h6>
 
                         <!-- List -->
-                        <a class="dropdown-item" href="#!">
-                          Track Job Changes
-                        </a>
-
-                        <!-- List -->
                         <a class="dropdown-item mb-5" href="#!">
-                          Reverse Email Lookup
+                          Track Job Changes
                         </a>
 
                       </div>
@@ -334,20 +318,20 @@
       </div>
     </nav>
 
-    <!-- WELCOME
+    <!-- 1st Fold
     ================================================== -->
-    <section class="pt-8 pb-11 pt-md-9 pb-md-12 bg-light bg-between border-bottom" style="background-image: url(./assets/img/illustrations/linkdb-left.png), url(./assets/img/illustrations/linkdb-right.png);">
+    <section class="pt-8 pb-8 pt-md-9 pb-md-12 bg-light bg-between border-bottom" style="background-image: url(./assets/img/illustrations/linkdb-left.png), url(./assets/img/illustrations/linkdb-right.png);">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7" data-aos="fade-up">
  
             <!-- Heading -->
-            <h1 class="display-3 pt-lg-12 font-weight-bold text-center" style="padding-top: 96px;">
-              LinkDB is a Postgresql database of <span class="text-primary">117M public Linkedin profiles</span>
+            <h1 class="display-3 pt-0 pt-lg-12 font-weight-bold text-center" style="padding-top: 96px;">
+              LinkDB: A Dataset of <span class="text-primary">472,880,151 Public LinkedIn Profiles</span>
             </h1>
 
             <p class="font-size-lg text-muted mb-6 text-center">
-              LinkDB is a fully managed and updated database of public Linkedin profiles
+              LinkDB is typically used by data-centric companies to power search applications. LinkDB is often used alongside Proxycurl API. Utilize LinkDB to identify interesting profiles, then employ Proxycurl API to extract detailed and updated data on these prospects.
             </p>
 
             <div class="row justify-content-center">
@@ -379,19 +363,21 @@
 
             </div>
 
-            <div class="row justify-content-center">
-
-              <!-- Buttons -->
-              <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
-                Get Postgresql Connection String
-              </button>  
-                
-              <!-- Buttons -->
-              <button type="button" class="btn btn-primary-soft btn-md text-center mb-2">
-                Read the Docs
-              </button>             
-    
-            </div> <!-- row -->
+            <div class="col-12">
+            
+              <div class="row justify-content-center">
+            
+            
+                <a class="col-12 col-md-auto btn btn-primary mr-md-3 mb-3 mb-md-0 lift" href="#" target="blank">
+                  Donwload Sample Data
+                </a>
+                <a class="col-12 col-md-auto btn btn-primary-soft " href="#" target="blank">
+                  Pricing
+                </a>
+            
+              </div> <!-- row -->
+            
+            </div>
 
           </div>
         </div> <!-- / .row -->
@@ -399,350 +385,1228 @@
     </section>
 
     <!--ENTIRE-->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
+    <section class="py-8 py-md-12 border-bottom">
+      <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+          <div class="col-12 col-md-10 col-lg-10 text-center">
 
             <!-- Heading -->
-            <h1 class="font-weight-bold">
-            An entire country's people database in your application
+            <h1 class="display-4 font-weight-bold mb-8 mb-md-11">
+              LinkDB: <span class="text-primary">A Global Dataset</span>
             </h1>
 
             <!-- Image -->
-            <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-6">         
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-4">
-              These countries are also available:
-            </p>
+            <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-9 mb-md-12">         
             
           </div>
         </div> <!-- / .row -->        
 
         <!-- List -->
-        <div class="row justify-content-center mb-6">
+        <div class="row">
 
-          <div class="col-12 col-md-4">
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    United States
-                  </p>
-
-                </div>                
-                
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Singapore
-                  </p>
-
-                </div>
-
-          </div>             
-                
-          <!-- Item -->
-          <div class="col-12 col-md-4 d-flex">
-
-              <!-- Check -->
-              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                <i class="fe fe-check"></i>
+          <div class="col-12 col-md-6 mb-10 mb-md-0" data-aos="fade-up">
+          
+            <div class="d-flex">
+            <img class="pb-9" src="/assets/dwarf forms/man_bue.svg" style="width: 36px;">
+            <h2 class="pl-4 mb-5"> <span class="text-primary font-weight-bold ">People profile</span> distribution <br> by country</h2>
+            </div>
+          
+            <div class="col-12 col-md-11 shadow-light lift rounded pb-4">
+          
+              <!-- Table -->
+              <div class="table-responsive mb-2 mb-md-5">
+                <table class="table table-align-middle table-striped">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span class="h6 text-uppercase font-weight-bold text-gray-700">
+                          Country
+                        </span>
+                      </th>
+                      <th class="text-right">
+                        <span class="h6 text-uppercase font-weight-bold text-gray-700">
+                          People Profile
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          United States
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          264+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          India
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          24+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          United Kingdom
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          20+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Brazil
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          17+M
+                        </span>
+          
+                      </td>
+                    </tr>
+          
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Canada
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          13+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          France
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          11+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Denmark
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          9.3+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Australia
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          8.3+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Mexico
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          6+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Italy
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          5.3+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Spain
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          5.2+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Indonesia
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          4.4+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Netherlands
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          4.2+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          China
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          3.8+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          South Africa
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-primary-desat-soft font-size-sm mb-0">
+                          3.3+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-                  
-              <!-- Text -->
-              <p>
-                Other countries are per request only
-              </p>
 
+              <!-- Buttons -->
+              <div class="btn btn-primary btn-block btn-md text-center lift">
+                DOWNLOAD .CSV
+              </div>  
+          
+            </div> <!-- / .row -->
+          
+          </div>
+                
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="250">
+          
+            <div class="d-flex pr-6">
+              <img class="pb-9" src="/assets/dwarf forms/company_blue.svg" style="width: 36px;">
+              <h2 class="pl-4 mb-5"> <span class="text-info font-weight-bold  ">Company profile</span> distribution by country
+              </h2>
+            </div>
+                   
+            <div class="col-12 col-md-11 shadow-light lift rounded pb-4">
+          
+              <!-- Table -->
+              <div class="table-responsive mb-2 mb-md-5">
+                <table class="table table-align-middle table-striped">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span class="h6 text-uppercase font-weight-bold text-gray-700">
+                          Country
+                        </span>
+                      </th>
+                      <th class="text-right">
+                        <span class="h6 text-uppercase font-weight-bold text-gray-700">
+                          Company Profile
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          United States
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          5.7+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          United Kingdom
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          1.9+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          France
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          1+M
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Denmark
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          998+K
+                        </span>
+          
+                      </td>
+                    </tr>
+          
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          India
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          837+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Brazil
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          506+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Australia
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          435+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Spain
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          432+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Canada
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          398+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Netherlands
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          397+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Italy
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          304+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Belgium
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          244+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          South Africa
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          146+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          China
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          133+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pt-4 pb-4">
+          
+                        <p class="mb-1">
+                          Turkey
+                        </p>
+          
+                      </td>
+                      <td class="pt-4 pb-4 text-right">
+          
+                        <span class="badge badge-pill badge-info-soft font-size-sm mb-0">
+                          106+K
+                        </span>
+          
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <!-- Buttons -->
+              <a class="btn btn-primary btn-block btn-md text-center lift" href="#!">
+                DOWNLOAD .CSV
+              </a>
+          
+            </div>
+          
+          
           </div>
 
-        </div> <!-- row -->
 
-        <div class="row justify-content-center">
-
-          <!-- Buttons -->
-          <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
-            Get Postgresql Connection String
-          </button>  
-            
-          <!-- Buttons -->
-          <button type="button" class="btn btn-primary-soft btn-md text-center mb-2">
-            Read the Docs
-          </button>             
-
-        </div> <!-- row -->
-
-      </div> <!-- / .container -->
+      </div> <!-- / .row -->
     </section>
 
     <!-- 3RD FOLD
     ================================================== -->
-    <section class="py-8 py-md-11 bg-gray-200">
-      <div class="container">     
-
-        <!-- Contents -->
-        <div class="row align-items-center mb-6">
-          
-          <div class="col-12 col-md-6 col-lg-6">
-
-            <!--img-->
-            <div class="col-12 justify-content-center">
-              <img src="./assets/img/photos/postgreSQL.png" class="img-fluid" alt="PostgreSQL">
+    <section class="pb-4 pb-md-8 pt-8 pt-md-11 bg-light">
+    
+      <div class="row justify-content-center">
+        <div class="col-11 col-md-4 text-center">
+    
+          <!-- Heading -->
+          <h1 class="display-4 font-weight-bold">
+            Technical Specifications and Usage Terms
+          </h1>
+    
+        </div>
+      </div> <!-- / .row -->
+    
+    </section>
+    
+    <!-- 3RD FOLD Section 1-->
+    <section class="bg-light pb-6 pb-md-9">
+      <div class="container">
+     
+        <div class="card" data-aos="fade-up">
+          <div class="card-body shadow-light-lg lift">
+    
+            <div class="row justify-content-between">
+    
+              <div class="col-12 col-md-5 order-md-2">
+    
+                <!-- Image -->
+                <img src="assets/img/illustrations/Parquet File Format.png" class="img-fluid mb-6 mb-md-0 rounded" alt="Parquet file format illustration"
+                  data-aos="fade-up" data-aos-delay="100">
+    
+              </div>
+    
+              <div class="col-12 col-md-6 order-md-1">
+    
+                <!-- Badge -->
+                <span class="badge badge-pill badge-info-soft mb-5">
+                  <span class="h6 text-uppercase">File Format</span>
+                </span>
+    
+                <!-- Heading -->
+                <h1 class="font-weight-bold">
+                  LinkDB is Delivered in <span class="text-info">Parquet File Format</span>
+                </h1>
+    
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-lg-9">
+                  LinkDB snapshots are provided in Parquet file format. For <span class="text-info">seamless
+                    integration</span>, here are some sample
+                  Parquet files identical to the data we deliver:
+                </p>
+    
+                <a class="btn btn-primary btn-block shadow-light-lg lift" href="https://drive.google.com/file/d/1UbRw8b-4KHDSVqdCc0IR8faXPgM2R-lG/view?usp=sharing">
+                  Download Parquet Sample
+                </a>
+    
+              </div>
+    
             </div>
-
-            <!-- Heading -->
-            <h3 class="text-center">
-              LinkedinDB is a PostgresSQL database
-            </h3>
-                      
+    
           </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-
-            <!--img-->
-            <div class="col-12 justify-content-center">
-              <img src="./assets/img/photos/complex queries.png" class="img-fluid" alt="complex queries">
-              </div>            
-
-            <!-- Heading -->
-            <h3 class="text-center">
-              Run complex queries with SQL
-            </h3>
-
-          </div>
-
+    
         </div> <!-- / .row -->
-
-        <!-- Button -->
-        <div class="row justify-content-center">
-
-          <!-- Buttons -->
-          <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
-            Get Postgresql Connection String
-          </button>
-          
-          <!-- Buttons -->
-          <button type="button" class="btn btn-primary-soft btn-md text-center mb-2">
-            Read the Docs
-          </button>           
-
-        </div> <!-- row -->     
-
+    
+      </div> <!-- / .container -->
+    </section>
+    
+    <!-- 3RD FOLD Section 2-->
+    <section class="bg-light pb-6 pb-md-9">
+      <div class="container">
+    
+        <div class="card" data-aos="fade-up">
+          <div class="card-body shadow-light-lg lift">
+    
+            <div class="row justify-content-between">
+    
+              <div class="col-12 col-md-5 order-md-2">
+    
+                <!-- Image -->
+                <img src="assets/img/illustrations/Freshness.png" class="img-fluid mb-6 mb-md-0 rounded" alt="No freshness illustration"
+                  data-aos="fade-up" data-aos-delay="100">
+    
+              </div>
+    
+              <div class="col-12 col-md-6 order-md-1">
+    
+                <!-- Badge -->
+                <span class="badge badge-pill badge-info-soft mb-5">
+                  <span class="h6 text-uppercase">Freshness</span>
+                </span>
+    
+                <!-- Heading -->
+                <h1 class="font-weight-bold">
+                 Millions Of Profiles Updated  <span class="text-info">Every Month</span>
+                </h1>
+    
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-lg-6">
+                  We extract and provide <span class="text-info">millions of up-to-date LinkedIn profiles</span> to our API users. Each user, as part of a collective, determines which profiles are of interest by accessing our <span class="text-primary-desat">Person Profile Endpoint</span> for a newly extracted profile. Each fresh profile is then fed back into the system to <span class="text-info ">update and enhance LinkDB</span> with new entries.
+                </p>
+    
+                <a class="btn btn-primary btn-block shadow-light-lg lift" href="https://nubela.co/blog/how-often-is-linkdb-updated/">
+                  Understand LinkDB Updates
+                </a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div> <!-- / .row -->
+    
+      </div> <!-- / .container -->
+    </section>
+    
+    <!-- 3RD FOLD Section 3-->
+    <section class="bg-light border-bottom pb-md-11 pb-8">
+      <div class="container">
+    
+        <div class="card" data-aos="fade-up">
+          <div class="card-body shadow-light-lg lift">
+    
+            <div class="row justify-content-between">
+    
+              <div class="col-12 col-md-5 order-md-2">
+    
+                <!-- Image -->
+                <img src="assets/img/illustrations/No Resale.png" class="img-fluid mb-6 mb-md-0 rounded" alt="No resale illustration"
+                  data-aos="fade-up" data-aos-delay="100">
+    
+              </div>
+    
+              <div class="col-12 col-md-6 order-md-1">
+    
+                <!-- Badge -->
+                <span class="badge badge-pill badge-info-soft mb-5">
+                  <span class="h6 text-uppercase">No Resale</span>
+                </span>
+    
+                <!-- Heading -->
+                <h1 class="font-weight-bold">
+                  LinkDB: <span class="text-info">Not for Resale</span>
+                </h1>
+    
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-lg-6">
+                  LinkDB cannot be purchased for resale. At any given time, you should <span class="text-info">not disclose
+                    more than 33% of LinkDB data</span> (including derivatives) to any customer or to the public. You may
+                  use LinkDB to enhance your applications provided, <span class="text-info">no customer is exposed to more
+                    than 33% of the data</span> you purchased from us.
+                </p>
+    
+                <a class="btn btn-primary btn-block shadow-light-lg lift" href="https://docs.google.com/document/u/1/d/1ssY2nWUOEl9hc4azVnMSv2qHs46ad0pV/edit?pli=1">
+                  Review Data Licensing Agreement
+                </a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div> <!-- / .row -->
+    
       </div> <!-- / .container -->
     </section>
 
-    <!-- PERFORM 4TH FOLD
-    ================================================== -->
-    <section class="bg-white py-8 py-md-13">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+  <!-- POWERED BY LINKDB -->
+  <section class="pt-8 bg-white pt-md-12 pb-8 pb-md-11 border-bottom">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-4 mb-md-6">
+        <div class="col-12 col-md-4 order-md-2 text-center">
 
+          <!-- Image -->
+          <img class="img-fluid w-md-100 mb-6 mb-md-0 rounded" src="assets/img/illustrations/Powered by LinkDB.png"
+            alt="Powered by LinkDB illustration" data-aos="fade-up" data-aos-delay="100">
+
+        </div>
+        <div class="col-12 col-md-7 order-md-1 mb-1 mt-5">
+
+          <!-- Badge -->
+          <span class="badge badge-pill badge-primary-soft mb-7">
+            <span class="h6 text-uppercase">Powered by LinkDB</span>
+          </span>
+
+          <!-- Heading -->
+          <h2 class="display-4 font-weight-bold">
+            <span class="text-primary">API Endpoints</span> <br>Powered by LinkDB
+          </h2>
+
+        </div>
+      </div> <!-- / .row -->
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Employee Listing API Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    List of employees
+                  </p>
+                </div>
+
+
+            <!-- Sample code -->
+            <div class="col-12 mt-7">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/job-search.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Employee Search API Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    List of employees that meet a set of criteria
+                  </p>
+                </div>
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company?categories=include&funding_data=include&extra=include&exit_data=include&acquisitions=include&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&use_cache=if-present
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man_search.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Person Search API Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Person Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    LinkedIn (Person) Profile URL
+                  </p>
+                </div>
+
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">            
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&cache=no-cache&callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company-search.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Company Search API Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    List of companies that meet a set of criteria
+                  </p>
+                </div>
+
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/contact-api/personal-email?linkedin_profile_url=https%3A%2F%2Flinkedin.com%2Fin%2Fsteven-goh-6738131b
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <a class="btn btn-block btn-primary shadow-lg" href="">
+            See API Cheatsheet
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- / .container-->
+  </section>  
+
+    <!-- FAQ-->
+    <section class="pb-8 pb-md-12 pt-8 pt-md-10 bg-light border-bottom">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            
             <!-- Heading -->
-            <h1 class="font-weight-bold mb-8">
-              Perform these queries with LinkDB
+            <h1 class="font-weight-bold mb-7">
+              Frequently Asked Questions
             </h1>
 
           </div>
         </div> <!-- / .row -->
-
-        <div class="row justify-content-center">
-
-            <div class="col-12 col-md-6 text-center">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <i class="neu-all-out" style="font-size: 40px;"></i>
-              </div>            
-  
-              <!-- Heading -->
-              <h3 class="mb-4">
-                "Find me all software engineers in San Francisco"
-              </h3>
-  
-              <div class="highlight-block mb-8">
-              
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                </div>              
-  
-                <pre class="text-left">
-                  <code class="language-python">
-  
-SELECT
-    id,
-    parsed_data->>'first_name' AS first_name,
-    parsed_data->'last_name' AS last_name,
-    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
-FROM profile
-WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
-  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
-              
-                  </code>
-                </pre>
-
-              </div>
-
-            </div>
-
-        </div> <!-- / .row -->        
-        
-        <div class="row justify-content-center">
-
-            <div class="col-12 col-md-6 text-center">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <i class="neu-groups" style="font-size: 40px;"></i>
-              </div>            
-  
-              <!-- Heading -->
-              <h3 class="mb-4">
-                "Find me all employees working in Apple"
-              </h3>
-  
-              <div class="highlight-block mb-8">
-              
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                </div>              
-  
-                <pre class="text-left">
-                  <code class="language-python">
-  
-SELECT
-    id,
-    parsed_data->>'first_name' AS first_name,
-    parsed_data->'last_name' AS last_name,
-    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
-FROM profile
-WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
-  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
-              
-                  </code>
-                </pre>
-
-              </div>
-
-            </div>
-
-        </div> <!-- / .row -->
-
-        <div class="row justify-content-center">
-
-            <div class="col-12 col-md-6 text-center">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <i class="neu-mathematical-anchor" style="font-size: 40px;"></i>
-              </div>            
-  
-              <!-- Heading -->
-              <h3 class="mb-4">
-                "Find me everyone who studied Computer Science in Stanford"
-              </h3>
-  
-              <div class="highlight-block mb-8">
-              
-                <!-- Controls -->
-                <div class="d-flex">
-                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                </div>              
-  
-                <pre class="text-left">
-                  <code class="language-python">
-  
-SELECT
-    id,
-    parsed_data->>'first_name' AS first_name,
-    parsed_data->'last_name' AS last_name,
-    jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
-FROM profile
-WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
-  AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
-              
-                  </code>
-                </pre>
-
-              </div>
-
-            </div>
-
-        </div> <!-- / .row --> 
-        
-        <div class="row justify-content-center">
-
-          <div class="col-12 col-md-6 text-center">
-
-            <!-- Icon -->
-            <div class="icon text-primary">
-              <i class="neu-achievement" style="font-size: 40px;"></i>
-            </div>            
-
-            <!-- Heading -->
-            <h3 class="mb-4">
-              "Employees of a company by name (Example: Electronic Arts)"
-            </h3>
-
-            <div class="highlight-block mb-8">
+        <div class="row justify-content-center ">
+          <div class="col-12">
             
-              <!-- Controls -->
-              <div class="d-flex">
-                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
-                <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-                <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
-              </div>              
+            <!-- Card -->
+            <div class="card accordion shadow-light-lg" id="featuresAccordion">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresOne" role="button" aria-expanded="true" aria-controls="featuresOne">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          Do you sell subsets of the data?
+                        </p>
 
-              <pre class="text-left">
-                <code class="language-python">
+                      </div>                    
 
-SELECT
-  id,
-  parsed_data->>'first_name' AS first_name,
-  parsed_data->'last_name' AS last_name,
-  jsonb_path_query_first(parsed_data, '$.experiences[*] ? (@.ends_at == null && @.company == "Electronic Arts (EA)").title') AS title
-FROM profile
-WHERE to_tsvector('simple', parsed_data) @@ plainto_tsquery('simple', 'Electronic Arts (EA)') -- general full text search
-AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Arts (EA)"}]}' -- confirm
-            
-                </code>
-              </pre>
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
 
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse show" id="featuresOne" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          We do not sell subsets of the data other than by the countries.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresTwo" role="button" aria-expanded="false" aria-controls="featuresTwo">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          What is the pricing of the dataset?
+                        </p>
+
+                      </div>                    
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse" id="featuresTwo" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          Our prices are usually priced in the 5-digits <span class="font-weight-bold">per data segment</span>. 
+                          We do not share price quotes to prevent pricing war. See <a href="#">this post</a> for context.  
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresThree" role="button" aria-expanded="false" aria-controls="featuresThree">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          Can I resell LinkDB?
+                        </p>
+
+                      </div>  
+                        
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse" id="featuresThree" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          Sorry. We do not sell LinkDB to resellers.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
             </div>
 
           </div>
-
-      </div> <!-- / .row -->         
-
+        </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </section>    
-
-    <!-- PRICING
+    </section> 
+    
+        <!-- PRICING
     ================================================== -->
     <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
 
@@ -758,7 +1622,7 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
             
             <!-- Heading -->
             <h1 class="display-2 text-white">
-              Pricing
+              Pricing Details
             </h1>
 
           </div>
@@ -770,102 +1634,66 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
     <!-- SHAPE
     ================================================== -->
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
       </div>
     </div>
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14">
+    <section class="mt-n8 mt-md-n14 border-bottom">
       <div class="container">
         <div class="row justify-content-center">
 
-          <div class="col-12 col-md-6 mb-12">
-
+          <div class="col-12 col-md-6">
+  
             <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card shadow-lg mb-6 mb-md-12">
               <div class="card-body">
-
+  
+                <!-- Preheading -->
+                <div class="text-center mb-5">
+                  <span class="badge badge-pill badge-primary-soft">
+                    <span class="h6 text-uppercase">ONE-TIME UPFRONT</span>
+                  </span>
+                </div>
+  
                 <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">US$</span>
-                  <span class="price display-2 mb-0">0.01</span>
+                <div class="text-center">
+                  <h5 class="mb-0 text-gray-700"> Starts from</h5>
+                </div>
+  
+                <div class="d-flex justify-content-center  mb-2">
+                  <span class="h2 mb-0 mt-2">$</span>
+                  <span class="price display-2">12000</span>
                 </div>
 
-                <p class="text-center text-muted mb-5">
-                  per credit
-                </p>
-
-                <!-- List -->
-                <div class="d-flex">
-                  
-                  <!-- Badge -->
-                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
                   <!-- Text -->
-                  <p>
-                    <span class="text-info">3 credits</span> per profile
+                  <p class="mb-0 text-info  text-center">
+                   Global Companies
                   </p>
-                  
-                </div>
-
-                <!-- List -->
-                <div class="d-flex">
-
+                 
                   <!-- Text -->
-                  <small class="caption mb-4 text-muted">
-                    <span class="text-danger">*</span> We charge 3 credits for every 5053 bytes of data returned. The median profile is 5053 bytes in size.
-                  </small>
-                  
-                </div>                
+                  <p class="text-muted small text-center mb-6">
+                   19+M profiles
+                  </p>
 
+  
                 <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary">
-                  Get Postgresql Connection String <i class="fe fe-arrow-right ml-3"></i>
+                <a href="https://nubela.co/proxycurl/linkdb/pricing" class="btn btn-block btn-primary">
+                  See Pricing Table <i class="fe fe-arrow-right ml-3"></i>
                 </a>
-                
+  
               </div>
             </div>
-
-          </div>    
+  
+          </div>
 
         </div> <!-- / .row -->
 
       </div> <!-- / .container -->
     </section>
 
-    <!-- CTA
-    ================================================== -->
-    <section class="bg-black">
-      <div class="container py-6 py-md-8 border-top border-bottom border-gray-900-50">
-        <div class="row align-items-center">
-          <div class="col-12 col-md">
-
-            <!-- Heading -->
-            <h3 class="font-weight-bold text-white mb-1">
-              Access to LinkDB is free
-            </h3>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-5 mb-md-0">
-              Get your connection string in the dashboard now
-            </p>
-
-          </div>
-          <div class="col-12 col-md-auto">
-
-            <!-- Button -->
-            <a href="#!" class="btn btn-primary lift">
-              Get LinkDB Connection String
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
     <!-- ARTICLES
     ================================================== -->
@@ -1094,111 +1922,55 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
 
           </div>
 
-          <div class="col-6 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
         
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Proxycurl
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Products
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Proxycurl API</h6>
 
             <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
               <li class="mb-3">
-                <a href="index.html" class="text-reset">
-                  Home
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog" class="text-reset">
-                  Blog
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="linkdb.html" class="text-reset">
-                  LinkDB Datasets
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  LinkDB Pricing
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Company Employee Listing Directory
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="terms-of-use.html" class="text-reset">
-                  Terms of Use
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Privacy Policy
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Affiliate Program
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
-                  Sapiengraph - B2B Enrichment in Google Sheets
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              API
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="pricing.html" class="text-reset">
-                  API Pricing
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="person-api.html" class="text-reset">
                   Person API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="company-api.html" class="text-reset">
                   Company API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="https://nubela.co/proxycurl/search-api" class="text-reset">
                   Search API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="jobs-api.html" class="text-reset">
                   Jobs API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="contact-api.html" class="text-reset">
                   Contact API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="school-api.html" class="text-reset">
                   School API
                 </a>
-              </li> 
+              </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="proxycurl-free-tools.html" class="text-reset">
                   Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
                 </a>
               </li>
               <li class="mb-3">
@@ -1212,46 +1984,123 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
                 </a>
               </li>
             </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">LinkDB</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb_pricing.html" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
 
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
         
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Company
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Solutions
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Use-cases</h6>
 
             <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  LinkedIn Scraper API
+                </a>
+              </li>
               <li class="mb-3">
                 <a href="#!" class="text-reset">
-                  Proxycurl LLC
+                  Crunchbase Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="data-teams-in-investment-firms.html" class="text-reset">
+                  Investment Signals
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/solutions/accelerate-growth" class="text-reset">
+                  Accelerating Growth Startups
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="hr-tech.html" class="text-reset">
+                  Data for HR Tech
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Automated Recruitment
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="sales-and-marketing-automation.html" class="text-reset">
+                  Sales and Marketing Automation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Identifying Buyer Intent Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  CRM Data Enrichment
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Demos</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li>
+                <a href="#!" class="text-reset">
+                  Track Job Changes
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-3 col-lg-2 offset-lg-0 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Resources
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="blog.html" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
                 </a>
               </li>
               <li class="mb-3">
                 <a href="team.html" class="text-reset">
-                  Our team
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
-                  Proxycurl VS PeopleDataLabs (PDL)
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
-                  Proxycurl VS CoreSignal
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
-                  Proxycurl VS BrightData
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
-                  Proxycurl VS PhantomBuster
+                  Free Resources
                 </a>
               </li>
               <li class="mb-3">
@@ -1261,61 +2110,114 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
               </li>
               <li class="mb-3">
                 <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
-                  Changelog Blogposts
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/company/employees/directory/" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Affiliate Program
                 </a>
               </li>
             </ul>
 
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-2">
-        
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Help
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Comparisons
+            </p>
 
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="mailto:hello@proxycurl.com" class="text-reset">
-                  Email us
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS People Data Labs
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS Coresignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl vs Bright Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
                 </a>
               </li>
               <li class="mb-3">
                 <a href="#!" class="text-reset">
-                  FAQ
+                  Proxycurl VS Clearbit
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Company
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="about-us.html" class="text-reset">
+                  About Proxycurl
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/team" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Term of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/privacy-policy" class="text-reset">
+                  Privacy Policy
                 </a>
               </li>
             </ul>
 
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Help
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@nubela.co" class="text-reset">
+                  Email Us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/faq/" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul> 
+
           </div>
 
         </div> <!-- / .row -->
+        <br>
 
-        <hr class="my-8">
-
-        <div class="text-center mb-4">
-
-          <h6 class="font-weight-bold text-uppercase text-gray-700">
-            Follow us
-          </h6>
-
-          <div class="mr-2">
-            <a href="https://twitter.com/proxycurl" target="_blank">
-              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
-            </a>
-  
-            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
-              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
-            </a>
-  
-            <a href="https://github.com/nubelaco/" target="_blank">
-              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
-            </a>
-          </div>
-
-        </div>
+        <hr class="text-gray-400">
+        <br>
 
         <div class="text-center">
           <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
@@ -1323,6 +2225,7 @@ AND parsed_data @> '{"experiences": [{"ends_at": null, "company": "Electronic Ar
 
       </div> <!-- / .container -->
     </footer>
+
 
     <!-- JAVASCRIPT
     ================================================== -->
