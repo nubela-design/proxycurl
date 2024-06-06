@@ -59,6 +59,7 @@
 
     </section>
 
+
      <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
@@ -66,7 +67,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
         </a>
 
         <!-- Toggler -->
@@ -87,12 +88,9 @@
 
             <!-- Products -->
             <li class="nav-item dropdown">
-              <a href="products.html" class="nav-link" id="navbarPages">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
                 Products <i class="fe fe-chevron-down"></i>
               </a>
-              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
               <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
                 <div class="row no-gutters">
                   <div class="col-12">
@@ -164,11 +162,8 @@
                         <a class="dropdown-item" href="#!">
                           Jobs API
                         </a>
-                        <a class="dropdown-item" href="#!">
+                        <a class="dropdown-item mb-5 font-weight-bold" href="#!">
                           API Documentation <i class="fe fe-arrow-right"></i>
-                        </a>
-                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
-                          See all products <i class="fe fe-arrow-right"></i>
                         </a>
 
                       </div>
@@ -252,11 +247,6 @@
                             People Data Labs Alternative
                           </a>
                         </div>
-                        <div class="dropdown-item dropright mt-4">
-                          <a class="text-primary font-weight-bold" href="use-cases.html">
-                            See all use-cases <i class="fe fe-arrow-right"></i>
-                          </a>
-                        </div>
                       </div>
 
                       <div class="col-12 col-lg-6">
@@ -267,13 +257,8 @@
                         </h6>
 
                         <!-- List -->
-                        <a class="dropdown-item" href="#!">
-                          Track Job Changes
-                        </a>
-
-                        <!-- List -->
                         <a class="dropdown-item mb-5" href="#!">
-                          Reverse Email Lookup
+                          Track Job Changes
                         </a>
 
                       </div>
@@ -347,10 +332,10 @@
           <div class="col-12 col-md-9 text-center">
 
             <h1 class="display-2 font-weight-bold">
-              Fetch <span class="text-primary">rich data on Schools</span>
+              Fetch rich data on <span class="text-primary">Schools</span>
             </h1>
 
-            <h4 class="h2 text-muted mb-6 mb-md-9">
+            <h4 class="h2 text-muted mb-6">
               List students; enrich school profiles
             </h4>
 
@@ -358,7 +343,15 @@
 
           <div class="col-12 col-md-12 text-center">
 
-            <img class="img img-fluid rounded mb-6" alt="illustration" src="assets/img/illustrations/School API illustration.png">
+            <!-- Desktop illustration -->
+            <div class="d-none d-lg-block mb-6">
+              <img class="img-fluid rounded" alt="School API Illustration" src="assets/img/illustrations/school-api-desktop.png">
+            </div>
+
+            <!-- Mobile illustration -->
+            <div class="d-block d-lg-none mb-6">
+              <img class="img-fluid rounded" alt="School API Illustration" src="assets/img/illustrations/school-api-mobile.png">
+            </div>
 
             <div>
 
@@ -404,9 +397,9 @@
       
         <div class="row justify-content-center">
           
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-6">
 
-          <div class="card shadow-light">
+          <div class="card shadow-lg">
 
             <div class="card-body">
 
@@ -414,12 +407,13 @@
                 Input
               </span>
 
-              <div class="py-3 px-4 border rounded shadow-lg">
-                linkedin.com/school/stanford-university
+              <div class="h4 font-weight-bold shadow rounded border border-muted text-left  py-4 px-4 d-flex">
+                <div class="fe fe-lock pr-3 pt-1"></div>
+                <div>linkedin.com<span class="text-muted">/school/national-university-of-singapore</span></div>
               </div>
       
               <!--arrow-->
-              <div class="text-center mt-n2">
+              <div class="text-center mt-n4">
                 <span class="badge badge-lg badge-rounded-circle bg-info text-white">
                   <i class="fe fe-arrow-down"></i>
                 </span>
@@ -435,7 +429,7 @@
                   <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                 </div>
       
-                <pre style="max-height: 128px;">
+                <pre style="max-height: 256px;">
 <code class="language-python">
 curl \
     -G \
@@ -474,9 +468,9 @@ curl \
 
         </div>
       
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5">
 
-          <div class="card shadow-light">
+          <div class="card shadow-light-lg">
 
             <div class="card-body">
         
@@ -488,39 +482,106 @@ curl \
 
                 <div class="card-body">
 
-                  <div class="row align-items-center justify-content-center mb-4 pb-6 border-bottom">
+                  <div class="row align-items-center justify-content-center text-center text-md-left mb-4 pb-6 border-bottom">
 
-                    <div class="col-3">
+                    <div class="col-12 col-md-3 mb-4 mb-md-0">
                       <div class="avatar avatar-xxl">
-                        <img class="avatar-img rounded-circle" src="assets/img/avatars/default-girl-avatar.png" alt="Avatar">
+                        <img class="avatar-img rounded-circle" src="assets/img/Misc/NUS logo.jpeg" alt="Avatar">
                       </div>
                     </div>
 
-                    <div class="col-9">
+                    <div class="col-12 col-md-9 pl-5 pl-md-7">
                       <h2 class="font-weight-bold mb-0">
-                        Patricia Well
+                        National University of Singapore
                       </h2>
                       <p class="text-gray-700 mb-0">
-                        Stanford University
+                        Higher Education
                       </p>
                     </div>
 
                   </div>
 
                   <div class="row">
-
+              
                     <div class="col-12">
-
-                      <p class="mb-2">
-                        <i class="neu-br-linkedin-sq text-primary h3"></i> LinkedIn URL
+            
+                      <p class="mb-1 pl-2">
+                        <svg class="mb-2 mr-1" id="a" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="m20,7c0,2.76141-2.23859,5-5,5-.34479,0-.68042-.03796-1.00555-.10443,1.23859-1.26337,2.00555-2.99084,2.00555-4.89557s-.76703-3.63226-2.00562-4.89563c.32513-.06641.66083-.10437,1.00562-.10437,2.76141,0,5,2.23859,5,5Zm-2,9h-1.54047c.95428,1.06281,1.54047,2.46246,1.54047,4v1c0,.35236-.0722.68567-.18427,1h3.18427c.55231,0,1-.44775,1-1v-1c0-2.20917-1.79083-4-4-4Z" fill="#3b82f6"/><circle cx="9" cy="7" r="5" fill="#93c5fd"/><path d="m12,16h-6c-2.20917,0-4,1.79083-4,4v1c0,.55225.44769,1,1,1h12c.55231,0,1-.44775,1-1v-1c0-2.20917-1.79083-4-4-4Z" fill="#93c5fd"/><path d="m9,12.5c3.03223,0,5.5-2.46729,5.5-5.5S12.03223,1.5,9,1.5,3.5,3.96729,3.5,7s2.46777,5.5,5.5,5.5Zm0-10c2.48145,0,4.5,2.01855,4.5,4.5s-2.01855,4.5-4.5,4.5-4.5-2.01855-4.5-4.5,2.01855-4.5,4.5-4.5Zm3,13h-6c-2.48145,0-4.5,2.01855-4.5,4.5v1c0,.82715.67285,1.5,1.5,1.5h12c.82715,0,1.5-.67285,1.5-1.5v-1c0-2.48145-2.01855-4.5-4.5-4.5Zm3.5,5.5c0,.27539-.22461.5-.5.5H3c-.27539,0-.5-.22461-.5-.5v-1c0-1.92969,1.57031-3.5,3.5-3.5h6c1.92969,0,3.5,1.57031,3.5,3.5v1Zm-1.09265-18.43958c-.2569-.31238-.54352-.59851-.84998-.86224.46759-.1272.94916-.19818,1.44263-.19818,3.03223,0,5.5,2.46729,5.5,5.5s-2.46777,5.5-5.5,5.5c-.49347,0-.97504-.07098-1.44263-.19818.30646-.26373.59308-.54987.84998-.86224.19653.02588.39136.06042.59265.06042,2.48145,0,4.5-2.01855,4.5-4.5s-2.01855-4.5-4.5-4.5c-.20129,0-.39612.03455-.59265.06042Zm8.09265,17.43958v1c0,.82715-.67285,1.5-1.5,1.5h-3.41724c.17773-.30487.30566-.63947.3667-1h3.05054c.27539,0,.5-.22461.5-.5v-1c0-1.92969-1.57031-3.5-3.5-3.5h-1.13647c-.26251-.36377-.56433-.69623-.89996-.99268.0127-.00098.0235-.00732.03644-.00732h2c2.48145,0,4.5,2.01855,4.5,4.5Z" fill="#1e40af"/></svg>
+                         List of students
                       </p>
+            
+                      <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                        <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                          <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <div class="avatar avatar-lg">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/default-girl-avatar.png" alt="avatar">
+                            </div>
+                          </div>
+                      
+                          <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                            <p class="text-black mb-0">Patricia Well</p>
+                            <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                          </div>
+                      
+                        </div>
+                      </div>
 
-                      <p class="text-primary py-2 px-4 border border-primary rounded mb-0">
-                        linkedin.com/in/...
-                      </p>
+                      <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                        <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                          <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <div class="avatar avatar-lg">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/default-boy-avatar.png" alt="avatar">
+                            </div>
+                          </div>
+                      
+                          <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                            <p class="text-black mb-0">Ivan Kim</p>
+                            <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                          </div>
+                      
+                        </div>
+                      </div>
 
+                      <div class="text-primary py-2 px-4 border border-muted rounded mb-2 shadow-light">
+                        <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                          <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <div class="avatar avatar-lg">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/default-boy-avatar-2.png" alt="avatar">
+                            </div>
+                          </div>
+                      
+                          <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                            <p class="text-black mb-0">Seb Timothy</p>
+                            <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                          </div>
+                      
+                        </div>
+                      </div>
+
+                      <div class="text-primary py-2 px-4 border border-muted rounded mb-4 shadow-light">
+                        <div class="row align-items-center text-center text-md-left py-4 py-md-0">
+                          <div class="col-12 col-md-2 mb-3 mb-md-0">
+                            <div class="avatar avatar-lg">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/default-girl-avatar-2.png" alt="avatar">
+                            </div>
+                          </div>
+                      
+                          <div class="col-12 col-md-10 pl-4 pl-md-5 text-truncate">
+                            <p class="text-black mb-0">Yuki Yong</p>
+                            <p class="text-primary mb-0 small">linkedin.com/in/...</p>
+                          </div>
+                      
+                        </div>
+                      </div>
+
+                      <div class="text-center text-md-left">
+                        <span class="badge text-uppercase badge-secondary-soft badge-lg"> 37,458 more</span>
+                      </div> 
+
+
+            
                     </div>
-
+            
                   </div>
 
                 </div>
@@ -607,20 +668,21 @@ curl \
         
         <div class="row justify-content-between mt-6">
             
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-6">
 
-            <div class="card shadow-light">
+            <div class="card shadow-lg">
 
               <div class="card-body">
 
                 <span class="badge badge-pill badge-float badge-float-outside badge-info text-uppercase"> Input </span>
         
-                <div class="py-3 px-4 border rounded shadow-lg">
-                  linkedin.com/school/national-university-of-singapore
+                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 d-flex">
+                  <div class="fe fe-lock pr-3 pt-1"></div>
+                  <div>linkedin.com<span class="text-muted">/school/national-university-of-singapore</span></div>
                 </div>
         
                 <!--arrow-->
-                <div class="text-center mt-n2">
+                <div class="text-center mt-n4">
                   <span class="badge badge-lg badge-rounded-circle bg-info text-white">
                     <i class="fe fe-arrow-down"></i>
                   </span>
@@ -636,7 +698,7 @@ curl \
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
         
-                  <pre style="max-height: 128px;">
+                  <pre style="max-height: 256px;">
   <code class="language-python">
 curl \
   -G \
@@ -666,9 +728,9 @@ curl \
             </h1>
           </div>
         
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-5">
 
-            <div class="card shadow-light">
+            <div class="card shadow-light-lg">
 
               <div class="card-body">
           
@@ -680,15 +742,15 @@ curl \
 
                   <div class="card-body">
   
-                    <div class="row align-items-center justify-content-center mb-4 pb-6 border-bottom">
+                    <div class="row align-items-center justify-content-center text-center text-md-left mb-4 pb-6 border-bottom">
   
-                      <div class="col-3">
+                      <div class="col-12 col-md-3 mb-4 mb-md-0">
                         <div class="avatar avatar-xxl">
                           <img class="avatar-img" src="assets/img/Misc/NUS logo.jpeg" alt="School profile picture">
                         </div>
                       </div>
   
-                      <div class="col-9">
+                      <div class="col-12 col-md-9 pl-5 pl-md-7">
                         <h2 class="font-weight-bold mb-0">
                           National University of Singapore
                         </h2>
@@ -701,42 +763,42 @@ curl \
   
                     <div class="row text-center">
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m22,7v10c0,1.10455-.89545,2-2,2H4c-1.10455,0-2-.89545-2-2V7c0-1.10461.89545-2,2-2h16c1.10455,0,2,.89539,2,2Z" fill="#93c5fd"/><path d="m20,4.5H4c-1.37891,0-2.5,1.12109-2.5,2.5v10c0,1.37891,1.12109,2.5,2.5,2.5h16c1.37891,0,2.5-1.12109,2.5-2.5V7c0-1.37891-1.12109-2.5-2.5-2.5Zm1.5,12.5c0,.82715-.67285,1.5-1.5,1.5H4c-.82715,0-1.5-.67285-1.5-1.5V7c0-.82715.67285-1.5,1.5-1.5h16c.82715,0,1.5.67285,1.5,1.5v10Zm-3-5c0,.27637-.22363.5-.5.5H6c-.27637,0-.5-.22363-.5-.5s.22363-.5.5-.5h12c.27637,0,.5.22363.5.5Zm-13-3c0-.27637.22363-.5.5-.5h2c.27637,0,.5.22363.5.5s-.22363.5-.5.5h-2c-.27637,0-.5-.22363-.5-.5Zm9,6c0,.27637-.22363.5-.5.5H6c-.27637,0-.5-.22363-.5-.5s.22363-.5.5-.5h8c.27637,0,.5.22363.5.5Z" fill="#1e40af"/></svg>
                         <p class="small text-truncate font-weight-bold mt-1">
                           Name
                         </p>
                       </div>
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m22,12c0,5.52285-4.47715,10-10,10S2,17.52285,2,12,6.47715,2,12,2s10,4.47715,10,10Z" fill="#93c5fd"/><path d="m12,1.5C6.20996,1.5,1.5,6.20996,1.5,12s4.70996,10.5,10.5,10.5,10.5-4.70996,10.5-10.5S17.79004,1.5,12,1.5Zm8.36353,6h-3.38263c-.4693-1.93091-1.23291-3.52252-2.19037-4.58026,2.40076.73932,4.39825,2.40576,5.573,4.58026Zm-3.86353,4.5c0,1.22925-.1203,2.41016-.33228,3.5H7.83234c-.21198-1.08984-.33234-2.27075-.33234-3.5s.12036-2.41016.33234-3.5h8.33539c.21198,1.08984.33228,2.27075.33228,3.5ZM12,2.5c1.67426,0,3.16962,2.04968,3.9433,5h-7.8866c.77368-2.95032,2.26904-5,3.9433-5Zm-2.79053.41974c-.95746,1.05774-1.72107,2.64935-2.19037,4.58026h-3.38263c1.17474-2.1745,3.17224-3.84094,5.573-4.58026ZM2.5,12c0-1.23657.24469-2.41541.67651-3.5h3.63165c-.19641,1.0918-.30817,2.26514-.30817,3.5s.11176,2.4082.30817,3.5h-3.63165c-.43182-1.08459-.67651-2.26343-.67651-3.5Zm1.13647,4.5h3.38263c.4693,1.93091,1.23291,3.52246,2.19037,4.58032-2.40076-.73938-4.39825-2.40576-5.573-4.58032Zm8.36353,5c-1.67426,0-3.16962-2.04968-3.9433-5h7.8866c-.77368,2.95032-2.26904,5-3.9433,5Zm2.79053-.41968c.95746-1.05786,1.72107-2.64941,2.19037-4.58032h3.38263c-1.17474,2.17456-3.17224,3.84094-5.573,4.58032Zm2.40131-5.58032c.19641-1.0918.30817-2.26514.30817-3.5s-.11176-2.4082-.30817-3.5h3.63165c.43182,1.08459.67651,2.26343.67651,3.5s-.24469,2.41541-.67651,3.5h-3.63165Z" fill="#1e40af"/></svg>
                         <p class="small font-weight-bold mt-1">
                           Website
                         </p>
                       </div>
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m20,3h-2c-.55231,0-1,.44769-1,1v7h-4v-2l-5,2v-2l-3.7428,1.49707c-.75928.30377-1.2572,1.03918-1.2572,1.85699v6.64594c0,1.10455.89545,2,2,2h14c1.10455,0,2-.89545,2-2V4c0-.55231-.44769-1-1-1Z" fill="#93c5fd"/><path d="m20,2.5h-2c-.82715,0-1.5.67285-1.5,1.5v6.5h-3v-1.5c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.3125-.1123-.46582-.05029l-4.31445,1.72607v-1.26172c0-.16602-.08203-.3208-.21973-.41406-.13672-.09277-.31348-.1123-.46582-.05029l-3.74316,1.49707c-.95508.38232-1.57129,1.29346-1.57129,2.32129v6.646c0,1.37891,1.12109,2.5,2.5,2.5h14c1.37891,0,2.5-1.12109,2.5-2.5V4c0-.82715-.67285-1.5-1.5-1.5Zm.5,16.5c0,.82715-.67285,1.5-1.5,1.5H5c-.82715,0-1.5-.67285-1.5-1.5v-6.646c0-.6167.37012-1.16357.94238-1.39258l3.05762-1.22314v1.26172c0,.16602.08203.3208.21973.41406.13672.09277.31152.11133.46582.05029l4.31445-1.72607v1.26172c0,.27637.22363.5.5.5h4c.27637,0,.5-.22363.5-.5v-3.5h3v11.5Zm0-12.5h-3v-2.5c0-.27588.22461-.5.5-.5h2c.27539,0,.5.22412.5.5v2.5Zm-11.5,8.5h-4v-2h4v2Zm0,2h-4v2h4v-2Zm6-4h-4v2h4v-2Zm0,4h-4v2h4v-2Zm4-4h-2v2h2v-2Zm0,4h-2v2h2v-2Z" fill="#1e40af"/></svg>
                         <p class="small text-truncate font-weight-bold mt-1">
                           Industry
                         </p>
                       </div>
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m12,2c-4.41827,0-8,3.58173-8,8,0,4.90283,2.77008,9.38501,7.1554,11.57764l.8446.42236.8446-.42236c4.38531-2.19263,7.1554-6.6748,7.1554-11.57764,0-4.41827-3.58173-8-8-8Zm0,11c-1.6568,0-3-1.34326-3-3,0-1.65698,1.3432-3,3-3s3,1.34302,3,3c0,1.65674-1.34314,3-3,3Z" fill="#93c5fd"/><path d="m12,6.5c-1.92969,0-3.5,1.57031-3.5,3.5s1.57031,3.5,3.5,3.5,3.5-1.57031,3.5-3.5-1.57031-3.5-3.5-3.5Zm0,6c-1.37891,0-2.5-1.12109-2.5-2.5s1.12109-2.5,2.5-2.5,2.5,1.12109,2.5,2.5-1.12109,2.5-2.5,2.5Zm0-11C7.31348,1.5,3.5,5.31348,3.5,10c0,5.12402,2.84766,9.73242,7.43164,12.02539l.84473.42188c.07031.03516.14746.05273.22363.05273s.15332-.01758.22363-.05273l.84473-.42188c4.58398-2.29297,7.43164-6.90137,7.43164-12.02539,0-4.68652-3.81348-8.5-8.5-8.5Zm.62109,19.63086l-.62109.31055-.62109-.31055c-4.24316-2.12207-6.87891-6.3877-6.87891-11.13086,0-4.13574,3.36426-7.5,7.5-7.5s7.5,3.36426,7.5,7.5c0,4.74316-2.63574,9.00879-6.87891,11.13086Z" fill="#1e40af"/></svg>
-                        <p class="small font-weight-bold mt-1 mb-0">
+                        <p class="small font-weight-bold mb-4 mb-md-0">
                           HQ
                         </p>
                       </div>
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m21,4v12s-3,1-5,1c-3,0-5-2-8-2s-5,1-5,1V4s2-1,5-1,5,2,8,2c2,0,5-1,5-1Z" fill="#93c5fd"/><path d="m21.29248,3.59473c-.13135-.0957-.29834-.11914-.45068-.06934-.0293.00977-2.94727.97461-4.8418.97461-1.40381,0-2.57471-.46875-3.81445-.96387-1.27295-.50977-2.58936-1.03613-4.18555-1.03613-2.05603,0-3.63757.44568-4.5.75757v-1.25757c0-.27637-.22363-.5-.5-.5s-.5.22363-.5.5v20c0,.27637.22363.5.5.5s.5-.22363.5-.5v-5.67163c.61719-.25159,2.26837-.82837,4.5-.82837,1.40381,0,2.57471.46875,3.81445.96387,1.27295.50977,2.58936,1.03613,4.18555,1.03613,2.05762,0,5.03271-.9834,5.1582-1.02539.2041-.06836.3418-.25977.3418-.47461V4c0-.16113-.07715-.31152-.20752-.40527Zm-.79248,12.03906c-.82959.25293-2.98975.86621-4.5.86621-1.40381,0-2.57471-.46875-3.81445-.96387-1.27295-.50977-2.58936-1.03613-4.18555-1.03613-2.05603,0-3.63757.44568-4.5.75757V4.32837c.61719-.25159,2.26837-.82837,4.5-.82837,1.40381,0,2.57471.46875,3.81445.96387,1.27295.50977,2.58936,1.03613,4.18555,1.03613,1.49854,0,3.4834-.52148,4.5-.82129v10.95508Z" fill="#1e40af"/></svg>
-                        <p class="small font-weight-bold mt-1 mb-0">
+                        <p class="small text-truncate font-weight-bold mt-1 mb-4 mb-md-0">
                           Founded
                         </p>
                       </div>
   
-                      <div class="col-4">
+                      <div class="col-6">
                         <svg id="a" width="24" height="24" viewBox="0 0 24 24"><path d="m7,5c0,1.10457-.89543,2-2,2s-2-.89543-2-2,.89543-2,2-2,2,.89543,2,2Zm-2,5c-1.10457,0-2,.89543-2,2s.89543,2,2,2,2-.89543,2-2-.89543-2-2-2Zm0,7c-1.10457,0-2,.89543-2,2s.89543,2,2,2,2-.89543,2-2-.89543-2-2-2Z" fill="#93c5fd"/><path d="m10.5,5c0-.27637.22363-.5.5-.5h10c.27637,0,.5.22363.5.5s-.22363.5-.5.5h-10c-.27637,0-.5-.22363-.5-.5Zm10.5,6.5h-10c-.27637,0-.5.22363-.5.5s.22363.5.5.5h10c.27637,0,.5-.22363.5-.5s-.22363-.5-.5-.5Zm0,7h-10c-.27637,0-.5.22363-.5.5s.22363.5.5.5h10c.27637,0,.5-.22363.5-.5s-.22363-.5-.5-.5ZM7.5,5c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Zm1,7c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Zm1,7c0,1.37891-1.12158,2.5-2.5,2.5s-2.5-1.12109-2.5-2.5,1.12158-2.5,2.5-2.5,2.5,1.12109,2.5,2.5Zm-1,0c0-.82715-.67285-1.5-1.5-1.5s-1.5.67285-1.5,1.5.67285,1.5,1.5,1.5,1.5-.67285,1.5-1.5Z" fill="#1e40af"/></svg>
                         <p class="small text-truncate font-weight-bold mt-1 mb-0">
                           Description
@@ -883,7 +945,7 @@ curl \
 
     <!-- PRICING
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+    <section class="pt-8 pt-md-10 pb-10 pb-md-13 bg-primary">
 
       <!-- Shape -->
       <div class="shape shape-blur-3 svg-shim text-white">
@@ -921,7 +983,7 @@ curl \
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14 border-bottom pb-14">
+    <section class="mt-n8 mt-md-n12 border-bottom pb-10">
       <div class="container">
 
         <div class="row">
@@ -1013,111 +1075,55 @@ curl \
 
           </div>
 
-          <div class="col-6 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
         
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Proxycurl
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Products
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Proxycurl API</h6>
 
             <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
               <li class="mb-3">
-                <a href="index.html" class="text-reset">
-                  Home
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog" class="text-reset">
-                  Blog
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="linkdb.html" class="text-reset">
-                  LinkDB Datasets
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  LinkDB Pricing
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Company Employee Listing Directory
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="terms-of-use.html" class="text-reset">
-                  Terms of Use
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Privacy Policy
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Affiliate Program
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
-                  Sapiengraph - B2B Enrichment in Google Sheets
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              API
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="pricing.html" class="text-reset">
-                  API Pricing
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="person-api.html" class="text-reset">
                   Person API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="company-api.html" class="text-reset">
                   Company API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="https://nubela.co/proxycurl/search-api" class="text-reset">
                   Search API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="jobs-api.html" class="text-reset">
                   Jobs API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="contact-api.html" class="text-reset">
                   Contact API
                 </a>
               </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="school-api.html" class="text-reset">
                   School API
                 </a>
-              </li> 
+              </li>
               <li class="mb-3">
-                <a href="#!" class="text-reset">
+                <a href="proxycurl-free-tools.html" class="text-reset">
                   Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
                 </a>
               </li>
               <li class="mb-3">
@@ -1131,46 +1137,123 @@ curl \
                 </a>
               </li>
             </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">LinkDB</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb_pricing.html" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
 
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
         
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Company
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Solutions
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Use-cases</h6>
 
             <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  LinkedIn Scraper API
+                </a>
+              </li>
               <li class="mb-3">
                 <a href="#!" class="text-reset">
-                  Proxycurl LLC
+                  Crunchbase Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="data-teams-in-investment-firms.html" class="text-reset">
+                  Investment Signals
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/solutions/accelerate-growth" class="text-reset">
+                  Accelerating Growth Startups
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="hr-tech.html" class="text-reset">
+                  Data for HR Tech
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Automated Recruitment
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="sales-and-marketing-automation.html" class="text-reset">
+                  Sales and Marketing Automation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Identifying Buyer Intent Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  CRM Data Enrichment
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Demos</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li>
+                <a href="#!" class="text-reset">
+                  Track Job Changes
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-3 col-lg-2 offset-lg-0 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Resources
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="blog.html" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
                 </a>
               </li>
               <li class="mb-3">
                 <a href="team.html" class="text-reset">
-                  Our team
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
-                  Proxycurl VS PeopleDataLabs (PDL)
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
-                  Proxycurl VS CoreSignal
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
-                  Proxycurl VS BrightData
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
-                  Proxycurl VS PhantomBuster
+                  Free Resources
                 </a>
               </li>
               <li class="mb-3">
@@ -1180,61 +1263,114 @@ curl \
               </li>
               <li class="mb-3">
                 <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
-                  Changelog Blogposts
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/company/employees/directory/" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Affiliate Program
                 </a>
               </li>
             </ul>
 
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-2">
-        
             <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Help
-            </h6>
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Comparisons
+            </p>
 
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="mailto:hello@proxycurl.com" class="text-reset">
-                  Email us
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS People Data Labs
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS Coresignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl vs Bright Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
                 </a>
               </li>
               <li class="mb-3">
                 <a href="#!" class="text-reset">
-                  FAQ
+                  Proxycurl VS Clearbit
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Company
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="about-us.html" class="text-reset">
+                  About Proxycurl
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/team" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Term of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/privacy-policy" class="text-reset">
+                  Privacy Policy
                 </a>
               </li>
             </ul>
 
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Help
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@nubela.co" class="text-reset">
+                  Email Us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/faq/" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul> 
+
           </div>
 
         </div> <!-- / .row -->
+        <br>
 
-        <hr class="my-8">
-
-        <div class="text-center mb-4">
-
-          <h6 class="font-weight-bold text-uppercase text-gray-700">
-            Follow us
-          </h6>
-
-          <div class="mr-2">
-            <a href="https://twitter.com/proxycurl" target="_blank">
-              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
-            </a>
-  
-            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
-              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
-            </a>
-  
-            <a href="https://github.com/nubelaco/" target="_blank">
-              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
-            </a>
-          </div>
-
-        </div>
+        <hr class="text-gray-400">
+        <br>
 
         <div class="text-center">
           <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
