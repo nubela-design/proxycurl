@@ -197,3 +197,24 @@ pre {
 .u-hover:hover {
   text-decoration: underline; /* Add underline on hover */
 }
+
+
+/* BG BETWEEN FIX */
+@media (min-width: 1320px) and (max-width: 1400px) {
+  .bg-between {
+    background-size: auto 60% !important;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1319px) {
+  .bg-between {
+    background-size: auto 50% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .bg-between {
+    background-size: auto 35% !important;
+  }
+}
+/* BG BETWEEN FIX */
