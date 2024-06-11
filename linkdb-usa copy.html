@@ -405,7 +405,7 @@
 
       <div class="container">
   
-        <div class="row justify-content-between mb-md-10 mb-8">
+        <div class="row justify-content-between mb-md-11 mb-8">
       
           <div class="col-12 col-md-5">
 
@@ -757,11 +757,27 @@
           
         </div>
 
-        <hr>
-      
-        <div class="row justify-content-center pt-8 pt-md-10 mb-3 mb-lg-6">
+        <hr>    
+        
+        <div class="row justify-content-center pt-8 pt-md-9">
+
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 mb-6 mb-lg-9">
           
-          <div class="col-12 col-md-6" data-aos="fade-up">
+            <h2 class="display-4 font-weight-bold mb-4 text-center">
+              <span class="text-primary">Further Enrich All LinkDB Profiles</span> with Proxycurl API
+            </h2>
+          
+            <p class="text-muted font-size-lg text-center">
+              LinkDB is often used alongside Proxycurl API. Utilize LinkDB to identify profiles of interest, then employ Proxycurl API to extract detailed and updated data on these profiles.
+            </p>
+          
+          </div>
+
+        </div>
+      
+        <div class="row justify-content-center mb-3 mb-lg-6">
+          
+          <div class="col-12 col-lg-5 pr-lg-0" data-aos="fade-up">
 
             <div class="card shadow-lg">
 
@@ -771,20 +787,9 @@
                   Input
                 </span>
 
-                <div class="h4 font-weight-bold shadow rounded border border-muted text-left py-4 px-4 d-flex">
-                  <div class="fe fe-lock pr-3 pt-1"></div>
-                  <div>bill, gates, gatesfoundation</div>
-                </div>
-        
-                <!--arrow-->
-                <div class="text-center mt-n4">
-                  <span class="badge badge-lg badge-rounded-circle bg-info text-white">
-                    <i class="fe fe-arrow-down"></i>
-                  </span>
-                </div>
         
                 <!-- Code block -->
-                <div class="highlight-block text-left mt-n2">
+                <div class="highlight-block text-left">
         
                   <!-- Controls -->
                   <div class="d-flex">
@@ -795,7 +800,7 @@
         
                   <pre>
   <code class="language-python">
-    curl \
+  curl \
     -G \
     -H "Authorization: Bearer API_KEY_HERE" \
     'https://nubela.co/proxycurl/api/linkedin/profile/resolve' \
@@ -815,7 +820,7 @@
 
           </div>
 
-          <div class="col text-center d-md-block d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col text-center d-md-none d-lg-block d-xl-block d-none d-sm-none mt-6" data-aos="fade-up" data-aos-delay="100">
             
             <h1 class="display-3 mb-0">
               <i class="fe fe-arrow-right"></i>
@@ -823,7 +828,7 @@
 
           </div>
 
-          <div class="col text-center d-sm-block d-md-none d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col text-center d-sm-block d-md-block d-lg-none d-xl-none py-4" data-aos="fade-up" data-aos-delay="100">
             
             <h1 class="display-3 mb-0">
               <i class="fe fe-arrow-down"></i>
@@ -831,7 +836,7 @@
 
           </div>
         
-          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-5 pl-lg-0" data-aos="fade-up" data-aos-delay="200">
 
             <div class="card shadow-light-lg">
 
@@ -840,22 +845,7 @@
                 <span class="badge badge-pill badge-float badge-float-outside badge-primary text-uppercase">
                   Output
                 </span>
-                
-                <div class="row mb-0">
-                  
-                  <div class="col-1">
-                    <svg class="" width="24" height="32" viewBox="0 3 24 24"><path fill="#335eea" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8.078,18.737H5.085v-9H8.078ZM6.582,8.5h-.02A1.56,1.56,0,1,1,6.6,5.393,1.56,1.56,0,1,1,6.582,8.5ZM18.87,18.737H15.877V13.921c0-1.211-.433-2.036-1.516-2.036a1.637,1.637,0,0,0-1.535,1.094,2.032,2.032,0,0,0-.1.731v5.027H9.734s.04-8.16,0-9h2.992V11.01a2.97,2.97,0,0,1,2.7-1.488c1.969,0,3.446,1.287,3.446,4.053Z"/></svg>
-                  </div>
-                  
-                  <div class="col-10 pl-3 h5 font-weight-bold">
-                    LinkedIn URL
-                  </div>
-
-                </div>
-
-                <div class="text-primary py-3 px-4 mb-4 border border-primary rounded shadow-lg">
-                  linkedin.com/in/williamhgates
-                </div>
+              
 
                 <!-- Code block -->
                 <div class="highlight-block text-left">
@@ -867,7 +857,7 @@
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
           
-                  <pre style="max-height: 255px;">
+                  <pre style="max-height: 280px;">
   <code class="language-python">                        
   {
     "url":"https://www.linkedin.com/in/williamhgates",
@@ -1320,7 +1310,7 @@
           </div>
         </div> <!-- / .row -->
     
-        <div class="row mb-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mb-md-4" data-aos="fade-up" data-aos-delay="100">
     
           <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
@@ -1621,7 +1611,7 @@ curl \
         </div> <!-- / .row -->
     
         <div class="row justify-content-center">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-5">
             <a class="btn btn-block btn-primary shadow-lg lift" href="">
               See API Cheatsheet
             </a>
@@ -1772,7 +1762,7 @@ curl \
           </div>
         </div> <!-- / .row -->
 
-        <div class="row justify-content-center mb-8">
+        <div class="row justify-content-center mb-6 mb-md-8">
 
           <!--1 - Global People-->
           <div class="col-12 col-md-6 col-lg-4  d-flex mb-6 mb-xl-6" data-aos="fade-up">
@@ -1781,12 +1771,12 @@ curl \
 
               <div class="card-body">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="https://nubela.co/proxycurl/linkdb" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="Global People profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="Global People profile dataset" src="assets/img/illustrations/linkdb-p-global.png">
 
                   <div class="mb-2">
-                    <span class="badge badge-pill badge-primary-soft mb-0 text-uppercase">
+                    <span class="badge badge-pill badge-primary-desat-soft mb-0 text-uppercase">
                       People Profile
                     </span>
                     <span class="badge badge-pill badge-success-soft mb-0 text-uppercase">
@@ -1813,9 +1803,9 @@ curl \
 
               <div class="card-body">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="https://nubela.co/proxycurl/linkdb" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="Global company profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="Global company profile dataset" src="assets/img/illustrations/linkdb-c-global.png">
 
                   <div class="mb-2">
                     <span class="badge badge-pill badge-info-soft mb-0 text-uppercase">
@@ -1845,12 +1835,12 @@ curl \
 
               <div class="card-body">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="linkdb-india.html" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="India People profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="India People profile dataset" src="assets/img/illustrations/linkdb-p-india.png">
 
                   <div class="mb-2">
-                    <span class="badge badge-pill badge-primary-soft mb-0 text-uppercase">
+                    <span class="badge badge-pill badge-primary-desat-soft mb-0 text-uppercase">
                       People Profile
                     </span>
                     <span class="badge badge-pill badge-success-soft mb-0 text-uppercase">
@@ -1877,12 +1867,12 @@ curl \
 
               <div class="card-body">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="linkdb-france.html" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="France People profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="France People profile dataset" src="assets/img/illustrations/linkdb-p-france.png">
 
                   <div class="mb-2">
-                    <span class="badge badge-pill badge-primary-soft mb-0 text-uppercase">
+                    <span class="badge badge-pill badge-primary-desat-soft mb-0 text-uppercase">
                       People Profile
                     </span>
                     <span class="badge badge-pill badge-success-soft mb-0 text-uppercase">
@@ -1909,12 +1899,12 @@ curl \
 
               <div class="card-body">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="linkdb-sweden.html" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="Sweden people profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="Sweden people profile dataset" src="assets/img/illustrations/linkdb-p-sweden.png">
 
                   <div class="mb-2">
-                    <span class="badge badge-pill badge-primary-soft mb-0 text-uppercase">
+                    <span class="badge badge-pill badge-primary-desat-soft mb-0 text-uppercase">
                       People Profile
                     </span>
                     <span class="badge badge-pill badge-success-soft mb-0 text-uppercase">
@@ -1941,12 +1931,12 @@ curl \
 
               <div class="card-body mb-0">
   
-                <a href="https://nubela.co/proxycurl/linkdb">
+                <a href="linkdb-spain.html" target="_blank">
 
-                  <img class="img img-fluid rounded mb-6" alt="Spain People profile dataset" src="Illustration_blog_placement.png">
+                  <img class="img img-fluid rounded mb-6" alt="Spain People profile dataset" src="assets/img/illustrations/linkdb-p-spain.png">
 
                   <div class="mb-2">
-                    <span class="badge badge-pill badge-primary-soft mb-0 text-uppercase">
+                    <span class="badge badge-pill badge-primary-desat-soft mb-0 text-uppercase">
                       People Profile
                     </span>
                     <span class="badge badge-pill badge-success-soft mb-0 text-uppercase">
@@ -1964,13 +1954,13 @@ curl \
 
             </div>
 
-          </div>          
+          </div>        
 
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-12 col-md-4 text-center">
-            <a class="btn btn-primary btn-block shadow-lg lift" href="">
+          <div class="col-12 col-md-5 text-center">
+            <a class="btn btn-primary btn-block shadow-lg lift" href="https://nubela.co/proxycurl/media/files/linkdb-people-country-breakdown.csv">
               See all countries
             </a>
           </div>
@@ -2390,13 +2380,15 @@ curl \
 
     <!-- FOOTER
     ================================================== -->
-    <footer class="py-8 py-md-11 bg-white">
+    <footer class="py-8 py-md-10 bg-white">
+
       <div class="container-fluid" style="max-width: 1080px;">
+
         <div class="row">
 
-          <div class="col-12 col-md-3 col-lg-3">
+          <div class="col-8 col-md-4 col-lg-3">
 
-            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-4">
 
           </div>
 
@@ -2599,7 +2591,7 @@ curl \
 
         </div> <!-- / .row -->
 
-        <hr class="my-8">
+        <hr class="my-6">
 
         <div class="text-center mb-4">
 
@@ -2624,10 +2616,13 @@ curl \
         </div>
 
         <div class="text-center">
-          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+          <p class="caption mb-0">
+            Proxycurl LLC. All rights reserved.
+          </p>
         </div>
 
-      </div> <!-- / .container -->
+      </div>
+
     </footer>
 
     <!-- JAVASCRIPT
