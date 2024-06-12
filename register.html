@@ -71,7 +71,7 @@
             <!-- Form -->
             <form class="mb-4 was-validated">
               <!-- Email -->
-              <div class="form-group mb-5" style="position: relative">
+              <div class="form-group" style="position: relative">
                 <label for="email"> Email Address </label>
                 <input
                   type="email"
@@ -81,10 +81,10 @@
                   placeholder="ex: someone@company.com"
                   required
                 />
-                <div class="invalid-tooltip bg-warning text-black">
+                <!-- <div class="invalid-tooltip bg-warning text-black">
                   Update your email address to your work email to get 100
                   credits instead of 10 credits for trial.
-                </div>
+                </div> -->
               </div>
 
               <!-- Password -->
@@ -119,7 +119,10 @@
                   value=""
                   id="flexCheckDefault"
                 />
-                <label class="form-check-label text-black" for="flexCheckDefault">
+                <label
+                  class="form-check-label text-black"
+                  for="flexCheckDefault"
+                >
                   Accept
                   <a
                     class="text-primary"
@@ -139,9 +142,10 @@
             <!-- Sign Up text -->
             <p class="mb-0 font-size-sm text-muted">
               Already have an account?
-              <a class="text-primary font-weight-bold" href="login.html"
-                >Sign in</a
-              >.
+              <a class="text-primary font-weight-bold" href="login.html">
+                Sign in
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -149,6 +153,16 @@
       </div>
       <!-- / .container -->
     </section>
+
+    <script>
+      $("#email").tooltip({
+        trigger: "focus",
+        template:
+          '<div class="tooltip"><div class="arrow border-warning"></div><div class="tooltip-inner bg-warning text-black"></div></div>',
+        title:
+          "Update your email address to your work email to get 100 credits instead of 10 credits for trial.",
+      });
+    </script>
 
     <!-- JAVASCRIPT
     ================================================== -->
