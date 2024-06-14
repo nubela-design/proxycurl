@@ -1194,34 +1194,114 @@
                     </a>
           
                   </div>
-                  <div class="card-body pb-14">
+                  <div class="card-body">
                     <!-- content -->
           
-                    <h3 class="font-weight-bold mb-6">
+                    <h3 class="font-weight-bold mb-7">
                       <img class="img-fluid pr-2" width="36px" src="assets/dwarf forms/customer2.svg" alt="Card image cap">
                       Customers
                     </h3>
           
                     <!-- List group-->
-                    <div class="list-group list-group-flush pt-4">
-                      <div class="list-group-item ">
+                    <div class="list-group list-group-flush">
+          
+                      <div class="list-group-item">
           
                         <!-- Toggle -->
-                        <a class=" align-items-center text-decoration-none text-primary" href="#" role="button">
+                        <div class="mr-auto">
+          
+                          <!-- Title -->
+                          <p class="font-weight-bold mb-0 text-primary">
+                            LinkedIn Profile
+                          </p>
+          
+                        </div>
+          
+          
+                      </div> <!-- item 2_1-->
+          
+                      <div class="list-group-item">
+          
+                        <!-- Toggle -->
+                        <div class="mr-auto">
+          
+                          <!-- Title -->
+                          <p class="font-weight-bold mb-0 text-primary">
+                            Twitter/X Profile
+                          </p>
+          
+                        </div>
+          
+                      </div> <!-- item 2_2-->
+          
+                      <div class="list-group-item">
+                        <div class="collapse" id="featurescustomer" data-parent="#featuresAccordion_customer">
+          
+                          <div class="border-bottom mb-2">
+          
+                            <!-- Toggle -->
+                            <div class="mr-auto">
+          
+                              <!-- Title -->
+                              <p class="font-weight-bold mb-5 text-primary">
+                                Followers
+                              </p>
+          
+                            </div>
+          
+                          </div> <!-- item 2_3-->
+          
+                          <div class="border-bottom mb-2">
+          
+                            <!-- Toggle -->
+                            <div class="mr-auto">
+          
+                              <!-- Title -->
+                              <p class="font-weight-bold mb-5 mt-5 text-primary">
+                                Email
+                              </p>
+          
+                            </div>
+          
+                          </div> <!-- item 2_4-->
+          
+                          <div class="mb-2">
+          
+                            <!-- Toggle -->
+                            <div class="mr-auto">
+          
+                              <!-- Title -->
+                              <p class="font-weight-bold mb-5 mt-5 text-primary">
+                                And More. See <a class="text-primary" style="text-decoration: underline;"
+                                  href="https://nubela.co/proxycurl/docs#customer-api-experimental">API Docs</a>
+                              </p>
+          
+                            </div>
+          
+                          </div> <!-- item and more-->
+          
+                        </div>
+          
+                        <!-- Toggle -->
+                        <a class="text-center" data-toggle="collapse" href="#featurescustomer" role="button" aria-expanded="false"
+                          aria-controls="featurescustomer">
                           <div class="mr-auto">
           
-                            <!-- Title -->
-                            <span class="badge badge-pill badge-info-soft">
-                              <span class="h6 text-uppercase">Coming soon!</span>
+                            <!-- Chevron -->
+                            <span class="collapse-chevron btn btn-outline-primary btn-rounded-circle shadow shadow-light">
+                              <i class="fe fe-lg fe-chevron-down"></i>
                             </span>
           
                           </div>
           
+          
+          
                         </a> <!-- / .row -->
+                        <!-- Collapse -->
           
-                      </div> <!-- item 3_1-->
+                      </div>
           
-                    </div> <!-- List group-->
+                    </div> <!-- item 2_2-->
           
                   </div> <!-- card-body-->
                 </div>
@@ -1239,6 +1319,10 @@
             <div class="form-group">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
             </div>
+            
+            <!-- captcha sample-->
+            <div class="g-recaptcha mb-4 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            style="transform-origin: 0 0;"></div>
         
             <a class="btn btn-primary btn-block mb-2" href="https://nubela.co/proxycurl/docs" target="blank">
               Get trial API key
@@ -1256,6 +1340,7 @@
               <a class="dropdown-item" href="jobs-api.html">Jobs API</a>
               <a class="dropdown-item" href="school-api.html">School API</a>
               <a class="dropdown-item" href="search-api.html">Search API</a>
+              <a class="dropdown-item" href="customer-api.html">Customer API</a>
               <a class="dropdown-item" href="search-api.html">API Documentation <i class="fe fe-arrow-right"></i></a>
 
             </div>
@@ -2128,6 +2213,7 @@
     <script src="./assets/libs/quill/dist/quill.min.js"></script>
     <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
     <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
