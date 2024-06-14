@@ -221,3 +221,21 @@
     outline: none !important;
   }
 }
+
+// Subscribe Price Tabs
+#subscribePriceTab {
+  li {
+    &:first-child {
+      button {
+        border-top-left-radius: .35rem !important;
+        border-bottom-left-radius: .35rem !important;
+      }
+    }
+    &:last-child {
+      button {
+        border-top-right-radius: .35rem !important;
+        border-bottom-right-radius: .35rem !important;
+      }
+    }
+  }
+}
