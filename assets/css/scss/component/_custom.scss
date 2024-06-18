@@ -197,12 +197,12 @@
 }
 
 // Rounded
-.rounded-4{
-  border-radius: .25rem !important;
+.rounded-4 {
+  border-radius: 0.25rem !important;
 }
 
-.rounded-8{
-  border-radius: .5rem !important;
+.rounded-8 {
+  border-radius: 0.5rem !important;
 }
 
 // Outline Custom
@@ -224,18 +224,22 @@
 
 // Subscribe Price Tabs
 #subscribePriceTab {
-  li {
-    &:first-child {
-      button {
-        border-top-left-radius: .35rem !important;
-        border-bottom-left-radius: .35rem !important;
+  &.nav-pills {
+    
+    .nav-link {
+      color: #9B9BA4 !important;
+      background-color: #f7f7f7 !important;
+      border: 1px solid #f1f1f1 !important;
+      
+      &.active {
+        background-color: #eff6ff !important;
+        color: $primary !important;
       }
     }
-    &:last-child {
-      button {
-        border-top-right-radius: .35rem !important;
-        border-bottom-right-radius: .35rem !important;
-      }
+    
+    .show > .nav-link {
+      background-color: #eff6ff !important;
+      color: $primary !important;
     }
   }
 }
