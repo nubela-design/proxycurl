@@ -67,7 +67,7 @@
 
      <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Header Menu">
       <div class="container-fluid">
 
         <!-- Brand -->
@@ -409,7 +409,7 @@
             <div class="col-12 col-xl-8 mb-8 mb-xl-0">
 
               <!-- Nav-->
-              <nav class="pb-md-6 pb-4">
+              <nav class="pb-md-6 pb-4" aria-label="Price Category Navigation">
                 <div class="nav nav-pills nav-fill flex-column flex-xl-row" id="nav-tab" role="tablist">
                  
                   <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
@@ -443,31 +443,29 @@
 
                       <ul class="nav nav-pills justify-content-center" id="subscribePriceTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link btn btn-outline-primary text-center fs-18 fw-900 rounded-0 active" id="annual-tab" data-toggle="tab" data-target="#annual" type="button" role="tab" aria-controls="annual" aria-selected="true">
-                            Annual <br/>
-                          <small class="fs-12 lh-base">Annual upfront payment.</small>
+                          <button class="nav-link btn btn-secondary-subtle text-center fw-900 rounded-0 active" id="monthly-tab" data-toggle="tab" data-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">
+                            Monthly plans <br/>
+                          <small class="fs-12 lh-base">Cancel anytime</small>
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link btn btn-outline-primary text-center fs-18 fw-900 rounded-0" id="monthly-tab" data-toggle="tab" data-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="false">
-                            Monthly <br/>
-                          <small class="fs-12 lh-base">Monthly payments</small>
+                          <button class="nav-link btn btn-secondary-subtle text-center fw-900 rounded-0" id="annual-monthly-tab" data-toggle="tab" data-target="#annual-monthly" type="button" role="tab" aria-controls="annual-monthly" aria-selected="false">
+                            Annual plans, billed monthly <br/>
+                          <small class="fs-12 lh-base">+20% credits </small>
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-secondary-subtle text-center fw-900 rounded-0" id="annual-tab" data-toggle="tab" data-target="#annual" type="button" role="tab" aria-controls="annual" aria-selected="false">
+                            Annual plans, billed annually <br/>
+                          <small class="fs-12 lh-base badge badge-warning text-black text-uppercase">+ Extra 2 free months </small>
                           </button>
                         </li>
                       </ul>
                       <div class="tab-content" id="subscribePriceTabContent">
-                        <div class="tab-pane fade py-3 show active" id="annual" role="tabpanel" aria-labelledby="annual-tab">
+                        <div class="tab-pane fade py-3 show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
                           
                           <!-- Desktop -->
                           <div class="d-none d-md-block">
-
-                            <hr>
-
-                            <div class="d-flex justify-content-center">
-                              <span class="badge badge-pill badge-warning ml-1">
-                                <span class="h6 font-weight-bold text-uppercase">+2 MONTHS FREE CREDITS</span>
-                              </span>
-                            </div>
 
                             <hr>
                           
@@ -776,7 +774,7 @@
                           </div>
                         </div>
 
-                        <div class="tab-pane fade py-3" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                        <div class="tab-pane fade py-3" id="annual-monthly" role="tabpanel" aria-labelledby="annual-monthly-tab">
                           
                           <!-- Desktop -->
                           <div class="d-none d-md-block">
@@ -994,6 +992,297 @@
                           
                                 <p class="display-2 mb-4">
                                   $10,788 <span class="h5 text-gray-700 d-block">per year</span>
+                                </p>
+                          
+                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                  12-month contract, paid annually
+                                </span>
+                          
+                                <small class="text-muted d-block mb-5">
+                                  12+2 months credits issued immediately, expire in a year
+                                </small>
+                          
+                                <a class="btn btn-sm btn-primary w-100" href="#!">
+                                  Start now
+                                </a>
+                          
+                              </div>
+                          
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                          
+                                <h3 class="font-weight-bold h2">
+                                  Ultra
+                                </h3>
+                          
+                                <p>
+                                  2,954,000 credits
+                                  <span class="text-muted d-block font-weight-normal">(2,532,000 + 422,000)</span>
+                                </p>
+                          
+                                <p class="text-gray-700">
+                                  $0.008/credit
+                                </p>
+                          
+                                <p class="display-2 mb-4">
+                                  $ 22,788 <span class="h5 text-gray-700 d-block">per year</span>
+                                </p>
+                          
+                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                  12-month contract, paid annually
+                                </span>
+                          
+                                <small class="text-muted d-block mb-5">
+                                  12+2 months credits issued immediately, expire in a year
+                                </small>
+                          
+                                <a class="btn btn-sm btn-primary w-100" href="#!">
+                                  Start now
+                                </a>
+                          
+                              </div>
+                          
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                          
+                                <h3 class="font-weight-bold h2">
+                                  Enterprise
+                                </h3>
+                          
+                                <p>
+                                  &gt; 2,954,000 credits
+                                  <span class="text-muted d-block font-weight-normal">(TBD)</span>
+                                </p>
+                          
+                                <p class="text-gray-700">
+                                  &lt; $0.008/credit
+                                </p>
+                          
+                                <p class="display-2 mb-4">
+                                  <span class="h5 text-gray-700 d-block">
+                                    Starts from &gt;
+                                  </span>
+                                  $ 24,000 <span class="h5 text-gray-700 d-block">per year</span>
+                                </p>
+                          
+                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                  12-month contract, paid annually
+                                </span>
+                          
+                                <small class="text-muted d-block mb-5">
+                                  12+2 months credits issued immediately, expire in a year
+                                </small>
+                          
+                                <a class="btn btn-sm btn-primary w-100" href="#!">
+                                  Start now
+                                </a>
+                          
+                              </div>
+                          
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="tab-pane fade py-3" id="annual" role="tabpanel" aria-labelledby="annual-tab">
+
+                          <!-- Desktop -->
+                          <div class="d-none d-md-block">
+
+                            <hr>
+                          
+                            <table class="table bg-light table-hover">
+                              <tbody>
+                          
+                                <tr class="clickable table-primary">
+                                  <td class="font-weight-bold">
+                                    Starter
+                                  </td>
+                                  <td class="col-5 font-weight-bold">
+                                    <span class="mb-0">
+                                      35,000
+                                    </span>
+                                    credits
+                                    <span class="text-muted h6 d-block">
+                                      30,000 + 5,000
+                                    </span>
+                                  </td>
+                                  <td class="col-5 text-gray-700">$0.017/credit</td>
+                                  <td class="col-2 text-right pr-9 font-weight-bold">
+                                    $<span class="mb-0">588</span>
+                                  </td>
+                                </tr>
+                          
+                                <tr class="clickable">
+                                  <td class="font-weight-bold">
+                                    Growth
+                                  </td>
+                                  <td class="font-weight-bold">
+                                    <span class="mb-0">
+                                      350,000
+                                    </span>
+                                    credits
+                                    <span class="text-muted h6 d-block">
+                                      300,000 + 50,000
+                                    </span>
+                                  </td>
+                                  <td class="text-gray-700">0.010/credit</td>
+                                  <td class="text-right pr-9 font-weight-bold">
+                                    $<span class="mb-0">3,588</span>
+                                  </td>
+                                </tr>
+                          
+                                <tr class="clickable">
+                                  <td class="font-weight-bold">
+                                    Pro
+                                  </td>
+                                  <td class="font-weight-bold">
+                                    <span class="mb-0">
+                                      1,258,600
+                                    </span>
+                                    credits
+                                    <span class="text-muted h6 d-block">
+                                      1,078,800 + 179,800
+                                    </span>
+                                  </td>
+                                  <td class="text-gray-700">0.009/credit</td>
+                                  <td class="text-right pr-9 font-weight-bold">
+                                    $<span class="mb-0">10,788</span>
+                                  </td>
+                                </tr>
+                          
+                                <tr class="clickable">
+                                  <td class="font-weight-bold">
+                                    Ultra
+                                  </td>
+                                  <td class="font-weight-bold">
+                                    <span class="mb-0">
+                                      2,954,000
+                                    </span>
+                                    credits
+                                    <span class="text-muted h6 d-block">
+                                      2,532,000 + 422,000
+                                    </span>
+                                  </td>
+                                  <td class="text-gray-700">0.008/credit</td>
+                                  <td class="text-right pr-9 font-weight-bold">
+                                    $<span class="mb-0">22,788</span>
+                                  </td>
+                                </tr>
+                          
+                                <tr class="clickable">
+                                  <td class="font-weight-bold">
+                                    Enterprise
+                                  </td>
+                                  <td class="font-weight-bold">
+                                    <span class="mb-0">
+                                      &gt; 2,954,000
+                                    </span>
+                                    credits
+                                    <span class="text-muted h6 d-block">
+                                      2,532,000 + 422,000
+                                    </span>
+                                  </td>
+                                  <td class="text-gray-700">
+                                    &lt; 0.008/credit
+                                  </td>
+                                  <td class="text-right pr-9 font-weight-bold">
+                                    &gt; Start from $<span class="mb-0">24,000</span>
+                                  </td>
+                                </tr>
+                          
+                              </tbody>
+                            </table>
+
+                          </div>
+
+                          <!-- Mobile -->
+                          <div class="d-block d-md-none">
+                          
+                            <div>
+                          
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                          
+                                <h3 class="font-weight-bold h2">
+                                  Starter
+                                </h3>
+                          
+                                <p>
+                                  35,000 credits
+                                  <span class="text-muted d-block font-weight-normal">(30,000 + 5,000)</span>
+                                </p>
+                          
+                                <p class="text-gray-700">
+                                  $0.017/credit
+                                </p>
+                          
+                                <p class="display-2 mb-4">
+                                  $ 588 <span class="h5 text-gray-700 d-block">per year</span>
+                                </p>
+                          
+                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                  12-month contract, paid annually
+                                </span>
+                          
+                                <small class="text-muted d-block mb-5">
+                                  12+2 months credits issued immediately, expire in a year
+                                </small>
+                          
+                                <a class="btn btn-sm btn-primary w-100" href="#!">
+                                  Start now
+                                </a>
+                          
+                              </div>
+                          
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                          
+                                <h3 class="font-weight-bold h2">
+                                  Growth
+                                </h3>
+                          
+                                <p>
+                                  350,000 credits
+                                  <span class="text-muted d-block font-weight-normal">(300,000 + 50,000)</span>
+                                </p>
+                          
+                                <p class="text-gray-700">
+                                  $0.010/credit
+                                </p>
+                          
+                                <p class="display-2 mb-4">
+                                  $ 3,588 <span class="h5 text-gray-700 d-block">per year</span>
+                                </p>
+                          
+                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                  12-month contract, paid annually
+                                </span>
+                          
+                                <small class="text-muted d-block mb-5">
+                                  12+2 months credits issued immediately, expire in a year
+                                </small>
+                          
+                                <a class="btn btn-sm btn-primary w-100" href="#!">
+                                  Start now
+                                </a>
+                          
+                              </div>
+                          
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                          
+                                <h3 class="font-weight-bold h2">
+                                  Pro
+                                </h3>
+                          
+                                <p>
+                                  1,258,600 credits
+                                  <span class="text-muted d-block font-weight-normal">(1,078,800 + 179,800)</span>
+                                </p>
+                          
+                                <p class="text-gray-700">
+                                  $0.009/credit
+                                </p>
+                          
+                                <p class="display-2 mb-4">
+                                  $ 10,788 <span class="h5 text-gray-700 d-block">per year</span>
                                 </p>
                           
                                 <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
