@@ -1,0 +1,1737 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <title>LinkDB Pricing Tiers - Proxycurl API</title>
+
+</head>
+
+<body class="bg-white">
+
+  <!-- ANNOUNCEMENT
+    ================================================== -->
+  <section class="bg-dark">
+
+    <div class="container">
+
+      <div class="row justify-content-center align-items-center pt-4">
+
+        <div class="col-12 text-center">
+
+          <!-- Text -->
+          <p class="font-size-md text-white">
+            Enrich companies with funding, categories, emails, exits/acquisitions data
+            <a class="text-warning font-weight-bold ml-2"
+              href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data"
+              target="_blank">
+              Learn more <i class="neu-arrow"></i>
+            </a>
+          </p>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+    </div>
+
+  </section>
+
+     <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" class="navbar-brand-img" alt="proxycurl logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Public LinkedIn Profile Dataset
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                          Sapiengraph - B2B Enrichment <br class="d-block">
+                          in Google Sheets
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="#!">
+                          Profile Picture API
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker API
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item mb-5 font-weight-bold" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
+
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Track Job Changes
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
+          </div>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+  <!-- WELCOME
+    ================================================== -->
+  <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+    <!-- Shape -->
+    <div class="shape shape-blur-3 svg-shim text-white">
+      <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" stop-opacity=".075" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-2 text-white">
+            LinkDB Pricing Plans
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-white-80 mb-6 mb-md-4">
+            LinkDB can be segmented by country or by person/company data. We offer multiple financing options, enabling you to pay in monthly or quarterly installments. Updates are <span class="font-weight-bold"> not</span> included and are sold separately, <a href="#pricingupdate" data-toggle="smooth-scroll" class="text-white font-weight-bold"> see below</a>.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+  </section>
+
+  <!-- SHAPE
+    ================================================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- FIRST FOLD-->
+  <!--  PRICING DARI PAK ROY edit-->
+  <section class="mt-n8 mt-md-n14 pb-8 pb-md-11 border-bottom">
+    <div class="container-fluid px-xl-14 px-4">
+      <div class="card shadow-lg">
+  
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-9 mb-8 mb-md-0">
+  
+              <!-- Nav-->
+              <nav class="pb-md-6 pb-4">
+                <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
+              
+                  <a class="font-weight-bold nav-item nav-link active pt-4" id="nav-onetime-tab" data-toggle="tab" href="#nav-onetime"
+                    role="tab" aria-controls="nav-onetime" aria-selected="true">
+                    One-time Upfront
+                    <p class="h6 font-weight-bold text-reset"> </p>
+                  </a>
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-quarterly-tab" data-toggle="tab" href="#nav-quarterly"
+                    role="tab" aria-controls="nav-quarterly" aria-selected="false">Quarterly installments
+                    <p class="h6 font-weight-bold text-reset"></p>
+                  </a>
+                  <a class="font-weight-bold nav-item nav-link pt-4" id="nav-monthly-tab" data-toggle="tab" href="#nav-monthly"
+                    role="tab" aria-controls="nav-monthly" aria-selected="false">Monthly Installments
+                    <p class="h6 font-weight-bold text-reset"></p>
+                  </a>
+
+  
+                </div>
+              </nav>
+              <!-- content-->
+              <div class="tab-content" id="nav-tabContent">
+  
+                <!-- Content 1-->
+                <div class="table-responsive tab-pane fade show active" id="nav-onetime" role="tabpanel"
+                  aria-labelledby="nav-onetime-tab">
+                
+                  <table class="table table-hover">
+                  
+                    <thead class="bg-light">
+                      <tr class="h3 text-gray-700">
+                        <th scope="col" class="align-middle">Offering</th>
+                        <th scope="col" class="align-middle">People</th>
+                        <th scope="col" class="align-middle">Companies</th>
+                        <th class="text-right align-middle pr-9" scope="col">Cost</th>
+                      </tr>
+                    </thead>
+                  
+                    <tbody>
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>264+M profiles
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$45000</td>
+                      </tr>
+                      
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country People
+                              Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Varies</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                            <i class="fe fe-x"></i>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-right pr-9 pl-0"><span class="text-muted pr-1">Starts from</span> $9000</td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global Companies</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold text-muted">
+                        <div class="row">
+                          <div class="col-12 d-flex">
+
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+
+                          </div>
+                        </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$12000</td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">All Data</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>473+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                  
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$69500</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+  
+                <!-- Content 2-->
+                <div class="table-responsive tab-pane fade" id="nav-quarterly" role="tabpanel"
+                  aria-labelledby="nav-quarterly-tab">
+                 
+                  <table class="table table-hover">
+                  
+                    <thead class="bg-light">
+                      <tr class="h3 text-gray-700">
+                        <th scope="col" class="align-middle">Offering</th>
+                        <th scope="col" class="align-middle">People</th>
+                        <th scope="col" class="align-middle">Companies</th>
+                        <th class="text-right align-middle pr-9" scope="col">Cost</th>
+                      </tr>
+                    </thead>
+                  
+                    <tbody>
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>264+M profiles
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$15000<span class="text-gray-700 h5">/quarter</span>
+                          <p class="text-muted h6">4 quarters</p> 
+                        </td>
+                      </tr>
+                      
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country People
+                              Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Varies</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                            <i class="fe fe-x"></i>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-right pr-9 pl-0">Depends</td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global Companies</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold text-muted">
+                        <div class="row">
+                          <div class="col-12 d-flex">
+
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+
+                          </div>
+                        </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$4000<span class="text-gray-700 h5">/quarter</span>
+                          <p class="text-muted h6">4 quarters</p>
+                        </td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">All Data</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>473+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                  
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$22500<span class="text-gray-700 h5">/quarter</span>
+                          <p class="text-muted h6">4 quarters</p>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>       
+
+                </div>
+
+                <!-- Content 3-->
+                <div class="table-responsive tab-pane fade" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab">
+                
+                  <table class="table table-hover">
+                
+                    <thead class="bg-light">
+                      <tr class="h3 text-gray-700">
+                        <th scope="col" class="align-middle">Offering</th>
+                        <th scope="col" class="align-middle">People</th>
+                        <th scope="col" class="align-middle">Companies</th>
+                        <th class="text-right align-middle pr-9" scope="col">Cost</th>
+                      </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People
+                              Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>264+M profiles
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$7500<span class="text-gray-700 h5">/mo</span>
+                          <p class="text-muted h6">12 months</p>
+                        </td>
+                      </tr>
+                
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country
+                              People
+                              Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Varies</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                            <i class="fe fe-x"></i>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-right pr-9 pl-0">Depends</td>
+                      </tr>
+                
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global
+                              Companies</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold text-muted">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$2000<span class="text-gray-700 h5">/mo</span>
+                          <p class="text-muted h6">12 months</p>
+                
+                        </td>
+                      </tr>
+                
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">All Data</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>473+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$11500<span class="text-gray-700 h5">/mo</span>
+                          <p class="text-muted h6">12 months</p>
+                
+                        </td>
+                      </tr>
+                
+                    </tbody>
+                  </table>
+                
+                </div>
+  
+              </div>
+            </div>
+  
+            <!--  kotak kanan-->
+            <div class="tab-content col-12 col-md-3 text-center pt-md-10 pt-6 pb-0 pb-md-6 bg-light border"
+              id="nav-tabContent">
+  
+              <div class="tab-pane fade show active" id="nav-payasyougo" role="tabpanel"
+                aria-labelledby="nav-payasyougo-tab">
+  
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">One-time Upfront</span>
+                </span>
+  
+                <div class="justify-content-center pt-6 pb-4">
+                  <span class="display-2 font-weight-bold">$45000</span>
+                </div>
+  
+                <p class="mb-0 text-gray-700 font-weight-bold">
+                  US People Profiles
+                </p>
+  
+                <p class=" mb-6 text-muted small font-weight-bold">
+                  264+M profiles
+                </p>
+  
+                <a href="#!" class="btn btn-sm btn-block btn-primary mb-md-0 mb-6">
+                  Start now
+                </a>
+              </div>
+  
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <!-- SECOND FOLD-->
+  <section class="pt-8 pt-md-11 pb-6 pb-md-7 bg-light" id="pricingupdate">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-3 font-weight-bold">
+            <span class="text-primary">LinkDB Update</span> Pricing
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-muted mb-6 mb-md-4">
+            LinkDB updates are optional and sold separately from LinkDB. Updates are released and billed quarterly. To receive updates, you must commit to an update package from the start.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+  </section>
+  <!-- LinkDB PRICING UPDATE-->
+  <section class="pb-8 pb-md-11 border-bottom bg-light">
+    <div class="container-fluid px-xl-14 px-4">
+      <div class="card shadow-lg">
+  
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-9 mb-8 mb-md-0">
+  
+  
+                <!-- Content 4-->
+                <div class="table-responsive"
+                  aria-labelledby="nav-updatecost-tab">
+
+                  <table class="table table-hover">
+                  
+                    <thead class="bg-light">
+                      <tr class="h3 text-gray-700">
+                        <th scope="col" class="align-middle">Offering</th>
+                        <th scope="col" class="align-middle">People</th>
+                        <th scope="col" class="align-middle">Companies</th>
+                        <th class="text-right align-middle pr-9" scope="col">Cost</th>
+                      </tr>
+                    </thead>
+                  
+                    <tbody>
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">US People Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>264+M profiles
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$4500</td>
+                      </tr>
+                      
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Per Country People
+                              Profiles</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>Varies</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-muted">
+                          <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                            <i class="fe fe-x"></i>
+                        </td>
+                        <td class="col-3 h4 font-weight-bold text-right pr-9 pl-0"><span class="text-muted pr-1">Starts from</span> $1000</td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">Global Companies</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold text-muted">
+                        <div class="row">
+                          <div class="col-12 d-flex">
+
+                              <div class="badge badge-rounded-circle badge-danger-soft mt-1 mr-4">
+                                <i class="fe fe-x"></i>
+                              </div>
+
+                          </div>
+                        </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>19+M profiles </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$2000</td>
+                      </tr>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-3 font-weight-bold">
+                          <div> <span class="badge badge-secondary-soft text-uppercase font-weight-bold py-2 badge-pill">All Data</span>
+                          </div>
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>473+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                  
+                        </td>
+                        <td class="col-3 font-weight-bold">
+                          <div class="row">
+                            <div class="col-12 d-flex">
+                              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                                <i class="fe fe-check"></i>
+                              </div>
+                              <div>18+M profiles</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="col-3 h4 text-right font-weight-bold pr-9 pl-0">$9000</td>
+                      </tr>
+
+                    </tbody>
+                  </table> 
+
+                </div>
+
+            </div>
+  
+            <!--  kotak kanan-->
+            <div class="col-12 col-md-3 text-center pt-md-9 pt-6 pb-0 pb-md-6 bg-light border">
+  
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">LinkDB Update cost</span>
+                </span>
+  
+                <div class="justify-content-center pt-6 pb-4">
+                  <span class="display-2 font-weight-bold">$4500</span>
+                </div>
+  
+                <p class="mb-0 text-gray-700 font-weight-bold">
+                  US People Profiles
+                </p>
+  
+                <p class=" mb-6 text-muted small font-weight-bold">
+                  264+M profiles
+                </p>
+  
+                <a href="#!" class="btn btn-sm btn-block btn-primary mb-md-0 mb-6">
+                  Update now
+                </a>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  
+  <!-- 4TH FOLD
+      ================================================== -->
+  <section class="py-8 pb-8 py-md-12 border-bottom bg-white">
+  
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+  
+        <!-- Heading -->
+        <h1 class="font-weight-bold mb-6 mb-md-9">
+          How does it work
+        </h1>
+  
+      </div>
+    </div> <!-- / .row -->
+  
+    <div class="container">
+  
+      <div class="row">
+  
+        <div class="col-12 col-md-4" data-aos="fade-up">
+  
+          <!-- Card -->
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+  
+            <!-- Image -->
+            <img src="assets/img/illustrations/LinkDB_3_1.png" alt="..." class="card-img-top">
+  
+            <!-- Body -->
+            <div class="card-body position-relative">
+  
+              <!-- Heading -->
+              <h4 class="mb-4">
+                Who is it for
+              </h4>
+  
+              <!-- Item -->
+              <div class="d-flex text-muted">
+  
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+  
+                <!-- Text -->
+                <p>
+                  Companies who has received Venture Capital of at least USD1M, or
+                </p>
+  
+              </div>
+  
+              <div class="d-flex text-muted">
+  
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+  
+                <!-- Text -->
+                <p>
+                  Companies with more than 50 US/EU employees
+                </p>
+  
+              </div>
+  
+              <div class="d-flex text-muted">
+  
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+  
+                <!-- Text -->
+                <p>
+                  Located in a country with a strong rule of law
+                </p>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+  
+          <!-- Card -->
+          <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+  
+            <!-- Image -->
+            <img src="assets/img/illustrations/LinkDB_3_2.png" alt="..." class="card-img-top">
+  
+            <!-- Body -->
+            <div class="card-body position-relative">
+  
+              <!-- Heading -->
+              <h4 class="mb-4">
+                Quarterly updates
+              </h4>
+  
+              <p class="text-muted">
+                Keep LinkDB updated with optional quarterly updates for a nominal fee.
+              </p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+  
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+  
+            <!-- Image -->
+            <img src="assets/img/illustrations/LinkDB_3_3.png" alt="..." class="card-img-top">
+  
+            <!-- Body -->
+            <div class="card-body position-relative">
+  
+              <!-- Heading -->
+              <h4 class="mb-4">
+                Parquet format
+              </h4>
+  
+              <p class="text-muted">
+                We ship LinkDB in parquet format.
+              </p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div> <!-- / .row -->
+  
+    </div> <!-- COntainer -->
+  
+  </section>
+  
+    <!-- FAQ-->
+    <section class="pb-8 pb-md-12 pt-8 pt-md-10 bg-light border-bottom">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            
+            <!-- Heading -->
+            <h1 class="font-weight-bold mb-7">
+              FAQ
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center ">
+          <div class="col-12">
+            
+            <!-- Card -->
+            <div class="card accordion shadow-light-lg" id="featuresAccordion">
+              <div class="card-body">
+                
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresOne" role="button" aria-expanded="false" aria-controls="featuresOne">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          Do you sell subsets of the data?
+                        </p>
+
+                      </div>                    
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse" id="featuresOne" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          We do not sell subsets of the data other than by the countries.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresTwo" role="button" aria-expanded="false" aria-controls="featuresTwo">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          What is the pricing of the dataset?
+                        </p>
+
+                      </div>                    
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse" id="featuresTwo" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          Our prices are usually priced in the 5-digits <span class="font-weight-bold">per data segment</span>. 
+                          We do not share price quotes to prevent pricing war. See <a href="#">this post</a> for context.  
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  
+                  <div class="list-group-item">
+                    
+                    <!-- Toggle -->
+                    <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#featuresThree" role="button" aria-expanded="false" aria-controls="featuresThree">
+                      <div class="mr-auto">
+                        
+                        <!-- Title -->
+                        <p class="font-weight-bold mb-4">
+                          Can I resell LinkDB?
+                        </p>
+
+                      </div>  
+                        
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted ml-4">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </a> <!-- / .row -->
+                    
+                    <!-- Collapse -->
+                    <div class="collapse" id="featuresThree" data-parent="#featuresAccordion">
+                      <div class="pt-2">
+                        <p class="text-muted">
+                          Sorry. We do not sell LinkDB to resellers.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>  
+
+
+
+  <!-- OUR CUSTOMERS
+    ================================================== -->
+  <section class="pb-8 pb-md-9 pt-md-11 pt-10 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold">
+            Our customers
+          </h1>
+
+          <!-- Text -->
+          <p class="font-size-lg text-muted">
+            We partner with organizations large and small to transform their product with big data
+          </p>
+
+        </div>
+
+        <div class="row align-items-center justify-content-center px-4 px-md-9 px-lg-13 px-xl-0 
+        pb-0 pb-xl-4 pt-0 pt-xl-4">
+
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+              <!-- IBM -->
+              <img class="svg-shim img-fluid" alt="IBM logo SVG" src="assets/img/Misc/ibm.png">
+  
+            </div>
+  
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
+              <!-- Rightbound -->
+              <img class="svg-shim img-fluid" alt="Rightbound logo SVG" src="assets/img/Misc/rightbound.com_logo.svg">
+  
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-8 mb-md-0">
+  
+              <!-- Linux -->
+              <img class="svg-shim img-fluid" alt="Linux logo SVG" src="assets/img/Misc/LinuxFoundation.png">
+  
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-8 mb-md-0">
+  
+              <!-- HP -->
+              <img class="svg-shim img-fluid" alt="HP logo PNG" src="assets/img/Misc/hp.png">
+  
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
+              <!-- Agicap -->
+              <img class="svg-shim img-fluid" alt="Agicap logo SVG" src="assets/img/Misc/agicap.svg">
+  
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
+              <!-- Dover -->
+              <img class="svg-shim img-fluid" alt="Dover logo SVG" src="assets/img/Misc/dover.io_logo.svg">
+  
+            </div>
+
+        </div>
+
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Products
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Proxycurl API</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="person-api.html" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="company-api.html" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/search-api" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-api.html" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="contact-api.html" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="school-api.html" class="text-reset">
+                  School API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="proxycurl-free-tools.html" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">LinkDB</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb_pricing.html" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Solutions
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Use-cases</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  LinkedIn Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Crunchbase Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="data-teams-in-investment-firms.html" class="text-reset">
+                  Investment Signals
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/solutions/accelerate-growth" class="text-reset">
+                  Accelerating Growth Startups
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="hr-tech.html" class="text-reset">
+                  Data for HR Tech
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Automated Recruitment
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="sales-and-marketing-automation.html" class="text-reset">
+                  Sales and Marketing Automation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Identifying Buyer Intent Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  CRM Data Enrichment
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Demos</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li>
+                <a href="#!" class="text-reset">
+                  Track Job Changes
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 offset-md-3 col-lg-2 offset-lg-0 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Resources
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="blog.html" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Free Resources
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/company/employees/directory/" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+            </ul>
+
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Comparisons
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS People Data Labs
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS Coresignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl vs Bright Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl VS Clearbit
+                </a>
+              </li>
+            </ul>            
+
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Company
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="about-us.html" class="text-reset">
+                  About Proxycurl
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/team" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Term of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/privacy-policy" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Help
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@nubela.co" class="text-reset">
+                  Email Us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/faq/" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul> 
+
+          </div>
+
+        </div> <!-- / .row -->
+        <br>
+
+        <hr class="text-gray-400">
+        <br>
+
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
+        </div>
+
+      </div> <!-- / .container -->
+    </footer>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
+
+
+</body>
+
+</html>
