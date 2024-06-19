@@ -229,20 +229,24 @@
       &:first-child {
         border-top-left-radius: 0.25rem !important;
         border-top-right-radius: 0.25rem !important;
-
+        border-bottom-left-radius: 0 !important;
+        
         .nav-link {
           border-top-left-radius: 0.25rem !important;
           border-top-right-radius: 0.25rem !important;
+          border-bottom-left-radius: 0 !important;
         }
       }
 
       &:last-child {
         border-bottom-left-radius: 0.25rem !important;
         border-bottom-right-radius: 0.25rem !important;
-
+        border-top-right-radius: 0 !important;
+        
         .nav-link {
           border-bottom-left-radius: 0.25rem !important;
           border-bottom-right-radius: 0.25rem !important;
+          border-top-right-radius: 0 !important;
         }
       }
 
@@ -268,20 +272,24 @@
         &:first-child {
           border-top-left-radius: 0.25rem !important;
           border-bottom-left-radius: 0.25rem !important;
+          border-top-right-radius: 0 !important;
 
           .nav-link {
             border-top-left-radius: 0.25rem !important;
             border-bottom-left-radius: 0.25rem !important;
+            border-top-right-radius: 0 !important;
           }
         }
 
         &:last-child {
           border-top-right-radius: 0.25rem !important;
           border-bottom-right-radius: 0.25rem !important;
+          border-bottom-left-radius: 0 !important;
 
           .nav-link {
             border-top-right-radius: 0.25rem !important;
             border-bottom-right-radius: 0.25rem !important;
+            border-bottom-left-radius: 0 !important;
           }
         }
       }
