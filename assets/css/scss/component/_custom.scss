@@ -228,20 +228,20 @@
     .nav-item {
       &:first-child {
         border-top-left-radius: 0.25rem !important;
-        border-bottom-left-radius: 0.25rem !important;
+        border-top-right-radius: 0.25rem !important;
 
         .nav-link {
           border-top-left-radius: 0.25rem !important;
-          border-bottom-left-radius: 0.25rem !important;
+          border-top-right-radius: 0.25rem !important;
         }
       }
 
       &:last-child {
-        border-top-right-radius: 0.25rem !important;
+        border-bottom-left-radius: 0.25rem !important;
         border-bottom-right-radius: 0.25rem !important;
 
         .nav-link {
-          border-top-right-radius: 0.25rem !important;
+          border-bottom-left-radius: 0.25rem !important;
           border-bottom-right-radius: 0.25rem !important;
         }
       }
@@ -262,6 +262,28 @@
         background-color: #eff6ff !important;
         color: $primary !important;
         border: 1px solid $primary !important;
+      }
+
+      @media (min-width: $lg) {
+        &:first-child {
+          border-top-left-radius: 0.25rem !important;
+          border-bottom-left-radius: 0.25rem !important;
+
+          .nav-link {
+            border-top-left-radius: 0.25rem !important;
+            border-bottom-left-radius: 0.25rem !important;
+          }
+        }
+
+        &:last-child {
+          border-top-right-radius: 0.25rem !important;
+          border-bottom-right-radius: 0.25rem !important;
+
+          .nav-link {
+            border-top-right-radius: 0.25rem !important;
+            border-bottom-right-radius: 0.25rem !important;
+          }
+        }
       }
     }
   }
