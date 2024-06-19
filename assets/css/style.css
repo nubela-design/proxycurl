@@ -859,20 +859,62 @@
   outline: none !important;
 }
 
-#subscribePriceTab.nav-pills .nav-link {
-  color: #9B9BA4 !important;
+#subscribePriceTab.nav-pills .nav-item:first-child {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0 !important;
+}
+#subscribePriceTab.nav-pills .nav-item:first-child .nav-link {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0 !important;
+}
+#subscribePriceTab.nav-pills .nav-item:last-child {
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0 !important;
+}
+#subscribePriceTab.nav-pills .nav-item:last-child .nav-link {
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0 !important;
+}
+#subscribePriceTab.nav-pills .nav-item .nav-link {
+  color: #9b9ba4 !important;
   background-color: #f7f7f7 !important;
   border: 1px solid #f1f1f1 !important;
 }
-#subscribePriceTab.nav-pills .nav-link.active {
+#subscribePriceTab.nav-pills .nav-item .nav-link.active {
   background-color: #eff6ff !important;
   color: #335eea !important;
   border: 1px solid #335eea !important;
 }
-#subscribePriceTab.nav-pills .show > .nav-link {
+#subscribePriceTab.nav-pills .nav-item .show > .nav-link {
   background-color: #eff6ff !important;
   color: #335eea !important;
   border: 1px solid #335eea !important;
+}
+@media (min-width: 992px) {
+  #subscribePriceTab.nav-pills .nav-item:first-child {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-top-right-radius: 0 !important;
+  }
+  #subscribePriceTab.nav-pills .nav-item:first-child .nav-link {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-top-right-radius: 0 !important;
+  }
+  #subscribePriceTab.nav-pills .nav-item:last-child {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  #subscribePriceTab.nav-pills .nav-item:last-child .nav-link {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0 !important;
+  }
 }
 
 /*--- Scroll Horizontal ---*/
