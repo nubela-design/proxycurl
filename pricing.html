@@ -405,11 +405,9 @@
         <div class="card shadow-lg card-body bg-light">
           <div class="row align-items-start">
 
-            <!-- pricing -->
-            <div class="col-12 col-lg-8 mb-8 mb-xl-0">
-
+            <div class="col-12">
               <!-- Nav-->
-              <nav class="pb-md-6 pb-4" aria-label="Category Navigation">
+              <nav class="mb-3" aria-label="Category Navigation">
                 <div class="nav nav-pills nav-fill flex-column flex-xl-row" id="nav-tab" role="tablist">
                  
                   <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
@@ -431,17 +429,22 @@
                 </div>
               </nav>
 
+              <div class="w-100 bg-primary line my-4"></div>
+            </div>
+
+            <div class="col-12">
+
               <!-- content-->
               <div class="tab-content" id="nav-tabContent">
 
                 <!-- Subscription Desktop -->
-                <div class="table-responsive tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
+                <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
 
                   <!-- Tabs Subscripiton Plan -->
                   <div class="row mb-3">
-                    <div class="col-12 text-center">
+                    <div class="col-12">
 
-                      <ul class="nav nav-pills justify-content-center" id="subscribePriceTab" role="tablist">
+                      <ul class="nav nav-pills justify-content-center my-6 my-lg-1 flex-column flex-lg-row" id="subscribePriceTab" role="tablist">
                         <li class="nav-item d-inline-flex flex-fill" role="presentation">
                           <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0 active" id="monthly-tab" data-toggle="tab" data-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">
                             Monthly plans <br/>
@@ -461,92 +464,140 @@
                           </button>
                         </li>
                       </ul>
+
                       <div class="tab-content" id="subscribePriceTabContent">
                         <div class="tab-pane fade py-3 show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
                           
                           <!-- Desktop -->
-                          <div class="d-none d-md-block">
+                          <div class="d-none d-lg-block">
 
-                            <hr>
-                          
-                            <table class="table bg-light table-hover">
-                              <tbody>
-                          
-                                <tr class="clickable table-primary">
-                                  <td class="font-weight-bold">
-                                    Starter
-                                  </td>
-                                  <td class="col-5 font-weight-bold">
-                                    <span class="mb-0">
-                                      2500
-                                    </span>
-                                    credits
-                                  </td>
-                                  <td class="col-5 text-gray-700">$0.017/credit</td>
-                                  <td class="col-2 text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">49</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Growth
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      25,000
-                                    </span>
-                                    credits
-                                  </td>
-                                  <td class="text-gray-700">$0.010/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">299</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Pro
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      89,900
-                                    </span>
-                                    credits
-                                  </td>
-                                  <td class="text-gray-700">$0.009/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">899</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Ultra
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      211,000
-                                    </span>
-                                    credits
-                                  </td>
-                                  <td class="text-gray-700">$0.008/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">1,899</span>
-                                  </td>
-                                </tr>
-                          
-                              </tbody>
-                            </table>
+                            <div class="row">
+
+                              <div class="col-12 col-md-7 col-lg-8">
+
+                                <div class="table-responsive">
+
+                                  <table class="table bg-light table-hover">
+                                    <tbody>
+                                
+                                      <tr class="clickable table-primary">
+                                        <td class="font-weight-bold">
+                                          Starter
+                                        </td>
+                                        <td class="col-5 font-weight-bold">
+                                          <span class="mb-0">
+                                            2500
+                                          </span>
+                                          credits
+                                        </td>
+                                        <td class="col-5 text-gray-700">$0.017/credit</td>
+                                        <td class="col-2 text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">49</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Growth
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            25,000
+                                          </span>
+                                          credits
+                                        </td>
+                                        <td class="text-gray-700">$0.010/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">299</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Pro
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            89,900
+                                          </span>
+                                          credits
+                                        </td>
+                                        <td class="text-gray-700">$0.009/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">899</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Ultra
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            211,000
+                                          </span>
+                                          credits
+                                        </td>
+                                        <td class="text-gray-700">$0.008/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">1,899</span>
+                                        </td>
+                                      </tr>
+                                
+                                    </tbody>
+                                  </table>
+
+                                </div>
+
+                              </div>
+
+                              <div class="col-12 col-md-5 col-lg-4">
+
+                                <!-- Card Plan -->
+                                <div class="card card-body border border-primary shadow-light-md text-center">
+                                  <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
+                                    <span class="h6 text-uppercase">Starter</span>
+                                  </span>
+                    
+                                  <div class="d-flex justify-content-center pb-4">
+                                    <span class="h2 mb-0 mt-2">$</span>
+                                    <span class="display-2 font-weight-bold">49</span>
+                                    <span class="h2 align-self-end mb-1">/month</span>
+                                  </div>
+                    
+                                  <p class="mb-0 font-weight-bold">
+                                    2,500 credits
+                                  </p>
+                    
+                                  <p class="mb-3 text-gray-700 small font-weight-bold">
+                                    0.017/credits
+                                  </p>
+                  
+                                  <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                    Monthly Plans
+                                  </span>
+                    
+                                  <p class="mb-6 small text-muted">
+                                    Cancel anytime
+                                  </p>
+                    
+                                  <a href="#!" class="btn btn-sm btn-block btn-primary">
+                                    Start now
+                                  </a>
+                                </div>
+
+                              </div>
+
+                            </div>
 
                           </div>
 
                           <!-- Mobile -->
-                          <div class="d-block d-md-none">
+                          <div class="d-block d-lg-none">
                           
                             <div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Starter
@@ -578,7 +629,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Growth
@@ -610,7 +661,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Pro
@@ -642,7 +693,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Ultra
@@ -674,7 +725,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Enterprise
@@ -718,100 +769,145 @@
                         <div class="tab-pane fade py-3" id="annual-monthly" role="tabpanel" aria-labelledby="annual-monthly-tab">
                           
                           <!-- Desktop -->
-                          <div class="d-none d-md-block">
+                          <div class="d-none d-lg-block">
 
-                            <hr>
+                            <div class="row">
 
-                            <table class="table bg-light table-hover">
-                              <tbody>
-                          
-                                <tr class="clickable table-primary">
-                                  <td class="font-weight-bold">
-                                    Starter
-                                  </td>
-                                  <td class="col-5 font-weight-bold">
-                                    <span class="mb-0">
-                                      3000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      2,500 + 500
-                                    </span>
-                                  </td>
-                                  <td class="col-5 text-gray-700">$0.017/credit</td>
-                                  <td class="col-2 text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0" data-annual="49" data-monthly="49">49</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Growth
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      30,000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      25,000 + 5,000
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.010/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">299</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Pro
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      107,880
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      89,900 + 17,980
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.009/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">899</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Ultra
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      253,200
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      211,000 + 42,200
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.008/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">1,899</span>
-                                  </td>
-                                </tr>
-                          
-                              </tbody>
-                            </table>
+                              <div class="col-12 col-md-7 col-lg-8">
+
+                                <div class="table-responsive">
+                                  <table class="table bg-light table-hover">
+                                    <tbody>
+                                
+                                      <tr class="clickable table-primary">
+                                        <td class="font-weight-bold">
+                                          Starter
+                                        </td>
+                                        <td class="col-5 font-weight-bold">
+                                          <span class="mb-0">
+                                            3000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            2,500 + 500
+                                          </span>
+                                        </td>
+                                        <td class="col-5 text-gray-700">$0.017/credit</td>
+                                        <td class="col-2 text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0" data-annual="49" data-monthly="49">49</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Growth
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            30,000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            25,000 + 5,000
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.010/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">299</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Pro
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            107,880
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            89,900 + 17,980
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.009/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">899</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Ultra
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            253,200
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            211,000 + 42,200
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.008/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">1,899</span>
+                                        </td>
+                                      </tr>
+                                
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                              </div>
+
+                              <div class="col-12 col-md-5 col-lg-4">
+
+                                <!-- Card Plan -->
+                                <div class="card card-body border border-primary shadow-light-md text-center">
+                                  <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
+                                    <span class="h6 text-uppercase">Starter</span>
+                                  </span>
+                    
+                                  <div class="d-flex justify-content-center pb-4">
+                                    <span class="h2 mb-0 mt-2">$</span>
+                                    <span class="display-2 font-weight-bold">49</span>
+                                    <span class="h2 align-self-end mb-1">/month</span>
+                                  </div>
+                    
+                                  <p class="mb-0 font-weight-bold">
+                                    3,000 credits
+                                  </p>
+                    
+                                  <p class="mb-3 text-gray-700 small font-weight-bold">
+                                    0.017/credits
+                                  </p>
+                  
+                                  <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                    Annual plans, billed monthly
+                                  </span>
+                    
+                                  <p class="mb-6 small text-muted">
+                                    Get +20% more credits
+                                  </p>
+                    
+                                  <a href="#!" class="btn btn-sm btn-block btn-primary">
+                                    Start now
+                                  </a>
+                                </div>
+
+                              </div>
+
+                            </div>
 
                           </div>
 
                           <!-- Mobile -->
-                          <div class="d-block d-md-none">
+                          <div class="d-block d-lg-none">
                           
                             <div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Starter
@@ -844,7 +940,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Growth
@@ -877,7 +973,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Pro
@@ -910,7 +1006,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Ultra
@@ -943,7 +1039,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Enterprise
@@ -988,121 +1084,166 @@
                         <div class="tab-pane fade py-3" id="annual" role="tabpanel" aria-labelledby="annual-tab">
 
                           <!-- Desktop -->
-                          <div class="d-none d-md-block">
+                          <div class="d-none d-lg-block">
 
-                            <hr>
-                          
-                            <table class="table bg-light table-hover">
-                              <tbody>
-                          
-                                <tr class="clickable table-primary">
-                                  <td class="font-weight-bold">
-                                    Starter
-                                  </td>
-                                  <td class="col-5 font-weight-bold">
-                                    <span class="mb-0">
-                                      35,000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      30,000 + 5,000
-                                    </span>
-                                  </td>
-                                  <td class="col-5 text-gray-700">$0.017/credit</td>
-                                  <td class="col-2 text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">588</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Growth
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      350,000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      300,000 + 50,000
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.010/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">3,588</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Pro
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      1,258,600
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      1,078,800 + 179,800
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.009/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">10,788</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Ultra
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      2,954,000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      2,532,000 + 422,000
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">$0.008/credit</td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    $<span class="mb-0">22,788</span>
-                                  </td>
-                                </tr>
-                          
-                                <tr class="clickable">
-                                  <td class="font-weight-bold">
-                                    Enterprise
-                                  </td>
-                                  <td class="font-weight-bold">
-                                    <span class="mb-0">
-                                      &gt; 2,954,000
-                                    </span>
-                                    credits
-                                    <span class="text-muted h6 d-block">
-                                      2,532,000 + 422,000
-                                    </span>
-                                  </td>
-                                  <td class="text-gray-700">
-                                    &lt; $0.008/credit
-                                  </td>
-                                  <td class="text-right pr-9 font-weight-bold">
-                                    &gt; Start from $<span class="mb-0">24,000</span>
-                                  </td>
-                                </tr>
-                          
-                              </tbody>
-                            </table>
+                            <div class="row">
+
+                              <div class="col-12 col-md-7 col-lg-8">
+
+                                <div class="table-responsive">
+                                  <table class="table bg-light table-hover">
+                                    <tbody>
+                                
+                                      <tr class="clickable table-primary">
+                                        <td class="font-weight-bold">
+                                          Starter
+                                        </td>
+                                        <td class="col-5 font-weight-bold">
+                                          <span class="mb-0">
+                                            35,000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            30,000 + 5,000
+                                          </span>
+                                        </td>
+                                        <td class="col-5 text-gray-700">$0.017/credit</td>
+                                        <td class="col-2 text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">588</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Growth
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            350,000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            300,000 + 50,000
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.010/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">3,588</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Pro
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            1,258,600
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            1,078,800 + 179,800
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.009/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">10,788</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Ultra
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            2,954,000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            2,532,000 + 422,000
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">$0.008/credit</td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          $<span class="mb-0">22,788</span>
+                                        </td>
+                                      </tr>
+                                
+                                      <tr class="clickable">
+                                        <td class="font-weight-bold">
+                                          Enterprise
+                                        </td>
+                                        <td class="font-weight-bold">
+                                          <span class="mb-0">
+                                            &gt; 2,954,000
+                                          </span>
+                                          credits
+                                          <span class="text-muted h6 d-block">
+                                            2,532,000 + 422,000
+                                          </span>
+                                        </td>
+                                        <td class="text-gray-700">
+                                          &lt; $0.008/credit
+                                        </td>
+                                        <td class="text-right pr-9 font-weight-bold">
+                                          &gt; Start from $<span class="mb-0">24,000</span>
+                                        </td>
+                                      </tr>
+                                
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                              </div>
+
+                              <div class="col-12 col-md-5 col-lg-4">
+
+                                <!-- Card Plan -->
+                                <div class="card card-body border border-primary shadow-light-md text-center">
+                                  <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
+                                    <span class="h6 text-uppercase">Starter</span>
+                                  </span>
+                    
+                                  <div class="d-flex justify-content-center pb-4">
+                                    <span class="h2 mb-0 mt-2">$</span>
+                                    <span class="display-2 font-weight-bold">588</span>
+                                    <span class="h2 align-self-end mb-1">/year</span>
+                                  </div>
+                    
+                                  <p class="mb-0 font-weight-bold">
+                                    35,000 credits
+                                  </p>
+                    
+                                  <p class="mb-3 text-gray-700 small font-weight-bold">
+                                    0.017/credits
+                                  </p>
+                  
+                                  <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                                    12-month contract, paid annually
+                                  </span>
+                    
+                                  <p class="mb-6 small text-muted">
+                                    12+2 months credits issued immediately, expire in a year
+                                  </p>
+                    
+                                  <a href="#!" class="btn btn-sm btn-block btn-primary">
+                                    Start now
+                                  </a>
+                                </div>
+
+                              </div>
+
+                            </div>
 
                           </div>
 
                           <!-- Mobile -->
-                          <div class="d-block d-md-none">
+                          <div class="d-block d-lg-none">
                           
                             <div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Starter
@@ -1135,7 +1276,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Growth
@@ -1168,7 +1309,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Pro
@@ -1201,7 +1342,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Ultra
@@ -1234,7 +1375,7 @@
                           
                               </div>
                           
-                              <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                              <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                           
                                 <h3 class="font-weight-bold h2">
                                   Enterprise
@@ -1283,89 +1424,133 @@
                 </div>
 
                 <!-- PAYG-->
-                <div class="table-responsive tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payasyougo-tab">
+                <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payasyougo-tab">
 
                   <!-- Desktop -->
-                  <div class="d-none d-md-block">
+                  <div class="d-none d-lg-block">
+                    <div class="row">
+                      <div class="col-12 col-md-8">
 
-                    <table class="table bg-light table-hover">
+                        <!-- Table PYG -->
+                        <div class="table-responsive">
+                          <table class="table bg-light table-hover">
+  
+                            <tbody>
+      
+                              <tr class="table-primary">
+                                <td class="col-5 font-weight-bold">
+                                  100 credits
+                                </td>
+                                <td class="col-5 text-gray-700">
+                                  $0.10/credit
+                                </td>
+                                <td class="col-2 text-right pr-9 font-weight-bold">
+                                  $10
+                                </td>
+                              </tr>
+      
+                              <tr>
+                                <td class="font-weight-bold">
+                                  834 credits
+                                </td>
+                                <td class="text-gray-700">
+                                  $0.06/credit
+                                </td>
+                                <td class="text-right font-weight-bold pr-9 font-weight-bold">
+                                  $50
+                                </td>
+                              </tr>
+      
+                              <tr>
+                                <td class="font-weight-bold">
+                                  3,788 credits
+                                </td>
+                                <td class="text-gray-700">
+                                  $0.0264/credit
+                                </td>
+                                <td class="text-right pr-9 font-weight-bold">
+                                  $100
+                                </td>
+                              </tr>
+      
+                              <tr>
+                                <td class="font-weight-bold">
+                                  20,834 credits
+                                </td>
+                                <td class="text-gray-700">
+                                  $0.024/credit
+                                </td>
+                                <td class="text-right pr-9 font-weight-bold">
+                                  $500
+                                </td>
+                              </tr>
+      
+                              <tr>
+                                <td class="font-weight-bold">
+                                  46,297 credits
+                                </td>
+                                <td class="text-gray-700">
+                                  $0.0216/credit
+                                </td>
+                                <td class="text-right pr-9 font-weight-bold">
+                                  $1,000
+                                </td>
+                              </tr>
+      
+                            </tbody>
+      
+                          </table>
+      
+                          <p class="text-muted h6 mb-0">
+                            <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18 months of payment inactivity.
+                          </p>
+                        </div>
+                        
+                      </div>
+                      <div class="col-12 col-md-4">
+                        
+                        <!-- Card Plan -->
+                        <div class="card card-body border border-primary shadow-light-lg text-center">
+                          <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
+                            <span class="h6 text-uppercase">Starter</span>
+                          </span>
+            
+                          <div class="d-flex justify-content-center pb-4">
+                            <span class="h2 mb-0 mt-2">$</span>
+                            <span class="display-2 font-weight-bold">588</span>
+                            <span class="h2 align-self-end mb-1">/year</span>
+                          </div>
+            
+                          <p class="mb-0 font-weight-bold">
+                            35,000 credits
+                          </p>
+            
+                          <p class="mb-3 text-gray-700 small font-weight-bold">
+                            0.017/credits
+                          </p>
+          
+                          <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
+                            12-month contract, paid annually
+                          </span>
+            
+                          <p class="mb-6 small text-muted">
+                            Credits expire every billing period
+                          </p>
+            
+                          <a href="#!" class="btn btn-sm btn-block btn-primary">
+                            Start now
+                          </a>
+                        </div>
 
-                      <tbody>
-
-                        <tr>
-                          <td class="col-5 font-weight-bold">
-                            100 credits
-                          </td>
-                          <td class="col-5 text-gray-700">
-                            $0.10/credit
-                          </td>
-                          <td class="col-2 text-right pr-9 font-weight-bold">
-                            $10
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td class="font-weight-bold">
-                            834 credits
-                          </td>
-                          <td class="text-gray-700">
-                            $0.06/credit
-                          </td>
-                          <td class="text-right font-weight-bold pr-9 font-weight-bold">
-                            $50
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td class="font-weight-bold">
-                            3,788 credits
-                          </td>
-                          <td class="text-gray-700">
-                            $0.0264/credit
-                          </td>
-                          <td class="text-right pr-9 font-weight-bold">
-                            $100
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td class="font-weight-bold">
-                            20,834 credits
-                          </td>
-                          <td class="text-gray-700">
-                            $0.024/credit
-                          </td>
-                          <td class="text-right pr-9 font-weight-bold">
-                            $500
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td class="font-weight-bold">
-                            46,297 credits
-                          </td>
-                          <td class="text-gray-700">
-                            $0.0216/credit
-                          </td>
-                          <td class="text-right pr-9 font-weight-bold">
-                            $1,000
-                          </td>
-                        </tr>
-
-                      </tbody>
-
-                    </table>
-
-                    <p class="text-muted h6 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18 months of payment inactivity.
-                    </p>
+                      </div>
+                    </div>
 
                   </div>
 
                   <!-- Mobile -->
-                  <div class="d-block d-md-none">
+                  <div class="d-block d-lg-none">
                   
-                    <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                    <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                   
                       <p>
                         100 credits
@@ -1394,7 +1579,7 @@
                   
                     </div>
 
-                    <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                    <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                   
                       <p>
                         834 credits
@@ -1423,7 +1608,7 @@
                   
                     </div>
 
-                    <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                    <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                   
                       <p>
                         3,788 credits
@@ -1452,7 +1637,7 @@
                   
                     </div>
 
-                    <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                    <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                   
                       <p>
                         20,834 credits
@@ -1481,7 +1666,7 @@
                   
                     </div>
 
-                    <div class="card card-body border shadow-light lift font-weight-bold mb-6">
+                    <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
                   
                       <p>
                         46,297 credits
@@ -1514,43 +1699,6 @@
 
                 </div>
 
-              </div>
-              
-            </div>
-
-            <!-- right card info -->
-            <div class="col-12 col-lg-4 text-center d-none d-md-block" id="nav-tabContent">
-
-              <div class="card card-body border border-primary shadow-light-lg">
-                <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
-                  <span class="h6 text-uppercase">Starter</span>
-                </span>
-  
-                <div class="d-flex justify-content-center pb-4">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="display-2 font-weight-bold">588</span>
-                  <span class="h2 align-self-end mb-1">/year</span>
-                </div>
-  
-                <p class="mb-0 font-weight-bold">
-                  35,000 credits
-                </p>
-  
-                <p class="mb-3 text-gray-700 small font-weight-bold">
-                  0.017/credits
-                </p>
-
-                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                  12-month contract, paid annually
-                </span>
-  
-                <p class="mb-6 small text-muted">
-                  Credits expire every billing period
-                </p>
-  
-                <a href="#!" class="btn btn-sm btn-block btn-primary">
-                  Start now
-                </a>
               </div>
 
             </div>
