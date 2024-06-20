@@ -596,10 +596,9 @@ curl \
                   <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                 </div>
         
-  <!-- Container with a class to control max-height -->
-  <div class="pre-container" style="max-height: 176px; overflow: hidden;">
-
-                <pre style="max-height: 176px;">
+                <!-- Container with a class to control max-height -->
+                <div class="pre-container" style="max-height: 176px; overflow: auto;">
+    <pre>
 <code class="language-python">                        
 {
     "company_similarity_score": 0.7894736842105263,
@@ -755,8 +754,9 @@ curl \
 }
 
 </code></pre>
+</div>
 
-<div class="btn btn-primary-soft btn-block">Show More/Less</div>
+<button class="btn btn-primary-soft btn-block mt-4" onclick="toggleHeight1(this)">Show More/Less</button>
 
               </div>
 
@@ -994,24 +994,183 @@ curl \
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
           
-                  <pre>
+                  <!-- Container with a class to control max-height -->
+                  <div class="pre-container" style="max-height: 176px; overflow: auto;">                  
+                    <pre>
   <code class="language-python">                        
 {
-    'url': 'linkedin.com/in/williamhgates',
-    'fallback_to_cache': 'on-error',
-    'use_cache': 'if-present',
-    'skills': 'include',
-    'inferred_salary': 'include',
-    'personal_email': 'include',
-    'personal_contact_number': 'include',
-    'twitter_profile_id': 'include',
-    'facebook_profile_id': 'include',
-    'github_profile_id': 'include',
-    'extra': 'include',
-}</code></pre>
+    "accomplishment_courses": [],
+    "accomplishment_honors_awards": [],
+    "accomplishment_organisations": [],
+    "accomplishment_patents": [],
+    "accomplishment_projects": [],
+    "accomplishment_publications": [],
+    "accomplishment_test_scores": [],
+    "activities": [],
+    "articles": [],
+    "background_cover_image_url": null,
+    "birth_date": null,
+    "certifications": [],
+    "city": "Seattle",
+    "connections": null,
+    "country": "US",
+    "country_full_name": "United States of America",
+    "education": [
+        {
+            "activities_and_societies": null,
+            "degree_name": null,
+            "description": null,
+            "ends_at": {
+                "day": 1,
+                "month": 1,
+                "year": 1975
+            },
+            "field_of_study": null,
+            "grade": null,
+            "logo_url": "https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_400_400/0/1519855919126?e=1698883200&v=beta&t=WYNGsq5B_faaoFA0QOEsb-sMeuGUdlGgAvNStk5RhU0",
+            "school": "Harvard University",
+            "school_linkedin_profile_url": null,
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 1973
+            }
+        },
+        {
+            "activities_and_societies": null,
+            "degree_name": null,
+            "description": null,
+            "ends_at": null,
+            "field_of_study": null,
+            "grade": null,
+            "logo_url": "https://media.licdn.com/dms/image/D560BAQGFmOQmzpxg9A/company-logo_400_400/0/1683732882929?e=1698883200&v=beta&t=Q3pGCHdD8UVfvewF_tpHRewGnsM5nzhnKf0ANcSwExM",
+            "school": "Lakeside School",
+            "school_linkedin_profile_url": null,
+            "starts_at": null
+        }
+    ],
+    "experiences": [
+        {
+            "company": "Bill & Melinda Gates Foundation",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/bill-&-melinda-gates-foundation/",
+            "description": null,
+            "ends_at": null,
+            "location": null,
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/bill-%26-melinda-gates-foundation/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085511Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=9052ae5bf18236b083b73eaeeaee4fef1bd2a8921e7533b0b3b79a5c00fcbb6e",
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2000
+            },
+            "title": "Co-chair"
+        },
+        {
+            "company": "Breakthrough Energy ",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/breakthrough-energy/",
+            "description": null,
+            "ends_at": null,
+            "location": null,
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/breakthrough-energy/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085511Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a759d103392b98ee4dd0d98e57cfc7f32fde4c70e7398bbd9b0960639e356d7",
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2015
+            },
+            "title": "Founder"
+        },
+        {
+            "company": "Microsoft",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/microsoft/",
+            "description": null,
+            "ends_at": null,
+            "location": null,
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/microsoft/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085511Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=04253ae4c1b03b169e9d5efbeb1cb4e51f704d6dc790692cb3e7ab8caf5b0558",
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 1975
+            },
+            "title": "Co-founder"
+        }
+    ],
+    "extra": {
+        "facebook_profile_id": "facebook.com/billgates",
+        "github_profile_id": "github.com/billgates007",
+        "twitter_profile_id": "twitter.com/billgates"
+    },
+    "first_name": "Bill",
+    "follower_count": null,
+    "full_name": "Bill Gates",
+    "gender": null,
+    "groups": [],
+    "headline": "Co-chair, Bill & Melinda Gates Foundation",
+    "industry": null,
+    "inferred_salary": {
+        "max": null,
+        "min": null
+    },
+    "interests": [
+        "Bridge",
+        "Developing New Vaccines",
+        "Energy Policy",
+        "Eradicating Polio",
+        "Philanthropy and Volunteerism",
+        "Reading",
+        "Research and Development",
+        "Taking Interesting Courses Online",
+        "Technology and Innovation",
+        "Tennis",
+        "Traveling With Family"
+    ],
+    "languages": [],
+    "last_name": "Gates",
+    "occupation": "Co-chair at Bill & Melinda Gates Foundation",
+    "people_also_viewed": [],
+    "personal_emails": [
+        "bill.gates@gatesfoundation.org"
+    ],
+    "personal_numbers": [],
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/williamhgates/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085510Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=98b8662b8a114bc69c42688499f1d3398aaaed76874330e45e6cd4967326d386",
+    "public_identifier": "williamhgates",
+    "recommendations": [],
+    "similarly_named_profiles": [
+        {
+            "link": "https://www.linkedin.com/in/bill-gates-610",
+            "location": "Whitehall, PA",
+            "name": "Bill Gates",
+            "summary": "Looking for connections within the IT field."
+        },
+        {
+            "link": "https://www.linkedin.com/in/bill-gates-50939b1a1",
+            "location": "Tompkins County, NY",
+            "name": "Bill Gates",
+            "summary": "Janitor at Bill Gates Associates"
+        },
+        {
+            "link": "https://www.linkedin.com/in/bill-gates-b3320919",
+            "location": "Santa Rosa, CA",
+            "name": "Bill Gates",
+            "summary": "GATES Solid Gold Investments ,Inc  LLC"
+        },
+        {
+            "link": "https://www.linkedin.com/in/bill-gates-03935451",
+            "location": "Boca Raton, FL",
+            "name": "Bill Gates",
+            "summary": "President & CEO at Bedford Materials, AIM Global Logistics"
+        }
+    ],
+    "skills": [
+        "Epson"
+    ],
+    "state": "Washington",
+    "summary": "Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.",
+    "volunteer_work": []
+}
 
-<div class="btn btn-primary-soft btn-block">Show More/Less</div>
-          
+  </code></pre>
+                  </div>
+                  <button class="btn btn-primary-soft btn-block mt-4" onclick="toggleHeight2(this)">Show More/Less</button>
+                  
                 </div>
               </div>
 
@@ -1229,12 +1388,162 @@ curl \
                     <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                   </div>
           
-                  <pre>
+                  <!-- Container with a class to control max-height -->
+                  <div class="pre-container" style="max-height: 176px; overflow: auto;">                  
+                    <pre>
   <code class="language-python">                        
 {
-"url": "https://linkedin.com/in/stevengoh"
-}</code></pre>
-          
+    "linkedin_profile_url": "https://www.linkedin.com/in/williamhgates",
+    "profile": {
+        "accomplishment_courses": [],
+        "accomplishment_honors_awards": [],
+        "accomplishment_organisations": [],
+        "accomplishment_patents": [],
+        "accomplishment_projects": [],
+        "accomplishment_publications": [],
+        "accomplishment_test_scores": [],
+        "activities": [],
+        "articles": [],
+        "background_cover_image_url": null,
+        "birth_date": null,
+        "certifications": [],
+        "city": "Seattle",
+        "connections": null,
+        "country": "US",
+        "country_full_name": "United States of America",
+        "education": [
+            {
+                "activities_and_societies": null,
+                "degree_name": null,
+                "description": null,
+                "ends_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 1975
+                },
+                "field_of_study": null,
+                "grade": null,
+                "logo_url": "https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_400_400/0/1519855919126?e=1698883200&v=beta&t=WYNGsq5B_faaoFA0QOEsb-sMeuGUdlGgAvNStk5RhU0",
+                "school": "Harvard University",
+                "school_linkedin_profile_url": null,
+                "starts_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 1973
+                }
+            },
+            {
+                "activities_and_societies": null,
+                "degree_name": null,
+                "description": null,
+                "ends_at": null,
+                "field_of_study": null,
+                "grade": null,
+                "logo_url": "https://media.licdn.com/dms/image/D560BAQGFmOQmzpxg9A/company-logo_400_400/0/1683732882929?e=1698883200&v=beta&t=Q3pGCHdD8UVfvewF_tpHRewGnsM5nzhnKf0ANcSwExM",
+                "school": "Lakeside School",
+                "school_linkedin_profile_url": null,
+                "starts_at": null
+            }
+        ],
+        "experiences": [
+            {
+                "company": "Bill & Melinda Gates Foundation",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/bill-&-melinda-gates-foundation/",
+                "description": null,
+                "ends_at": null,
+                "location": null,
+                "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/bill-%26-melinda-gates-foundation/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085555Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=c84f2c13c27141643ade07278adfdef24419e4be706fa23cf11ce4d2495eb951",
+                "starts_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 2000
+                },
+                "title": "Co-chair"
+            },
+            {
+                "company": "Breakthrough Energy ",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/breakthrough-energy/",
+                "description": null,
+                "ends_at": null,
+                "location": null,
+                "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/breakthrough-energy/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085555Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=0b02e0381bf55d7791ff98b47fac2c2f694829e1df20810aa35ff2f491c5ce97",
+                "starts_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 2015
+                },
+                "title": "Founder"
+            },
+            {
+                "company": "Microsoft",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/microsoft/",
+                "description": null,
+                "ends_at": null,
+                "location": null,
+                "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/microsoft/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085555Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=7cbf4403ca02acf11503a1776db3e7db5a4f9a0102b69e004ab29509e7557dba",
+                "starts_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 1975
+                },
+                "title": "Co-founder"
+            }
+        ],
+        "extra": null,
+        "first_name": "Bill",
+        "follower_count": null,
+        "full_name": "Bill Gates",
+        "gender": null,
+        "groups": [],
+        "headline": "Co-chair, Bill & Melinda Gates Foundation",
+        "industry": null,
+        "inferred_salary": null,
+        "interests": [],
+        "languages": [],
+        "last_name": "Gates",
+        "occupation": "Co-chair at Bill & Melinda Gates Foundation",
+        "people_also_viewed": [],
+        "personal_emails": [],
+        "personal_numbers": [],
+        "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/williamhgates/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230804%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230804T085555Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2ba004937c8639c2af31d3b95b458ea7f2661614cfdead02a9c02f232ed361b8",
+        "public_identifier": "williamhgates",
+        "recommendations": [],
+        "similarly_named_profiles": [
+            {
+                "link": "https://www.linkedin.com/in/bill-gates-610",
+                "location": "Whitehall, PA",
+                "name": "Bill Gates",
+                "summary": "Looking for connections within the IT field."
+            },
+            {
+                "link": "https://www.linkedin.com/in/bill-gates-50939b1a1",
+                "location": "Tompkins County, NY",
+                "name": "Bill Gates",
+                "summary": "Janitor at Bill Gates Associates"
+            },
+            {
+                "link": "https://www.linkedin.com/in/bill-gates-b3320919",
+                "location": "Santa Rosa, CA",
+                "name": "Bill Gates",
+                "summary": "GATES Solid Gold Investments ,Inc  LLC"
+            },
+            {
+                "link": "https://www.linkedin.com/in/bill-gates-03935451",
+                "location": "Boca Raton, FL",
+                "name": "Bill Gates",
+                "summary": "President & CEO at Bedford Materials, AIM Global Logistics"
+            }
+        ],
+        "skills": [],
+        "state": "Washington",
+        "summary": "Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.",
+        "volunteer_work": []
+    }
+}
+
+  </code></pre>
+                  </div>
+                  <button class="btn btn-primary-soft btn-block mt-4" onclick="toggleHeight3(this)">Show More/Less</button>
                 </div>
               </div>
 
@@ -2430,6 +2739,8 @@ curl \
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <script src="show-hide-button.js"></script>
 
       
   </body>
