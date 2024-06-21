@@ -680,6 +680,15 @@
 /*--- Footer ---*/
 /*--- /Footer ---*/
 /*--- Header ---*/
+.space-navbar-header {
+  height: 86px;
+}
+@media (min-width: 992px) {
+  .space-navbar-header {
+    height: 88px;
+  }
+}
+
 /*--- /Header ---*/
 @media (min-width: 992px) {
   .w-auto-lg {
