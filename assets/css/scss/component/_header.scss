@@ -1,3 +1,10 @@
 /*--- Header ---*/
+.space-navbar-header {
+  height: 86px;
+
+  @media (min-width: $lg) {
+    height: 88px;
+  }
+}
 
 /*--- /Header ---*/
