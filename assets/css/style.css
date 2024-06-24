@@ -926,6 +926,17 @@
   }
 }
 
+#monitorJobNav .nav-tabs .nav-item.show .nav-link, #monitorJobNav .nav-tabs .nav-link.active {
+  border-bottom: none !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: #506690;
+}
+#monitorJobNav .nav-tabs .nav-link {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin-bottom: -1px;
+  color: #335eea;
+}
+
 /*--- Scroll Horizontal ---*/
 .scroll {
   white-space: nowrap;
