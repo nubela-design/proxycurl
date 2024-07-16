@@ -1,44 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">    
-    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-    <link rel="stylesheet" href="./style.css" />
-    
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Import Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    
-    <title>Reverse Email Lookup API - Proxycurl</title>
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Import Jquey -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
-  </head>
-  <body>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <!-- ANNOUNCEMENT
+  <!-- Import Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>Reverse Email Lookup API - Proxycurl</title>
+
+  <!-- Import Jquey -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT
     ================================================== -->
-    <!-- <section class="bg-dark">
+  <!-- <section class="bg-dark">
 
       <div class="container">
 
@@ -46,8 +48,8 @@
 
           <div class="col-12 text-center"> -->
 
-            <!-- Text -->
-            <!-- <p class="font-size-md text-white">
+  <!-- Text -->
+  <!-- <p class="font-size-md text-white">
               Enrich companies with funding, categories, emails, exits/acquisitions data 
               <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
                 Learn more <i class="neu-arrow"></i> 
@@ -56,13 +58,13 @@
             
           </div> -->
 
-        <!-- </div> / .row -->
+  <!-- </div> / .row -->
 
-      <!-- </div>
+  <!-- </div>
 
     </section> -->
 
-     <!-- NAVBAR
+  <!-- NAVBAR
   ================================================== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container-fluid">
@@ -73,7 +75,8 @@
       </a>
 
       <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -81,7 +84,8 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fe fe-x"></i>
         </button>
 
@@ -93,7 +97,8 @@
             <a href="products.html" class="nav-link" id="navbarPages">
               Products <i class="fe fe-chevron-down"></i>
             </a>
-            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
@@ -105,7 +110,8 @@
 
                       <!-- Heading -->
                       <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
+                        LinkDB
                       </h6>
 
                       <!-- List -->
@@ -116,7 +122,8 @@
 
                       <!-- Heading -->
                       <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet
+                        Addon
                       </h6>
 
                       <!-- List -->
@@ -127,21 +134,24 @@
 
                       <!-- Heading -->
                       <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
-                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free
+                        Tools
                       </a>
 
                       <!-- List -->
                       <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
                         Disposable Email Checker
-                      </a>                        
+                      </a>
 
                       <!-- List -->
-                      <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
                         Person Profile Picture API
                       </a>
 
                       <!-- List -->
-                      <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
                         Company Profile Picture API
                       </a>
 
@@ -151,7 +161,8 @@
 
                       <!-- Heading -->
                       <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo"
+                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
                       </h6>
 
                       <!-- List -->
@@ -163,13 +174,13 @@
                       </a>
                       <a class="dropdown-item" href="contact-api.html">
                         Contact API
-                      </a>       
+                      </a>
                       <a class="dropdown-item" href="reverse-email-lookup.html">
                         ᴸ Reverse Email Lookup API
-                      </a>                    
+                      </a>
                       <a class="dropdown-item" href="email-lookup-api-endpoint.html">
                         ᴸ Work Email Lookup API
-                      </a>     
+                      </a>
                       <a class="dropdown-item" href="jobs-api.html">
                         Jobs API
                       </a>
@@ -201,7 +212,8 @@
 
           <!-- Solution -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
               Solutions <i class="fe fe-chevron-down"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
@@ -213,7 +225,8 @@
 
                       <!-- Heading -->
                       <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg">
+                        Use Cases
                       </h6>
 
                       <!-- List -->
@@ -243,7 +256,8 @@
                         </a>
                       </div>
                       <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
                           Automated Recruitment
                         </a>
                       </div>
@@ -253,12 +267,14 @@
                         </a>
                       </div>
                       <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
                           Identifying Buyer Intent Data
                         </a>
                       </div>
                       <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
                           CRM Data Enrichment
                         </a>
                       </div>
@@ -283,7 +299,14 @@
 
                       <!-- Heading -->
                       <h6 class="dropdown-header">
-                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z"
+                              fill="#335EEA"></path>
+                          </g>
+                        </svg> Demos
                       </h6>
 
                       <!-- List -->
@@ -306,7 +329,8 @@
 
           <!-- Pricing -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
               Pricing <i class="fe fe-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarAccount">
@@ -356,78 +380,40 @@
     </div>
   </nav>
 
-    <!-- WELCOME
+  <!-- WELCOME
     ================================================== -->
-    <section
-      id="lookupProfile"
-      class="bg-between bg-light border-bottom pb-11 pb-md-12 pt-12 pt-md-9 py-lg-6"
-      style="background-image: url(assets/img/illustrations/reverse-email-left.png), url(assets/img/illustrations/reverse-email-right.png);"
-    >
-      <div class="container">
-        <div class="justify-content-center row">
-          <div
-            data-aos="fade-up"
-            class="col-12 col-lg-7 col-md-10 text-center aos-init aos-animate"
-          >
-            <h1 class="display-3 font-weight-bold pt-lg-10">
-              <span class="text-primary"> Look up a LinkedIn profile </span> from a
-              work email address
-            </h1>
-            <p class="font-size-lg mb-6 mb-md-8 text-muted">
-              Proxycurl Reverse Email Lookup API takes a work email address and
-              returns you a Linkedin Profile URL
-            </p>
-            <div style="max-width: 304px; margin: auto" class="pb-lg-10">
-              <form
-                action="/proxycurl/auth/login"
-                method="post"
-                data-parsley-validate=""
-                novalidate=""
-              >
-                <div class="form-group" style="text-align: left">
-                  <input
-                    id="email"
-                    type="email"
-                    data-parsley-type="email"
-                    data-parsley-required=""
-                    name="email"
-                    placeholder="work@email.com"
-                    class="form-control"
-                  />
-                  <input
-                    type="text"
-                    name="is_captcha_loaded"
-                    value=""
-                    data-parsley-required=""
-                    data-parsley-error-message="Please wait for Captcha to load and do click on it."
-                    style="display: none"
-                  />
-                </div>
-                <div
-                  class="g-recaptcha mt-3"
-                  data-sitekey="6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV"
-                  style="display: inline-block"
-                  data-callback="captchaCallback"
-                >
-                  <div style="width: 304px; height: 78px">
-                    <div>
-                      <iframe
-                        title="reCAPTCHA"
-                        width="304"
-                        height="78"
-                        role="presentation"
-                        name="a-8q54wqk6n6kb"
-                        frameborder="0"
-                        scrolling="no"
-                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV&amp;co=aHR0cHM6Ly9udWJlbGEuY286NDQz&amp;hl=en&amp;v=KXX4ARWFlYTftefkdODAYWZh&amp;size=normal&amp;cb=w0f3i1ptgimv"
-                      ></iframe>
-                    </div>
-                    <textarea
-                      id="g-recaptcha-response"
-                      name="g-recaptcha-response"
-                      class="g-recaptcha-response"
-                      style="
+  <section id="lookupProfile" class="bg-between bg-light border-bottom pb-11 pb-md-12 pt-12 pt-md-9 py-lg-6"
+    style="background-image: url(assets/img/illustrations/reverse-email-left.png), url(assets/img/illustrations/reverse-email-right.png);">
+    <div class="container">
+      <div class="justify-content-center row">
+        <div data-aos="fade-up" class="col-12 col-lg-7 col-md-10 text-center aos-init aos-animate">
+          <h1 class="display-3 font-weight-bold pt-lg-10">
+            <span class="text-primary"> Look up a LinkedIn profile </span> from a
+            work email address
+          </h1>
+          <p class="font-size-lg mb-6 mb-md-8 text-muted">
+            Proxycurl Reverse Email Lookup API takes a work email address and
+            returns you a Linkedin Profile URL
+          </p>
+          <div style="max-width: 304px; margin: auto" class="pb-lg-10">
+            <form action="/proxycurl/auth/login" method="post" data-parsley-validate="" novalidate="">
+              <div class="form-group" style="text-align: left">
+                <input id="email" type="email" data-parsley-type="email" data-parsley-required="" name="email"
+                  placeholder="work@email.com" class="form-control" />
+                <input type="text" name="is_captcha_loaded" value="" data-parsley-required=""
+                  data-parsley-error-message="Please wait for Captcha to load and do click on it."
+                  style="display: none" />
+              </div>
+              <div class="g-recaptcha mt-3" data-sitekey="6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV"
+                style="display: inline-block" data-callback="captchaCallback">
+                <div style="width: 304px; height: 78px">
+                  <div>
+                    <iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-8q54wqk6n6kb"
+                      frameborder="0" scrolling="no"
+                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV&amp;co=aHR0cHM6Ly9udWJlbGEuY286NDQz&amp;hl=en&amp;v=KXX4ARWFlYTftefkdODAYWZh&amp;size=normal&amp;cb=w0f3i1ptgimv"></iframe>
+                  </div>
+                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="
                         width: 250px;
                         height: 40px;
                         border: 1px solid rgb(193, 193, 193);
@@ -435,64 +421,47 @@
                         padding: 0px;
                         resize: none;
                         display: none;
-                      "
-                    ></textarea>
-                  </div>
+                      "></textarea>
                 </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-md btn-block text-center mt-2"
-                >
-                  Get trial API key
-                </button>
-              </form>
-              <a
-                href="/proxycurl/docs#email-lookup-api-reverse-email-lookup-endpoint"
-                class="btn btn-block btn-md btn-primary-soft mt-2"
-                >Read Docs</a
-              >
-            </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-md btn-block text-center mt-2">
+                Get trial API key
+              </button>
+            </form>
+            <a href="/proxycurl/docs#email-lookup-api-reverse-email-lookup-endpoint"
+              class="btn btn-block btn-md btn-primary-soft mt-2">Read Docs</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <!-- CONTENT
+  <!-- CONTENT
     ================================================== -->
-    <section class="pb-8 pb-md-14 pt-8 pt-md-11">
-      <div class="container">
-        <div class="justify-content-center row">
-          <div class="col-12 col-lg-8 col-md-10 text-center">
-            <h1 class="font-weight-bold pb-6">
-              Look up a LinkedIn profile from a work email address programmatically
-            </h1>
-          </div>
+  <section class="pb-8 pb-md-14 pt-8 pt-md-11">
+    <div class="container">
+      <div class="justify-content-center row">
+        <div class="col-12 col-lg-8 col-md-10 text-center">
+          <h1 class="font-weight-bold pb-6">
+            Look up a LinkedIn profile from a work email address programmatically
+          </h1>
         </div>
-        <div class="mb-6 row">
-          <div class="col-12 col-lg-5 col-md-6">
-            <h4 class="font-weight-bold">Request to look up a Linkedin Profile</h4>
-            <p class="font-size-sm mb-6 mb-md-0 text-muted">
-              Resolve Linkedin Profile from a work email address
-            </p>
-          </div>
-          <div class="col-12 col-lg-7 col-md-6">
-            <div class="highlight-block">
-              <div class="d-flex">
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-danger rounded-circle"
-                ></span>
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-warning ml-1 rounded-circle"
-                ></span>
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-success ml-1 rounded-circle"
-                ></span>
-              </div>
-              <pre>                        
+      </div>
+      <div class="mb-6 row">
+        <div class="col-12 col-lg-5 col-md-6">
+          <h4 class="font-weight-bold">Request to look up a Linkedin Profile</h4>
+          <p class="font-size-sm mb-6 mb-md-0 text-muted">
+            Resolve Linkedin Profile from a work email address
+          </p>
+        </div>
+        <div class="col-12 col-lg-7 col-md-6">
+          <div class="highlight-block">
+            <div class="d-flex">
+              <span style="width: 10px; height: 10px" class="bg-danger rounded-circle"></span>
+              <span style="width: 10px; height: 10px" class="bg-warning ml-1 rounded-circle"></span>
+              <span style="width: 10px; height: 10px" class="bg-success ml-1 rounded-circle"></span>
+            </div>
+            <pre>
                 <code class="language-python">
 <span class="text-hl">import</span> requests
 
@@ -508,247 +477,225 @@ response <span class="text-hl">=</span> requests.get(api_endpoint,
                         headers<span class="text-hl">=</span>header_dic)
                   </code>
               </pre>
+          </div>
+          <br /><br />
+          <br /><br />
+        </div>
+        <div class="col-12 col-lg-5 col-md-6">
+          <h4 class="font-weight-bold">Get Linkedin Profile link</h4>
+          <p class="font-size-sm mb-6 mb-md-0 text-muted">
+            The accuracy of the linkedin profile returned is on a best-effort
+            basis. Results are not guaranteed to be accurate.
+          </p>
+        </div>
+        <div class="col-12 col-lg-7 col-md-6">
+          <div class="highlight-block limit-height">
+            <div class="d-flex">
+              <span style="width: 10px; height: 10px" class="bg-danger rounded-circle"></span>
+              <span style="width: 10px; height: 10px" class="bg-warning ml-1 rounded-circle"></span>
+              <span style="width: 10px; height: 10px" class="bg-success ml-1 rounded-circle"></span>
             </div>
-            <br /><br />
-            <br /><br />
-          </div>
-          <div class="col-12 col-lg-5 col-md-6">
-            <h4 class="font-weight-bold">Get Linkedin Profile link</h4>
-            <p class="font-size-sm mb-6 mb-md-0 text-muted">
-              The accuracy of the linkedin profile returned is on a best-effort
-              basis. Results are not guaranteed to be accurate.
-            </p>
-          </div>
-          <div class="col-12 col-lg-7 col-md-6">
-            <div class="highlight-block limit-height">
-              <div class="d-flex">
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-danger rounded-circle"
-                ></span>
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-warning ml-1 rounded-circle"
-                ></span>
-                <span
-                  style="width: 10px; height: 10px"
-                  class="bg-success ml-1 rounded-circle"
-                ></span>
-              </div>
-              <code class="language-json">
+            <code class="language-json">
                 <pre class="m-0">
 {
     "url": "https://sg.linkedin.com/in/steven-goh-6738131b"
 }
                 </pre>
               </code>
-            </div>
-          </div>
-        </div>
-        <div class="justify-content-center row">
-          <div class="col-12 col-md-5 text-center">
-            <a
-              href="/proxycurl/docs#email-lookup-api-reverse-email-lookup-endpoint"
-              class="btn btn-block btn-md btn-primary-soft"
-              >Read Docs</a
-            >
           </div>
         </div>
       </div>
-    </section>
-    
-
-    <!-- PRICING
-    ================================================== -->
-    <section class="bg-primary pb-10 pb-md-15 pt-8 pt-md-11">
-        <div class="shape shape-blur-3 svg-shim text-white">
-            <svg fill="none" viewBox="0 0 1738 487">
-                <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/>
-                <defs>
-                    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="currentColor" stop-opacity=".075"/>
-                        <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-                    </linearGradient>
-                </defs>
-            </svg>
+      <div class="justify-content-center row">
+        <div class="col-12 col-md-5 text-center">
+          <a href="/proxycurl/docs#email-lookup-api-reverse-email-lookup-endpoint"
+            class="btn btn-block btn-md btn-primary-soft">Read Docs</a>
         </div>
-        <div class="container">
-            <div class="justify-content-center row">
-                <div class="col-12 col-lg-8 col-md-10 text-center">
-                    <h1 class="display-2 text-white">Simple, fair pricing.</h1>
-                    <p class="lead mb-6 mb-md-8 text-white-80"> Companies of all sizes need access to Proxycurl, so we have a flexible pricing system for any size of project or company. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-        <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-            <svg fill="none" viewBox="0 0 2880 48">
-                <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
-            </svg>
-        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- PRICING
+  <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14">
-        <div class="container">
-            <div class="form-row">
-                <div class="col-12 col-md-6">
-                    <div class="card shadow-lg mb-6 mb-md-0">
-                        <div class="card-body">
+  <section class="bg-primary pb-10 pb-md-15 pt-8 pt-md-11">
+    <div class="shape shape-blur-3 svg-shim text-white">
+      <svg fill="none" viewBox="0 0 1738 487">
+        <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" stop-opacity=".075" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="justify-content-center row">
+        <div class="col-12 col-lg-8 col-md-10 text-center">
+          <h1 class="display-2 text-white">Simple, fair pricing.</h1>
+          <p class="lead mb-6 mb-md-8 text-white-80"> Companies of all sizes need access to Proxycurl, so we have a
+            flexible pricing system for any size of project or company. </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                            <div class="text-center mb-5">
-                                <span class="badge badge-pill badge-primary-soft">
-                                    <span class="h6 text-uppercase">Pay as you go</span>
-                                </span>
-                            </div>
+  <!-- SHAPE
+    ================================================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <svg fill="none" viewBox="0 0 2880 48">
+        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+      </svg>
+    </div>
+  </div>
 
-                            <div class="text-center">
-                                <h5 class="mb-0 text-gray-700"> Starts from</h5>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <span class="h2 mb-0 mt-2">$</span>
-                                <span class="price display-2 mb-0">0.009</span>
-                                <span class="h2 align-self-end mb-1">/ credit</span>
-                            </div>
+  <!-- PRICING
+    ================================================== -->
+  <section class="mt-n8 mt-md-n14">
+    <div class="container">
+      <div class="form-row">
+        <div class="col-12 col-md-6">
+          <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card-body">
 
-                            <div class="d-flex justify-content-center mb-3 mt-2">
+              <div class="text-center mb-5">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">Pay as you go</span>
+                </span>
+              </div>
 
-                                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-3">
-                                    <i class="fe fe-check"></i>
-                                </div>
+              <div class="text-center">
+                <h5 class="mb-0 text-gray-700"> Starts from</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <span class="h2 mb-0 mt-2">$</span>
+                <span class="price display-2 mb-0">0.009</span>
+                <span class="h2 align-self-end mb-1">/ credit</span>
+              </div>
 
-                                <p>
-                                    <span class="text-info">3 credits</span>
-                                    <span class="text-muted">/ request</span>
-                                </p>
-                            </div>
+              <div class="d-flex justify-content-center mb-3 mt-2">
 
-                            <a href="/proxycurl/pricing" class="btn btn-block btn-primary">
-
-                                See Pricing Table 
-                                <i class="fe fe-arrow-right ml-3"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-3">
+                  <i class="fe fe-check"></i>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="card shadow-lg mb-6 mb-md-0">
-                        <div class="card-body">
-                            <div class="text-center mb-3">
-                                <span class="badge badge-pill badge-primary-soft">
-                                    <span class="h6 text-uppercase">
-                                    Enterprise
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="d-flex justify-content-center" ">
-                                <h2 class="mb-0 mt-2 font-weight-bold">
-                                Volume pricing available
-                                </h2>
-                            </div>
-                            <p class="text-center text-muted mb-5">
-                            Annual contracts
-                            </p>
-                            <a href="/cdn-cgi/l/email-protection#f182859487949fb19f8493949d90df929e" class="btn btn-block btn-primary-soft">
 
-                                Send Email 
-                                <i class="fe fe-arrow-right ml-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                  <span class="text-info">3 credits</span>
+                  <span class="text-muted">/ request</span>
+                </p>
+              </div>
+
+              <a href="/proxycurl/pricing" class="btn btn-block btn-primary">
+
+                See Pricing Table
+                <i class="fe fe-arrow-right ml-3"></i>
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="col-12 col-md-6">
+          <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">
+                    Enterprise
+                  </span>
+                </span>
+              </div>
+              <div class="d-flex justify-content-center" ">
+                                <h2 class=" mb-0 mt-2 font-weight-bold">
+                Volume pricing available
+                </h2>
+              </div>
+              <p class="text-center text-muted mb-5">
+                Annual contracts
+              </p>
+              <a href="/cdn-cgi/l/email-protection#f182859487949fb19f8493949d90df929e"
+                class="btn btn-block btn-primary-soft">
 
-    <!-- OUR CUSTOMERS
-    ================================================== -->
-    <section class="py-8 py-md-11">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 text-center">
-                    <h1 class="font-weight-bold">
-                    Our customers
-                    </h1>
-                    <p class="font-size-lg text-muted mb-7 mb-md-9">
-                    We partner with organizations large and small to transform their product with big data
-                    </p>
-                </div>
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="IBM Logo PNG" src="./assets/img/brand/ibm.png">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="Rightbound Logo SVG" src="./assets/img/brand/rightbound.com_logo.svg">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="Linux Foundation PNG" src="./assets/img/brand/LinuxFoundation.png">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="Hewlett Packard Logo PNG" src="./assets/img/brand/hp.png">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="Agicap Logo SVG" src="./assets/img/brand/agicap.svg">
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-                            <img class="svg-shim img-fluid" alt="Dover Logo SVG" src="./assets/img/brand/dover.svg">
-                        </div>
-                    </div>
-                </div>
+                Send Email
+                <i class="fe fe-arrow-right ml-3"></i>
+              </a>
             </div>
+          </div>
         </div>
-        </div>
-    </section>       
+      </div>
+    </div>
+  </section>
 
-    <!-- CTA
+  <!-- OUR CUSTOMERS
     ================================================== -->
-    <section class="bg-dark pb-md-12 pt-md-11 py-8">
+  <section class="py-8 py-md-11">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <h1 class="font-weight-bold">
+            Our customers
+          </h1>
+          <p class="font-size-lg text-muted mb-7 mb-md-9">
+            We partner with organizations large and small to transform their product with big data
+          </p>
+        </div>
         <div class="container">
-            <div class="justify-content-center row">
-                <div class="col-12 col-lg-8 col-md-10 text-center">
-                    <h1 class="font-weight-bold text-white">
-                        Try Proxycurl now with a trial API Key 
-                        <br>
-                        <br>
-                    </h1>
-                    <div style="max-width:304px;margin:auto">
-                        <form action="/proxycurl/auth/login" method="post" data-parsley-validate>
-                            <div class="form-group" style="text-align: left;">
-                                <input id="email" type="email" data-parsley-type="email" data-parsley-required name="email" placeholder="work@email.com" class="form-control">
-                                </input>
-                                <input type="text" name="is_captcha_loaded" value data-parsley-required data-parsley-error-message="Please wait for Captcha to load and do click on it." style="display:none;">
-                            </div>
-                            <div
-                              class="g-recaptcha mt-3"
-                              data-sitekey="6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV"
-                              style="display: inline-block"
-                              data-callback="captchaCallback"
-                            >
-                              <div style="width: 304px; height: 78px">
-                                <div>
-                                  <iframe
-                                    title="reCAPTCHA"
-                                    width="304"
-                                    height="78"
-                                    role="presentation"
-                                    name="a-8q54wqk6n6kb"
-                                    frameborder="0"
-                                    scrolling="no"
-                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV&amp;co=aHR0cHM6Ly9udWJlbGEuY286NDQz&amp;hl=en&amp;v=KXX4ARWFlYTftefkdODAYWZh&amp;size=normal&amp;cb=w0f3i1ptgimv"
-                                  ></iframe>
-                                </div>
-                                <textarea
-                                  id="g-recaptcha-response"
-                                  name="g-recaptcha-response"
-                                  class="g-recaptcha-response"
-                                  style="
+          <div class="row align-items-center justify-content-center">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="IBM Logo PNG" src="./assets/img/brand/ibm.png">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="Rightbound Logo SVG"
+                src="./assets/img/brand/rightbound.com_logo.svg">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="Linux Foundation PNG" src="./assets/img/brand/LinuxFoundation.png">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="Hewlett Packard Logo PNG" src="./assets/img/brand/hp.png">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="Agicap Logo SVG" src="./assets/img/brand/agicap.svg">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+              <img class="svg-shim img-fluid" alt="Dover Logo SVG" src="./assets/img/brand/dover.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CTA
+    ================================================== -->
+  <section class="bg-dark pb-md-12 pt-md-11 py-8">
+    <div class="container">
+      <div class="justify-content-center row">
+        <div class="col-12 col-lg-8 col-md-10 text-center">
+          <h1 class="font-weight-bold text-white">
+            Try Proxycurl now with a trial API Key
+            <br>
+            <br>
+          </h1>
+          <div style="max-width:304px;margin:auto">
+            <form action="/proxycurl/auth/login" method="post" data-parsley-validate>
+              <div class="form-group" style="text-align: left;">
+                <input id="email" type="email" data-parsley-type="email" data-parsley-required name="email"
+                  placeholder="work@email.com" class="form-control">
+                </input>
+                <input type="text" name="is_captcha_loaded" value data-parsley-required
+                  data-parsley-error-message="Please wait for Captcha to load and do click on it."
+                  style="display:none;">
+              </div>
+              <div class="g-recaptcha mt-3" data-sitekey="6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV"
+                style="display: inline-block" data-callback="captchaCallback">
+                <div style="width: 304px; height: 78px">
+                  <div>
+                    <iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-8q54wqk6n6kb"
+                      frameborder="0" scrolling="no"
+                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdzP74ZAAAAALPC-IGZ_62tK3ay6zFgDSqUoGXV&amp;co=aHR0cHM6Ly9udWJlbGEuY286NDQz&amp;hl=en&amp;v=KXX4ARWFlYTftefkdODAYWZh&amp;size=normal&amp;cb=w0f3i1ptgimv"></iframe>
+                  </div>
+                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="
                                     width: 250px;
                                     height: 40px;
                                     border: 1px solid rgb(193, 193, 193);
@@ -756,394 +703,426 @@ response <span class="text-hl">=</span> requests.get(api_endpoint,
                                     padding: 0px;
                                     resize: none;
                                     display: none;
-                                  "
-                                ></textarea>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-md btn-block text-center mt-2">
-                            Get trial API key
-                            </button>
-                        </form>
-                    </div>
+                                  "></textarea>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ARTICLES
-    ================================================== -->
-    <section class="bg-light pb-md-10 pt-md-10 py-7">
-        <div class="container">
-            <div class="align-items-center mb-5 row">
-                <div class="col-12 col-md">
-                    <h3 class="mb-0">Featured Articles</h3>
-                    <p class="mb-0 text-muted"> Here's what we've been up to recently. </p>
-                </div>
-                <div class="col-12 col-md-auto">
-                    <a href="https://nubela.co/blog/" target="_blank" class="btn btn-outline-gray-300 btn-sm d-md-inline d-none"> View all </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-4 col-md-6 d-flex">
-                    <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-                        <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/" class="card-img-top">
-                            <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/11/TLC_Linkedin_API.png" alt="..." class="card-img-top">
-                            <div class="position-relative">
-                                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                                    <svg fill="none" viewBox="0 0 2880 480">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/" class="card-body">
-                            <h3> Ultimate Guide To The LinkedIn API: People Profile API (with Python Examples) </h3>
-                            <p class="mb-0 text-muted"> Let&#39;s kick off this article with a demo. Run the following command to see what an enriched LinkedIn profile looks like when accessed through a 3rd-party LinkedIn API:
-                            $ curl \
-                            -G \
-                            -H &#34;Authorization: Bearer demo-bearer-token&#34; \
-                            &#39;https://nubela.co/proxycurl/api/v2/linkedin&#39; \
-                            --data-urlencode &#39;linkedin_profile_url=https://www.linkedin.com/in/ </p>
-                        </a>
-                        <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/" class="card-meta mt-auto">
-                            <hr class="card-meta-divider">
-                            <div class="avatar avatar-sm mr-2">
-                                <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-                            <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
-                            <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 13 MIN READ </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-md-6 d-flex">
-                    <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-                        <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-img-top">
-                            <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Comparison_API.png" alt="..." class="card-img-top">
-                            <div class="position-relative">
-                                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                                    <svg fill="none" viewBox="0 0 2880 480">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-body">
-                            <h3> The 19 Best Data Enrichment APIs of 2024 </h3>
-                            <p class="mb-0 text-muted"> Learn the purpose of a data enrichment API and the best ones currently available. </p>
-                        </a>
-                        <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-meta mt-auto">
-                            <hr class="card-meta-divider">
-                            <div class="avatar avatar-sm mr-2">
-                                <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/08/cr.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-                            <h6 class="mb-0 mr-2 text-muted text-uppercase"> Colton Randolph </h6>
-                            <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 79 MIN READ </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-md-6 d-flex">
-                    <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-                        <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/" class="card-img-top">
-                            <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Announcing-Fresh-Facebook-and-XTwitter-Profile-Data.png" alt="..." class="card-img-top">
-                            <div class="position-relative">
-                                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                                    <svg fill="none" viewBox="0 0 2880 480">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/" class="card-body">
-                            <h3> Announcing Fresh Facebook and X/Twitter Profile Data in Person Profile Endpoint </h3>
-                            <p class="mb-0 text-muted"> In the heels of our recent announcement of the all-new Customer API, I am happy to share that we will now return fresh profile data for Facebook or Twitter/X profiles via the Person Profile Endpoint (provided that the use_cache=if-recent parameter is included).
-                            Here is a quick demo </p>
-                        </a>
-                        <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/" class="card-meta mt-auto">
-                            <hr class="card-meta-divider">
-                            <div class="avatar avatar-sm mr-2">
-                                <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-                            <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
-                            <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 3 MIN READ </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER
-    ================================================== -->
-    <footer class="bg-white py-8 py-md-11">
-
-      <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
-
-        <div class="row" bis_skin_checked="1">
-
-          <div class="col-12 col-lg-3 col-md-4">
-
-            <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo" class="footer-brand img-fluid mb-4">
-
+              </div>
+              <button type="submit" class="btn btn-primary btn-md btn-block text-center mt-2">
+                Get trial API key
+              </button>
+            </form>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">
-              Proxycurl API
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="people-api.html">
-                  Person API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="company-api.html">
-                  Company API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="search-api.html">
-                  Search API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="jobs-api.html">
-                  Jobs API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="contact-api.html">
-                  Contact API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="school-api.html">
-                  School API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="customer-api.html">
-                  Customer API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                  Free API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="pricing.html">
-                  API Pricing
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="documentation.html">
-                  Documentation
-                  <i class="fe fe-arrow-right"></i>
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
-                  API Status
-                  <span class="badge badge-primary-soft rounded-pill" >
-                    <i class="neu-br-twitter"></i>
-                    @Proxycurl 
-                    </span>
-                </a>
-              </li>
-            </ul>
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
-            <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="linkdb.html">
-                  LinkDB Datasets
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="linkdb-pricing.html">
-                  LinkDB Pricing
-                </a>
-              </li>
-            </ul>
-
+  <!-- ARTICLES
+    ================================================== -->
+  <section class="bg-light pb-md-10 pt-md-10 py-7">
+    <div class="container">
+      <div class="align-items-center mb-5 row">
+        <div class="col-12 col-md">
+          <h3 class="mb-0">Featured Articles</h3>
+          <p class="mb-0 text-muted"> Here's what we've been up to recently. </p>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="https://nubela.co/blog/" target="_blank" class="btn btn-outline-gray-300 btn-sm d-md-inline d-none">
+            View all </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
+            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-img-top">
+              <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/11/TLC_Linkedin_API.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg fill="none" viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-body">
+              <h3> Ultimate Guide To The LinkedIn API: People Profile API (with Python Examples) </h3>
+              <p class="mb-0 text-muted"> Let&#39;s kick off this article with a demo. Run the following command to see
+                what an enriched LinkedIn profile looks like when accessed through a 3rd-party LinkedIn API:
+                $ curl \
+                -G \
+                -H &#34;Authorization: Bearer demo-bearer-token&#34; \
+                &#39;https://nubela.co/proxycurl/api/v2/linkedin&#39; \
+                --data-urlencode &#39;linkedin_profile_url=https://www.linkedin.com/in/ </p>
+            </a>
+            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2">
+                <img
+                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
+                  alt="..." class="avatar-img rounded-circle">
+              </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 13 MIN READ </p>
+            </a>
           </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
+            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-img-top">
+              <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Comparison_API.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg fill="none" viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-body">
+              <h3> The 19 Best Data Enrichment APIs of 2024 </h3>
+              <p class="mb-0 text-muted"> Learn the purpose of a data enrichment API and the best ones currently
+                available. </p>
+            </a>
+            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2">
+                <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/08/cr.jpg"
+                  alt="..." class="avatar-img rounded-circle">
+              </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Colton Randolph </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 79 MIN READ </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
+            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
+              class="card-img-top">
+              <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Announcing-Fresh-Facebook-and-XTwitter-Profile-Data.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg fill="none" viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
+              class="card-body">
+              <h3> Announcing Fresh Facebook and X/Twitter Profile Data in Person Profile Endpoint </h3>
+              <p class="mb-0 text-muted"> In the heels of our recent announcement of the all-new Customer API, I am
+                happy to share that we will now return fresh profile data for Facebook or Twitter/X profiles via the
+                Person Profile Endpoint (provided that the use_cache=if-recent parameter is included).
+                Here is a quick demo </p>
+            </a>
+            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
+              class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2">
+                <img
+                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
+                  alt="..." class="avatar-img rounded-circle">
+              </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 3 MIN READ </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">
-              Use Cases
-            </h6>
+  <!-- FOOTER
+    ================================================== -->
+  <footer class="bg-white py-8 py-md-11">
 
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="linkedin.html">
-                  Linkedin Scraper API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="linkedin.html">
-                  Crunchbase Scraper API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
-                  Investment Signals 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="solution-growth.html">
-                  Accelerating Growth Startups
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
-                  Data for HR Tech 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                  Automated Recruitment 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
-                  Sales and Marketing Automation 
-                </a>
-              </li> 
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                  Identifying Buyer Intent Data 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                  CRM Data Enrichment  <i class="fe fe-arrow-right"></i>
-                </a>
-              </li>
-            </ul>
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
+    <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
+
+      <div class="row" bis_skin_checked="1">
+
+        <div class="col-12 col-lg-3 col-md-4">
+
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo"
+            class="footer-brand img-fluid mb-4">
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Proxycurl API
+          </h6>
+
+          <!-- List -->
           <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li> 
+            <li class="mb-2">
+              <a class="small text-reset" href="people-api.html">
+                Person API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="company-api.html">
+                Company API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="search-api.html">
+                Search API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="jobs-api.html">
+                Jobs API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="contact-api.html">
+                Contact API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="school-api.html">
+                School API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="customer-api.html">
+                Customer API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="pricing.html">
+                API Pricing
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="documentation.html">
+                Documentation
+                <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
+                API Status
+                <span class="badge badge-primary-soft rounded-pill">
+                  <i class="neu-br-twitter"></i>
+                  @Proxycurl
+                </span>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
+          <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkdb.html">
+                LinkDB Datasets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="linkdb-pricing.html">
+                LinkDB Pricing
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Use Cases
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Linkedin Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Crunchbase Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
+                Investment Signals
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-growth.html">
+                Accelerating Growth Startups
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
+                Data for HR Tech
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                Automated Recruitment
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
+                Sales and Marketing Automation
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                Identifying Buyer Intent Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                CRM Data Enrichment <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li>
               <a class="small text-reset" href="monitoring-job-changes.html"> Track Job Changes </a>
             </li>
           </ul>
-          </div>
+        </div>
 
-          <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
-        
-          
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/">
-                  Home
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog">
-                  Blog
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text" target="_blank">
-                  Sapiengraph - B2B Enrichment in Google Sheets 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                  Free Resources
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
-                  Building in Public
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
-                  Changelog
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="employee-listing-directory.html">
-                  Company Employee Listing Directory 
-                </a>
-              </li>    
-            </ul>
-
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
-        
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
-                  Proxycurl VS People Data Labs 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
-                  Proxycurl VS Coresignal
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
-                  Proxycurl VS Bright Data
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
-                  Proxycurl VS PhantomBusters
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
-                  Proxycurl VS Clearbit
-                </a>
-              </li>
-            </ul>
+        <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
 
 
-          </div>
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/">
+                Home
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog">
+                Blog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text"
+                target="_blank">
+                Sapiengraph - B2B Enrichment in Google Sheets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free Resources
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
+                Building in Public
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
+                Changelog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="employee-listing-directory.html">
+                Company Employee Listing Directory
+              </a>
+            </li>
+          </ul>
 
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
-             
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="about.html">
-                  About Proxycurl
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="team.html">
-                  Our Team
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="terms-of-use.html">
-                  Term of Use
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="gom-privacy.html">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
 
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
+                Proxycurl VS People Data Labs
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
+                Proxycurl VS Coresignal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
+                Proxycurl VS Bright Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
+                Proxycurl VS PhantomBusters
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
+                Proxycurl VS Clearbit
+              </a>
+            </li>
+          </ul>
 
-            <!-- List -->
-            <ul class="list-unstyled mb-0 text-muted">
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="about.html">
+                About Proxycurl
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="team.html">
+                Our Team
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="terms-of-use.html">
+                Term of Use
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="gom-privacy.html">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-0 text-muted">
             <li class="mb-2">
               <a class="small text-reset" href="mailto:hello@nubela.co">
                 Email Us
@@ -1159,71 +1138,73 @@ response <span class="text-hl">=</span> requests.get(api_endpoint,
                 Remove My Data
               </a>
             </li>
-            </ul>
-          </div>
-
-        </div> <!-- / .row -->
-
-        <hr class="my-6">
-
-        <div class="text-center mb-4">
-
-          <h6 class="font-weight-bold text-uppercase text-gray-700">
-            Follow us
-          </h6>
-
-          <div class="mr-2">
-            <a href="https://twitter.com/proxycurl" target="_blank">
-              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
-            </a>
-  
-            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
-              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
-            </a>
-  
-            <a href="https://github.com/nubelaco/" target="_blank">
-              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
-            </a>
-          </div>
-
+          </ul>
         </div>
 
-        <div class="text-center">
-          <p class="caption mb-0">
-            Proxycurl LLC. All rights reserved.
-          </p>
+      </div> <!-- / .row -->
+
+      <hr class="my-6">
+
+      <div class="text-center mb-4">
+
+        <h6 class="font-weight-bold text-uppercase text-gray-700">
+          Follow us
+        </h6>
+
+        <div class="mr-2">
+          <a href="https://twitter.com/proxycurl" target="_blank">
+            <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+          </a>
+
+          <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+            <img class="img-fluid" width="36" height="auto" alt="YouTube logo"
+              src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+          </a>
+
+          <a href="https://github.com/nubelaco/" target="_blank">
+            <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+          </a>
         </div>
 
       </div>
 
-    </footer>
+      <div class="text-center">
+        <p class="caption mb-0">
+          Proxycurl LLC. All rights reserved.
+        </p>
+      </div>
 
-    <!-- JAVASCRIPT
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT
     ================================================== -->
-    <!-- Libs JS -->
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/quill/dist/quill.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+  <!-- Libs JS -->
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
 
-    <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
 
-      
-  </body>
+
+</body>
+
 </html>
