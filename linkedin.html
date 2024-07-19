@@ -24,7 +24,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Proxycurl is a LinkedIn Scraping API</title>
+    <title>Proxycurl API to enrich profiles, contact info, company funding, etc.</title>
 
   </head>
 
@@ -350,38 +350,39 @@
       </div>
     </nav>
 
-    <!-- WELCOME
+  <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-10 bg-light bg-between" style="background-image: url(./assets/img/illustrations/left.png), url(./assets/img/illustrations/right.png);">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
-            
-            <!-- Heading -->
-            <h1 class="display-3 font-weight-bold">
-              Proxycurl API turns a <span class="text-primary">LinkedIn Profile URL</span> into <span class="text-primary">JSON</span> in real-time
-            </h1>
+    <section class="pt-8 pb-11 pt-md-11 pb-md-6 bg-light bg-between bg-between-linkedin-scraper border-bottom"
+    style="background-image: url(./assets/img/illustrations/left.png), url(./assets/img/illustrations/right.png);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
 
-            <p class="lead text-gray-700 mb-8">
-              Scrape LinkedIn member and company profiles. Scrape LinkedIn Jobs. Get insights on employee count and trends. And more!
-            </p>
+          <!-- Heading -->
+          <h1 class="display-3 font-weight-bold">
+            Proxycurl API is a <br><span class="text-primary">Public LinkedIn<sup>*</sup> Profile Scraping API</span>
+          </h1>
 
-            <!-- Linkedin Link -->
-            <fieldset disabled>
+          <p class="lead text-gray-700 mb-8">
+            Enrich public LinkedIn* profiles; get contact Information; get venture funding data; list jobs
+          </p>
 
-              <span class="btn btn-white btn-block shadow-lg text-black mb-4" style="cursor: auto;">
-                <i class="neu-br-linkedin-sq text-primary"></i>
-                linkedin.com/in/williamhgates
-              </span>
+          <!-- Linkedin Link -->
+          <fieldset disabled>
 
-            </fieldset>
+            <span class="btn btn-white btn-block shadow-lg text-black mb-4" style="cursor: auto;">
+              <i class="neu-br-linkedin-sq text-primary"></i>
+              linkedin.com/in/williamhgates
+            </span>
 
-            <!-- Arrow -->
-            <i class="fe fe-arrow-down text-primary" style="font-size: 32px;"></i>            
+          </fieldset>
 
-            <div class="mt-4 mb-6 text-left">
-            
-              <div class="highlight-block">
+          <!-- Arrow -->
+          <i class="fe fe-arrow-down text-primary" style="font-size: 32px;"></i>
+
+          <div class="mt-4 mb-6 text-left">
+
+            <div class="highlight-block">
 
               <!-- Controls -->
               <div class="d-flex">
@@ -390,75 +391,201 @@
                 <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
               </div>
 
-              <pre style="height: 320px;"><code class="language-python">
+              <pre style="height: 920px;"><code class="language-python">
 
-('{
+{
     "public_identifier": "williamhgates",
-    "profile_pic_url": '
-    '"https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw", '
-    '"first_name": "Bill",
+    "profile_pic_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHqRRhVsnaziA/profile-displayphoto-shrink_200_200/0/1626063510328?e=1640217600&v=beta&t=6sSKthJwkNGWUV2-V-8BQzirJFe7wBUCEuq7ZiE447A",
+    "background_cover_image_url": "https://media-exp1.licdn.com/dms/image/C4D16AQHCmaRo1aaK2w/profile-displaybackgroundimage-shrink_200_800/0/1626063499170?e=1640217600&v=beta&t=TAwSSpIkYPG2ybh1caSxUYOHG92j5xPoxSyoWhvEsEQ",
+    "first_name": "Bill",
     "last_name": "Gates",
-    "occupation": "Co-chair, Bill & '
-    'Melinda Gates Foundation", "headline": "Co-chair, Bill & Melinda Gates '
-    'Foundation", "summary": "Co-chair of the Bill & Melinda Gates Foundation. '
-    'Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.", '
-    '"country": "us",
-    "birth_date": {
-        "month": 10,
-        "day": 28
-    },
-    "address": null, '
-    '"wechat_contact_info": null,
-    "primary_twitter_handle": null, '
-    '"twitter_handles": [],
-    "phone_numbers": [],
-    "email_address": null, '
-    '"websites": [],
+    "full_name": "Bill Gates",
+    "occupation": "Co-chair at Bill & Melinda Gates Foundation",
+    "headline": "Co-chair, Bill & Melinda Gates Foundation",
+    "summary": "Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.",
+    "country": "US",
+    "country_full_name": "United States of America",
+    "city": "Seattle",
+    "state": "Washington",
     "experiences": [
         {
-            "company": "Bill & Melinda Gates '
-    'Foundation", "title": "Co-chair", "starts_at": {"month": null, "year": '
-    '2000
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2000
+            },
+            "ends_at": null,
+            "company": "Bill & Melinda Gates Foundation",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/bill-&-melinda-gates-foundation",
+            "title": "Co-chair",
+            "description": null,
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQE7Na_mKQhIJg/company-logo_100_100/0/1633731810932?e=1642636800&v=beta&t=hItj5lRZS_QmopnwbW-g_ihhjEHgQCgYA7KLrz-cRNw"
         },
-        "ends_at": null
-    },
-    {
-        "company": "Microsoft",
-        "title": "Co-founder", '
-    '"starts_at": {
-            "month": null,
-            "year": 1975
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2015
+            },
+            "ends_at": null,
+            "company": "Breakthrough Energy",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/breakthrough-energy",
+            "title": "Founder",
+            "description": null,
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQGwD9vNu044FA/company-logo_100_100/0/1601560874941?e=1642636800&v=beta&t=WjzyQOPWUjX6ZCjKo6BUNErMtBWcLVpE4rvTSYc7fBI"
         },
-        "ends_at": null
-    }
-],
-"education": '
-    '[
-    {
-        "school": null,
-        "degree_name": null,
-        "field_of_study": null
-    },
-    {
-        "school": '
-    '"Harvard University",
-        "degree_name": null,
-        "field_of_study": null
-    }
-], '
-    '"languages": [],
-"organisations": []
-}')
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 1975
+            },
+            "ends_at": null,
+            "company": "Microsoft",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+            "title": "Co-founder",
+            "description": null,
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1642636800&v=beta&t=MAq_qy-nRaL6rKgjUK2guITFDoNZKUA68gibX9vF2S8"
+        }
+    ],
+    "education": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 1973
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 12,
+                "year": 1975
+            },
+            "field_of_study": null,
+            "degree_name": null,
+            "school": "Harvard University",
+            "description": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1519855919126?e=1642636800&v=beta&t=Y6xmp31gvJUu_n6fuinB56w9xduD6RlmUj7vXVCZeQ4"
+        },
+        {
+            "starts_at": null,
+            "ends_at": null,
+            "field_of_study": null,
+            "degree_name": null,
+            "school": "Lakeside School",
+            "description": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQENlfOPKBEk3Q/company-logo_100_100/0/1519856497259?e=1642636800&v=beta&t=r9w6E_bExlNGB7feracny_Lm8qeOFN_blwnYDilef6g"
+        }
+    ],
+    "languages": [],
+    "accomplishment_organisations": [],
+    "accomplishment_publications": [],
+    "accomplishment_honors_awards": [],
+    "accomplishment_patents": [],
+    "accomplishment_courses": [],
+    "accomplishment_projects": [],
+    "accomplishment_test_scores": [],
+    "volunteer_work": [],
+    "certifications": [],
+    "connections": 8,
+    "people_also_viewed": [],
+    "recommendations": [],
+    "activities": [
+        {
+            "title": "Reaching net zero will take bold action and creativity to accelerate the development of climate-smart technologies. The first cohort of Breakthrough…",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Shared by Bill Gates"
+        },
+        {
+            "title": "There are many reasons why students don’t go to college or pursue a postsecondary degree. College Advising Corps is providing guidance and support to…",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Shared by Bill Gates"
+        },
+        {
+            "title": "Microsoft supports strong climate and clean energy provisions in US budget reconciliation and infrastructure bills and encourages Congress to take…",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Liked by Bill Gates"
+        }
+    ],
+    "similarly_named_profiles": [
+        {
+            "name": "Bill Gates",
+            "link": "https://www.linkedin.com/in/bill-gates-610",
+            "summary": "Currently looking for Opportunity and Advancements.",
+            "location": "Whitehall, PA"
+        },
+        {
+            "name": "Bill Gates",
+            "link": "https://www.linkedin.com/in/bill-gates-50939b1a1",
+            "summary": "Janitor at Bill Gates Associates",
+            "location": "Tompkins County, NY"
+        },
+        {
+            "name": "Bill Gates",
+            "link": "https://www.linkedin.com/in/bill-gates-b3320919",
+            "summary": "GATES Solid Gold Investments ,Inc  LLC",
+            "location": "Santa Rosa, CA"
+        },
+        {
+            "name": "Bill Gates",
+            "link": "https://www.linkedin.com/in/bill-gates-b1a606b0",
+            "summary": "Maricopa County/PING Golf",
+            "location": "Phoenix, AZ"
+        }
+    ],
+    "articles": [
+        {
+            "title": "How to use vaccines more fairly and effectively",
+            "link": "https://www.linkedin.com/pulse/how-use-vaccines-more-fairly-effectively-bill-gates",
+            "published_date": {
+                "day": 13,
+                "month": 1,
+                "year": 2021
+            },
+            "author": "By Bill Gates",
+            "image_url": "https://media-exp1.licdn.com/dms/image/C4D12AQE3UotyMzc87Q/article-cover_image-shrink_180_320/0/1634143523512?e=1640217600&v=beta&t=EFDRPoc3O9vDIfnwGkD4EaaoCXJpatIO0kxjGMxuzGA"
+        },
+        {
+            "title": "Innovation and Inequity | 2021 Goalkeepers Report",
+            "link": "https://www.linkedin.com/pulse/innovation-inequity-2021-goalkeepers-report-bill-gates",
+            "published_date": {
+                "day": 14,
+                "month": 1,
+                "year": 2021
+            },
+            "author": "By Bill Gates",
+            "image_url": "https://media-exp1.licdn.com/dms/image/C4D12AQF4STKts6wKuw/article-cover_image-shrink_180_320/0/1631638325036?e=1640217600&v=beta&t=e8HIAtzYVSi6Bas0BjlSK0NQ7oXSmPTZIicTAkDGBLk"
+        },
+        {
+            "title": "How to fight malaria during a pandemic",
+            "link": "https://www.linkedin.com/pulse/how-fight-malaria-during-pandemic-bill-gates",
+            "published_date": {
+                "day": 25,
+                "month": 1,
+                "year": 2021
+            },
+            "author": "By Bill Gates",
+            "image_url": "https://media-exp1.licdn.com/dms/image/C4D12AQHIypYcSh9X5A/article-cover_image-shrink_180_320/0/1629916418149?e=1640217600&v=beta&t=fYySRiVx78oYH0T2gxrqOj11ujNX4ye0VRJx0jMhhQo"
+        }
+    ]
+}
               </code></pre>
-              </div>
+            </div>
 
           </div>
 
-            <!-- Form -->
-            <form class="pb-lg-10">
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="work@email.com">
-              </div>
+          <!-- Form -->
+          <form class="pb-lg-10">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="work@email.com">
+            </div>
+
+            <!-- captcha sample-->
+            <div class="g-recaptcha mb-4 d-inline-block" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              style="transform-origin: 0 0;"></div>            
 
             <!-- Buttons -->
             <button type="button" class="mb-4 btn btn-primary btn-md btn-block text-center">
@@ -468,1154 +595,1392 @@
             <!-- Secondary Buttons -->
             <button type="button" class="btn btn-primary-soft btn-md btn-block text-center">
               Read API Docs
-            </button>            
-            </form>
+            </button>
+          </form>
 
-            <p class="small text-center text-muted" data-aos="fade-up">Not a developer?
-              <a href="https://sapiengraph.com/" target="_blank" class="font-weight-bold text-success">
-                Try Sapiengraph<i class="neu-arrow"></i>
-              </a>
-              . Sapiengraph integrates Proxycurl APIs within Google Sheets.
-            </p>
+        </div>
+      </div> <!-- / .row -->
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
+      <div class="row justify-content-center">
+        
+        <p class="font-size-lg text-center text-muted mb-6 mb-md-9" data-aos="fade-up">
+          Not a developer?
+          <a href="https://sapiengraph.com/" target="_blank" class="text-primary">
+            Sapiengraph<i class="neu-arrow"></i>
+          </a> is a Google Sheet addon that grants you Proxycurl powers.
+        </p>
+      
+        <div class="col-12 col-lg-8">
+          <p class="text-muted h6 text-center"><span class="text-danger">*</span>Disclaimer: LinkedIn, Facebook and Twitter
+            are
+            registered trademarks of various companies not affiliated with Proxycurl. Proxycurl is not affiliated with,
+            endorsed
+            by, or sponsored by these companies.</p>
+        </div>
+      </div>
 
-    <!-- POWERED BY PROXYCURL -->
-    <div class="section pt-12 bg-light pt-md-12 pb-8 pb-md-11 border-bottom">
+    </div> <!-- / .container -->
+  </section>
 
-      <div class="container">
+  <!-- POWERED BY PROXYCURL -->
+  <div class="section pt-12 bg-white pt-md-12 pb-8 pb-md-6 border-bottom">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-5">
+        <div class="col-12 col-md-4 order-md-2 text-center">
 
-        <div class="row justify-content-between align-items-center mb-5">
+          <!-- Image -->
+          <img class="img-fluid w-75 w-md-100 mb-6 mb-md-0" src="assets/dwarf forms/df-data-driven illustration.svg"
+            alt="Data-driven illustration" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-12 col-md-4 order-md-2 text-center">
-            <img src="assets/dwarf forms/df-data-driven illustration.svg" alt="Data-driven illustration" data-aos="fade-up" data-aos-delay="100" class="img-fluid w-75 w-md-100 mb-6 mb-md-0 aos-init aos-animate">
-          </div>
+        </div>
+        <div class="col-12 col-md-7 order-md-1 mb-6">
 
-          <div class="col-12 col-md-7 order-md-1 mb-6">
-            <h6 class="text-uppercase text-info mb-6">
-              Powered by Proxycurl
-            </h6>
-            <h2 style="max-width: 450px;">
-              Build data-driven applications with Proxycurl API
-            </h2>
-            <div class="lead text-muted-80 mb-4">
-              Scrape LinkedIn profiles; get contact Information; get venture funding data; list jobs
-            </div>
+          <!-- Heading -->
+          <h6 class="text-uppercase text-info mb-6">
+            Powered by Proxycurl
+          </h6>
+
+          <!-- Heading -->
+          <h2 style="max-width: 450px;">
+            Build data-driven applications with Proxycurl API
+          </h2>
+
+          <!-- Text -->
+          <div class="lead text-muted-80 mb-4">
+            Scrape public LinkedIn* profiles; get contact Information; get venture funding data; list jobs
           </div>
 
         </div>
+      </div> <!-- / .row -->
 
-        <div data-aos="fade-up" data-aos-delay="100" class="row aos-init aos-animate">
-          
-          <div class="col-12 col-lg-6 mb-6 d-flex">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="card shadow-light-lg lift lift-lg">
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
 
-              <div class="card-body my-auto">
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
 
-                <img alt="user icon" src="assets/dwarf forms/man.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="font-weight-bold mt-auto mb-0">
-                  Person Profile Endpoint
-                </h3>
+            <!-- Body -->
+            <div class="card-body my-auto">
 
-                <p class="text-muted">
-                  Scrape a LinkedIn member profile
-                </p>
+              <img alt="user icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man.svg">
 
-                <div style="min-height: 120px;" class="row justify-content-center">
-                  
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      Person Profile URL
-                    </p>
-                  </div>
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Person Profile Endpoint
+              </h3>
 
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-                    <p class="mb-0">
-                      Profile data with profile picture, job history, etc.
-                    </p>
-                  </div>
+              <div class="row justify-content-center">
 
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Person Profile URL
+                  </p>
                 </div>
 
-                <div class="row justify-content-center">
-
-                  <div class="col-12 mb-5">
-
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <div class="card-body my-auto">
-
-                <img alt="company icon" src="assets/dwarf forms/company.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="font-weight-bold mt-auto mb-0">
-                  Company Profile Endpoint
-                </h3>
-
-                <p class="text-muted">
-                  Scrape a LinkedIn company profile
-                </p>
-
-                <div style="min-height: 120px;" class="row justify-content-center">
-                  
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      Company Profile URL
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-
-                    <p class="mb-0">
-                      Profile data with profile picture, office locations, etc.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-12 mb-5">
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/linkedin/company?categories=include&amp;funding_data=include&amp;extra=include&amp;exit_data=include&amp;acquisitions=include&amp;url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&amp;use_cache=if-present</code></pre>
-                      </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <div class="card shadow-light-lg lift lift-lg">
-              <div class="card-body my-auto">
-
-                <img alt="email icon" src="assets/dwarf forms/bag.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="font-weight-bold mt-auto mb-0">
-                  Job Listing Endpoint
-                </h3>
-
-                <p class="text-muted">
-                  Scrape LinkedIn job listings
-                </p>
-
-                <div style="min-height: 120px;" class="row justify-content-center">
-
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      Work Email Address
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
                     Output
-                    </h4>
-                    <p class="mb-0">
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Profile data with profile picture, job history, etc.
+                    <br>
+                    <br>
+                  </p>
+                </div>
+
+                <!-- Sample code -->
+                <div class="col-12 mt-3">
+
+                  <div class="highlight-block">
+
+                    <!-- Controls -->
+                    <div class="d-flex">
+                      <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                      <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                    </div>
+
+                    <pre><code class="language-python">       
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&use_cache=if-present
+  </code></pre>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Company Profile Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Profile data with profile picture, office locations, etc.
+                  </p>
+                </div>
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company?categories=include&funding_data=include&extra=include&exit_data=include&acquisitions=include&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&use_cache=if-present
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Work Email Lookup Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Work Email Address
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
                     LinkedIn (Person) Profile URL
-                    </p>
-                  </div>
-
+                  </p>
                 </div>
 
-                <div class="row justify-content-center">
-                  <div class="col-12 mb-5">
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">            
 curl \
     -X GET \
     -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&amp;cache=no-cache&amp;callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a</code></pre>
-                    </div>
-                  </div>
-                </div>
-
+    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&cache=no-cache&callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a
+  </code></pre>
               </div>
-            </div>
 
-          </div>
-
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <div class="card-body my-auto">
-
-                <img alt="user icon" src="assets/dwarf forms/woman.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="font-weight-bold mt-auto mb-0">
-                  Job Profile Endpoint
-                </h3>
-
-                <p class="text-muted">
-                  Scrape LinkedIn job profile
-                </p>
-
-                <div style="min-height: 120px;" class="row justify-content-center">
-                  
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      LinkedIn (Person) Profile URL
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-                    <p class="mb-0">
-                      List of Personal Emails
-                    </p>
-                  </div>
-
-                </div>
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12 mb-5">
-
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
-                    </div>
-
-                  </div>
-
-                </div>
+            </div>                
 
               </div>
 
             </div>
 
-          </div>
-
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <div class="card-body my-auto">
-
-                <img alt="user icon" src="assets/dwarf forms/employee.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="font-weight-bold mt-auto mb-0">
-                  Employee Count Endpoint
-                </h3>
-
-                <p class="text-muted">
-                  Scrape employee count of any company on LinkedIn
-                </p>
-
-                <div style="min-height: 120px;" class="row justify-content-center">
-                  
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      Company Profile URL
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-                    <p class="mb-0">
-                      List of employees
-                    </p>
-                  </div>
-
-                </div>
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12 mb-5">
-
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-12 col-lg-6 mb-6 d-flex">
-
-            <div class="card shadow-light-lg lift lift-lg">
-
-              <div class="card-body my-auto">
-
-                <img alt="user icon" src="assets/dwarf forms/chart.svg" class="img-fluid mb-4" width="56">
-                
-                <h3 class="mt-auto">
-                  Role Lookup Endpoint
-                </h3>
-
-                <div style="min-height: 120px;" class="row justify-content-center">
-                  
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Input
-                    </h4>
-                    <p class="mb-0">
-                      Company Name and Role
-                    </p>
-                  </div>
-
-                  <div class="col-6">
-                    <h4 class="mb-0 text-info">
-                      Output
-                    </h4>
-                    <p class="mb-0">
-                      Person Profile URL
-                    </p>
-                  </div>
-
-                </div>
-
-                <div class="row justify-content-center">
-
-                  <div class="col-12 mb-5">
-
-                    <div class="highlight-block">
-                      <div class="d-flex">
-                        <span style="width: 10px; height: 10px;" class="bg-danger rounded-circle"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-warning rounded-circle ml-1"></span>
-                        <span style="width: 10px; height: 10px;" class="bg-success rounded-circle ml-1"></span>
-                      </div>
-
-                      <pre style="min-height: 140px; max-height: 140px;"><code>
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/v2/linkedin?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoho-balboa%2F&amp;use_cache=if-present</code></pre>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
 
           </div>
 
         </div>
 
-        <div class="row justify-content-center mt-md-8">
-          <div class="col-12 text-center">
-            <a href="#!" class="btn mr-md-4 mr-2 lift btn-primary shadow-lg">
-              Get Trial API Key
-            </a>
-            <a href="#!" class="btn lift btn-primary-soft shadow-lg">
-              See API Cheatsheet
-            </a>
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
+
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+
+            <!-- Body -->
+            <div class="card-body my-auto">
+
+              <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/woman.svg">
+
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Personal Email Lookup Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    LinkedIn (Person) Profile URL
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    List of Personal Emails
+                  </p>
+                </div>
+
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/contact-api/personal-email?linkedin_profile_url=https%3A%2F%2Flinkedin.com%2Fin%2Fsteven-goh-6738131b
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
+
           </div>
+
         </div>
 
-      </div>
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
 
-    </div> 
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
 
-    <!-- DEVELOPERS FOR DEVELOPERS
-    ================================================== -->
-    <section class="pt-4 pt-md-11">
+            <!-- Body -->
+            <div class="card-body my-auto">
 
-      <div class="container">
+              <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
 
-        <div class="row align-items-center">
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Employee Listing Endpoint
+              </h3>
 
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+              <div class="row justify-content-center">
 
-            <!-- Image -->
-            <img src="assets/img/illustrations/developer illustration.svg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
 
-          </div>
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Profile URL
+                  </p>
+                </div>
 
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
 
-            <!-- Heading -->
-            <h1 class="display-3 text-center text-md-left">
-              For developers, by developers
-            </h1>
+                  <!-- Text -->
+                  <p class="mb-0">
+                    List of employees
+                  </p>
+                </div>
 
-            <!-- Text -->
-            <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-              Proxycurl API takes an opinionated approach in delivering a developer-first experience. Our product CEO writes the documentation, and our CTO refines and implements. We take pride in that we have never committed the cardinal sin of design by committee or consensus.
-            </p>
 
-          </div>
+            <!-- Sample code -->
+            <div class="col-12 mt-7">
 
-        </div> <!-- / .row -->
+              <div class="highlight-block">
 
-      </div> <!-- / .container -->
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
 
-    </section>
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
+  </code></pre>
+              </div>
 
-    <!-- KEY POINTS
-    ================================================== -->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
+            </div>                
 
-        <div class="row mb-8">
+              </div>
 
-          <div class="col-12 col-md-4" data-aos="fade-up">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 9H19L8 22L11 12H5L10 2H17L13 9Z" fill="black"/>
-              </svg>
             </div>
 
-            <!-- Heading -->
-            <h3>
-              Fast
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              Our real-time API responds in ~2S.
-            </p>
 
           </div>
 
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 7H16C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16V8C7 7.73478 7.10536 7.48043 7.29289 7.29289C7.48043 7.10536 7.73478 7 8 7Z" fill="#335EEA"/>
-                <path d="M11 4V2H13V4H11Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M16 2H18V4H16V2Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M8 4H6V2H8V4Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M2 4V2H4L2 4Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M22 2V4L20 2H22Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M13 20V22H11V20H13Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M18 22H16V20H18V22Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M8 22H6V20H8V22Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M22 13H20V11H22V13Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M22 18H20V16H22V18Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M22 8H20V6H22V8Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M2 11H4V13H2V11Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M2 16H4V18H2V16Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M2 6H4V8H2V6Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M2 22V20L4 22H2Z" fill="#335EEA" fill-opacity="0.3"/>
-                <path d="M22 20V22H20L22 20Z" fill="#335EEA" fill-opacity="0.3"/>
-                </svg>                
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Scalable
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              Make concurrent requests, up to 300 requests / minute.
-            </p>
-
-          </div>
-
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA"/><rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"/></g></svg>
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Well-documented and designed
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              We sprinkle sample code and sample responses with every API endpoint.
-            </p>
-
-          </div>
-
-        </div> <!-- / .row -->
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <a class="btn btn-block btn-primary shadow-lg" href="">
-              Read API Docs
-            </a>
-          </div>
         </div>
 
-      </div> <!-- / .container -->
-    </section>
+        <!-- API Card -->
+        <div class="col-12 col-lg-6 mb-6 d-flex">
 
-    <!-- PRICING
-    ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
 
-      <!-- Shape -->
-      <div class="shape shape-blur-3 svg-shim text-white">
-        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
-      </div>
+            <!-- Body -->
+            <div class="card-body my-auto">
 
-      <!-- Content -->
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            
-            <!-- Heading -->
-            <h1 class="display-2 text-white">
-              Simple, fair pricing.
-            </h1>
+              <img alt="chart icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/chart.svg">
 
-            <!-- Text -->
-            <p class="lead text-white-80 mb-6 mb-md-8">
-              Pay as you go with Proxycurl; no subscriptions needed.
-            </p>
+              <!-- Heading -->
+              <h3 class="mt-auto">
+                Role Lookup Endpoint
+              </h3>
+
+              <div class="row justify-content-center">
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Input
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Company Name and Role
+                  </p>
+                </div>
+
+                <div class="col-6">
+                  <!-- Input -->
+                  <h4 class="mb-0 text-info">
+                    Output
+                  </h4>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Person Profile URL
+                  </p>
+                </div>
+
+
+            <!-- Sample code -->
+            <div class="col-12 mt-4">
+
+              <div class="highlight-block">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre><code class="language-python">
+curl \
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/find/company/role?role=ceo&company_name=nubela
+  </code></pre>
+              </div>
+
+            </div>                
+
+              </div>
+
+            </div>
+
 
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
 
-    </section>
+        </div>
 
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div> <!-- / .row -->
+
+      <div class="row justify-content-center mb-6 mb-md-9">
+        <div class="col-12 col-md-6">
+          <a class="btn btn-block btn-primary shadow-lg" href="">
+            See API Cheatsheet
+          </a>
+        </div>
       </div>
+
+      <div class="row justify-content-center">
+      
+        <div class="col-12 col-lg-8">
+          <p class="text-muted h6 text-center"><span class="text-danger">*</span>Disclaimer: LinkedIn, Facebook and Twitter
+            are
+            registered trademarks of various companies not affiliated with Proxycurl. Proxycurl is not affiliated with,
+            endorsed
+            by, or sponsored by these companies.</p>
+        </div>
+      </div>      
+
+    </div> <!-- / .container-->
+  </div>
+
+  <!-- DEVELOPERS FOR DEVELOPERS
+    ================================================== -->
+  <section class="pt-4 pt-md-11 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+          <!-- Image -->
+          <img src="assets/img/illustrations/developer illustration.svg"
+            class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+
+          <!-- Heading -->
+          <h1 class="display-3 text-center text-md-left">
+            For developers, by developers
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+            Proxycurl API takes an opinionated approach in delivering a developer-first experience. Our product CEO
+            writes the documentation, and our CTO refines and implements. We take pride in that we have never committed
+            the cardinal sin of design by committee or consensus.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- KEY POINTS
+    ================================================== -->
+  <section class="py-8 py-md-11 bg-light border-bottom">
+    <div class="container">
+
+      <div class="row mb-8">
+
+        <div class="col-12 col-md-4" data-aos="fade-up">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 9H19L8 22L11 12H5L10 2H17L13 9Z" fill="black" />
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Fast
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Our real-time API responds in ~2S.
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 7H16C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16V8C7 7.73478 7.10536 7.48043 7.29289 7.29289C7.48043 7.10536 7.73478 7 8 7Z"
+                fill="#335EEA" />
+              <path d="M11 4V2H13V4H11Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M16 2H18V4H16V2Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M8 4H6V2H8V4Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M2 4V2H4L2 4Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M22 2V4L20 2H22Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M13 20V22H11V20H13Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M18 22H16V20H18V22Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M8 22H6V20H8V22Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M22 13H20V11H22V13Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M22 18H20V16H22V18Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M22 8H20V6H22V8Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M2 11H4V13H2V11Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M2 16H4V18H2V16Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M2 6H4V8H2V6Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M2 22V20L4 22H2Z" fill="#335EEA" fill-opacity="0.3" />
+              <path d="M22 20V22H20L22 20Z" fill="#335EEA" fill-opacity="0.3" />
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Scalable
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Make concurrent requests, up to 300 requests / minute.
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h24v24H0z" />
+                <path
+                  d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                  fill="#335EEA" />
+                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16"
+                  rx="1" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Well-documented and designed
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-0">
+            We sprinkle sample code and sample responses with every API endpoint.
+          </p>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <a class="btn btn-block btn-primary shadow-lg" href="">
+            Read API Docs
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- PRICING
+    ================================================== -->
+  <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+    <!-- Shape -->
+    <div class="shape shape-blur-3 svg-shim text-white">
+      <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" stop-opacity=".075" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
-    <!-- PRICING
+    <!-- Content -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-2 text-white">
+            Simple, fair pricing.
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-white-80 mb-6 mb-md-8">
+            Pay as you go with Proxycurl; no subscriptions needed.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+  </section>
+
+  <!-- SHAPE
     ================================================== -->
-    <section class="mt-n8 mt-md-n14 mb-12">
-      <div class="container">
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+      </svg>
+    </div>
+  </div>
 
-        <div class="form-row">
+  <!-- PRICING
+    ================================================== -->
+  <section class="mt-n8 mt-md-n15 mb-11">
+    <div class="container">
 
-          <div class="col-12">
+      <div class="form-row">
 
-            <div class="card shadow-lg mb-lg-5 mb-6">
+        <div class="col-12">
+          <div class="card shadow-lg mb-5">
+            <div class="card-body">
 
-              <div class="card-body">
+              <!-- Table -->
+              <div class="row">
+                <div class="col-12">
+                  <table class="table table-responsive table-borderless table-hover table-striped">
 
-                <!-- Table -->
-                <div class="row">
-                  <div class="col-12">
-                    <table class="table table-responsive table-borderless table-hover table-striped">
-                      
-                      <thead class="text-center  text-primary lead">
-                        <tr>
-                          <th scope="col" class="text-black">API</th>
-                          <th scope="col">Free</th>
-                          <th scope="col">Lite</th>
-                          <th scope="col">Pro</th>
-                        </tr>
-                      </thead>
-    
-                      <tbody class="text-center">
-                        <tr>
-                          <th scope="row">Person Profile Endpoint</th>
-                          <td>1 credit</td>
-                          <td>1 credit</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Company Profile Endpoint</th>
-                          <td>1 credit</td>
-                          <td>1 credit</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Job Listings Endpoint</th>
-                          <td>2 credits</td>
-                          <td>1 credit (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Job Profile Endpoint</th>
-                          <td>2 credits</td>
-                          <td>1 credit (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">General Resolution Endpoint</th>
-                          <td>3 credits</td>
-                          <td>2 credits (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Company General Resolution Endpoint</th>
-                          <td>3 credits</td>
-                          <td>2 credits (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Employee Listing Count Endpoint</th>
-                          <td>10 credits</td>
-                          <td>1 credit (up to 10000 calls / mo)</td>
-                          <td>1 credit / employee</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Employee Listing Endpoint</th>
-                          <td>10 credits / employee</td>
-                          <td>3 credits / employee (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Work Email Lookup Endpoint</th>
-                          <td>10 credits</td>
-                          <td>3 credits (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Personal Email Lookup Endpoint</th>
-                          <td>10 credits</td>
-                          <td>3 credits (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Contact Number Lookup Endpoint</th>
-                          <td>10 credits</td>
-                          <td>3 credits (up to 10000 calls / mo)</td>
-                          <td>1 credit</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                    <thead class="text-primary lead">
+                      <tr>
+                        <th scope="col" class="text-black col-8">API Endpoint</th>
+                        <th scope="col" class="col-4">Credit cost</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="">
+                      <tr>
+                        <th scope="row">Person API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#people-api-person-profile-endpoint">Person Profile
+                            Endpoint</a></th>
+                        <td> 1 credit <span class="text-gray-700"> + (credit cost of optional parameters)</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Person API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#people-api-role-lookup-endpoint">Role Lookup
+                            Endpoint</a></th>
+                        <td> 3 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Person API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">Person
+                            Profile Picture Endpoint</a></th>
+                        <td> FREE </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Person API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#people-api-person-lookup-endpoint">Person Lookup
+                            Endpoint</a></th>
+                        <td> 2 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-employee-count-endpoint">Employee Count
+                            Endpoint</a></th>
+                        <td> 1 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-employee-search-api-endpoint">Employee
+                            Search Endpoint</a></th>
+                        <td> 10 credits <span class="text-gray-700"> / successful request. </span> + 6 credits <span class="text-gray-700">/ employee returned </span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">Company
+                            Profile Picture Endpoint</a></th>
+                        <td> FREE </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-employee-listing-endpoint">Employee
+                            Listing Endpoint</a></th>
+                        <td> 3 credits <span class="text-gray-700">/ employee returned </span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-company-lookup-endpoint">Company Lookup
+                            Endpoint</a></th>
+                        <td> 2 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint">Company Profile
+                            Endpoint</a></th>
+                        <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jobs API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-count-endpoint">Jobs Listing
+                            Count Endpoint</a></th>
+                        <td> 2 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jobs API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-endpoint">Jobs Listing
+                            Endpoint</a></th>
+                        <td> 2 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jobs API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#jobs-api-job-profile-endpoint">Jobs Profile
+                            Endpoint</a></th>
+                        <td> 2 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Contact API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#contact-api-reverse-work-email-lookup-endpoint">Reverse
+                            Work Email Lookup Endpoint</a></th>
+                        <td> 3 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Contact API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#contact-api-work-email-lookup-endpoint">Work Email
+                            Lookup Endpoint</a></th>
+                        <td> 3 credits </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Contact API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#contact-api-personal-contact-number-lookup-endpoint">Personal
+                            Contact Number Lookup Endpoint</a></th>
+                        <td> 1 credit <span class="text-gray-700">/ contact number returned </span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Contact API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal
+                            Email Lookup Endpoint</a></th>
+                        <td> 1 credit <span class="text-gray-700"> / email returned </span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Contact API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#contact-api-disposable-email-address-check-endpoint">Disposable
+                            Email Address Check Endpoint</a></th>
+                        <td> FREE </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">School API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#school-api-student-listing-endpoint">Student Listing
+                            Endpoint</a></th>
+                        <td> 3 credits <span class="text-gray-700">/ student returned</span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">School API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#school-api-school-profile-endpoint">School Profile
+                            Endpoint</a></th>
+                        <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Reveal API - <a class="text-primary"
+                            href="https://nubela.co/proxycurl/docs#reveal-api-reveal-endpoint">Reveal Endpoint</a></th>
+                        <td> 2 credits <span class="text-gray-700"> / successful requests</span> </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
                 </div>
-      
               </div>
 
             </div>
 
           </div>
+        </div>    
 
-          <div class="col-12 col-md-6">
-            
-            <!-- Card -->
-            <div class="card shadow-lg mb-6 mb-md-0">
-              <div class="card-body">
+        <div class="col-12 col-md-6">
 
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Pay as you go</span>
-                  </span>
-                </div>
+          <!-- Card -->
+          <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card-body">
 
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0">0.01</span>
-                  <span class="h2 align-self-end mb-1">/ credit</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-5">
-                  Do not expire
-                </p>
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary">
-                  Start with 10 credits for free <i class="fe fe-arrow-right ml-3"></i>
-                </a>
-                
+              <!-- Preheading -->
+              <div class="text-center mb-5">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">Pay as you go</span>
+                </span>
               </div>
-            </div>
 
+              <!-- Price -->
+              <div class="text-center">
+                <h5 class="mb-0 text-gray-700"> Starts from</h5>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <span class="h2 mb-0 mt-2">$</span>
+                <span class="price display-2 mb-0">0.009</span>
+                <span class="h2 align-self-end mb-1">/ credit</span>
+              </div>
+
+              <!-- Text -->
+              <p class="text-center text-muted mb-5">
+                Do not expire
+              </p>
+
+              <!-- Button -->
+              <a href="https://nubela.co/proxycurl/pricing" class="btn btn-block btn-primary">
+                See Pricing Table <i class="fe fe-arrow-right ml-3"></i>
+              </a>
+
+            </div>
           </div>
-
-          <div class="col-12 col-md-6">
-            
-            <!-- Card -->
-            <div class="card shadow-lg mb-md-0">
-              <div class="card-body">
-
-                <!-- Preheading -->
-                <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
-                    <span class="h6 text-uppercase">Enterprise</span>
-                  </span>
-                </div>
-
-                <!-- Price -->
-                <div class="d-flex justify-content-center">
-                  <span class="h2 mb-0 mt-2 text-center">Volume pricing available</span>
-                </div>
-
-                <!-- Text -->
-                <p class="text-center text-muted mb-8">
-                  Annual contracts
-                </p>
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-block btn-primary-soft">
-                  Sent Email <i class="fe fe-arrow-right ml-3"></i>
-                </a>
-                
-              </div>
-            </div>
-
-          </div>          
 
         </div>
 
-      </div> <!-- / .container -->
-    </section>
+        <div class="col-12 col-md-6">
 
-    <!-- ENTIRE
-    ================================================== -->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
+          <!-- Card -->
+          <div class="card shadow-lg mb-md-0">
+            <div class="card-body">
 
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              LinkedIn Public Profile Database
-            </h1>
-
-            <!-- Desc -->
-            <p class="lead text-muted mb-10">
-              An entire country's people database in your application
-            </p>
-
-            <!-- Image -->
-            <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-6">
-            
-          </div>
-        </div> <!-- / .row -->        
-
-        <!-- List -->
-        <div class="row justify-content-center mb-6">
-
-          <div class="col-12 col-md-4">
-
-            <h3 class="font-weight-bold font-size-lg mb-4">
-              People profiles:
-            </h3>
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    United States
-                  </p>
-
-                </div>                
-                
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Canada
-                  </p>
-
-                </div>
-
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    United Kingdom
-                  </p>
-
-                </div>
-
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Israel
-                  </p>
-
-                </div>
-
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Singapore
-                  </p>
-
-                </div>
-
-          </div>             
-                
-          <!-- Item -->
-          <div class="col-12 col-md-4">
-
-            <h3 class="font-weight-bold font-size-lg mb-4">
-              Company profiles:
-            </h3>
-
-            <div class="d-flex">
-
-              <!-- Check -->
-              <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                <i class="fe fe-check"></i>
+              <!-- Preheading -->
+              <div class="text-center mb-3">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">Enterprise</span>
+                </span>
               </div>
-              
+
+              <!-- Price -->
+              <div class="d-flex justify-content-center">
+                <span class="h2 mb-0 mt-2 text-center">Volume pricing available</span>
+              </div>
+
               <!-- Text -->
-              <p>
-                17+M companies globally
+              <p class="text-center text-muted mb-5">
+                Annual contracts
               </p>
 
+              <!-- Button -->
+              <a href="#!" class="btn btn-block btn-primary-soft">
+                Send Email <i class="fe fe-arrow-right ml-3"></i>
+              </a>
+
             </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- ENTIRE
+    ================================================== -->
+  <section class="py-8 py-md-11 border-bottom">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold">
+            LinkedIn Public Profile Database
+          </h1>
+
+          <!-- Desc -->
+          <p class="lead text-muted mb-10">
+            An entire country's people database in your application
+          </p>
+
+          <!-- Image -->
+          <img src="./assets/img/illustrations/US Map.png" alt="map" class="img-fluid mb-6">
+
+        </div>
+      </div> <!-- / .row -->
+
+      <!-- List -->
+      <div class="row justify-content-center mb-6">
+
+        <div class="col-12 col-md-4">
+
+          <h3 class="font-weight-bold font-size-lg mb-4">
+            People profiles:
+          </h3>
+
+          <!-- Item -->
+          <div class="d-flex">
+
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p>
+              United States
+            </p>
 
           </div>
 
-        </div> <!-- row -->
+          <!-- Item -->
+          <div class="d-flex">
 
-        <div class="row justify-content-center">
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
 
-          <!-- Buttons -->
-          <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
-            Explore LinkDB Snapshots
-          </button>
+            <!-- Text -->
+            <p>
+              Canada
+            </p>
 
-        </div> <!-- row -->
+          </div>
 
-      </div> <!-- / .container -->
-    </section>
+          <div class="d-flex">
+
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p>
+              United Kingdom
+            </p>
+
+          </div>
+
+          <div class="d-flex">
+
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p>
+              Israel
+            </p>
+
+          </div>
+
+          <div class="d-flex">
+
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p>
+              Singapore
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="col-12 col-md-4">
+
+          <h3 class="font-weight-bold font-size-lg mb-4">
+            Company profiles:
+          </h3>
+
+          <div class="d-flex">
+
+            <!-- Check -->
+            <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p>
+              17+M companies globally
+            </p>
+
+          </div>
+
+        </div>
+
+      </div> <!-- row -->
+
+      <div class="row justify-content-center">
+
+        <!-- Buttons -->
+        <button type="button" class="btn btn-primary btn-md text-center mr-lg-4 mb-2">
+          Explore LinkDB Snapshots
+        </button>
+
+      </div> <!-- row -->
+
+    </div> <!-- / .container -->
+  </section>
 
     <!-- ARTICLES
     ================================================== -->
-    <section class="py-7 pb-md-10 pt-md-10 bg-light">
+    <section class="py-7 pb-md-12 pt-md-10 bg-light">
       <div class="container">
         <div class="row align-items-center mb-5">
           <div class="col-12 col-md">
-
+  
             <!-- Heading -->
             <h3 class="mb-0">
               Latest Articles
             </h3>
-
+  
             <!-- Text -->
             <p class="mb-0 text-muted">
               Here’s what we've been up to recently.
             </p>
-
+  
           </div>
           <div class="col-12 col-md-auto">
-
+  
             <!-- Button -->
             <a href="https://nubela.co/blog/" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline" target="_blank">
               View all
             </a>
-
+  
           </div>
         </div> <!-- / .row -->
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 d-flex">
-
+  
             <!-- Card -->
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
+  
               <!-- Image -->
-              <a class="card-img-top" href="#!">
-
+              <a class="card-img-top" href="blog-post.html">
+  
                 <!-- Image -->
-                <img src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png" alt="..." class="card-img-top">
-
+                <img
+                  src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png"
+                  alt="..." class="card-img-top">
+  
                 <!-- Shape -->
                 <div class="position-relative">
                   <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                    </svg>
                   </div>
                 </div>
-
+  
               </a>
-
+  
               <!-- Body -->
-              <a class="card-body" href="#!">
-
+              <a class="card-body" href="blog-post.html">
+  
+                <!-- Tag -->
+                <h2 class="text-uppercase small text-muted mb-1">
+                  Proxycurl
+                </h2>
+  
                 <!-- Heading -->
                 <h3>
                   Enrich companies with funding, categories, emails, exits/acquisitions data
                 </h3>
-
+  
                 <!-- Text -->
                 <p class="mb-0 text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
                 </p>
-
+  
               </a>
-
+  
               <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
+              <div class="row card-meta mt-auto">
+  
                 <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                <div class="col-12">
+                  <hr class="card-meta-divide">
                 </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Ab Hadley
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
+  
+                <div class="col-auto">
+                  <!-- Avatar -->
+                  <div class="avatar avatar-sm mr-2">
+                    <img src="assets/img/photos/steven picture.jpeg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                </div>
+  
+                <div class="col ml-n6">
+                  <!-- Author -->
+                  <a class="text-black text-uppercase font=font-weight-bold" href="blog-author.html">
+                    <h6 class="font-weight-bold mb-0 pt-1">
+                      Steven Goh
+                    </h6>
+                  </a>
+  
+                  <!-- Publish Date -->
+                  <p class="text-muted text-uppercase h6 mb-0">
+                    20 Apr 2023
+                  </p>
+  
+                </div>
+  
+                <div class="col-auto">
+                  <!-- Time -->
+                  <p class="h6 text-uppercase text-muted text-right mb-0 ml-auto">
+                    <time>1 min <br>read</time>
+                  </p>
+                </div>
+  
+              </div>
+  
             </div>
-
+  
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex">
-
+  
             <!-- Card -->
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
+  
               <!-- Image -->
-              <a class="card-img-top" href="#!">
-
+              <a class="card-img-top" href="blog-post.html">
+  
                 <!-- Image -->
-                <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png" alt="..." class="card-img-top">
-
+                <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png" alt="..."
+                  class="card-img-top">
+  
                 <!-- Shape -->
                 <div class="position-relative">
                   <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                    </svg>
                   </div>
                 </div>
-
+  
               </a>
-
+  
               <!-- Body -->
-              <a class="card-body" href="#!">
-
+              <a class="card-body" href="blog-post.html">
+  
+                <!-- Tag -->
+                <h2 class="text-uppercase small text-muted mb-1">
+                  Proxycurl
+                </h2>
+  
                 <!-- Heading -->
                 <h3>
                   How stable is Proxycurl for scraping LinkedIn?
                 </h3>
-
+  
                 <!-- Text -->
                 <p class="mb-0 text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
                 </p>
-
+  
               </a>
-
+  
               <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
+              <div class="row card-meta mt-auto">
+  
                 <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                <div class="col-12">
+                  <hr class="card-meta-divide">
                 </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Adolfo Hess
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
+  
+                <div class="col-auto">
+                  <!-- Avatar -->
+                  <div class="avatar avatar-sm mr-2">
+                    <img src="assets/img/photos/joseph.png" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                </div>
+  
+                <div class="col ml-n6">
+                  <!-- Author -->
+                  <a class="text-black text-uppercase font=font-weight-bold" href="blog-author.html">
+                    <h6 class="font-weight-bold mb-0 pt-1">
+                      Joseph Lim
+                    </h6>
+                  </a>
+  
+                  <!-- Publish Date -->
+                  <p class="text-muted text-uppercase h6 mb-0">
+                    04 Mar 2023
+                  </p>
+  
+                </div>
+  
+                <div class="col-auto">
+                  <!-- Time -->
+                  <p class="h6 text-uppercase text-muted text-right mb-0 ml-auto">
+                    <time>1 min <br>read</time>
+                  </p>
+                </div>
+  
+              </div>
+  
             </div>
-
+  
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex">
-
+  
             <!-- Card -->
             <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
-
+  
               <!-- Image -->
-              <a class="card-img-top" href="#!">
-
+              <a class="card-img-top" href="blog-post.html">
+  
                 <!-- Image -->
-                <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..." class="card-img-top">
-
+                <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..."
+                  class="card-img-top">
+  
                 <!-- Shape -->
                 <div class="position-relative">
                   <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                    </svg>
                   </div>
                 </div>
-
+  
               </a>
-
+  
               <!-- Body -->
-              <a class="card-body" href="#!">
-
+              <a class="card-body" href="blog-post.html">
+  
+                <!-- Tag -->
+                <h2 class="text-uppercase small text-muted mb-1">
+                  Proxycurl
+                </h2>
+  
                 <!-- Heading -->
                 <h3>
                   Introducing Role Lookup API endpoint
                 </h3>
-
+  
                 <!-- Text -->
                 <p class="mb-0 text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
                 </p>
-
+  
               </a>
-
+  
               <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
+              <div class="row card-meta mt-auto">
+  
                 <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                <div class="col-12">
+                  <hr class="card-meta-divide">
                 </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Ab Hadley
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
+  
+                <div class="col-auto">
+                  <!-- Avatar -->
+                  <div class="avatar avatar-sm mr-2">
+                    <img src="assets/img/photos/cr.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+                </div>
+  
+                <div class="col ml-n6">
+                  <!-- Author -->
+                  <a class="text-black text-uppercase font=font-weight-bold" href="blog-author.html">
+                    <h6 class="font-weight-bold mb-0 pt-1">
+                      Colton Randolph
+                    </h6>
+                  </a>
+  
+                  <!-- Publish Date -->
+                  <p class="text-muted text-uppercase h6 mb-0">
+                    15 Feb 2023
+                  </p>
+  
+                </div>
+  
+                <div class="col-auto">
+                  <!-- Time -->
+                  <p class="h6 text-uppercase text-muted text-right mb-0 ml-auto">
+                    <time>10 min <br>read</time>
+                  </p>
+                </div>
+  
+              </div>
+  
             </div>
-
+  
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </section>
+    </section>   
 
     <!-- FOOTER
     ================================================== -->
@@ -1964,6 +2329,7 @@ curl \
     <script src="./assets/libs/quill/dist/quill.min.js"></script>
     <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
     <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
