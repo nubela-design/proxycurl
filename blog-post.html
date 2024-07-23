@@ -32,299 +32,321 @@
 
 <body>
 
-     <!-- NAVBAR
+  <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
-        </a>
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
         </button>
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
 
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
-
-          <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
-
-            <!-- Products -->
-            <li class="nav-item dropdown">
-              <a href="products.html" class="nav-link" id="navbarPages">
-                Products <i class="fe fe-chevron-down"></i>
-              </a>
-              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="row no-gutters">
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="linkdb.html">
-                          Database of public<br>
-                          LinkedIn profiles
-                        </a>
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
-                          Sapiengraph - B2B Enrichment <br class="d-block">
-                          in Google Sheets
-                        </a>
-
-                        <!-- Heading -->
-                        <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
-                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
-                        </a>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
-                          Disposable Email Checker
-                        </a>                        
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
-                          Person Profile Picture API
-                        </a>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
-                          Company Profile Picture API
-                        </a>
-
-                      </div>
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="people-api.html">
-                          People API
-                        </a>
-                        <a class="dropdown-item" href="company-api.html">
-                          Company API
-                        </a>
-                        <a class="dropdown-item" href="contact-api.html">
-                          Contact API
-                        </a>       
-                        <a class="dropdown-item" href="reverse-email-lookup.html">
-                          ᴸ Reverse Email Lookup API
-                        </a>                    
-                        <a class="dropdown-item" href="email-lookup-api-endpoint.html">
-                          ᴸ Work Email Lookup API
-                        </a>     
-                        <a class="dropdown-item" href="jobs-api.html">
-                          Jobs API
-                        </a>
-                        <a class="dropdown-item" href="school-api.html">
-                          School API
-                        </a>
-                        <a class="dropdown-item" href="search-api.html">
-                          Search API
-                        </a>
-                        <a class="dropdown-item" href="customer-api.html">
-                          Customer API
-                        </a>
-
-
-                        <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
-                          API Documentation <i class="fe fe-arrow-right"></i>
-                        </a>
-                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
-                          See all products <i class="fe fe-arrow-right"></i>
-                        </a>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-            </li>
-
-            <!-- Solution -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Solutions <i class="fe fe-chevron-down"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="row no-gutters">
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
-                        </h6>
-
-                        <!-- List -->
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="linkedin.html">
-                            LinkedIn Scraper API
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="linkedin.html">
-                            Crunchbase Scraper API
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
-                            Investment Signals
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="solution-growth.html">
-                            Accelerating Growth Startups
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="hr-tech.html">
-                            Data for HR Tech
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                            Automated Recruitment
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
-                            Sales and Marketing Automation
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                            Identifying Buyer Intent Data
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                            CRM Data Enrichment
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="clearbit-alternative.html">
-                            Clearbit Alternative
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="solution-PeopleDataLabs.html">
-                            People Data Labs Alternative
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright mt-4">
-                          <a class="text-primary font-weight-bold" href="use-cases.html">
-                            See all use-cases <i class="fe fe-arrow-right"></i>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="monitoring-job-changes.html">
-                          Track Job Changes
-                        </a>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="reverse-email-lookup-demo.html">
-                          Reverse Email Lookup
-                        </a>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-            </li>
-
-            <!-- Pricing -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Pricing <i class="fe fe-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="pricing.html">
-                    Proxycurl API Pricing
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="linkdb-pricing.html">
-                    LinkDB Pricing
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Blog -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="blog.html">
-                Blog
-              </a>
-            </li>
-
-            <!-- FAQ -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="#!">
-                FAQ
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="text-center ml-auto">
-            <!-- Button -->
-            <a class="btn btn-sm btn-link" href="login.html">
-              Log in
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a href="products.html" class="nav-link" id="navbarPages">
+              Products <i class="fe fe-chevron-down"></i>
             </a>
-          </div>
+            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
 
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
+                        LinkDB
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="linkdb.html">
+                        Database of public<br>
+                        LinkedIn profiles
+                      </a>
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet
+                        Addon
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                        Sapiengraph - B2B Enrichment <br class="d-block">
+                        in Google Sheets
+                      </a>
+
+                      <!-- Heading -->
+                      <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
+                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free
+                        Tools
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                        Disposable Email Checker
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
+                        Person Profile Picture API
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
+                        Company Profile Picture API
+                      </a>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo"
+                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="people-api.html">
+                        People API
+                      </a>
+                      <a class="dropdown-item" href="company-api.html">
+                        Company API
+                      </a>
+                      <a class="dropdown-item" href="contact-api.html">
+                        Contact API
+                      </a>
+                      <a class="dropdown-item" href="reverse-email-lookup.html">
+                        ᴸ Reverse Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="email-lookup-api-endpoint.html">
+                        ᴸ Work Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="jobs-api.html">
+                        Jobs API
+                      </a>
+                      <a class="dropdown-item" href="school-api.html">
+                        School API
+                      </a>
+                      <a class="dropdown-item" href="search-api.html">
+                        Search API
+                      </a>
+                      <a class="dropdown-item" href="customer-api.html">
+                        Customer API
+                      </a>
+
+
+                      <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
+                        API Documentation <i class="fe fe-arrow-right"></i>
+                      </a>
+                      <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                        See all products <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / .row -->
+          </li>
+
+          <!-- Solution -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
+              Solutions <i class="fe fe-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg">
+                        Use Cases
+                      </h6>
+
+                      <!-- List -->
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          LinkedIn Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          Crunchbase Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                          Investment Signals
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-growth.html">
+                          Accelerating Growth Startups
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="hr-tech.html">
+                          Data for HR Tech
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                          Automated Recruitment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                          Sales and Marketing Automation
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                          Identifying Buyer Intent Data
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                          CRM Data Enrichment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="clearbit-alternative.html">
+                          Clearbit Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-PeopleDataLabs.html">
+                          People Data Labs Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright mt-4">
+                        <a class="text-primary font-weight-bold" href="use-cases.html">
+                          See all use-cases <i class="fe fe-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z"
+                              fill="#335EEA"></path>
+                          </g>
+                        </svg> Demos
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="monitoring-job-changes.html">
+                        Track Job Changes
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="reverse-email-lookup-demo.html">
+                        Reverse Email Lookup
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / .row -->
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Pricing <i class="fe fe-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing.html">
+                  Proxycurl API Pricing
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="linkdb-pricing.html">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <!-- FAQ -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="#!">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center ml-auto">
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
-            Sign up
+          <a class="btn btn-sm btn-link" href="login.html">
+            Log in
           </a>
-
         </div>
 
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+          Sign up
+        </a>
+
       </div>
-    </nav>
+
+    </div>
+  </nav>
 
   <!-- IMAGE
     ================================================== -->
@@ -333,7 +355,7 @@
       src="/assets/img/illustrations/TLC_Linkedin_API.png">
     <figcaption class="h4 text-gray-700 pt-3 pt-md-5 px-4">
       Getting people profiles data via LinkedIn API - with python code examples
-    </figcaption>  
+    </figcaption>
   </section>
 
   <!-- HEADER
@@ -465,7 +487,8 @@
     <div class="container">
       <div class="row justify-content-center justify-content-xl-start">
 
-        <div class="col-12 col-md-10 col-lg-9 col-xl-3 ml-xl-n11 position-md-sticky d-flex mb-5 mb-md-9 mb-xl-0" style="top: 0;">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-3 ml-xl-n11 position-md-sticky d-flex mb-5 mb-md-9 mb-xl-0"
+          style="top: 0;">
 
           <!-- Sidebar -->
           <aside class="pr-2">
@@ -492,8 +515,8 @@
                 </a>
 
               </li>
-            </ul>               
-            
+            </ul>
+
             <!-- List group -->
             <ul class="list-group list-group-flush  vr py-1 py-md-2">
               <li class="list-group-item">
@@ -504,8 +527,8 @@
                 </a>
 
               </li>
-            </ul>       
-            
+            </ul>
+
             <!-- List group -->
             <ul class="list-group list-group-flush  vr-active py-1 py-md-2">
               <li class="list-group-item">
@@ -516,8 +539,8 @@
                 </a>
 
               </li>
-            </ul>                
-            
+            </ul>
+
             <!-- List group -->
             <ul class="list-group list-group-flush vr py-1 py-md-2">
               <li class="list-group-item">
@@ -528,8 +551,8 @@
                 </a>
 
               </li>
-            </ul>     
-                        
+            </ul>
+
             <!-- List group -->
             <ul class="list-group list-group-flush vr py-1 py-md-2">
               <li class="list-group-item">
@@ -540,8 +563,8 @@
                 </a>
 
               </li>
-            </ul>     
-            
+            </ul>
+
             <!-- List group -->
             <ul class="list-group list-group-flush  vr py-1 py-md-2">
               <li class="list-group-item">
@@ -552,22 +575,23 @@
                 </a>
 
               </li>
-            </ul>             
+            </ul>
 
           </aside>
 
-        </div>        
+        </div>
 
         <div class="col-12 col-md-10 col-lg-9 ml-xl-n6">
 
           <div>
 
             <p class="h4 mb-5">
-              Let's kick off this article with a demo. Run the following command to see what an enriched LinkedIn profile looks like when accessed through a 3rd-party LinkedIn API:
+              Let's kick off this article with a demo. Run the following command to see what an enriched LinkedIn
+              profile looks like when accessed through a 3rd-party LinkedIn API:
             </p>
 
             <!-- Code block -->
-            <div class="text-left mb-5">    
+            <div class="text-left mb-5">
 
               <pre>
 <code class="language-shell">$ curl \
@@ -576,14 +600,18 @@
 'https://nubela.co/proxycurl/api/v2/linkedin' \
 --data-urlencode 'linkedin_profile_url=https://www.linkedin.com/in/williamhgates/'</code></pre>
 
-            </div>               
+            </div>
 
             <p class="h4 mb-5">
-              <a href="#!" class="text-primary-desat">Impressed by what you see</a>? This is a demonstration of the <a href="#!" class="text-primary-desat">Proxycurl API</a> in action. There exists the official LinkedIn API, as well as third-party LinkedIn APIs like Proxycurl.
+              <a href="#!" class="text-primary-desat">Impressed by what you see</a>? This is a demonstration of the <a
+                href="#!" class="text-primary-desat">Proxycurl API</a> in action. There exists the official LinkedIn
+              API, as well as third-party LinkedIn APIs like Proxycurl.
             </p>
 
             <p class="h4">
-              As the CEO of Proxycurl, and a coder myself, I've garnered a few years of experience dealing with LinkedIn data. In this guide, I aim to equip you with a comprehensive understanding of LinkedIn APIs, both official and 3rd-party alternatives. Expect a deep dive from both a technical and business perspective.
+              As the CEO of Proxycurl, and a coder myself, I've garnered a few years of experience dealing with LinkedIn
+              data. In this guide, I aim to equip you with a comprehensive understanding of LinkedIn APIs, both official
+              and 3rd-party alternatives. Expect a deep dive from both a technical and business perspective.
             </p>
 
           </div><!-- paragraph-->
@@ -619,8 +647,8 @@
                       <th scope="col" class="h4"></th>
                       <th scope="col" class="h4">Official LinkedIn API</th>
                       <th scope="col" class="h4">Proxycurl</th>
-                      <th scope="col" class="h4">PhantomBuster</th>    
-                      <th scope="col" class="h4">People Data Labs</th>   
+                      <th scope="col" class="h4">PhantomBuster</th>
+                      <th scope="col" class="h4">People Data Labs</th>
 
                     </tr>
                   </thead>
@@ -685,46 +713,62 @@
           <p class="h4 mb-5">
             LinkedIn APIs fall into two categories: the official LinkedIn API and 3rd-party LinkedIn APIs.
           </p>
-                    
+
           <!-- Text -->
           <p class="h4 mb-5">
-            To gain access to the official LinkedIn API, you must be a LinkedIn Partner. This means you, the developer, and your associated business will need to navigate through administrative hoops for several months in hopes of getting approved. One of the criteria for being approved as a LinkedIn Partner is that you cannot be a competitor to LinkedIn in any way. So, if you are in an industry like HR tech, building an application that might compete with an existing LinkedIn product, you're out of luck.
+            To gain access to the official LinkedIn API, you must be a LinkedIn Partner. This means you, the developer,
+            and your associated business will need to navigate through administrative hoops for several months in hopes
+            of getting approved. One of the criteria for being approved as a LinkedIn Partner is that you cannot be a
+            competitor to LinkedIn in any way. So, if you are in an industry like HR tech, building an application that
+            might compete with an existing LinkedIn product, you're out of luck.
           </p>
-          
+
           <!-- Text -->
           <p class="h4 mb-5">
-            As far as I'm aware, another requirement for being a LinkedIn Partner is that you need to be paying five-digit monthly fees to LinkedIn.
-          </p> 
-          
+            As far as I'm aware, another requirement for being a LinkedIn Partner is that you need to be paying
+            five-digit monthly fees to LinkedIn.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
-            At the other end of the spectrum, we have 3rd-party LinkedIn APIs. The world of third-party LinkedIn APIs is like the wild west.
-          </p>      
-          
+            At the other end of the spectrum, we have 3rd-party LinkedIn APIs. The world of third-party LinkedIn APIs is
+            like the wild west.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
-            Some 3rd-party vendors, like <a href="" class="text-primary-desat">PhantomBuster</a>, require you to supply your own LinkedIn account(s). PhantomBuster is a great choice if you want to automate actions within your own LinkedIn account and aren't scared of having your personal LinkedIn account banned.
-          </p>      
-          
+            Some 3rd-party vendors, like <a href="" class="text-primary-desat">PhantomBuster</a>, require you to supply
+            your own LinkedIn account(s). PhantomBuster is a great choice if you want to automate actions within your
+            own LinkedIn account and aren't scared of having your personal LinkedIn account banned.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
-            There are also vendors like <a href="" class="text-primary-desat">People Data Labs (PDL)</a>, which have obtained bulk LinkedIn data from various vendors and resell access to this combined LinkedIn profile database. The data from such resellers often tend to be out-of-date.
-          </p>  
-          
+            There are also vendors like <a href="" class="text-primary-desat">People Data Labs (PDL)</a>, which have
+            obtained bulk LinkedIn data from various vendors and resell access to this combined LinkedIn profile
+            database. The data from such resellers often tend to be out-of-date.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
-            Then, there are 3rd-party vendors that scrape LinkedIn. There are variations in this category too. <a href="" class="text-primary-desat">Some of these scraping vendors</a> engage in fraudulent behavior, such as registering fake accounts and using private throwaway debit cards to sign up for free Sales Navigator trials, and then using such whitelisted accounts to scrape LinkedIn at scale. Meanwhile, some vendors strictly work with <a href="" class="text-primary-desat">publicly accessible LinkedIn profiles</a>.
-          </p> 
-          
+            Then, there are 3rd-party vendors that scrape LinkedIn. There are variations in this category too. <a
+              href="" class="text-primary-desat">Some of these scraping vendors</a> engage in fraudulent behavior, such
+            as registering fake accounts and using private throwaway debit cards to sign up for free Sales Navigator
+            trials, and then using such whitelisted accounts to scrape LinkedIn at scale. Meanwhile, some vendors
+            strictly work with <a href="" class="text-primary-desat">publicly accessible LinkedIn profiles</a>.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
-            The ramifications are significant. On one hand, companies that engage in fraud have been sued and shut down. On the other hand, companies that work exclusively with public LinkedIn profiles operate within a <a href="" class="text-primary-desat">legally tested framework</a> for compliance.
-          </p> 
-          
+            The ramifications are significant. On one hand, companies that engage in fraud have been sued and shut down.
+            On the other hand, companies that work exclusively with public LinkedIn profiles operate within a <a href=""
+              class="text-primary-desat">legally tested framework</a> for compliance.
+          </p>
+
           <!-- Text -->
           <p class="h4 mb-5">
             Here's a quick recap with the comparison table:
-          </p> 
+          </p>
 
           <div class="row justify-content-center mt-6 mb-5">
             <div class="col-12 col-md-12">
@@ -737,8 +781,8 @@
                       <th scope="col" class="h4"></th>
                       <th scope="col" class="h4">Official LinkedIn API</th>
                       <th scope="col" class="h4">Proxycurl</th>
-                      <th scope="col" class="h4">PhantomBuster</th>    
-                      <th scope="col" class="h4">People Data Labs</th>     
+                      <th scope="col" class="h4">PhantomBuster</th>
+                      <th scope="col" class="h4">People Data Labs</th>
 
                     </tr>
                   </thead>
@@ -797,12 +841,13 @@
               </div>
 
             </div>
-          </div> <!-- / .table -->          
+          </div> <!-- / .table -->
 
           <!-- Text -->
           <p class="h4 mb-5 font-italic">
-            Interested in learning more about 3rd-party LinkedIn APIs? We've compared <a href="" class="text-primary-desat">7 top LinkedIn scraping tools</a>. You can read more about it.
-          </p>           
+            Interested in learning more about 3rd-party LinkedIn APIs? We've compared <a href=""
+              class="text-primary-desat">7 top LinkedIn scraping tools</a>. You can read more about it.
+          </p>
 
         </div>
       </div> <!-- / .row -->
@@ -824,83 +869,106 @@
           <!-- H2 / What Can You Do with the Official LinkedIn API?-->
           <p class="h2 font-weight-bold mb-5">
             What Can You Do with the Official LinkedIn API?
-          </p>          
+          </p>
 
           <!-- Text -->
           <p class="h4 mb-5">
-            LinkedIn is a formidable professional social network that serves as a treasure trove of data for professionals and job listings. This data is something that a <a href="#!" class="text-primary-desat">recruitment tech startup</a> or a <a href="#!" class="text-primary-desat">sales automation product</a> would love to integrate into their offerings. LinkedIn recognizes its value and <a href="#!" class="text-primary-desat">closed public access to their API in 2015</a>. To access the official LinkedIn API, you'll need to become a LinkedIn Partner.
+            LinkedIn is a formidable professional social network that serves as a treasure trove of data for
+            professionals and job listings. This data is something that a <a href="#!"
+              class="text-primary-desat">recruitment tech startup</a> or a <a href="#!" class="text-primary-desat">sales
+              automation product</a> would love to integrate into their offerings. LinkedIn recognizes its value and <a
+              href="#!" class="text-primary-desat">closed public access to their API in 2015</a>. To access the official
+            LinkedIn API, you'll need to become a LinkedIn Partner.
           </p>
 
           <p class="h4 mb-5">
             Once you become a LinkedIn Partner, you'll gain access to a subset of the following APIs:
-          </p>       
+          </p>
 
           <ol type="1" class="mb-7">
-            <li class="h4"><span class="font-weight-black">Profile API:</span> Allows access to a user's LinkedIn profile information. You can access basic profile details,
+            <li class="h4"><span class="font-weight-black">Profile API:</span> Allows access to a user's LinkedIn
+              profile information. You can access basic profile details,
               pictures, and headlines.</li>
-            <li class="h4"><span class="font-weight-black">Connections API:</span> Allows access to a user's LinkedIn network. You can retrieve the list of a user's connections.</li>              
-            <li class="h4"><span class="font-weight-black">Share API:</span> Allows you to post shares for authenticated members. You can share text, URLs, and media.</li>              
-            <li class="h4"><span class="font-weight-black">Invitation API:</span> Allows you to invite others to connect on LinkedIn.</li>              
-            <li class="h4"><span class="font-weight-black">Organization API:</span> Allows you to retrieve organization and brand data.</li>              
-            <li class="h4"><span class="font-weight-black">UGC (User Generated Content) API:</span> Allows you to retrieve, create, and manage rich, multi-faceted content.</li>              
-            <li class="h4"><span class="font-weight-black">Compliance API:</span> Allows you to report content that violates LinkedIn's Professional Community Policies.</li>                          
+            <li class="h4"><span class="font-weight-black">Connections API:</span> Allows access to a user's LinkedIn
+              network. You can retrieve the list of a user's connections.</li>
+            <li class="h4"><span class="font-weight-black">Share API:</span> Allows you to post shares for authenticated
+              members. You can share text, URLs, and media.</li>
+            <li class="h4"><span class="font-weight-black">Invitation API:</span> Allows you to invite others to connect
+              on LinkedIn.</li>
+            <li class="h4"><span class="font-weight-black">Organization API:</span> Allows you to retrieve organization
+              and brand data.</li>
+            <li class="h4"><span class="font-weight-black">UGC (User Generated Content) API:</span> Allows you to
+              retrieve, create, and manage rich, multi-faceted content.</li>
+            <li class="h4"><span class="font-weight-black">Compliance API:</span> Allows you to report content that
+              violates LinkedIn's Professional Community Policies.</li>
           </ol>
 
           <!-- H2 / Getting Approved as a LinkedIn Partner-->
           <p class="h2 font-weight-bold mb-5">
             Getting Approved as a LinkedIn Partner
-          </p> 
-          
+          </p>
+
           <p class="h4 mb-5">
             The LinkedIn Partner Program is open to four types of businesses:
-          </p>       
+          </p>
 
           <ol type="1" class="mb-5">
             <li class="h4">Talent Solutions, for HR tech companies.</li>
-            <li class="h4">Marketing Solutions, for marketing automation companies.</li>              
-            <li class="h4">Sales Navigator Application Development, for startups looking to enhance LinkedIn Sales Navigator.</li>              
-            <li class="h4">LinkedIn Learning Integration, for content companies.</li>              
+            <li class="h4">Marketing Solutions, for marketing automation companies.</li>
+            <li class="h4">Sales Navigator Application Development, for startups looking to enhance LinkedIn Sales
+              Navigator.</li>
+            <li class="h4">LinkedIn Learning Integration, for content companies.</li>
           </ol>
 
           <p class="h4 mb-5">
-            From what I understand, it's a long and arduous process to get a company approved as a LinkedIn Partner. Your best bet is to select the category that best fits your company's offerings and apply to become a LinkedIn Partner.
+            From what I understand, it's a long and arduous process to get a company approved as a LinkedIn Partner.
+            Your best bet is to select the category that best fits your company's offerings and apply to become a
+            LinkedIn Partner.
           </p>
 
           <p class="h4 mb-7">
-            Most of the impressive LinkedIn API features also require a paid subscription to LinkedIn Developer Enterprise Products.
+            Most of the impressive LinkedIn API features also require a paid subscription to LinkedIn Developer
+            Enterprise Products.
           </p>
 
           <!-- H2 / Profile Enrichment with the Official LinkedIn API-->
           <p class="h2 font-weight-bold mb-5">
             Profile Enrichment with the Official LinkedIn API
-          </p> 
-          
+          </p>
+
           <p class="h4 mb-5">
-            Most companies will want to start with LinkedIn's Consumer Solutions Platform (CSP). When you think of LinkedIn, you likely think of the rich and bountiful profiles, and CSP is your access point to these alluring profiles.
-          </p>       
+            Most companies will want to start with LinkedIn's Consumer Solutions Platform (CSP). When you think of
+            LinkedIn, you likely think of the rich and bountiful profiles, and CSP is your access point to these
+            alluring profiles.
+          </p>
 
           <p class="h4 mb-5">
             There are only two features of the CSP that allow you to extract profile data from LinkedIn:
-          </p>              
+          </p>
 
           <ol type="1" class="mb-7">
-            <li class="h4"><span class="badge badge-secondary-soft">Sign In with LinkedIn</span> provides the authentication layer to your product by allowing users to sign in with their professional LinkedIn profiles.</li>
-            <li class="h4"><span class="badge badge-secondary-soft">Profile API</span> returns structured data of a profile programmatically.</li>                        
+            <li class="h4"><span class="badge badge-secondary-soft">Sign In with LinkedIn</span> provides the
+              authentication layer to your product by allowing users to sign in with their professional LinkedIn
+              profiles.</li>
+            <li class="h4"><span class="badge badge-secondary-soft">Profile API</span> returns structured data of a
+              profile programmatically.</li>
           </ol>
 
           <!-- H2 / "Sign In with LinkedIn" OAuth-->
           <p class="h2 font-weight-bold mb-5">
             "Sign In with LinkedIn" OAuth
-          </p> 
-          
+          </p>
+
           <p class="h4 mb-5">
-            <span class="font-italic">Sign In with LinkedIn</span> is an OAuth provider for your application. Most people assume that if you use <span class="font-italic">Sign In with LinkedIn</span>, LinkedIn will provide every user's LinkedIn profile. However, this is not the case. What can be returned are:
-          </p>                 
+            <span class="font-italic">Sign In with LinkedIn</span> is an OAuth provider for your application. Most
+            people assume that if you use <span class="font-italic">Sign In with LinkedIn</span>, LinkedIn will provide
+            every user's LinkedIn profile. However, this is not the case. What can be returned are:
+          </p>
 
           <ol type="1" class="mb-5">
             <li class="h4">First/Last name</li>
-            <li class="h4">Email address</li>        
-            <li class="h4">Profile picture</li>                      
+            <li class="h4">Email address</li>
+            <li class="h4">Profile picture</li>
           </ol>
 
           <p class="h4 mb-5">
@@ -908,21 +976,27 @@
           </p>
 
           <p class="h4 mb-7">
-            In my opinion, <span class="font-italic">Sign In with LinkedIn</span> offers very little utility for most applications because the key data you want to extract is the user's LinkedIn profile, not general information about the user devoid of any data from their LinkedIn profile.
-          </p>   
-          
+            In my opinion, <span class="font-italic">Sign In with LinkedIn</span> offers very little utility for most
+            applications because the key data you want to extract is the user's LinkedIn profile, not general
+            information about the user devoid of any data from their LinkedIn profile.
+          </p>
+
           <!-- H2 / Fetch Person Profile Data via the Official LinkedIn Profile API-->
           <p class="h2 font-weight-bold mb-5">
             Fetch Person Profile Data via the Official LinkedIn Profile API
-          </p>       
-          
+          </p>
+
           <p class="h4 mb-5">
             There are two ways to fetch the data of a profile via the official LinkedIn API:
           </p>
 
           <ol type="1" class="mb-7">
-            <li class="h4">The first "Sign In With LinkedIn" method is free and available to most developers. However, you must <span class="font-weight-black">obtain permission from each profile</span> you wish to extract into your application.</li>
-            <li class="h4">The second "Profile API" method is only available to <span class="font-weight-black">approved developers with a paid subscription</span> to LinkedIn's Consumer Solution Platform. This allows you to fetch profile data from any profile ID.</li>                         
+            <li class="h4">The first "Sign In With LinkedIn" method is free and available to most developers. However,
+              you must <span class="font-weight-black">obtain permission from each profile</span> you wish to extract
+              into your application.</li>
+            <li class="h4">The second "Profile API" method is only available to <span class="font-weight-black">approved
+                developers with a paid subscription</span> to LinkedIn's Consumer Solution Platform. This allows you to
+              fetch profile data from any profile ID.</li>
           </ol>
 
           <p class="h3 mb-5 font-weight-black">
@@ -930,23 +1004,29 @@
           </p>
 
           <p class="h4 mb-5">
-            The first method requires you, the developer, to seek permission from the user who owns the profile. To do that, LinkedIn requires you to fetch an access_token via 3-legged OAuth, a fancy term describing a two-step process to obtain an access token.
-          </p>       
-          
-          <p class="h4 mb-5">
-            <span class="font-weight-black">Step 0:</span> Obtain a CLIENT_ID and CLIENT_SECRET by creating an app on the LinkedIn Developers page. (You can find this page through a Google search)
-          </p>   
+            The first method requires you, the developer, to seek permission from the user who owns the profile. To do
+            that, LinkedIn requires you to fetch an access_token via 3-legged OAuth, a fancy term describing a two-step
+            process to obtain an access token.
+          </p>
 
           <p class="h4 mb-5">
-            <span class="font-weight-black">Step 1:</span> To get permission from a user, you will generate an authorization URL to send your user to LinkedIn, where they can permit your application to download their profile.
-          </p>   
+            <span class="font-weight-black">Step 0:</span> Obtain a CLIENT_ID and CLIENT_SECRET by creating an app on
+            the LinkedIn Developers page. (You can find this page through a Google search)
+          </p>
 
           <p class="h4 mb-5">
-            In this case, you must provide a REDIRECT_URI, the webpage to which LinkedIn will send the user back after they have finished granting permission.
-          </p>   
+            <span class="font-weight-black">Step 1:</span> To get permission from a user, you will generate an
+            authorization URL to send your user to LinkedIn, where they can permit your application to download their
+            profile.
+          </p>
+
+          <p class="h4 mb-5">
+            In this case, you must provide a REDIRECT_URI, the webpage to which LinkedIn will send the user back after
+            they have finished granting permission.
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">def generate_authorization_url():
@@ -974,14 +1054,16 @@ url = requests.Request('GET', LI_AUTH_URL,
             }).prepare().url
 return url</code></pre>
 
-          </div>                 
+          </div>
 
           <p class="h4 mb-5">
-            <span class="font-weight-black">Step 2:</span> After a user permits you to access their profile, you'll receive an authorization code. With this code, you will exchange it for an access_token to access the user's profile.
-          </p>   
+            <span class="font-weight-black">Step 2:</span> After a user permits you to access their profile, you'll
+            receive an authorization code. With this code, you will exchange it for an access_token to access the user's
+            profile.
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">def get_access_token(authorization_code):
@@ -998,14 +1080,14 @@ return url</code></pre>
   }).json()['access_token']
   return access_token</code></pre>
 
-          </div>          
+          </div>
 
           <p class="h4 mb-5">
             <span class="font-weight-black">Step 3:</span> Fetch the user's profile.
-          </p>   
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">def get_profile(access_token):
@@ -1017,30 +1099,34 @@ return url</code></pre>
            'Authorization': 'Bearer ' + access_token})
   return r.json()</code></pre>
 
-          </div>                 
+          </div>
 
           <p class="h4 mb-7">
-            The working Python code for this method can be found in <a href="#!" class="text-primary-desat">our linkedin-api-python3-examples GitHub repository</a>.
-          </p>   
+            The working Python code for this method can be found in <a href="#!" class="text-primary-desat">our
+              linkedin-api-python3-examples GitHub repository</a>.
+          </p>
 
           <p class="h3 mb-5 font-weight-black">
             Using the "Profile API" Method
-          </p>   
+          </p>
 
           <p class="h4 mb-5">
-            The second method does not require you to seek permission from the user. However, your application must be approved to use the People's Profile API endpoint with a 2-legged OAuth.
-          </p>   
+            The second method does not require you to seek permission from the user. However, your application must be
+            approved to use the People's Profile API endpoint with a 2-legged OAuth.
+          </p>
 
           <p class="h4 mb-5">
-            <span class="font-weight-black">Step 0:</span> In your pre-approved LinkedIn App, obtain the CLIENT_ID and CLIENT_SECRET fields.
-          </p>   
+            <span class="font-weight-black">Step 0:</span> In your pre-approved LinkedIn App, obtain the CLIENT_ID and
+            CLIENT_SECRET fields.
+          </p>
 
           <p class="h4 mb-5">
-            <span class="font-weight-black">Step 1:</span> Using your application's CLIENT_ID and CLIENT_SECRET, exchange for an access_token.
-          </p>  
-          
+            <span class="font-weight-black">Step 1:</span> Using your application's CLIENT_ID and CLIENT_SECRET,
+            exchange for an access_token.
+          </p>
+
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">def get_access_token():
@@ -1060,14 +1146,14 @@ return url</code></pre>
   }).json()['access_token']
   return access_token</code></pre>
 
-          </div>              
+          </div>
 
           <p class="h4 mb-5">
             <span class="font-weight-black">Step 2:</span> Fetch any profile with profile_id.
-          </p>   
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">def get_profile(access_token, profile_id):
@@ -1080,11 +1166,12 @@ return url</code></pre>
            'X-RestLi-Protocol-Version': '2.0.0'})
   return r.json()</code></pre>
 
-          </div>              
+          </div>
 
           <p class="h4 mb-7">
-            The working Python code for this method can be found in <a href="#!" class="text-primary-desat">our linkedin-api-python3-examples GitHub repository</a>.
-          </p>   
+            The working Python code for this method can be found in <a href="#!" class="text-primary-desat">our
+              linkedin-api-python3-examples GitHub repository</a>.
+          </p>
 
         </div>
       </div> <!-- / .row -->
@@ -1093,57 +1180,71 @@ return url</code></pre>
 
   <!-- PARAGRAPH SECTION / Proxycurl API
     ================================================== -->
-    <section class="pt-6 pt-md-7">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-9">
-  
-            <!-- Heading -->
-            <h1 class="display-4 font-weight-bold mb-7">
-              Proxycurl API
-            </h1>     
-  
-            <!-- Text -->
-            <p class="h4 mb-5">
-              The Proxycurl API offers B2B enrichment services quite like the official LinkedIn API. In some respects, it even surpasses the capabilities of the official LinkedIn API, though it does have its restrictions. It's worth noting that Proxycurl works exclusively with public LinkedIn profiles.
-            </p>
-  
-            <p class="h4 mb-5">
-              The Proxycurl API provides the following functions:
-            </p>       
-  
-            <ol type="1" class="mb-7">
-              <li class="h4"><span class="font-weight-black">People API:</span> This feature enriches people's profiles, identifies people from emails or names, searches for prospects, and retrieves profile pictures.</li>
-              <li class="h4"><span class="font-weight-black">Company API:</span> Enrich LinkedIn company profiles, fetch funding data, list and search employees, identify companies, and obtain the employee count.</li>              
-              <li class="h4"><span class="font-weight-black">Contact API:</span> Use this to fetch personal phone numbers, personal and work email addresses, and social media profiles of anyone with a LinkedIn profile via Proxycurl's Contact API.</li>              
-              <li class="h4"><span class="font-weight-black">Jobs API:</span> This function fetches up-to-date job posting data.</li>              
-              <li class="h4"><span class="font-weight-black">School API:</span> List students and enrich school profiles.</li>                         
-              <li class="h4"><span class="font-weight-black">Search API:</span> Perform advanced searches for people and companies.</li>                          
-            </ol>
-  
-            <!-- H2 / Enrich Person Profile Data via Proxycurl's Person Profile Endpoint-->
-            <p class="h2 font-weight-bold mb-5">
-              Enrich Person Profile Data via <span class="font-italic">Proxycurl's Person Profile Endpoint</span>
-            </p> 
-            
-            <p class="h4 mb-5">
-              Negotiating the challenges of LinkedIn's API can be daunting. Thankfully, there's Proxycurl, which provides its LinkedIn API so you can get everything that LinkedIn's official Profile API offers, and a <span class="font-weight-bold">whole lot more</span>. To see what data fields are supported, check out <a href="#!" class="text-primary-desat">Proxycurl's Person Profile API documentation</a>.
-            </p>      
-            
-            <p class="h4 mb-5">
-              To get profile data from any profile ID, you just need to follow one method.
-            </p>
+  <section class="pt-6 pt-md-7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
 
-            <p class="h4 mb-5">
-              <span class="font-weight-black">Step 0:</span> <a href="#!" class="text-primary-desat">Get a Proxycurl API key</a> by signing into Proxycurl with your work email address.
-            </p>
+          <!-- Heading -->
+          <h1 class="display-4 font-weight-bold mb-7">
+            Proxycurl API
+          </h1>
 
-            <p class="h4 mb-5">
-              <span class="font-weight-black">Step 1:</span> Query the Person Profile Endpoint with a LinkedIn Profile URL.
-            </p>
+          <!-- Text -->
+          <p class="h4 mb-5">
+            The Proxycurl API offers B2B enrichment services quite like the official LinkedIn API. In some respects, it
+            even surpasses the capabilities of the official LinkedIn API, though it does have its restrictions. It's
+            worth noting that Proxycurl works exclusively with public LinkedIn profiles.
+          </p>
+
+          <p class="h4 mb-5">
+            The Proxycurl API provides the following functions:
+          </p>
+
+          <ol type="1" class="mb-7">
+            <li class="h4"><span class="font-weight-black">People API:</span> This feature enriches people's profiles,
+              identifies people from emails or names, searches for prospects, and retrieves profile pictures.</li>
+            <li class="h4"><span class="font-weight-black">Company API:</span> Enrich LinkedIn company profiles, fetch
+              funding data, list and search employees, identify companies, and obtain the employee count.</li>
+            <li class="h4"><span class="font-weight-black">Contact API:</span> Use this to fetch personal phone numbers,
+              personal and work email addresses, and social media profiles of anyone with a LinkedIn profile via
+              Proxycurl's Contact API.</li>
+            <li class="h4"><span class="font-weight-black">Jobs API:</span> This function fetches up-to-date job posting
+              data.</li>
+            <li class="h4"><span class="font-weight-black">School API:</span> List students and enrich school profiles.
+            </li>
+            <li class="h4"><span class="font-weight-black">Search API:</span> Perform advanced searches for people and
+              companies.</li>
+          </ol>
+
+          <!-- H2 / Enrich Person Profile Data via Proxycurl's Person Profile Endpoint-->
+          <p class="h2 font-weight-bold mb-5">
+            Enrich Person Profile Data via <span class="font-italic">Proxycurl's Person Profile Endpoint</span>
+          </p>
+
+          <p class="h4 mb-5">
+            Negotiating the challenges of LinkedIn's API can be daunting. Thankfully, there's Proxycurl, which provides
+            its LinkedIn API so you can get everything that LinkedIn's official Profile API offers, and a <span
+              class="font-weight-bold">whole lot more</span>. To see what data fields are supported, check out <a
+              href="#!" class="text-primary-desat">Proxycurl's Person Profile API documentation</a>.
+          </p>
+
+          <p class="h4 mb-5">
+            To get profile data from any profile ID, you just need to follow one method.
+          </p>
+
+          <p class="h4 mb-5">
+            <span class="font-weight-black">Step 0:</span> <a href="#!" class="text-primary-desat">Get a Proxycurl API
+              key</a> by signing into Proxycurl with your work email address.
+          </p>
+
+          <p class="h4 mb-5">
+            <span class="font-weight-black">Step 1:</span> Query the Person Profile Endpoint with a LinkedIn Profile
+            URL.
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">import requests
@@ -1162,27 +1263,32 @@ def get_profile(profile_id):
               headers=header_dic)
   return response.json()</code></pre>
 
-          </div>            
+          </div>
 
-            <p class="h4 mb-7">
-              You can find the working Python code for this method in our <a href="#!" class="text-primary-desat">linkedin-api-python3-examples Github repository</a>.
-            </p>
+          <p class="h4 mb-7">
+            You can find the working Python code for this method in our <a href="#!"
+              class="text-primary-desat">linkedin-api-python3-examples Github repository</a>.
+          </p>
 
-            <!-- H2 / Enrich Person Profile Data via Proxycurl's Person Profile Endpoint-->
-            <p class="h2 font-weight-bold mb-5">
-              What if you don't have the user's LinkedIn profile URL?
-            </p>             
-  
-            <p class="h4 mb-5">
-              For some industries, like recruitment tech, identifying profiles of interest is a necessary step before profile enrichment. The current solution for the non-tech native involves purchasing LinkedIn Sales Navigator and performing a Boolean search. However, Proxycurl offers a "headless" equivalent known as the <a href="#!" class="text-primary-desat">Search API</a>.
-            </p>
-  
-            <p class="h4 mb-5">
-              To perform a Boolean search on the Person Search Endpoint and identify people living in the US who have previously worked at Google as Software Engineers, use the following code:
-            </p>
+          <!-- H2 / Enrich Person Profile Data via Proxycurl's Person Profile Endpoint-->
+          <p class="h2 font-weight-bold mb-5">
+            What if you don't have the user's LinkedIn profile URL?
+          </p>
+
+          <p class="h4 mb-5">
+            For some industries, like recruitment tech, identifying profiles of interest is a necessary step before
+            profile enrichment. The current solution for the non-tech native involves purchasing LinkedIn Sales
+            Navigator and performing a Boolean search. However, Proxycurl offers a "headless" equivalent known as the <a
+              href="#!" class="text-primary-desat">Search API</a>.
+          </p>
+
+          <p class="h4 mb-5">
+            To perform a Boolean search on the Person Search Endpoint and identify people living in the US who have
+            previously worked at Google as Software Engineers, use the following code:
+          </p>
 
           <!-- Code block -->
-          <div class="text-left mb-5">    
+          <div class="text-left mb-5">
 
             <pre>
 <code class="language-shell">import requests
@@ -1207,111 +1313,137 @@ if response.status_code == 200:
 else:
     print(f"Request failed with status {response.status_code}")</code></pre>
 
-          </div>            
-
-            <p class="h4 mb-7">
-              The response will include a linkedin_profile_url that you can use within the <a href="#!" class="text-primary-desat">Person Profile Endpoint</a> for enrichment.
-            </p>
-  
-            <!-- H2 / Advanced Proxycurl Features-->
-            <p class="h2 font-weight-bold mb-5">
-              Advanced Proxycurl Features
-            </p> 
-            
-            <p class="h4 mb-5">
-              Proxycurl supports some advanced features that the LinkedIn API does not natively support.
-            </p>       
-  
-            <p class="h3 mb-5 font-weight-black">
-              Fetching Contact Information
-            </p>   
-            
-            <p class="h4 mb-5">
-              For many use-cases, the natural next step after enriching a profile is to reach out to the person. Proxycurl's <a href="#!" class="text-primary-desat">Contact API</a> allows you to fetch three different types of contact information.
-            </p>  
-  
-            <ol type="1" class="mb-7">
-              <li class="h4">Work emails via the <a href="#!" class="text-primary-desat">Work Email Lookup Endpoint</a>.</li>
-              <li class="h4">Personal (free) emails via the <a href="#!" class="text-primary-desat">Personal Email Lookup Endpoint</a>.</li>   
-              <li class="h4">Personal phone numbers via the <a href="#!" class="text-primary-desat">Personal Contact Number Lookup Endpoint</a>.</li>                       
-            </ol>
-
-            <p class="h4 mb-5">
-              This contact information is not sourced from LinkedIn, but from a myriad of other external sources.
-            </p>  
-
-            <p class="h3 mb-5 font-weight-black">
-              Listing Employees or Students
-            </p>   
-
-            <p class="h4 mb-5">
-              You can also fetch (or search for) a list of employees from any target company or school. To get a list of past or present employees, you can use Proxycurl's <a href="#!" class="text-primary-desat">Employee Listing Endpoint</a>. The <a href="#!" class="text-primary-desat">Student Listing Endpoint</a> is available for listing graduates of any school organization.
-            </p>  
-
-            <p class="h3 mb-5 font-weight-black">
-              Identifying Key People in a Company
-            </p>   
-
-            <p class="h4 mb-5">
-              With Proxycurl's <a href="#!" class="text-primary-desat">Role Lookup Endpoint</a>, you can easily identify the key people you need to reach out to within any company.
-            </p>  
-
-            <p class="h3 mb-5 font-weight-black">
-              Profile Pictures and Company Logos
-            </p>   
-
-            <p class="h4 mb-7">
-              This is a freebie from Proxycurl. You can get logos of any company with Proxycurl's <a href="#!" class="text-primary-desat">Company Profile Picture Endpoint</a>. Similarly, you can get profile pictures of any LinkedIn Profile with the <a href="#!" class="text-primary-desat">Person Profile Picture Endpoint</a>. Both of these API endpoints are free :)
-            </p>  
-
-            <hr>
-
-            <p class="h4 mb-7">
-              There's a whole lot more you can do with Proxycurl API, including other free API endpoints. Check out the full list of Proxycurl powers <a href="#!" class="text-primary-desat">here</a>!
-            </p>
-  
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>  
+
+          <p class="h4 mb-7">
+            The response will include a linkedin_profile_url that you can use within the <a href="#!"
+              class="text-primary-desat">Person Profile Endpoint</a> for enrichment.
+          </p>
+
+          <!-- H2 / Advanced Proxycurl Features-->
+          <p class="h2 font-weight-bold mb-5">
+            Advanced Proxycurl Features
+          </p>
+
+          <p class="h4 mb-5">
+            Proxycurl supports some advanced features that the LinkedIn API does not natively support.
+          </p>
+
+          <p class="h3 mb-5 font-weight-black">
+            Fetching Contact Information
+          </p>
+
+          <p class="h4 mb-5">
+            For many use-cases, the natural next step after enriching a profile is to reach out to the person.
+            Proxycurl's <a href="#!" class="text-primary-desat">Contact API</a> allows you to fetch three different
+            types of contact information.
+          </p>
+
+          <ol type="1" class="mb-7">
+            <li class="h4">Work emails via the <a href="#!" class="text-primary-desat">Work Email Lookup Endpoint</a>.
+            </li>
+            <li class="h4">Personal (free) emails via the <a href="#!" class="text-primary-desat">Personal Email Lookup
+                Endpoint</a>.</li>
+            <li class="h4">Personal phone numbers via the <a href="#!" class="text-primary-desat">Personal Contact
+                Number Lookup Endpoint</a>.</li>
+          </ol>
+
+          <p class="h4 mb-5">
+            This contact information is not sourced from LinkedIn, but from a myriad of other external sources.
+          </p>
+
+          <p class="h3 mb-5 font-weight-black">
+            Listing Employees or Students
+          </p>
+
+          <p class="h4 mb-5">
+            You can also fetch (or search for) a list of employees from any target company or school. To get a list of
+            past or present employees, you can use Proxycurl's <a href="#!" class="text-primary-desat">Employee Listing
+              Endpoint</a>. The <a href="#!" class="text-primary-desat">Student Listing Endpoint</a> is available for
+            listing graduates of any school organization.
+          </p>
+
+          <p class="h3 mb-5 font-weight-black">
+            Identifying Key People in a Company
+          </p>
+
+          <p class="h4 mb-5">
+            With Proxycurl's <a href="#!" class="text-primary-desat">Role Lookup Endpoint</a>, you can easily identify
+            the key people you need to reach out to within any company.
+          </p>
+
+          <p class="h3 mb-5 font-weight-black">
+            Profile Pictures and Company Logos
+          </p>
+
+          <p class="h4 mb-7">
+            This is a freebie from Proxycurl. You can get logos of any company with Proxycurl's <a href="#!"
+              class="text-primary-desat">Company Profile Picture Endpoint</a>. Similarly, you can get profile pictures
+            of any LinkedIn Profile with the <a href="#!" class="text-primary-desat">Person Profile Picture
+              Endpoint</a>. Both of these API endpoints are free :)
+          </p>
+
+          <hr>
+
+          <p class="h4 mb-7">
+            There's a whole lot more you can do with Proxycurl API, including other free API endpoints. Check out the
+            full list of Proxycurl powers <a href="#!" class="text-primary-desat">here</a>!
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
 
   <!-- PARAGRAPH SECTION / Summarizing the State of LinkedIn Profile APIs
     ================================================== -->
-    <section class="pt-6 pt-md-7">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-9">
-  
-            <!-- Heading -->
-            <h1 class="display-4 font-weight-bold mb-7">
-              Summarizing the State of LinkedIn Profile APIs
-            </h1>     
-  
-            <!-- Text -->
-            <p class="h4 mb-5">
-              LinkedIn has made it <span class="font-weight-black">extremely difficult</span> for developers to work with their API, creating many hoops to jump through. "Sign in with LinkedIn", while free, is throttled with rate limits and requires cumbersome per-user permission granting. Even then, you won't be able to obtain rich LinkedIn profile data about the user signing into your service. The Profile API, with its 2-legged OAuth that lets you query any profile ID, requires you to be a LinkedIn Partner and necessitates a hefty payment via a LinkedIn subscription.
-            </p>
-  
-            <p class="h4 mb-5">
-              Proxycurl offers an alternative equivalent to LinkedIn's Profile API. The key difference lies in latency and data completeness. Proxycurl's Person Profile Endpoint performs a live scrape of a profile on each API call, so each call might take a few seconds to complete. To overcome throughput, a developer can launch requests to Proxycurl's API in parallel.
-            </p>       
-            
-            <p class="h4 mb-5">
-              Proxycurl is cost-effective and eliminates most of the headaches involved with pulling data from LinkedIn—even when compared to the official paid tools available from LinkedIn, like their own limited API or LinkedIn Sales Navigator.
-            </p>      
-            
-            <p class="h4 mb-5">
-              <a href="#!" class="text-primary-desat">Give Proxycurl a try today.</a>
-            </p>
+  <section class="pt-6 pt-md-7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
 
-            <p class="h4">
-              <span class="font-weight-black">P.S.</span> Do you have any questions about Proxycurl or how we scrape data from LinkedIn and beyond? Reach out to us at “ <a href="#!" class="text-primary-desat">hello@nubela.co</a>”, and we would be happy to help.
-            </p>
-  
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>      
+          <!-- Heading -->
+          <h1 class="display-4 font-weight-bold mb-7">
+            Summarizing the State of LinkedIn Profile APIs
+          </h1>
+
+          <!-- Text -->
+          <p class="h4 mb-5">
+            LinkedIn has made it <span class="font-weight-black">extremely difficult</span> for developers to work with
+            their API, creating many hoops to jump through. "Sign in with LinkedIn", while free, is throttled with rate
+            limits and requires cumbersome per-user permission granting. Even then, you won't be able to obtain rich
+            LinkedIn profile data about the user signing into your service. The Profile API, with its 2-legged OAuth
+            that lets you query any profile ID, requires you to be a LinkedIn Partner and necessitates a hefty payment
+            via a LinkedIn subscription.
+          </p>
+
+          <p class="h4 mb-5">
+            Proxycurl offers an alternative equivalent to LinkedIn's Profile API. The key difference lies in latency and
+            data completeness. Proxycurl's Person Profile Endpoint performs a live scrape of a profile on each API call,
+            so each call might take a few seconds to complete. To overcome throughput, a developer can launch requests
+            to Proxycurl's API in parallel.
+          </p>
+
+          <p class="h4 mb-5">
+            Proxycurl is cost-effective and eliminates most of the headaches involved with pulling data from
+            LinkedIn—even when compared to the official paid tools available from LinkedIn, like their own limited API
+            or LinkedIn Sales Navigator.
+          </p>
+
+          <p class="h4 mb-5">
+            <a href="#!" class="text-primary-desat">Give Proxycurl a try today.</a>
+          </p>
+
+          <p class="h4">
+            <span class="font-weight-black">P.S.</span> Do you have any questions about Proxycurl or how we scrape data
+            from LinkedIn and beyond? Reach out to us at “ <a href="#!" class="text-primary-desat">hello@nubela.co</a>”,
+            and we would be happy to help.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
 
   <!-- NEWSLETTER
     ================================================== -->
@@ -1706,13 +1838,13 @@ else:
     </div> <!-- / .container -->
   </section>
 
-    <!-- FOOTER
+  <!-- FOOTER
     ================================================== -->
     <footer class="bg-white py-8 py-md-11">
 
       <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
 
-        <div class="row" bis_skin_checked="1">
+        <div class="row justify-content-end" bis_skin_checked="1">
 
           <div class="col-12 col-lg-3 col-md-4">
 
@@ -1799,7 +1931,7 @@ else:
                 </a>
               </li>
               <li class="mb-2">
-                <a class="small text-reset" href="linkdb-pricing.html">
+                <a class="small text-reset" href="pricing-linkdb.html">
                   LinkDB Pricing
                 </a>
               </li>
@@ -2031,6 +2163,7 @@ else:
       </div>
 
     </footer>
+
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
