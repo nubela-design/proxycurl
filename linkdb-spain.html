@@ -1593,10 +1593,10 @@
 
                     <pre class="text-left"><code class="language-python">
 curl \
-  -X GET \
-  -H "Authorization: Bearer ${YOUR_API_KEY}" \
-  https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
-</code></pre>
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
+  </code></pre>
                   </div>
                 </div>
               </div>
@@ -1662,10 +1662,10 @@ curl \
 
                     <pre class="text-left"><code class="language-python">
 curl \
-  -X GET \
-  -H "Authorization: Bearer ${YOUR_API_KEY}" \
-  https://nubela.co/proxycurl/api/linkedin/company?categories=include&funding_data=include&extra=include&exit_data=include&acquisitions=include&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&use_cache=if-present
-</code></pre>
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/linkedin/company/employee/search/?country=us&keyword_regex=ceo%7Ccto&linkedin_company_profile_url=https://www.linkedin.com/company/microsoft/
+                                    </code></pre>
                   </div>
                 </div>
               </div>
@@ -1730,9 +1730,10 @@ curl \
 
                     <pre class="text-left"><code class="language-python">            
 curl \
-  -X GET \
-  -H "Authorization: Bearer ${YOUR_API_KEY}" \
-  https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&cache=no-cache&callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/search/person/?last_name=Jackson%7CJohnson&first_name=Sarah&city=Seattle%7CLos+Angeles&current_company_region=United+States
+
 </code></pre>
                   </div>
                 </div>
@@ -1799,9 +1800,10 @@ curl \
 
                     <pre class="text-left"><code class="language-python">
 curl \
-  -X GET \
-  -H "Authorization: Bearer ${YOUR_API_KEY}" \
-  https://nubela.co/proxycurl/api/contact-api/personal-email?linkedin_profile_url=https%3A%2F%2Flinkedin.com%2Fin%2Fsteven-goh-6738131b
+    -X GET \
+    -H "Authorization: Bearer ${YOUR_API_KEY}" \
+    https://nubela.co/proxycurl/api/search/company?country=us&city=Seattle%7CLos+Angeles&name=Technology&employee_count_min=1000&founded_before_year=1999&founded_after_year=1999
+                                    
 </code></pre>
                   </div>
                 </div>
