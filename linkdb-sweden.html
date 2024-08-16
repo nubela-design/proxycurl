@@ -1466,335 +1466,383 @@
     </section>    
     
     <!-- 5TH FOLD / POWERED BY LINKDB -->
-    <section class="pt-8 bg-light pt-lg-11 pb-8 pb-md-11 border-bottom">
+    <section class="pt-8 bg-white pt-lg-11 pb-8 pb-md-11 border-bottom">
       <div class="container">
         <div class="row justify-content-between align-items-center mb-4 mb-md-6">
           <div class="col-12 col-md-5 order-md-2 text-center">
-    
+  
             <!-- Image -->
-            <img class="img-fluid w-md-100 mt-md-6 mb-6 mb-md-0 rounded" src="assets/img/illustrations/Powered by LinkDB.png"
-              alt="Powered by LinkDB illustration" data-aos="fade-up" data-aos-delay="100">
-    
+            <img class="img-fluid w-md-100 mt-md-6 mb-6 mb-md-0 rounded"
+              src="assets/img/illustrations/Powered by LinkDB.png" alt="Powered by LinkDB illustration" data-aos="fade-up"
+              data-aos-delay="100">
+  
           </div>
           <div class="col-12 col-md-6 order-md-1 mb-1">
-    
+  
             <!-- Badge -->
             <span class="badge badge-pill badge-primary-soft mb-5">
               <span class="h6 text-uppercase">Powered by LinkDB</span>
             </span>
-    
+  
             <!-- Heading -->
             <h2 class="display-4 font-weight-bold">
               <span class="text-primary">API Endpoints</span> Powered by LinkDB
             </h2>
-
+  
             <p class="text-muted font-size-lg">
-              Apart from being a comprehensive database of LinkedIn profiles, LinkDB also powers these amazing endpoints that you can integrate directly into your applications.
+              Apart from being a comprehensive database of LinkedIn profiles, LinkDB also powers these amazing endpoints
+              that you can integrate directly into your applications.
             </p>
-    
+  
           </div>
         </div> <!-- / .row -->
-    
+  
         <div class="row mb-md-4" data-aos="fade-up" data-aos-delay="100">
-    
+  
           <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
-    
+  
             <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
-    
+  
               <!-- Body -->
               <div class="card-body my-auto">
-    
-                <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
-    
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Employee Listing API Endpoint
-                </h3>
-    
-                <div class="row justify-content-center">
-    
-                  <div class="col-6">
+  
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center align-items-lg-start mb-6 mb-lg-0">
+  
+                  <img alt="bag icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/bag.svg">
+  
+                  <!-- Heading -->
+                  <h3 class="mt-auto">
+                    Employee Listing API Endpoint
+                  </h3>
+                </div>
+  
+  
+                <div class="row justify-content-center flex-column flex-lg-row">
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       Company Profile URL
                     </p>
                   </div>
-    
-                  <div class="col-6">
+  
+                  <div class="col-auto text-center mb-3 mb-lg-0 d-inline-block d-lg-none">
+                    <i class="fe fe-arrow-down text-info"></i>
+                  </div>
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       List of employees
                     </p>
                   </div>
-    
-    
+  
+                </div>
+  
+                <div class="row justify-content-center mt-6 mt-lg-0">
+  
                   <!-- Sample code -->
-                  <div class="col-12 mt-7">
-    
+                  <div class="col-12 mt-4 mt-lg-7">
+  
                     <div class="highlight-block">
-    
+  
                       <!-- Controls -->
                       <div class="d-flex">
                         <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
                         <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                         <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                       </div>
-    
-                  <pre><code class="language-python">
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
-  </code></pre>
+  
+                      <pre><code class="language-python">
+    curl \
+        -X GET \
+        -H "Authorization: Bearer ${YOUR_API_KEY}" \
+        https://nubela.co/proxycurl/api/linkedin/company/employees/?employment_status=current&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnubela
+      </code></pre>
                     </div>
-    
+  
                   </div>
-    
+  
                 </div>
-    
+  
               </div>
-    
-    
+  
+  
             </div>
-    
+  
           </div>
-    
+  
           <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
-    
+  
             <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
-    
+  
               <!-- Body -->
               <div class="card-body my-auto">
+  
+                <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start mb-6 mb-lg-0">
+                  <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/job-search.svg">
     
-                <img alt="company icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/job-search.svg">
-    
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Employee Search API Endpoint
-                </h3>
-    
-                <div class="row justify-content-center">
-    
-                  <div class="col-6">
+                  <!-- Heading -->
+                  <h3 class="mt-auto">
+                    Employee Search API Endpoint
+                  </h3>
+                </div>
+  
+                <div class="row justify-content-center flex-column flex-lg-row">
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       Company Profile URL
                     </p>
                   </div>
-    
-                  <div class="col-6">
+  
+                  <div class="col-auto text-center mb-3 mb-lg-0 d-inline-block d-lg-none">
+                    <i class="fe fe-arrow-down text-info"></i>
+                  </div>
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       List of employees that meet a set of criteria
                     </p>
                   </div>
-    
+  
+                </div>
+  
+                <div class="row justify-content-center mt-6 mt-lg-0">
+  
                   <!-- Sample code -->
                   <div class="col-12 mt-4">
-    
+  
                     <div class="highlight-block">
-    
+  
                       <!-- Controls -->
                       <div class="d-flex">
                         <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
                         <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                         <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                       </div>
-    
-                  <pre><code class="language-python">
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/linkedin/company?categories=include&funding_data=include&extra=include&exit_data=include&acquisitions=include&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&use_cache=if-present
-  </code></pre>
+  
+                      <pre><code class="language-python">
+  curl \
+      -X GET \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      https://nubela.co/proxycurl/api/linkedin/company?categories=include&funding_data=include&extra=include&exit_data=include&acquisitions=include&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fapple%2F&use_cache=if-present
+    </code></pre>
                     </div>
-    
+  
                   </div>
-    
+  
                 </div>
-    
+  
               </div>
-    
-    
-    
+  
+  
+  
             </div>
-    
+  
           </div>
-    
+  
           <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
-    
+  
             <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
-    
+  
               <!-- Body -->
               <div class="card-body my-auto">
+  
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center align-items-lg-start mb-6 mb-lg-0">
+  
+                  <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man_search.svg">
     
-                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man_search.svg">
-    
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Person Search API Endpoint
-                </h3>
-    
-                <div class="row justify-content-center">
-    
-                  <div class="col-6">
+                  <!-- Heading -->
+                  <h3 class="mt-auto">
+                    Person Search API Endpoint
+                  </h3>
+  
+                </div>
+  
+                <div class="row justify-content-center flex-column flex-lg-row">
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       Person Profile URL
                     </p>
                   </div>
-    
-                  <div class="col-6">
+  
+                  <div class="col-auto text-center mb-3 mb-lg-0 d-inline-block d-lg-none">
+                    <i class="fe fe-arrow-down text-info"></i>
+                  </div>
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       LinkedIn (Person) Profile URL
                     </p>
                   </div>
-    
-    
+  
+                </div>
+  
+                <div class="row justify-content-center mt-6 mt-lg-0">
+  
                   <!-- Sample code -->
                   <div class="col-12 mt-4">
-    
+  
                     <div class="highlight-block">
-    
+  
                       <!-- Controls -->
                       <div class="d-flex">
                         <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
                         <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                         <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                       </div>
-    
-                  <pre><code class="language-python">            
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&cache=no-cache&callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a
-  </code></pre>
+  
+                      <pre><code class="language-python">            
+  curl \
+      -X GET \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      https://nubela.co/proxycurl/api/linkedin/profile/email?linkedin_profile_url=https%3A%2F%2Fsg.linkedin.com%2Fin%2Fsteven-goh-6738131b&cache=no-cache&callback_url=https%3A%2F%2Fwebhook.site%2F29e12f17-d5a2-400a-9d08-42ee9d83600a
+    </code></pre>
                     </div>
-    
+  
                   </div>
-    
+  
                 </div>
-    
+  
               </div>
-    
-    
+  
+  
             </div>
-    
+  
           </div>
-    
+  
           <!-- API Card -->
           <div class="col-12 col-lg-6 mb-6 d-flex">
-    
+  
             <!-- Card -->
             <div class="card shadow-light-lg lift lift-lg">
-    
+  
               <!-- Body -->
               <div class="card-body my-auto">
+  
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center align-items-lg-start mb-6 mb-lg-0">
+  
+                  <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company-search.svg">
     
-                <img alt="woman icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/company-search.svg">
-    
-                <!-- Heading -->
-                <h3 class="mt-auto">
-                  Company Search API Endpoint
-                </h3>
-    
-                <div class="row justify-content-center">
-    
-                  <div class="col-6">
+                  <!-- Heading -->
+                  <h3 class="mt-auto">
+                    Company Search API Endpoint
+                  </h3>
+  
+                </div>
+  
+                <div class="row justify-content-center flex-column flex-lg-row">
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Input
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       Company Profile URL
                     </p>
                   </div>
-    
-                  <div class="col-6">
+  
+                  <div class="col-auto text-center mb-3 mb-lg-0 d-inline-block d-lg-none">
+                    <i class="fe fe-arrow-down text-info"></i>
+                  </div>
+  
+                  <div class="col text-center text-lg-left mb-3 mb-lg-0">
                     <!-- Input -->
                     <h4 class="mb-0 text-info">
                       Output
                     </h4>
-    
+  
                     <!-- Text -->
                     <p class="mb-0">
                       List of companies that meet a set of criteria
                     </p>
                   </div>
-    
-    
+  
+                </div>
+  
+                <div class="row justify-content-center mt-6 mt-lg-0">
+  
                   <!-- Sample code -->
                   <div class="col-12 mt-4">
-    
+  
                     <div class="highlight-block">
-    
+  
                       <!-- Controls -->
                       <div class="d-flex">
                         <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
                         <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                         <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
                       </div>
-    
-                  <pre><code class="language-python">
-curl \
-    -X GET \
-    -H "Authorization: Bearer ${YOUR_API_KEY}" \
-    https://nubela.co/proxycurl/api/contact-api/personal-email?linkedin_profile_url=https%3A%2F%2Flinkedin.com%2Fin%2Fsteven-goh-6738131b
-  </code></pre>
+  
+                      <pre><code class="language-python">
+  curl \
+      -X GET \
+      -H "Authorization: Bearer ${YOUR_API_KEY}" \
+      https://nubela.co/proxycurl/api/contact-api/personal-email?linkedin_profile_url=https%3A%2F%2Flinkedin.com%2Fin%2Fsteven-goh-6738131b
+    </code></pre>
                     </div>
-    
+  
                   </div>
-    
+  
                 </div>
-    
+  
               </div>
-    
-    
+  
+  
             </div>
-    
+  
           </div>
-    
+  
         </div> <!-- / .row -->
-    
+  
         <div class="row justify-content-center">
           <div class="col-12 col-md-5">
             <a class="btn btn-block btn-primary shadow-lg lift" href="">
@@ -1802,7 +1850,7 @@ curl \
             </a>
           </div>
         </div>
-    
+  
       </div> <!-- / .container-->
     </section>
 
