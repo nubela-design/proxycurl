@@ -644,7 +644,7 @@ curl \
                   </svg>
                 </div>
 
-                <div class="col-10 pl-3 h5 font-weight-bold">
+                <div class="col-10 pl-3 pl-md-0 pl-lg-3 h5 font-weight-bold">
                   LinkedIn URL
                 </div>
 
@@ -978,16 +978,16 @@ curl \
                 <div class="card-body">
 
                   <div
-                    class="row align-items-center justify-content-center mb-4 pb-6 text-center text-md-left border-bottom">
+                    class="row align-items-center justify-content-center mb-4 pb-6 text-center text-lg-left border-bottom">
 
-                    <div class="col-12 col-md-2 col-lg-4">
+                    <div class="col-12 col-md-12 col-lg-4 mb-3 mb-lg-0">
                       <div class="avatar avatar-xxl">
                         <img class="avatar-img rounded-circle" src="assets/img/photos/bill gates photo.jpeg"
                           alt="company logo">
                       </div>
                     </div>
 
-                    <div class="col-12 col-md-10 col-lg-8">
+                    <div class="col-12 col-md-12 col-lg-8">
                       <h2 class="font-weight-bold mb-0">
                         Bill Gates
                       </h2>
@@ -1521,7 +1521,7 @@ curl \
                   </svg>
                 </div>
 
-                <div class="col-10 pl-3 h5 font-weight-bold">
+                <div class="col-10 pl-3 pl-md-0 pl-lg-3 h5 font-weight-bold">
                   LinkedIn URL
                 </div>
 
@@ -1835,12 +1835,14 @@ curl \
                 Output
               </span>
 
-              <p class="lead font-weight-bold">
+              <p class="lead font-weight-bold text-center text-lg-left">
                 <i class="neu-gallery text-primary"></i> Person profile picture
               </p>
 
-              <img width="128px" class="img img-fluid mb-5 py-2 px-2 rounded-circle border border-primary rounded"
-                alt="Profile picture" src="assets/img/photos/bill gates photo.jpeg">
+              <div class="text-center text-lg-left">
+                <img width="128px" class="img img-fluid mb-5 py-2 px-2 rounded-circle  border border-primary rounded"
+                  alt="Profile picture" src="assets/img/photos/bill gates photo.jpeg">
+              </div>
 
               <!-- Code block -->
               <div class="highlight-block text-left mb-3">
@@ -1933,18 +1935,22 @@ curl \
           <div class="card shadow-light-lg lift lift-lg">
 
             <!-- Body -->
-            <div class="card-body my-auto">
+            <div class="card-body">
 
-              <img alt="person icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man_search.svg">
+              <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start">
 
-              <!-- Heading -->
-              <h3 class="mt-auto">
-                Person Search Endpoint
-              </h3>
+                <img alt="person icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/man_search.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto mb-6 mb-lg-0">
+                  Person Search Endpoint
+                </h3>
+
+              </div>
 
               <div class="row justify-content-center">
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Input
@@ -1956,7 +1962,10 @@ curl \
                   </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 d-block d-lg-none text-center"><i class="fe fe-arrow-down"></i></div>
+
+                <div class="col-12 col-lg-6 text-center text-lg-left
+                ">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Output
@@ -1970,7 +1979,7 @@ curl \
 
 
                 <!-- Sample code -->
-                <div class="col-12 mt-4 mt-md-7">
+                <div class="col-12 mt-6 mt-lg-7">
 
                   <div class="highlight-block">
 
@@ -2010,16 +2019,20 @@ curl \
             <!-- Body -->
             <div class="card-body my-auto">
 
-              <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+              <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start">
 
-              <!-- Heading -->
-              <h3 class="mt-auto">
-                Reverse Email Lookup Endpoint
-              </h3>
+                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/email.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto mb-6 mb-lg-0">
+                  Reverse Email Lookup Endpoint
+                </h3>
+
+              </div>
 
               <div class="row justify-content-center">
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Input
@@ -2031,7 +2044,9 @@ curl \
                   </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 d-block d-lg-none text-center"><i class="fe fe-arrow-down"></i></div>
+
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Output
@@ -2044,7 +2059,7 @@ curl \
                 </div>
 
                 <!-- Sample code -->
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-6 mt-lg-4">
 
                   <div class="highlight-block">
 
@@ -2087,16 +2102,20 @@ curl \
             <!-- Body -->
             <div class="card-body my-auto">
 
-              <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/personal-email.svg">
+              <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start">
 
-              <!-- Heading -->
-              <h3 class="mt-auto">
-                Personal Email Lookup Endpoint
-              </h3>
+                <img alt="email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/personal-email.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto mb-6 mb-lg-0">
+                  Personal Email Lookup Endpoint
+                </h3>
+
+              </div>
 
               <div class="row justify-content-center">
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Input
@@ -2108,7 +2127,9 @@ curl \
                   </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 d-block d-lg-none text-center "><i class="fe fe-arrow-down"></i></div>
+
+                <div class="col-12 col-lg-6 text-center text-lg-left ">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Output
@@ -2122,7 +2143,7 @@ curl \
 
 
                 <!-- Sample code -->
-                <div class="col-12 mt-4 mt-md-7">
+                <div class="col-12 mt-6 mt-lg-7">
 
                   <div class="highlight-block">
 
@@ -2166,18 +2187,22 @@ curl \
           <div class="card shadow-light-lg lift lift-lg">
 
             <!-- Body -->
-            <div class="card-body my-auto">
+            <div class="card-body">
 
-              <img alt="work-email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/work-email.svg">
+              <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start">
 
-              <!-- Heading -->
-              <h3 class="mt-auto">
-                Work Email Lookup Endpoint
-              </h3>
+                <img alt="work-email icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/work-email.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto mb-6 mb-lg-0">
+                  Work Email Lookup Endpoint
+                </h3>
+
+              </div>
 
               <div class="row justify-content-center">
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Input
@@ -2189,7 +2214,9 @@ curl \
                   </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 d-block d-lg-none text-center"><i class="fe fe-arrow-down"></i></div>
+
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Output
@@ -2203,7 +2230,7 @@ curl \
 
 
                 <!-- Sample code -->
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-6 mt-lg-4">
 
                   <div class="highlight-block">
 
@@ -2243,16 +2270,20 @@ curl \
             <!-- Body -->
             <div class="card-body my-auto">
 
-              <img alt="phone-number icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/phone.svg">
+              <div class="d-flex justify-content-center flex-column align-items-center align-items-lg-start">
 
-              <!-- Heading -->
-              <h3 class="mt-auto">
-                Phone Number Lookup Endpoint
-              </h3>
+                <img alt="phone-number icon" class="img-fluid mb-4" width="56" src="assets/dwarf forms/phone.svg">
+
+                <!-- Heading -->
+                <h3 class="mt-auto mb-6 mb-lg-0">
+                  Phone Number Lookup Endpoint
+                </h3>
+
+              </div>
 
               <div class="row justify-content-center">
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Input
@@ -2264,7 +2295,9 @@ curl \
                   </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 d-block d-lg-none text-center"><i class="fe fe-arrow-down"></i></div>
+
+                <div class="col-12 col-lg-6 text-center text-lg-left">
                   <!-- Input -->
                   <h4 class="mb-0 text-info">
                     Output
@@ -2278,7 +2311,7 @@ curl \
 
 
                 <!-- Sample code -->
-                <div class="col-12 mt-4 mt-md-6">
+                <div class="col-12 mt-6 mt-lg-6">
 
                   <div class="highlight-block">
 
