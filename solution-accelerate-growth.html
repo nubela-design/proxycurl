@@ -1,1278 +1,1396 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons/css/neu.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons/css/neu.min.css">
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Accelerate hyper-growth with Proxycurl</title>
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
-  </head>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-  <body>
+  <title>Accelerate hyper-growth with Proxycurl</title>
 
-     <!-- ANNOUNCEMENT
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT
     ================================================== -->
-    <section class="bg-dark">
+  <section class="bg-dark">
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row justify-content-center align-items-center pt-4">
+      <div class="row justify-content-center align-items-center pt-4">
 
-          <div class="col-12 text-center">
+        <div class="col-12 text-center">
 
-            <!-- Text -->
-            <p class="font-size-md text-white">
-              Enrich companies with funding, categories, emails, exits/acquisitions data 
-              <a class="text-warning font-weight-bold ml-2" href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data" target="_blank">
-                Learn more <i class="neu-arrow"></i> 
-              </a>
-            </p>
-            
-          </div>
+          <!-- Text -->
+          <p class="font-size-md text-white">
+            Enrich companies with funding, categories, emails, exits/acquisitions data
+            <a class="text-warning font-weight-bold ml-2"
+              href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data"
+              target="_blank">
+              Learn more <i class="neu-arrow"></i>
+            </a>
+          </p>
 
-        </div> <!-- / .row -->
+        </div>
 
-      </div>
+      </div> <!-- / .row -->
 
-    </section>
+    </div>
 
-     <!-- NAVBAR
+  </section>
+
+  <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
-        </a>
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
         </button>
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
 
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a href="products.html" class="nav-link" id="navbarPages">
+              Products <i class="fe fe-chevron-down"></i>
+            </a>
+            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
 
-          <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+                    <div class="col-12 col-lg-6">
 
-            <!-- Products -->
-            <li class="nav-item dropdown">
-              <a href="products.html" class="nav-link" id="navbarPages">
-                Products <i class="fe fe-chevron-down"></i>
-              </a>
-              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="row no-gutters">
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
+                        LinkDB
+                      </h6>
 
-                      <div class="col-12 col-lg-6">
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="linkdb.html">
+                        Database of public<br>
+                        LinkedIn profiles
+                      </a>
 
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
-                        </h6>
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet
+                        Addon
+                      </h6>
 
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="linkdb.html">
-                          Database of public<br>
-                          LinkedIn profiles
-                        </a>
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                        Sapiengraph - B2B Enrichment <br class="d-block">
+                        in Google Sheets
+                      </a>
 
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
-                        </h6>
+                      <!-- Heading -->
+                      <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
+                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free
+                        Tools
+                      </a>
 
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
-                          Sapiengraph - B2B Enrichment <br class="d-block">
-                          in Google Sheets
-                        </a>
+                      <!-- List -->
+                      <a class="dropdown-item" href="disposable-email.html">
+                        Disposable Email Checker
+                      </a>
 
-                        <!-- Heading -->
-                        <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
-                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
-                        </a>
+                      <!-- List -->
+                      <a class="dropdown-item"
+                        href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
+                        Person Profile Picture API
+                      </a>
 
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
-                          Disposable Email Checker
-                        </a>                        
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
-                          Person Profile Picture API
-                        </a>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5 mb-lg-0" href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
-                          Company Profile Picture API
-                        </a>
-
-                      </div>
-
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="people-api.html">
-                          People API
-                        </a>
-                        <a class="dropdown-item" href="company-api.html">
-                          Company API
-                        </a>
-                        <a class="dropdown-item" href="contact-api.html">
-                          Contact API
-                        </a>       
-                        <a class="dropdown-item" href="reverse-email-lookup.html">
-                          ᴸ Reverse Email Lookup API
-                        </a>                    
-                        <a class="dropdown-item" href="email-lookup-api-endpoint.html">
-                          ᴸ Work Email Lookup API
-                        </a>     
-                        <a class="dropdown-item" href="jobs-api.html">
-                          Jobs API
-                        </a>
-                        <a class="dropdown-item" href="school-api.html">
-                          School API
-                        </a>
-                        <a class="dropdown-item" href="search-api.html">
-                          Search API
-                        </a>
-                        <a class="dropdown-item" href="customer-api.html">
-                          Customer API
-                        </a>
-
-
-                        <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
-                          API Documentation <i class="fe fe-arrow-right"></i>
-                        </a>
-                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
-                          See all products <i class="fe fe-arrow-right"></i>
-                        </a>
-
-                      </div>
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
+                        Company Profile Picture API
+                      </a>
 
                     </div>
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-            </li>
 
-            <!-- Solution -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Solutions <i class="fe fe-chevron-down"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="row no-gutters">
+                    <div class="col-12 col-lg-6">
 
-                      <div class="col-12 col-lg-6">
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo"
+                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                      </h6>
 
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
-                        </h6>
+                      <!-- List -->
+                      <a class="dropdown-item" href="people-api.html">
+                        People API
+                      </a>
+                      <a class="dropdown-item" href="company-api.html">
+                        Company API
+                      </a>
+                      <a class="dropdown-item" href="contact-api.html">
+                        Contact API
+                      </a>
+                      <a class="dropdown-item" href="reverse-email-lookup.html">
+                        ᴸ Reverse Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="email-lookup-api-endpoint.html">
+                        ᴸ Work Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="jobs-api.html">
+                        Jobs API
+                      </a>
+                      <a class="dropdown-item" href="school-api.html">
+                        School API
+                      </a>
+                      <a class="dropdown-item" href="search-api.html">
+                        Search API
+                      </a>
+                      <a class="dropdown-item" href="customer-api.html">
+                        Customer API
+                      </a>
 
-                        <!-- List -->
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="linkedin.html">
-                            LinkedIn Scraper API
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="linkedin.html">
-                            Crunchbase Scraper API
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
-                            Investment Signals
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="solution-growth.html">
-                            Accelerating Growth Startups
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="hr-tech.html">
-                            Data for HR Tech
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                            Automated Recruitment
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
-                            Sales and Marketing Automation
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                            Identifying Buyer Intent Data
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                            CRM Data Enrichment
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="clearbit-alternative.html">
-                            Clearbit Alternative
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright">
-                          <a class="dropdown-link" href="solution-PeopleDataLabs.html">
-                            People Data Labs Alternative
-                          </a>
-                        </div>
-                        <div class="dropdown-item dropright mt-4">
-                          <a class="text-primary font-weight-bold" href="use-cases.html">
-                            See all use-cases <i class="fe fe-arrow-right"></i>
-                          </a>
-                        </div>
-                      </div>
 
-                      <div class="col-12 col-lg-6">
-
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
-                        </h6>
-
-                        <!-- List -->
-                        <a class="dropdown-item" href="monitoring-job-changes.html">
-                          Track Job Changes
-                        </a>
-
-                        <!-- List -->
-                        <a class="dropdown-item mb-5" href="reverse-email-lookup-demo.html">
-                          Reverse Email Lookup
-                        </a>
-
-                      </div>
+                      <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
+                        API Documentation <i class="fe fe-arrow-right"></i>
+                      </a>
+                      <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                        See all products <i class="fe fe-arrow-right"></i>
+                      </a>
 
                     </div>
+
                   </div>
                 </div>
-              </div> <!-- / .row -->
-            </li>
+              </div>
+            </div> <!-- / .row -->
+          </li>
 
-            <!-- Pricing -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Pricing <i class="fe fe-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="pricing.html">
-                    Proxycurl API Pricing
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link" href="pricing-linkdb.html">
-                    LinkDB Pricing
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Blog -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="blog.html">
-                Blog
-              </a>
-            </li>
-
-            <!-- FAQ -->
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount" href="#!">
-                FAQ
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="text-center ml-auto">
-            <!-- Button -->
-            <a class="btn btn-sm btn-link" href="login.html">
-              Log in
+          <!-- Solution -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
+              Solutions <i class="fe fe-chevron-down"></i>
             </a>
-          </div>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
 
-          <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
-            Sign up
-          </a>
+                    <div class="col-12 col-lg-6">
 
-        </div>
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg">
+                        Use Cases
+                      </h6>
 
-      </div>
-    </nav>
+                      <!-- List -->
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          LinkedIn Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          Crunchbase Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                          Investment Signals
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-growth.html">
+                          Accelerating Growth Startups
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="hr-tech.html">
+                          Data for HR Tech
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                          Automated Recruitment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                          Sales and Marketing Automation
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                          Identifying Buyer Intent Data
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                          CRM Data Enrichment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="clearbit-alternative.html">
+                          Clearbit Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-PeopleDataLabs.html">
+                          People Data Labs Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright mt-4">
+                        <a class="text-primary font-weight-bold" href="use-cases.html">
+                          See all use-cases <i class="fe fe-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
 
-    <!-- FIRST FOLD
-    ================================================== -->
-    <section class="py-8 pt-md-12 pb-md-12 border-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+                    <div class="col-12 col-lg-6">
 
-            <div class="" data-aos="fade-left">
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z"
+                              fill="#335EEA"></path>
+                          </g>
+                        </svg> Demos
+                      </h6>
 
-              <!-- Image -->
-              <div class="img-skewed img-skewed-left">
+                      <!-- List -->
+                      <a class="dropdown-item" href="monitoring-job-changes.html">
+                        Track Job Changes
+                      </a>
 
-                <!-- Image -->
-                <img src="assets/img/illustrations/Accelerate hyper-growth illustration.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="...">
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="reverse-email-lookup-demo.html">
+                        Reverse Email Lookup
+                      </a>
 
-              </div>
+                    </div>
 
-            </div>
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-right">
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold mb-6">
-              Accelerate hyper-growth at your <span class="text-primary">growth-stage startup</span> in two-steps
-            </h1>
-
-            <!-- List -->
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" x="4" y="5" width="16" height="3" rx="1.5"/><path d="M7.5 11h9a1.5 1.5 0 010 3h-9a1.5 1.5 0 010-3zm3 6h3a1.5 1.5 0 010 3h-3a1.5 1.5 0 010-3z" fill="#335EEA" opacity=".3"/></g></svg>
-              </div>
-
-              <div class="ml-5">
-
-                <!-- Heading -->
-                <h4 class="lead mb-1 font-weight-bold">
-                  Build an exhaustive list of prospects
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6">
-                  Given your Ideal Customer Profile (ICP), build an exhaustive list of your prospects with <a class="text-primary" href="linkdb.html">LinkDB</a>, an exhaustive dataset of all LinkedIn profiles.
-                </p>
-
-              </div>
-
-            </div>
-
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M16.374 19.939l5.849-8.773A.75.75 0 0021.599 10H17V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 0010.401 14H15v5.523a.75.75 0 001.374.416z" fill="#335EEA"/><path d="M4.5 5h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm0 12h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm-2-6h4a1.5 1.5 0 010 3h-4a1.5 1.5 0 010-3z" fill="#335EEA" opacity=".3"/></g></svg>
-              </div>
-
-              <div class="ml-5">
-
-                <!-- Heading -->
-                <h4 class="lead mb-4 font-weight-bold">
-                  Pushing out growth campaigns in the form of:
-                </h4>
-
-                <!-- Bullet -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
                   </div>
-                  
-                  <!-- Text -->
-                  <p class="text-primary">
-                    Facebook Ads
-                  </p>
-
                 </div>
-
-                <!-- Bullet -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p class="text-primary">
-                    Bulk connection on LinkedIn
-                  </p>
-
-                </div>
-
-                <!-- Bullet -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p class="text-primary">
-                    Cold Email Campaigns
-                  </p>
-
-                </div>
-
               </div>
+            </div> <!-- / .row -->
+          </li>
 
-            </div>
-
-            <a class="btn btn-primary btn-block shadow-light-lg lift mt-4" href="mailto:hello@nubela.co">
-              Talk to Proxycurl's Head of Growth
+          <!-- Pricing -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Pricing <i class="fe fe-chevron-down"></i>
             </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- HOW
-    ================================================== -->
-    <section class="pt-md-12 py-8 pb-12 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-            <!-- Image -->
-            <img src="assets/img/illustrations/Build an exhaustive list of Identify prospects.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 rounded" alt="..." data-aos="fade-up" data-aos-delay="100">
-
-          </div>
-
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
-            <!-- Badge -->
-            <span class="badge badge-pill badge-success-soft mb-3">
-              <span class="h6 text-uppercase">How to</span>
-            </span>
-
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Build an exhaustive list of <span class="text-success">Identify prospects</span>.
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-muted mb-6 mb-lg-8">
-              With <a class="text-primary font-weight-bold" href="https://nubela.co/proxycurl/linkdb" target="_blank">LinkDB <i class="neu-arrow"></i></a>, a customer can build a list of prospects by filter down an exhaustive dataset of publicly accessible LinkedIn profiles with an ideal customer profile constraint.
-            </p>
-
-            <a class="btn btn-primary btn-block shadow-light-lg lift mt-4" href="mailto:hello@nubela.co">
-              Talk to Proxycurl's Head of Growth
-            </a>
-
-          </div>
-
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- Third fold
-    ================================================== -->
-    <section class="py-8 pt-md-12 bg-light">
-
-      <div class="container">
-
-        <div class="row align-items-center">
-
-          <div class="col-12 col-md-6">
-
-            <h1 class="font-weight-bold mb-4">
-              Grow your company with a list of prospects <i class="neu-right-lg text-primary"></i>
-            </h1>
-
-          </div>
-
-          <div class="col-12 col-md-6">
-
-            <h4 class="mb-6">
-              Now that we have a list of prospects, a growth-stage company can build growth in four ways
-            </h4>
-
-          </div>
-
-        </div>
-
-        <div class="row align-items-top mt-8">
-
-          <div class="col-12 col-md-6 d-flex">
-
-            <!--Cold email-->
-            <div class="card border lift shadow-light-lg mb-4 mb-md-8">
-              <div class="card-body">
-            
-                <!-- Badge -->
-                <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
-                  Email Campaign
-                </span>
-                
-                <div class="icon text-primary mb-2">
-                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 16h1a1 1 0 010 2H4a1 1 0 010-2zm-3-5h4a1 1 0 010 2H1a1 1 0 010-2zm2-5h2a1 1 0 110 2H3a1 1 0 110-2z" fill="#335EEA" opacity=".3"/><path d="M10 6h12a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2V8a2 2 0 012-2zm11.085 2.072L16 10.719l-5.085-2.647a.632.632 0 00-.84.244.59.59 0 00.252.812l5.379 2.8a.64.64 0 00.588 0l5.38-2.8a.59.59 0 00.252-.812.632.632 0 00-.841-.244z" fill="#335EEA"/></g></svg>
-                </div>
-    
-                <h4 class="lead mb-4 font-weight-bold">
-                  Cold email campaigns, how?
-                </h4>
-    
-                <div class="d-flex">
-    
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-    
-                  <p>
-                    For each prospect found with LinkDB, use our <a class="text-primary" href="https://nubela.co/proxycurl/email-lookup">Work Email Lookup API</a> to fetch verfied work emails for cold email campaigns
-                  </p>
-    
-                </div>
-    
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Launch a cold email campaign
-                  </p>
-    
-                </div>
-            
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6 d-flex">
-
-            <!--Facebook-->
-            <div class="card border lift shadow-light-lg mb-4 mb-md-8">
-              <div class="card-body">
-            
-                <!-- Badge -->
-                <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
-                  Facebook
-                </span>
-                
-                <div class="icon text-primary mb-2">
-                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.8962,2H3.104c-.6094-.0002-1.1035,.4936-1.1038,1.1029V20.8958c0,.6096,.4942,1.1038,1.1038,1.1038H20.8962c.6095-.0002,1.1034-.4943,1.1036-1.1038V3.1038c.0001-.6095-.4939-1.1036-1.1034-1.1038h-.0002Z" fill="#335eea" isolation="isolate" opacity=".3"/><path d="M18.3993,14.2548l.3891-3.0184h-2.9888v-1.9271c0-.8737,.2425-1.4693,1.4958-1.4693l1.5981-.0006v-2.7c-.2763-.0366-1.2249-.1187-2.3289-.1187-2.3045,0-3.8823,1.4067-3.8823,3.9899v2.226h-2.606v3.0184h2.6062v7.745h3.1172v-7.7452h2.5996Z" fill="#335eea" isolation="isolate"/></svg>
-                </div>
-    
-                <h4 class="lead mb-1 font-weight-bold">
-                  Facebook Ads
-                </h4>
-    
-                <p>
-                  Facebook ads at an order of magnitude cheaper and more pervasive than LinkedIn ads.
-                </p>
-  
-                <p class="font-weight-bold mb-1">
-                  This is how:
-                </p>
-  
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Build a list of personal email addresses for each prospect found with LinkDB by using our <a class="text-primary" href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal Email Lookup API</a> to fetch personal (Facebook) emails of prospects
-                  </p>
-    
-                </div>
-  
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Build a custom audience on Facebook Ad Manager with the email list
-                  </p>
-    
-                </div>
-  
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Launch a FB ad campaign targeting prospects you found and similar people like such
-                  </p>
-    
-                </div>
-            
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6">
-
-            <!--LinkedIn-->
-            <div class="card border lift shadow-light-lg mb-4 mb-md-8">
-              <div class="card-body">
-            
-                <!-- Badge -->
-                <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
-                  LinkedIn
-                </span>
-                
-                <div class="icon text-primary mb-2">
-                  <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.5186,2.0015H3.4758c-.8-.009-1.466,.6415-1.4758,1.4415V20.5566c.0094,.8005,.6753,1.4517,1.4758,1.4431H20.5186c.8024,.0101,1.4707-.6411,1.4814-1.4431V3.4419c-.0107-.8017-.6799-1.4522-1.4814-1.4416" fill="#335eea" isolation="isolate" opacity=".3"/><path d="M19.0413,19.0413h-2.9635v-4.6409c0-1.1067-.0198-2.5313-1.5413-2.5313-1.5435,0-1.7797,1.2057-1.7797,2.4507v4.7211h-2.9634V9.4974h2.8448v1.3042h.0399c.5792-.9904,1.6602-1.5841,2.8069-1.5415,3.0035,0,3.5574,1.9756,3.5574,4.5458l-.0013,5.2354ZM6.4498,8.1929h-.0004c-.9434,0-1.7197-.7762-1.7197-1.7196s.7763-1.7197,1.7197-1.7197,1.7196,.7761,1.7197,1.7194v.0004c0,.9432-.7761,1.7195-1.7194,1.7196m1.4817,10.8484h-2.9665V9.4974h2.9665v9.5439Z" fill="#335eea" isolation="isolate"/></svg>
-                </div>
-    
-                <h4 class="lead mb-4 font-weight-bold">
-                  Bulk connects on LinkedIn
-                </h4>
-  
-                <p class="font-weight-bold mb-1">
-                  This is how:
-                </p>
-  
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    Build a list of personal email addresses for each prospect found with LinkDB by using our Personal Email Lookup API to fetch personal (Facebook) emails of prospects
-                  </p>
-    
-                </div>
-  
-                <div class="d-flex">
-    
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-                  
-                  <!-- Text -->
-                  <p>
-                    <a class="text-primary font-weight-bold" href="https://www.linkedin.com/help/linkedin/answer/a539990" target="_blank">
-                      Upload a CSV of personal emails to LinkedIn to make connect with these prospects on linkedin <i class="neu-arrow"></i>
-                    </a>
-                  </p>
-    
-                </div>
-            
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6 d-flex">
-
-            <!--Personal email-->
-            <div class="card border lift shadow-light-lg mb-4 mb-md-8">
-              <div class="card-body">
-            
-                <!-- Badge -->
-                <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
-                  Personal Email
-                </span>
-                
-                <div class="icon text-primary mb-2">
-                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z" fill="#335EEA" opacity=".3"/><path d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z" fill="#335EEA"/></g></svg>
-                </div>
-    
-                <h4 class="lead mb-4 font-weight-bold">
-                  Personal email
-                </h4>
-  
-                <p>
-                  Build a list of personal email addresses for each prospect found with LinkDB by using our <a class="text-primary" href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal Email Lookup API</a> to fetch personal (Facebook) emails of prospects
-                </p>
-            
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- CTA
-    ================================================== -->
-    <section class="py-10 py-md-12 bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg);">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 text-center">
-
-            <!-- Heading -->
-            <h1 class="display-4 text-white">
-              Talk to the Head of Growth at Proxycurl
-            </h1>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6 mb-md-8">
-              We dogfood our product to accelerate growth internally.
-              Proxycurl is a bootstrapped, multi-million ARR startup. Find out how you can do it for your growth stage startup by sending us an email today.
-            </p>
-
-            <!-- Button -->
-            <a href="mailto:hello@nubela.co" class="btn btn-primary-desat lift">
-              Talk to Proxycurl's Head of Growth <i class="fe fe-arrow-right ms-2"></i>
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- ARTICLES
-    ================================================== -->
-    <section class="py-7 pb-md-10 pt-md-10 bg-light">
-      <div class="container">
-        <div class="row align-items-center mb-5">
-          <div class="col-12 col-md">
-
-            <!-- Heading -->
-            <h3 class="mb-0">
-              Featured Articles
-            </h3>
-
-            <!-- Text -->
-            <p class="mb-0 text-muted">
-              Here’s what we've been up to recently.
-            </p>
-
-          </div>
-          <div class="col-12 col-md-auto">
-
-            <!-- Button -->
-            <a href="https://nubela.co/blog/" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline" target="_blank">
-              View all
-            </a>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-            <!-- Card -->
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
-              <!-- Image -->
-              <a class="card-img-top" href="#!">
-
-                <!-- Image -->
-                <img src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png" alt="..." class="card-img-top">
-
-                <!-- Shape -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-
-              </a>
-
-              <!-- Body -->
-              <a class="card-body" href="#!">
-
-                <!-- Heading -->
-                <h3>
-                  Enrich companies with funding, categories, emails, exits/acquisitions data
-                </h3>
-
-                <!-- Text -->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                </p>
-
-              </a>
-
-              <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
-                <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Ab Hadley
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-            <!-- Card -->
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
-              <!-- Image -->
-              <a class="card-img-top" href="#!">
-
-                <!-- Image -->
-                <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png" alt="..." class="card-img-top">
-
-                <!-- Shape -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-
-              </a>
-
-              <!-- Body -->
-              <a class="card-body" href="#!">
-
-                <!-- Heading -->
-                <h3>
-                  How stable is Proxycurl for scraping LinkedIn?
-                </h3>
-
-                <!-- Text -->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                </p>
-
-              </a>
-
-              <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
-                <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Adolfo Hess
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-
-            <!-- Card -->
-            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
-
-              <!-- Image -->
-              <a class="card-img-top" href="#!">
-
-                <!-- Image -->
-                <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..." class="card-img-top">
-
-                <!-- Shape -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-
-              </a>
-
-              <!-- Body -->
-              <a class="card-body" href="#!">
-
-                <!-- Heading -->
-                <h3>
-                  Introducing Role Lookup API endpoint
-                </h3>
-
-                <!-- Text -->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
-                </p>
-
-              </a>
-
-              <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-
-                <!-- Divider -->
-                <hr class="card-meta-divider">
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm mr-2">
-                  <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted mr-2 mb-0">
-                  Ab Hadley
-                </h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-
-              </a>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- FOOTER
-    ================================================== -->
-    <footer class="bg-white py-8 py-md-11">
-
-      <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
-
-        <div class="row justify-content-end" bis_skin_checked="1">
-
-          <div class="col-12 col-lg-3 col-md-4">
-
-            <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo" class="footer-brand img-fluid mb-4">
-
-          </div>
-
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">
-              Proxycurl API
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="people-api.html">
-                  Person API
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing.html">
+                  Proxycurl API Pricing
                 </a>
               </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="company-api.html">
-                  Company API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="search-api.html">
-                  Search API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="jobs-api.html">
-                  Jobs API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="contact-api.html">
-                  Contact API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="school-api.html">
-                  School API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="customer-api.html">
-                  Customer API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                  Free API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="pricing.html">
-                  API Pricing
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="documentation.html">
-                  Documentation
-                  <i class="fe fe-arrow-right"></i>
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
-                  API Status
-                  <span class="badge badge-primary-soft rounded-pill" >
-                    <i class="neu-br-twitter"></i>
-                    @Proxycurl 
-                    </span>
-                </a>
-              </li>
-            </ul>
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
-            <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="linkdb.html">
-                  LinkDB Datasets
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="pricing-linkdb.html">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing-linkdb.html">
                   LinkDB Pricing
                 </a>
               </li>
             </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <!-- FAQ -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="#!">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center ml-auto">
+          <!-- Button -->
+          <a class="btn btn-sm btn-link" href="login.html">
+            Log in
+          </a>
+        </div>
+
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+          Sign up
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- FIRST FOLD
+    ================================================== -->
+  <section class="py-8 pt-md-12 pb-md-12 border-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+          <div class="" data-aos="fade-left">
+
+            <!-- Image -->
+            <div class="img-skewed img-skewed-left">
+
+              <!-- Image -->
+              <img src="assets/img/illustrations/Accelerate hyper-growth illustration.png"
+                class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="...">
+
+            </div>
 
           </div>
 
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">
-              Use Cases
-            </h6>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-right">
 
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="linkedin.html">
-                  Linkedin Scraper API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="linkedin.html">
-                  Crunchbase Scraper API
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
-                  Investment Signals 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="solution-growth.html">
-                  Accelerating Growth Startups
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
-                  Data for HR Tech 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                  Automated Recruitment 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
-                  Sales and Marketing Automation 
-                </a>
-              </li> 
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                  Identifying Buyer Intent Data 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                  CRM Data Enrichment  <i class="fe fe-arrow-right"></i>
-                </a>
-              </li>
-            </ul>
-            <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
+          <!-- Heading -->
+          <h1 class="font-weight-bold mb-6">
+            Accelerate hyper-growth at your <span class="text-primary">growth-stage startup</span> in two-steps
+          </h1>
+
+          <!-- List -->
+          <div class="d-flex">
+
+            <!-- Icon -->
+            <div class="icon text-primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M0 0h24v24H0z" />
+                  <rect fill="#335EEA" x="4" y="5" width="16" height="3" rx="1.5" />
+                  <path d="M7.5 11h9a1.5 1.5 0 010 3h-9a1.5 1.5 0 010-3zm3 6h3a1.5 1.5 0 010 3h-3a1.5 1.5 0 010-3z"
+                    fill="#335EEA" opacity=".3" />
+                </g>
+              </svg>
+            </div>
+
+            <div class="ml-5">
+
+              <!-- Heading -->
+              <h4 class="lead mb-1 font-weight-bold">
+                Build an exhaustive list of prospects
+              </h4>
+
+              <!-- Text -->
+              <p class="text-muted mb-6">
+                Given your Ideal Customer Profile (ICP), build an exhaustive list of your prospects with <a
+                  class="text-primary" href="linkdb.html">LinkDB</a>, an exhaustive dataset of all LinkedIn profiles.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="d-flex">
+
+            <!-- Icon -->
+            <div class="icon text-primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M0 0h24v24H0z" />
+                  <path
+                    d="M16.374 19.939l5.849-8.773A.75.75 0 0021.599 10H17V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 0010.401 14H15v5.523a.75.75 0 001.374.416z"
+                    fill="#335EEA" />
+                  <path
+                    d="M4.5 5h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm0 12h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm-2-6h4a1.5 1.5 0 010 3h-4a1.5 1.5 0 010-3z"
+                    fill="#335EEA" opacity=".3" />
+                </g>
+              </svg>
+            </div>
+
+            <div class="ml-5">
+
+              <!-- Heading -->
+              <h4 class="lead mb-4 font-weight-bold">
+                Pushing out growth campaigns in the form of:
+              </h4>
+
+              <!-- Bullet -->
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p class="text-primary">
+                  Facebook Ads
+                </p>
+
+              </div>
+
+              <!-- Bullet -->
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p class="text-primary">
+                  Bulk connection on LinkedIn
+                </p>
+
+              </div>
+
+              <!-- Bullet -->
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p class="text-primary">
+                  Cold Email Campaigns
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <a class="btn btn-primary btn-block shadow-light-lg lift mt-4" href="mailto:hello@nubela.co">
+            Talk to Proxycurl's Head of Growth
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- HOW
+    ================================================== -->
+  <section class="pt-md-12 py-8 pb-12 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+          <!-- Image -->
+          <img src="assets/img/illustrations/Build an exhaustive list of Identify prospects.png"
+            class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 rounded" alt="..." data-aos="fade-up"
+            data-aos-delay="100">
+
+        </div>
+
+        <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+
+          <!-- Badge -->
+          <span class="badge badge-pill badge-success-soft mb-3">
+            <span class="h6 text-uppercase">How to</span>
+          </span>
+
+          <!-- Heading -->
+          <h1 class="font-weight-bold">
+            Build an exhaustive list of <span class="text-success">Identify prospects</span>.
+          </h1>
+
+          <!-- Text -->
+          <p class="lead text-muted mb-6 mb-lg-8">
+            With <a class="text-primary font-weight-bold" href="https://nubela.co/proxycurl/linkdb"
+              target="_blank">LinkDB <i class="neu-arrow"></i></a>, a customer can build a list of prospects by filter
+            down an exhaustive dataset of publicly accessible LinkedIn profiles with an ideal customer profile
+            constraint.
+          </p>
+
+          <a class="btn btn-primary btn-block shadow-light-lg lift mt-4" href="mailto:hello@nubela.co">
+            Talk to Proxycurl's Head of Growth
+          </a>
+
+        </div>
+
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- Third fold
+    ================================================== -->
+  <section class="py-8 pt-md-12 bg-light">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-6">
+
+          <h1 class="font-weight-bold mb-4">
+            Grow your company with a list of prospects <i class="neu-right-lg text-primary"></i>
+          </h1>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+
+          <h4 class="mb-6">
+            Now that we have a list of prospects, a growth-stage company can build growth in four ways
+          </h4>
+
+        </div>
+
+      </div>
+
+      <div class="row align-items-top mt-8">
+
+        <div class="col-12 col-md-6 d-flex">
+
+          <!--Cold email-->
+          <div class="card border lift shadow-light-lg mb-4 mb-md-8">
+            <div class="card-body">
+
+              <!-- Badge -->
+              <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
+                Email Campaign
+              </span>
+
+              <div class="icon text-primary mb-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z" />
+                    <path
+                      d="M4 16h1a1 1 0 010 2H4a1 1 0 010-2zm-3-5h4a1 1 0 010 2H1a1 1 0 010-2zm2-5h2a1 1 0 110 2H3a1 1 0 110-2z"
+                      fill="#335EEA" opacity=".3" />
+                    <path
+                      d="M10 6h12a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2V8a2 2 0 012-2zm11.085 2.072L16 10.719l-5.085-2.647a.632.632 0 00-.84.244.59.59 0 00.252.812l5.379 2.8a.64.64 0 00.588 0l5.38-2.8a.59.59 0 00.252-.812.632.632 0 00-.841-.244z"
+                      fill="#335EEA" />
+                  </g>
+                </svg>
+              </div>
+
+              <h4 class="lead mb-4 font-weight-bold">
+                Cold email campaigns, how?
+              </h4>
+
+              <div class="d-flex">
+
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <p>
+                  For each prospect found with LinkDB, use our <a class="text-primary"
+                    href="https://nubela.co/proxycurl/email-lookup">Work Email Lookup API</a> to fetch verfied work
+                  emails for cold email campaigns
+                </p>
+
+              </div>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Launch a cold email campaign
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 d-flex">
+
+          <!--Facebook-->
+          <div class="card border lift shadow-light-lg mb-4 mb-md-8">
+            <div class="card-body">
+
+              <!-- Badge -->
+              <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
+                Facebook
+              </span>
+
+              <div class="icon text-primary mb-2">
+                <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M20.8962,2H3.104c-.6094-.0002-1.1035,.4936-1.1038,1.1029V20.8958c0,.6096,.4942,1.1038,1.1038,1.1038H20.8962c.6095-.0002,1.1034-.4943,1.1036-1.1038V3.1038c.0001-.6095-.4939-1.1036-1.1034-1.1038h-.0002Z"
+                    fill="#335eea" isolation="isolate" opacity=".3" />
+                  <path
+                    d="M18.3993,14.2548l.3891-3.0184h-2.9888v-1.9271c0-.8737,.2425-1.4693,1.4958-1.4693l1.5981-.0006v-2.7c-.2763-.0366-1.2249-.1187-2.3289-.1187-2.3045,0-3.8823,1.4067-3.8823,3.9899v2.226h-2.606v3.0184h2.6062v7.745h3.1172v-7.7452h2.5996Z"
+                    fill="#335eea" isolation="isolate" />
+                </svg>
+              </div>
+
+              <h4 class="lead mb-1 font-weight-bold">
+                Facebook Ads
+              </h4>
+
+              <p>
+                Facebook ads at an order of magnitude cheaper and more pervasive than LinkedIn ads.
+              </p>
+
+              <p class="font-weight-bold mb-1">
+                This is how:
+              </p>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Build a list of personal email addresses for each prospect found with LinkDB by using our <a
+                    class="text-primary"
+                    href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal Email
+                    Lookup API</a> to fetch personal (Facebook) emails of prospects
+                </p>
+
+              </div>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Build a custom audience on Facebook Ad Manager with the email list
+                </p>
+
+              </div>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Launch a FB ad campaign targeting prospects you found and similar people like such
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+
+          <!--LinkedIn-->
+          <div class="card border lift shadow-light-lg mb-4 mb-md-8">
+            <div class="card-body">
+
+              <!-- Badge -->
+              <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
+                LinkedIn
+              </span>
+
+              <div class="icon text-primary mb-2">
+                <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M20.5186,2.0015H3.4758c-.8-.009-1.466,.6415-1.4758,1.4415V20.5566c.0094,.8005,.6753,1.4517,1.4758,1.4431H20.5186c.8024,.0101,1.4707-.6411,1.4814-1.4431V3.4419c-.0107-.8017-.6799-1.4522-1.4814-1.4416"
+                    fill="#335eea" isolation="isolate" opacity=".3" />
+                  <path
+                    d="M19.0413,19.0413h-2.9635v-4.6409c0-1.1067-.0198-2.5313-1.5413-2.5313-1.5435,0-1.7797,1.2057-1.7797,2.4507v4.7211h-2.9634V9.4974h2.8448v1.3042h.0399c.5792-.9904,1.6602-1.5841,2.8069-1.5415,3.0035,0,3.5574,1.9756,3.5574,4.5458l-.0013,5.2354ZM6.4498,8.1929h-.0004c-.9434,0-1.7197-.7762-1.7197-1.7196s.7763-1.7197,1.7197-1.7197,1.7196,.7761,1.7197,1.7194v.0004c0,.9432-.7761,1.7195-1.7194,1.7196m1.4817,10.8484h-2.9665V9.4974h2.9665v9.5439Z"
+                    fill="#335eea" isolation="isolate" />
+                </svg>
+              </div>
+
+              <h4 class="lead mb-4 font-weight-bold">
+                Bulk connects on LinkedIn
+              </h4>
+
+              <p class="font-weight-bold mb-1">
+                This is how:
+              </p>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Build a list of personal email addresses for each prospect found with LinkDB by using our Personal
+                  Email Lookup API to fetch personal (Facebook) emails of prospects
+                </p>
+
+              </div>
+
+              <div class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  <a class="text-primary font-weight-bold" href="https://www.linkedin.com/help/linkedin/answer/a539990"
+                    target="_blank">
+                    Upload a CSV of personal emails to LinkedIn to make connect with these prospects on linkedin <i
+                      class="neu-arrow"></i>
+                  </a>
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 d-flex">
+
+          <!--Personal email-->
+          <div class="card border lift shadow-light-lg mb-4 mb-md-8">
+            <div class="card-body">
+
+              <!-- Badge -->
+              <span class="badge text-white bg-primary rounded-pill badge-float badge-float-outside">
+                Personal Email
+              </span>
+
+              <div class="icon text-primary mb-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z" />
+                    <path
+                      d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z"
+                      fill="#335EEA" opacity=".3" />
+                    <path
+                      d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z"
+                      fill="#335EEA" />
+                  </g>
+                </svg>
+              </div>
+
+              <h4 class="lead mb-4 font-weight-bold">
+                Personal email
+              </h4>
+
+              <p>
+                Build a list of personal email addresses for each prospect found with LinkDB by using our <a
+                  class="text-primary"
+                  href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal Email
+                  Lookup API</a> to fetch personal (Facebook) emails of prospects
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA
+    ================================================== -->
+  <section class="py-10 py-md-12 bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-4 text-white">
+            Talk to the Head of Growth at Proxycurl
+          </h1>
+
+          <!-- Text -->
+          <p class="fs-lg text-muted mb-6 mb-md-8">
+            We dogfood our product to accelerate growth internally.
+            Proxycurl is a bootstrapped, multi-million ARR startup. Find out how you can do it for your growth stage
+            startup by sending us an email today.
+          </p>
+
+          <!-- Button -->
+          <a href="mailto:hello@nubela.co" class="btn btn-primary-desat lift">
+            Talk to Proxycurl's Head of Growth <i class="fe fe-arrow-right ms-2"></i>
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- ARTICLES
+    ================================================== -->
+  <section class="py-7 pb-md-10 pt-md-10 bg-light">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md">
+
+          <!-- Heading -->
+          <h3 class="mb-0">
+            Featured Articles
+          </h3>
+
+          <!-- Text -->
+          <p class="mb-0 text-muted">
+            Here’s what we've been up to recently.
+          </p>
+
+        </div>
+        <div class="col-12 col-md-auto">
+
+          <!-- Button -->
+          <a href="https://nubela.co/blog/" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline" target="_blank">
+            View all
+          </a>
+
+        </div>
+      </div> <!-- / .row -->
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+            <!-- Image -->
+            <a class="card-img-top" href="#!">
+
+              <!-- Image -->
+              <img
+                src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png"
+                alt="..." class="card-img-top">
+
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+
+            </a>
+
+            <!-- Body -->
+            <a class="card-body" href="#!">
+
+              <!-- Heading -->
+              <h3>
+                Enrich companies with funding, categories, emails, exits/acquisitions data
+              </h3>
+
+              <!-- Text -->
+              <p class="mb-0 text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+              </p>
+
+            </a>
+
+            <!-- Meta -->
+            <a class="card-meta mt-auto" href="#!">
+
+              <!-- Divider -->
+              <hr class="card-meta-divider">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-sm mr-2">
+                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+              </div>
+
+              <!-- Author -->
+              <h6 class="text-uppercase text-muted mr-2 mb-0">
+                Ab Hadley
+              </h6>
+
+              <!-- Date -->
+              <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                <time datetime="2019-05-02">May 02</time>
+              </p>
+
+            </a>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+            <!-- Image -->
+            <a class="card-img-top" href="#!">
+
+              <!-- Image -->
+              <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png" alt="..."
+                class="card-img-top">
+
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+
+            </a>
+
+            <!-- Body -->
+            <a class="card-body" href="#!">
+
+              <!-- Heading -->
+              <h3>
+                How stable is Proxycurl for scraping LinkedIn?
+              </h3>
+
+              <!-- Text -->
+              <p class="mb-0 text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+              </p>
+
+            </a>
+
+            <!-- Meta -->
+            <a class="card-meta mt-auto" href="#!">
+
+              <!-- Divider -->
+              <hr class="card-meta-divider">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-sm mr-2">
+                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+              </div>
+
+              <!-- Author -->
+              <h6 class="text-uppercase text-muted mr-2 mb-0">
+                Adolfo Hess
+              </h6>
+
+              <!-- Date -->
+              <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                <time datetime="2019-05-02">May 02</time>
+              </p>
+
+            </a>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+          <!-- Card -->
+          <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+
+            <!-- Image -->
+            <a class="card-img-top" href="#!">
+
+              <!-- Image -->
+              <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..."
+                class="card-img-top">
+
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+
+            </a>
+
+            <!-- Body -->
+            <a class="card-body" href="#!">
+
+              <!-- Heading -->
+              <h3>
+                Introducing Role Lookup API endpoint
+              </h3>
+
+              <!-- Text -->
+              <p class="mb-0 text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+              </p>
+
+            </a>
+
+            <!-- Meta -->
+            <a class="card-meta mt-auto" href="#!">
+
+              <!-- Divider -->
+              <hr class="card-meta-divider">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-sm mr-2">
+                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+              </div>
+
+              <!-- Author -->
+              <h6 class="text-uppercase text-muted mr-2 mb-0">
+                Ab Hadley
+              </h6>
+
+              <!-- Date -->
+              <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                <time datetime="2019-05-02">May 02</time>
+              </p>
+
+            </a>
+
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+  <!-- FOOTER
+    ================================================== -->
+  <footer class="bg-white py-8 py-md-11">
+
+    <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
+
+      <div class="row justify-content-end" bis_skin_checked="1">
+
+        <div class="col-12 col-lg-3 col-md-4">
+
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo"
+            class="footer-brand img-fluid mb-4">
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Proxycurl API
+          </h6>
+
+          <!-- List -->
           <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li> 
+            <li class="mb-2">
+              <a class="small text-reset" href="people-api.html">
+                Person API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="company-api.html">
+                Company API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="search-api.html">
+                Search API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="jobs-api.html">
+                Jobs API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="contact-api.html">
+                Contact API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="school-api.html">
+                School API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="customer-api.html">
+                Customer API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="pricing.html">
+                API Pricing
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="documentation.html">
+                Documentation
+                <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
+                API Status
+                <span class="badge badge-primary-soft rounded-pill">
+                  <i class="neu-br-twitter"></i>
+                  @Proxycurl
+                </span>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
+          <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkdb.html">
+                LinkDB Datasets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="pricing-linkdb.html">
+                LinkDB Pricing
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Use Cases
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Linkedin Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Crunchbase Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
+                Investment Signals
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-growth.html">
+                Accelerating Growth Startups
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
+                Data for HR Tech
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                Automated Recruitment
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
+                Sales and Marketing Automation
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                Identifying Buyer Intent Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                CRM Data Enrichment <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li>
               <a class="small text-reset" href="monitoring-job-changes.html"> Track Job Changes </a>
             </li>
           </ul>
-          </div>
+        </div>
 
-          <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
-        
-          
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/">
-                  Home
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog">
-                  Blog
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text" target="_blank">
-                  Sapiengraph - B2B Enrichment in Google Sheets 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                  Free Resources
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
-                  Building in Public
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
-                  Changelog
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="employee-listing-directory.html">
-                  Company Employee Listing Directory 
-                </a>
-              </li>    
-            </ul>
-
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
-        
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
-                  Proxycurl VS People Data Labs 
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
-                  Proxycurl VS Coresignal
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
-                  Proxycurl VS Bright Data
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
-                  Proxycurl VS PhantomBusters
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
-                  Proxycurl VS Clearbit
-                </a>
-              </li>
-            </ul>
+        <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
 
 
-          </div>
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/">
+                Home
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog">
+                Blog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text"
+                target="_blank">
+                Sapiengraph - B2B Enrichment in Google Sheets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free Resources
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
+                Building in Public
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
+                Changelog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="employee-listing-directory.html">
+                Company Employee Listing Directory
+              </a>
+            </li>
+          </ul>
 
-          <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
-             
-            <!-- List -->
-            <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-              <li class="mb-2">
-                <a class="small text-reset" href="about.html">
-                  About Proxycurl
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="team.html">
-                  Our Team
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="terms-of-use.html">
-                  Term of Use
-                </a>
-              </li>
-              <li class="mb-2">
-                <a class="small text-reset" href="gom-privacy.html">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
 
-            <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
+                Proxycurl VS People Data Labs
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
+                Proxycurl VS Coresignal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
+                Proxycurl VS Bright Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
+                Proxycurl VS PhantomBusters
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
+                Proxycurl VS Clearbit
+              </a>
+            </li>
+          </ul>
 
-            <!-- List -->
-            <ul class="list-unstyled mb-0 text-muted">
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="about.html">
+                About Proxycurl
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="team.html">
+                Our Team
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="terms-of-use.html">
+                Term of Use
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="gom-privacy.html">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-0 text-muted">
             <li class="mb-2">
               <a class="small text-reset" href="mailto:hello@nubela.co">
                 Email Us
@@ -1288,73 +1406,75 @@
                 Remove My Data
               </a>
             </li>
-            </ul>
-          </div>
-
-        </div> <!-- / .row -->
-
-        <hr class="my-6">
-
-        <div class="text-center mb-4">
-
-          <h6 class="font-weight-bold text-uppercase text-gray-700">
-            Follow us
-          </h6>
-
-          <div class="mr-2">
-            <a href="https://twitter.com/proxycurl" target="_blank">
-              <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
-            </a>
-  
-            <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
-              <img class="img-fluid" width="36" height="auto" alt="YouTube logo" src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
-            </a>
-  
-            <a href="https://github.com/nubelaco/" target="_blank">
-              <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
-            </a>
-          </div>
-
+          </ul>
         </div>
 
-        <div class="text-center">
-          <p class="caption mb-0">
-            Proxycurl LLC. All rights reserved.
-          </p>
+      </div> <!-- / .row -->
+
+      <hr class="my-6">
+
+      <div class="text-center mb-4">
+
+        <h6 class="font-weight-bold text-uppercase text-gray-700">
+          Follow us
+        </h6>
+
+        <div class="mr-2">
+          <a href="https://twitter.com/proxycurl" target="_blank">
+            <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+          </a>
+
+          <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+            <img class="img-fluid" width="36" height="auto" alt="YouTube logo"
+              src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+          </a>
+
+          <a href="https://github.com/nubelaco/" target="_blank">
+            <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+          </a>
         </div>
 
       </div>
 
-    </footer>
+      <div class="text-center">
+        <p class="caption mb-0">
+          Proxycurl LLC. All rights reserved.
+        </p>
+      </div>
 
-    <!-- JAVASCRIPT
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT
     ================================================== -->
-    <!-- Libs JS -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/quill/dist/quill.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+  <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
 
-    <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
 
 
-  </body>
+</body>
+
 </html>
