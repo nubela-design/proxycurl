@@ -6,6 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Import Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
   <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
@@ -26,6 +36,39 @@
   <link rel="stylesheet" href="./assets/css/theme.min.css">
 
   <title>Jobs API | Proxycurl</title>
+
+  <style>
+    /* // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 100 to 900 */
+
+    .inter-heading {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .inter-content {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .source-sans-3-heading {
+      font-family: "Source Sans 3", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .source-sans-3-content {
+      font-family: "Source Sans 3", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
 
 </head>
 
@@ -387,7 +430,7 @@
           <div class="text-center">
 
             <!--Heading-->
-            <h1 class="display-2 pt-lg-10 font-weight-bold">
+            <h1 class="display-2 pt-lg-10 font-weight-bold inter-heading">
               <span class="text-primary">Pull LinkedIn jobs</span> programmatically
             </h1>
 
@@ -406,7 +449,7 @@
 
           </div>
 
-          <h2 class="font-weight-bold text-center mt-4">
+          <h2 class="font-weight-bold text-center mt-4 inter-heading">
             List jobs
           </h2>
 
@@ -549,7 +592,7 @@
         <div class="col-12 col-lg-8 text-center">
 
           <!-- Heading -->
-          <h1 class="font-weight-bold mb-1">
+          <h1 class="font-weight-bold mb-1 inter-heading">
             List jobs posted by any target company
           </h1>
 
@@ -622,7 +665,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         <div class="col-12 col-lg-8 text-center">
 
           <!-- Heading -->
-          <h1 class="font-weight-bold mb-1">
+          <h1 class="font-weight-bold mb-1 inter-heading">
             Get job details
           </h1>
 
@@ -701,7 +744,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
 
         <div class="col-12 col-md-4 mb-8 mb-md-0">
 
-          <h3 class="font-weight-bold mb-4">
+          <h3 class="font-weight-bold mb-4 inter-heading">
             Filter jobs by
           </h3>
 
@@ -844,7 +887,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
 
         <div class="col-12 col-md-8">
 
-          <h3 class="font-weight-bold mb-4">
+          <h3 class="font-weight-bold mb-4 inter-heading">
             5 results found
           </h3>
 
@@ -1068,7 +1111,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
             alt="Identify investment signals by tracking job postings count of startups illustration"
             src="assets/img/illustrations/Identify investment signals by tracking job postings count of startups.png">
 
-          <h1 class="display-5 font-weight-bold pt-4">
+          <h1 class="display-5 font-weight-bold pt-4 inter-heading">
             Identify investment signals by<span class="text-primary"> tracking job postings count of startups</span>
           </h1>
 
@@ -1108,7 +1151,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
           <img class="img-fluid rounded mb-2 d-lg-none" alt="Identify remote-only job opportunities illustration"
             src="assets/img/illustrations/Identify remote-only job opportunities.png">
 
-          <h1 class="display-5 font-weight-bold pt-4">
+          <h1 class="display-5 font-weight-bold pt-4 inter-heading">
             Identify<span class="text-primary"> remote-only job opportunities</span>
           </h1>
 
@@ -1134,7 +1177,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
             alt="Search for companies looking to hire for specific skillsets illustration"
             src="assets/img/illustrations/Search for companies looking to hire for specific skillsets.png">
 
-          <h1 class="display-5 font-weight-bold pt-4">
+          <h1 class="display-5 font-weight-bold pt-4 inter-heading">
             Search for companies looking to<span class="text-primary"> hire for specific skillsets</span>
           </h1>
 
@@ -1184,7 +1227,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         <div class="col-12 col-md-10 col-lg-8 text-center">
 
           <!-- Heading -->
-          <h1 class="display-2 text-white">
+          <h1 class="display-2 text-white inter-heading">
             Pricing
           </h1>
 
@@ -1272,7 +1315,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         </div>
 
         <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase inter-heading">Products</p>
 
           <!-- Heading -->
           <h6 class="font-weight-bold text-gray-700 text-uppercase">
@@ -1359,7 +1402,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         </div>
 
         <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase inter-heading">Solutions</p>
 
           <!-- Heading -->
           <h6 class="font-weight-bold text-gray-700 text-uppercase">
@@ -1426,7 +1469,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         </div>
 
         <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase inter-heading">Resources</p>
 
 
           <!-- List -->
@@ -1470,7 +1513,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
             </li>
           </ul>
 
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase inter-heading">Comparison</p>
 
           <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
             <li class="mb-2">
@@ -1506,7 +1549,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
         </div>
 
         <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase inter-heading">Company</p>
 
           <!-- List -->
           <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
@@ -1532,7 +1575,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
             </li>
           </ul>
 
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase inter-heading">Help</p>
 
           <!-- List -->
           <ul class="list-unstyled mb-0 text-muted">
