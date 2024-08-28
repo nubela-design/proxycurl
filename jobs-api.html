@@ -727,23 +727,25 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                   </h4>
 
                   <div class="input-group input-group-sm">
-                    <span class="input-group-text pe-0 border-end-0">
-                      <i class="fe fe-search" id="searchJob"></i>
-                    </span>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text pe-0 border-end-0">
+                        <i class="fe fe-search" id="searchJob"></i>
+                      </span>
+                    </div>
                     <input class="form-control form-control-sm ps-2 border-start-0" type="search"
                       placeholder="Search job title" aria-label="Search for a job" aria-describedby="searchJob">
                   </div>
                 </div>
 
                 <!-- Advance Filter -->
-                <div class="mb-4">
-                  <p>
-                    <a class="btn bg-transparent text-info border-0 d-flex justify-content-center align-items-center" data-toggle="collapse" href="#collapseAdvanceFilters" role="button"
+                <div>
+                  <p class="mb-0">
+                    <a class="btn bg-transparent text-info border-0 d-flex justify-content-center align-items-center py-0" data-toggle="collapse" href="#collapseAdvanceFilters" role="button"
                       aria-expanded="false" aria-controls="collapseAdvanceFilters">
                       Advance Filter <i id="advanceFilterIcon" class="fe fe-chevron-down ml-2"></i>
                     </a>
                   </p>
-                  <div class="collapse" id="collapseAdvanceFilters">
+                  <div class="collapse pt-3" id="collapseAdvanceFilters">
                     <div class="row">
                       <div class="col-6 col-md-3 col-lg-12">
                         <div class="mb-4">
@@ -800,7 +802,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                         </div>
                       </div>
                       <div class="col-6 col-md-3 col-lg-12">
-                        <div class="mb-4">
+                        <div class="mb-0 mb-lg-4">
                           <h4 class="font-weight-bold">
                             Last posted
                           </h4>
@@ -833,7 +835,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                         </div>
                       </div>
                       <div class="col-6 col-md-3 col-lg-12">
-                        <div class="mb-4">
+                        <div class="mb-0">
                           <h4 class="font-weight-bold">
                             Company
                           </h4>
