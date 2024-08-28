@@ -27,6 +27,16 @@
 
   <title>Jobs API | Proxycurl</title>
 
+  <style>
+    #advanceFilterIcon {
+      transition: transform 0.3s ease-in-out;
+    }
+    .icon-rotate {
+      transform: rotate(-180deg);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -730,7 +740,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                   <p>
                     <a class="btn bg-transparent text-info border-0 d-flex justify-content-center align-items-center" data-toggle="collapse" href="#collapseAdvanceFilters" role="button"
                       aria-expanded="false" aria-controls="collapseAdvanceFilters">
-                      Advance Filter <i class="fe fe-chevron-down ml-2"></i>
+                      Advance Filter <i id="advanceFilterIcon" class="fe fe-chevron-down ml-2"></i>
                     </a>
                   </p>
                   <div class="collapse" id="collapseAdvanceFilters">
@@ -1627,6 +1637,13 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
   <!-- Theme JS -->
   <script src="./assets/js/theme.min.js"></script>
 
+  <script>
+    $(document).ready(function() {
+      $('#collapseAdvanceFilters').on('show.bs.collapse hide.bs.collapse', function () {
+        $('#advanceFilterIcon').toggleClass('icon-rotate');
+      });
+    });
+  </script>
 
 </body>
 
