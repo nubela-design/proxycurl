@@ -727,23 +727,144 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                   </h4>
 
                   <div class="input-group input-group-sm">
-                    <span class="input-group-text pe-0 border-end-0">
-                      <i class="fe fe-search" id="searchJob"></i>
-                    </span>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text pe-0 border-end-0">
+                        <i class="fe fe-search" id="searchJob"></i>
+                      </span>
+                    </div>
                     <input class="form-control form-control-sm ps-2 border-start-0" type="search"
                       placeholder="Search job title" aria-label="Search for a job" aria-describedby="searchJob">
                   </div>
                 </div>
 
+                <div class="d-none d-lg-block">
+                  <div class="row">
+                    <div class="col-6 col-md-3 col-lg-12">
+                      <div class="mb-4">
+                        <h4 class="font-weight-bold">
+                          Flexibility
+                        </h4>
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="onsite" checked>
+                          <label class="form-check-label" for="onsite">
+                            On-site
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="hybrid">
+                          <label class="form-check-label" for="hybrid">
+                            Hybrid
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="remote">
+                          <label class="form-check-label" for="remote">
+                            Remote
+                          </label>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-12">
+                      <div class="mb-4">
+                        <h4 class="font-weight-bold">
+                          Region
+                        </h4>
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault2" id="worldwide" checked>
+                          <label class="form-check-label" for="worldwide">
+                            Worldwide
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault2" id="usa">
+                          <label class="form-check-label" for="usa">
+                            USA
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault2" id="india">
+                          <label class="form-check-label" for="india">
+                            India
+                          </label>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-12">
+                      <div class="mb-0 mb-lg-4">
+                        <h4 class="font-weight-bold">
+                          Last posted
+                        </h4>
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="yesterday" checked>
+                          <label class="form-check-label" for="yesterday">
+                            Yesterday
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="lastWeek">
+                          <label class="form-check-label" for="lastWeek">
+                            Last week
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="lastMonth">
+                          <label class="form-check-label" for="lastMonth">
+                            Last month
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="anytime">
+                          <label class="form-check-label" for="anytime">
+                            Anytime
+                          </label>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-12">
+                      <div class="mb-0">
+                        <h4 class="font-weight-bold">
+                          Company
+                        </h4>
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault4" id="meta" checked>
+                          <label class="form-check-label" for="meta">
+                            Meta
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault4" id="google">
+                          <label class="form-check-label" for="google">
+                            Google
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault4" id="amazon">
+                          <label class="form-check-label" for="amazon">
+                            Amazon
+                          </label>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Advance Filter -->
-                <div class="mb-4">
-                  <p>
-                    <a class="btn bg-transparent text-info border-0 d-flex justify-content-center align-items-center" data-toggle="collapse" href="#collapseAdvanceFilters" role="button"
+                <div class="d-lg-none">
+                  <p class="mb-0">
+                    <a class="btn bg-transparent text-primary border-0 d-flex justify-content-center align-items-center py-0" data-toggle="collapse" href="#collapseAdvanceFilters" role="button"
                       aria-expanded="false" aria-controls="collapseAdvanceFilters">
                       Advance Filter <i id="advanceFilterIcon" class="fe fe-chevron-down ml-2"></i>
                     </a>
                   </p>
-                  <div class="collapse" id="collapseAdvanceFilters">
+                  <div class="collapse pt-3" id="collapseAdvanceFilters">
                     <div class="row">
                       <div class="col-6 col-md-3 col-lg-12">
                         <div class="mb-4">
@@ -800,7 +921,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                         </div>
                       </div>
                       <div class="col-6 col-md-3 col-lg-12">
-                        <div class="mb-4">
+                        <div class="mb-0 mb-lg-4">
                           <h4 class="font-weight-bold">
                             Last posted
                           </h4>
@@ -833,7 +954,7 @@ $ curl ... <span class="text-warning">https://apple.com</span></code></pre>
                         </div>
                       </div>
                       <div class="col-6 col-md-3 col-lg-12">
-                        <div class="mb-4">
+                        <div class="mb-0">
                           <h4 class="font-weight-bold">
                             Company
                           </h4>
