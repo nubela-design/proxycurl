@@ -238,3 +238,8 @@ pre {
   }
 }
 /* BG BETWEEN FIX */
+
+.custom-rounded {
+  border-radius: 1rem 1rem 1rem 1rem; /* Custom corner rounding */
+  overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
+}
