@@ -154,3 +154,8 @@ pre {
 .p-toc {
   line-height: 1.4 !important;
 }
+
+/* Rifki */
+body {
+  overflow: unset !important;
+}
