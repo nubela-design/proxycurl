@@ -256,6 +256,13 @@ pre {
   }
 }
 
+@media (max-width: 767px) {
+.overflow-small-screen{
+  overflow-x: auto !important;
+}
+}
+
 .vertical-align-middle {
   vertical-align: middle !important;
 }
+
