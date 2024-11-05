@@ -243,3 +243,19 @@ pre {
   border-radius: 1rem 1rem 1rem 1rem; /* Custom corner rounding */
   overflow: hidden; /* Ensure the image doesn't overflow rounded corner */
 }
+
+@media (min-width: 1200px) {
+  td.small-padding {
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  td.small-padding {
+    padding-right: 0.3rem !important;
+  }
+}
+
+.vertical-align-middle {
+  vertical-align: middle !important;
+}

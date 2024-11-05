@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
   <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
   <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./style.css" />
 
   <!-- Map -->
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -24,14 +25,7 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-  <!-- Import Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
   <title>Pricing Tiers - Proxycurl API</title>
-
-  <!-- Import Jquey -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -65,1913 +59,912 @@
 
   </section>
 
-  <!-- NAVBAR
+     <!-- NAVBAR
     ================================================== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.html">
-        <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
-      </a>
-
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collapse -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fe fe-x"></i>
-        </button>
-
-        <!-- Navigation -->
-        <ul class="navbar-nav ml-auto">
-
-          <!-- Products -->
-          <li class="nav-item dropdown">
-            <a href="products.html" class="nav-link mb-5 mb-lg-0" id="navbarPages">
-              Products <i class="fe fe-chevron-down"></i>
-            </a>
-            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
-              <div class="row no-gutters">
-                <div class="col-12">
-                  <div class="row no-gutters">
-
-                    <div class="col-12 col-lg-6">
-
-                      <!-- Heading -->
-                      <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
-                        LinkDB
-                      </h6>
-
-                      <!-- List -->
-                      <a class="dropdown-item mb-5" href="linkdb.html">
-                        Database of public<br>
-                        LinkedIn profiles
-                      </a>
-
-                      <!-- Heading -->
-                      <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet
-                        Addon
-                      </h6>
-
-                      <!-- List -->
-                      <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
-                        Sapiengraph - B2B Enrichment <br class="d-block">
-                        in Google Sheets
-                      </a>
-
-                      <!-- Heading -->
-                      <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
-                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free
-                        Tools
-                      </a>
-
-                      <!-- List -->
-                      <a class="dropdown-item" href="disposable-email.html">
-                        Disposable Email Checker
-                      </a>
-
-                      <!-- List -->
-                      <a class="dropdown-item"
-                        href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
-                        Person Profile Picture API
-                      </a>
-
-                      <!-- List -->
-                      <a class="dropdown-item mb-5 mb-lg-0"
-                        href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
-                        Company Profile Picture API
-                      </a>
-
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-
-                      <!-- Heading -->
-                      <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="Proxycurl logo"
-                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
-                      </h6>
-
-                      <!-- List -->
-                      <a class="dropdown-item" href="people-api.html">
-                        People API
-                      </a>
-                      <a class="dropdown-item" href="company-api.html">
-                        Company API
-                      </a>
-                      <a class="dropdown-item" href="contact-api.html">
-                        Contact API
-                      </a>
-                      <a class="dropdown-item" href="reverse-email-lookup.html">
-                        ᴸ Reverse Email Lookup API
-                      </a>
-                      <a class="dropdown-item" href="email-lookup-api-endpoint.html">
-                        ᴸ Work Email Lookup API
-                      </a>
-                      <a class="dropdown-item" href="jobs-api.html">
-                        Jobs API
-                      </a>
-                      <a class="dropdown-item" href="school-api.html">
-                        School API
-                      </a>
-                      <a class="dropdown-item" href="search-api.html">
-                        Search API
-                      </a>
-                      <a class="dropdown-item" href="customer-api.html">
-                        Customer API
-                      </a>
-
-
-                      <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
-                        API Documentation <i class="fe fe-arrow-right"></i>
-                      </a>
-                      <a class="dropdown-item text-primary font-weight-bold" href="products.html">
-                        See all products <i class="fe fe-arrow-right"></i>
-                      </a>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div> <!-- / .row -->
-          </li>
-
-          <!-- Solution -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#"
-              aria-haspopup="true" aria-expanded="false">
-              Solutions <i class="fe fe-chevron-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
-              <div class="row no-gutters">
-                <div class="col-12">
-                  <div class="row no-gutters">
-
-                    <div class="col-12 col-lg-6">
-
-                      <!-- Heading -->
-                      <h6 class="dropdown-header">
-                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg">
-                        Use
-                        Cases
-                      </h6>
-
-                      <!-- List -->
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="linkedin.html">
-                          LinkedIn Scraper API
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="linkedin.html">
-                          Crunchbase Scraper API
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="data-teams-in-investment-firms.html">
-                          Investment Signals
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="solution-growth.html">
-                          Accelerating Growth Startups
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="hr-tech.html">
-                          Data for HR Tech
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link"
-                          href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                          Automated Recruitment
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="sales-and-marketing-automation.html">
-                          Sales and Marketing Automation
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link"
-                          href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                          Identifying Buyer Intent Data
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link"
-                          href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                          CRM Data Enrichment
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="clearbit-alternative.html">
-                          Clearbit Alternative
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright">
-                        <a class="dropdown-link" href="solution-peopledatalabs-pdl-alternative.html">
-                          People Data Labs Alternative
-                        </a>
-                      </div>
-                      <div class="dropdown-item dropright mt-5 mb-6 mb-lg-0">
-                        <a class="text-primary font-weight-bold" href="use-cases.html">
-                          See all use-cases <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-
-                      <!-- Heading -->
-                      <h6 class="dropdown-header">
-                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h24v24H0z"></path>
-                            <path
-                              d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z"
-                              fill="#335EEA"></path>
-                          </g>
-                        </svg> Demos
-                      </h6>
-
-                      <!-- List -->
-                      <a class="dropdown-item" href="monitoring-job-changes.html">
-                        Track Job Changes
-                      </a>
-
-                      <!-- List -->
-                      <a class="dropdown-item" href="reverse-email-lookup-demo.html">
-                        Reverse Email Lookup
-                      </a>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div> <!-- / .row -->
-          </li>
-
-          <!-- Pricing -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
-              aria-expanded="false">
-              Pricing <i class="fe fe-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-              <li class="dropdown-item dropright">
-                <a class="dropdown-link" href="pricing.html">
-                  Proxycurl API Pricing
-                </a>
-              </li>
-              <li class="dropdown-item dropright">
-                <a class="dropdown-link" href="pricing-linkdb.html">
-                  LinkDB Pricing
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Blog -->
-          <li class="nav-item">
-            <a class="nav-link" id="navbarAccount" href="blog.html">
-              Blog
-            </a>
-          </li>
-
-          <!-- FAQ -->
-          <li class="nav-item">
-            <a class="nav-link" id="navbarAccount" href="#!">
-              FAQ
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="text-center ml-auto">
-          <!-- Button -->
-          <a class="btn btn-sm btn-link" href="login.html">
-            Log in
-          </a>
-        </div>
-
-        <!-- Button -->
-        <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
-          Sign up
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" class="navbar-brand-img" alt="proxycurl logo">
         </a>
 
-      </div>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </div>
-  </nav>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
 
-  <!-- Welcome
-    ================================================== -->
-  <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
 
-    <!-- Shape -->
-    <div class="shape shape-blur-3 svg-shim text-white">
-      <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
-        <defs>
-          <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
-            <stop stop-color="currentColor" stop-opacity=".075" />
-            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
 
-    <!-- Content -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-
-          <!-- Heading -->
-          <h1 class="display-2 text-white">
-            Pricing Plans
-          </h1>
-
-          <!-- Text -->
-          <p class="lead text-white-80 mb-6 mb-md-4">
-            We have pricing plans for every level of usage.
-          <h6 class="text-white-80">
-            Our Pay-as-you-go credits are perfect for casual API users
-            because they do not expire and cost more.
-            Our subscription plans are for businesses with predictable use of credits.
-            Credits purchased via subscription are priced at a lower rate,
-            but they expire at the end of every billing cycle. The best pricing requires
-            commitment and volume.
-          </h6>
-          </p>
-
-        </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-
-  </section>
-
-  <!-- SHAPE
-      ================================================== -->
-  <div class="position-relative">
-    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
-      </svg>
-    </div>
-  </div>
-
-  <!-- FIRST FOLD-->
-  <section class="mt-n8 mt-md-n14 pb-8 pb-md-11 border-bottom">
-    <div class="container">
-
-      <div class="card shadow-lg card-body">
-        <div class="row align-items-start">
-
-          <div class="col-12">
-            <!-- Nav-->
-            <nav class="mb-6 mb-lg-3" aria-label="Category Navigation">
-              <div class="nav nav-pills nav-fill flex-column flex-lg-row" id="nav-tab" role="tablist">
-
-                <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
-                  href="#nav-subs" role="tab" aria-controls="nav-subs" aria-selected="false">
-                  Subscription
-                  <p class="h6">
-                    Credits expire every billing period
-                  </p>
-                </a>
-
-                <a class="lead font-weight-bold nav-item nav-link" id="nav-payg-tab" data-toggle="tab" href="#nav-payg"
-                  role="tab" aria-controls="nav-payg" aria-selected="true">
-                  Pay-as-you-go
-                  <p class="h6">
-                    Credits do not expire
-                  </p>
-                </a>
-
-              </div>
-            </nav>
-          </div>
-
-          <div class="col-12">
-
-            <!-- content-->
-            <div class="tab-content" id="nav-tabContent">
-
-              <!-- Subscription Desktop -->
-              <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
-
-                <!-- Tabs Subscripiton Plan -->
-                <div class="row mb-3">
+            <!-- Products -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link" id="navbarPages">
+                Products <i class="fe fe-chevron-down"></i>
+              </a>
+              <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
                   <div class="col-12">
+                    <div class="row no-gutters">
 
-                    <ul class="nav nav-pills justify-content-center mb-6 mb-lg-1 flex-column flex-lg-row"
-                      id="subscribePriceTab" role="tablist">
-                      <li class="nav-item d-inline-flex flex-fill" role="presentation">
-                        <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0 active"
-                          id="annual-tab" data-toggle="tab" data-target="#annual" type="button" role="tab"
-                          aria-controls="annual" aria-selected="false">
-                          <span class="text-danger">*</span> Annual upfront payment <br />
-                          <small class="fs-12 lh-base badge badge-warning text-black text-uppercase">+ Extra 2 free
-                            months </small>
-                        </button>
-                      </li>
-                      <li class="nav-item d-inline-flex flex-fill" role="presentation">
-                        <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0"
-                          id="monthly-tab" data-toggle="tab" data-target="#monthly" type="button" role="tab"
-                          aria-controls="monthly" aria-selected="true">
-                          Monthly Payments <br />
-                          <small class="fs-12 lh-base">without 12 month contract</small>
-                        </button>
-                      </li>
-                      <li class="nav-item d-inline-flex flex-fill" role="presentation">
-                        <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0"
-                          id="annual-monthly-tab" data-toggle="tab" data-target="#annual-monthly" type="button"
-                          role="tab" aria-controls="annual-monthly" aria-selected="false">
-                          Monthly Payments <br />
-                          <small class="fs-12 lh-base"><span class="text-danger">*</span>with 12 month contract</small>
-                        </button>
-                      </li>
-                    </ul>
+                      <div class="col-12 col-lg-6">
 
-                    <div class="tab-content" id="subscribePriceTabContent">
-                      <div class="tab-pane fade py-3" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg"> LinkDB
+                        </h6>
 
-                        <!-- Desktop -->
-                        <div class="d-none d-lg-block">
-
-                          <div class="row">
-
-                            <div class="col-12 col-md-8 col-lg-9 pr-md-2">
-
-                              <div class="table-responsive">
-
-                                <table class="table table-hover">
-                                  <tbody>
-
-                                    <tr class="clickable table-primary">
-                                      <td class="font-weight-bold">
-                                        Starter
-                                      </td>
-                                      <td class="col-5 font-weight-bold">
-                                        <span class="mb-0">
-                                          2500
-                                        </span>
-                                        credits
-                                      </td>
-                                      <td class="col-5 text-gray-700">$0.017/credit</td>
-                                      <td class="col-2 text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">49</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Growth
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          25,000
-                                        </span>
-                                        credits
-                                      </td>
-                                      <td class="text-gray-700">$0.010/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">299</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Pro
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          89,900
-                                        </span>
-                                        credits
-                                      </td>
-                                      <td class="text-gray-700">$0.009/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">899</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Ultra
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          211,000
-                                        </span>
-                                        credits
-                                      </td>
-                                      <td class="text-gray-700">$0.008/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">1,899</span>
-                                      </td>
-                                    </tr>
-
-                                  </tbody>
-                                </table>
-
-                              </div>
-
-                            </div>
-
-                            <div class="col-12 col-md-4 col-lg-3 pl-md-2">
-
-                              <!-- Card Plan -->
-                              <div class="card card-body border bg-light shadow-light-md text-center px-2 pb-2 h-100">
-                                <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
-                                  <span class="h6 text-uppercase">Starter</span>
-                                </span>
-
-                                <div class="d-flex justify-content-center pb-4">
-                                  <span class="h2 mb-0 mt-2">$</span>
-                                  <span class="display-2 font-weight-bold">49</span>
-                                  <span class="h2 align-self-end mb-1">/mo</span>
-                                </div>
-
-                                <p class="mb-0 font-weight-bold">
-                                  2,500 credits
-                                </p>
-
-                                <p class="mb-3 text-gray-700 small font-weight-bold">
-                                  0.017/credits
-                                </p>
-
-                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                  Monthly Plans
-                                </span>
-
-                                <p class="mb-6 small text-muted">
-                                  Cancel anytime
-                                </p>
-
-                                <a href="#!" class="btn btn-sm btn-block btn-primary">
-                                  Start now
-                                </a>
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                        <!-- Mobile -->
-                        <div class="d-block d-lg-none">
-
-                          <div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Starter
-                              </h3>
-
-                              <p>
-                                2,500 credits
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.020/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 49 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Monthly Plans
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                Cancel anytime
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Growth
-                              </h3>
-
-                              <p>
-                                25,000 credits
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.012/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 299 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Monthly Plans
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                Cancel anytime
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Pro
-                              </h3>
-
-                              <p>
-                                89,900 credits
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.010/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 899 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Monthly Plans
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                Cancel anytime
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Ultra
-                              </h3>
-
-                              <p>
-                                211,000
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.009/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 1,899 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Monthly Plans
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                Cancel anytime
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Enterprise
-                              </h3>
-
-                              <p>
-                                &gt; 211,000 credits
-                                <span class="text-muted d-block font-weight-normal">(TBD)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                &lt; $0.009/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                <span class="h5 text-gray-700 d-block">
-                                  Starts from &gt;
-                                </span>
-                                $ 2,000 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Monthly Plans
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                Cancel anytime
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="tab-pane fade py-3" id="annual-monthly" role="tabpanel"
-                        aria-labelledby="annual-monthly-tab">
-
-                        <!-- Desktop -->
-                        <div class="d-none d-lg-block">
-
-                          <div class="row">
-
-                            <div class="col-12 col-md-8 col-lg-9 pr-md-2">
-
-                              <div class="table-responsive">
-                                <table class="table table-hover">
-                                  <tbody>
-
-                                    <tr class="clickable table-primary">
-                                      <td class="font-weight-bold">
-                                        Starter
-                                      </td>
-                                      <td class="col-5 font-weight-bold">
-                                        <span class="mb-0">
-                                          3000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          2,500 + 500
-                                        </span>
-                                      </td>
-                                      <td class="col-5 text-gray-700">$0.017/credit</td>
-                                      <td class="col-2 text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0" data-annual="49" data-monthly="49">49</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Growth
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          30,000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          25,000 + 5,000
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.010/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">299</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Pro
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          107,880
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          89,900 + 17,980
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.009/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">899</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Ultra
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          253,200
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          211,000 + 42,200
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.008/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">1,899</span>
-                                      </td>
-                                    </tr>
-
-                                  </tbody>
-                                </table>
-                              </div>
-
-                              <p class="text-muted h6 mb-0">
-                                <span class="text-danger">*</span> Monthly payment with 12 month contract require you to
-                                agree to a 12-month service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="col-12 col-md-4 col-lg-3 pl-md-2">
-
-                              <!-- Card Plan -->
-                              <div class="card card-body border bg-light shadow-light-md text-center px-2 pb-2 h-100">
-                                <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
-                                  <span class="h6 text-uppercase">Starter</span>
-                                </span>
-
-                                <div class="d-flex justify-content-center pb-4">
-                                  <span class="h2 mb-0 mt-2">$</span>
-                                  <span class="display-2 font-weight-bold">49</span>
-                                  <span class="h2 align-self-end mb-1">/mo</span>
-                                </div>
-
-                                <p class="mb-0 font-weight-bold">
-                                  3,000 credits
-                                </p>
-
-                                <p class="mb-3 text-gray-700 small font-weight-bold">
-                                  0.017/credits
-                                </p>
-
-                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                  Annual plans, billed monthly
-                                </span>
-
-                                <p class="mb-6 small text-muted">
-                                  Get +20% more credits
-                                </p>
-
-                                <a href="#!" class="btn btn-sm btn-block btn-primary">
-                                  Start now
-                                </a>
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                        <!-- Mobile -->
-                        <div class="d-block d-lg-none">
-
-                          <div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Starter
-                              </h3>
-
-                              <p>
-                                3,000 credits
-                                <span class="text-muted d-block font-weight-normal">(2,500 + 500)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.020/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 49 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Annual plans, billed monthly
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                +20% more credits
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Growth
-                              </h3>
-
-                              <p>
-                                30,000 credits
-                                <span class="text-muted d-block font-weight-normal">(25,000 + 5,000)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.012/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 299 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Annual plans, billed monthly
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                +20% more credits
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Pro
-                              </h3>
-
-                              <p>
-                                107,880 credits
-                                <span class="text-muted d-block font-weight-normal">(89,900 + 17,900)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.009/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $899 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Annual plans, billed monthly
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                +20% more credits
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Ultra
-                              </h3>
-
-                              <p>
-                                253,200 credits
-                                <span class="text-muted d-block font-weight-normal">(211,000 + 42,200)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.008/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 1,899 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Annual plans, billed monthly
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                +20% more credits
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Enterprise
-                              </h3>
-
-                              <p>
-                                &gt; 211,000 credits
-                                <span class="text-muted d-block font-weight-normal">(TBD)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                &lt; $0.009/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                <span class="h5 text-gray-700 d-block">
-                                  Starts from &gt;
-                                </span>
-                                $ 2,000 <span class="h5 text-gray-700 d-block">per month</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                Annual plans, billed monthly
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                +20% more credits
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="tab-pane fade py-3 show active" id="annual" role="tabpanel"
-                        aria-labelledby="annual-tab">
-
-                        <!-- Desktop -->
-                        <div class="d-none d-lg-block">
-
-                          <div class="row">
-
-                            <div class="col-12 col-md-8 col-lg-9 pr-md-2">
-
-                              <div class="table-responsive">
-                                <table class="table table-hover">
-                                  <tbody>
-
-                                    <tr class="clickable table-primary">
-                                      <td class="font-weight-bold">
-                                        Starter
-                                      </td>
-                                      <td class="col-5 font-weight-bold">
-                                        <span class="mb-0">
-                                          35,000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          30,000 + 5,000
-                                        </span>
-                                      </td>
-                                      <td class="col-5 text-gray-700">$0.017/credit</td>
-                                      <td class="col-2 text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">588</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Growth
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          350,000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          300,000 + 50,000
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.010/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">3,588</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Pro
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          1,258,600
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          1,078,800 + 179,800
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.009/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">10,788</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Ultra
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          2,954,000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          2,532,000 + 422,000
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">$0.008/credit</td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        $<span class="mb-0">22,788</span>
-                                      </td>
-                                    </tr>
-
-                                    <tr class="clickable">
-                                      <td class="font-weight-bold">
-                                        Enterprise
-                                      </td>
-                                      <td class="font-weight-bold">
-                                        <span class="mb-0">
-                                          &gt; 2,954,000
-                                        </span>
-                                        credits
-                                        <span class="text-muted h6 d-block">
-                                          2,532,000 + 422,000
-                                        </span>
-                                      </td>
-                                      <td class="text-gray-700">
-                                        &lt; $0.008/credit
-                                      </td>
-                                      <td class="text-right pr-9 font-weight-bold">
-                                        &gt; Start from $<span class="mb-0">24,000</span>
-                                      </td>
-                                    </tr>
-
-                                  </tbody>
-                                </table>
-                              </div>
-
-                              <p class="text-muted h6 mb-0">
-                                <span class="text-danger">*</span> Annual upfront payment require you to agree to a
-                                12-month service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="col-12 col-md-4 col-lg-3 pl-md-2">
-
-                              <!-- Card Plan -->
-                              <div class="card card-body border bg-light shadow-light-md text-center px-2 pb-2 h-100">
-                                <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
-                                  <span class="h6 text-uppercase">Starter</span>
-                                </span>
-
-                                <div class="d-flex justify-content-center pb-4">
-                                  <span class="h2 mb-0 mt-2">$</span>
-                                  <span class="display-2 font-weight-bold">588</span>
-                                  <span class="h2 align-self-end mb-1">/yr</span>
-                                </div>
-
-                                <p class="mb-0 font-weight-bold">
-                                  35,000 credits
-                                </p>
-
-                                <p class="mb-3 text-gray-700 small font-weight-bold">
-                                  0.017/credits
-                                </p>
-
-                                <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                  12-month contract, paid annually
-                                </span>
-
-                                <p class="mb-6 small text-muted">
-                                  12+2 months credits issued immediately, expire in a year
-                                </p>
-
-                                <a href="#!" class="btn btn-sm btn-block btn-primary">
-                                  Start now
-                                </a>
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                        <!-- Mobile -->
-                        <div class="d-block d-lg-none">
-
-                          <div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Starter
-                              </h3>
-
-                              <p>
-                                35,000 credits
-                                <span class="text-muted d-block font-weight-normal">(30,000 + 5,000)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.017/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 588 <span class="h5 text-gray-700 d-block">per year</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                12-month contract, paid annually
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                12+2 months credits issued immediately, expire in a year
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Growth
-                              </h3>
-
-                              <p>
-                                350,000 credits
-                                <span class="text-muted d-block font-weight-normal">(300,000 + 50,000)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.010/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 3,588 <span class="h5 text-gray-700 d-block">per year</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                12-month contract, paid annually
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                12+2 months credits issued immediately, expire in a year
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Pro
-                              </h3>
-
-                              <p>
-                                1,258,600 credits
-                                <span class="text-muted d-block font-weight-normal">(1,078,800 + 179,800)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.009/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 10,788 <span class="h5 text-gray-700 d-block">per year</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                12-month contract, paid annually
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                12+2 months credits issued immediately, expire in a year
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Ultra
-                              </h3>
-
-                              <p>
-                                2,954,000 credits
-                                <span class="text-muted d-block font-weight-normal">(2,532,000 + 422,000)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                $0.008/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                $ 22,788 <span class="h5 text-gray-700 d-block">per year</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                12-month contract, paid annually
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                12+2 months credits issued immediately, expire in a year
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                            <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                              <h3 class="font-weight-bold h2">
-                                Enterprise
-                              </h3>
-
-                              <p>
-                                &gt; 2,954,000 credits
-                                <span class="text-muted d-block font-weight-normal">(TBD)</span>
-                              </p>
-
-                              <p class="text-gray-700">
-                                &lt; $0.008/credit
-                              </p>
-
-                              <p class="display-2 mb-4">
-                                <span class="h5 text-gray-700 d-block">
-                                  Starts from &gt;
-                                </span>
-                                $ 24,000 <span class="h5 text-gray-700 d-block">per year</span>
-                              </p>
-
-                              <span class="badge badge-info-soft badge-pill mb-4" style="font-size: 11px;">
-                                12-month contract, paid annually
-                              </span>
-
-                              <small class="text-muted d-block mb-5">
-                                12+2 months credits issued immediately, expire in a year
-                              </small>
-
-                              <a class="btn btn-sm btn-primary w-100" href="#!">
-                                Start now
-                              </a>
-
-                              <p class="h6 text-muted d-block mt-4 mb-0">
-                                <span class="text-danger">*</span> Annual plans require you to agree to a 12-month
-                                service contract with Proxycurl.
-                              </p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- PAYG-->
-              <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payasyougo-tab">
-
-                <!-- Desktop -->
-                <div class="d-none d-lg-block">
-                  <div class="row">
-                    <div class="col-12 col-md-8 col-lg-9 pr-md-2">
-
-                      <!-- Table PYG -->
-                      <div class="table-responsive">
-                        <table class="table table-hover">
-
-                          <tbody>
-
-                            <tr class="table-primary">
-                              <td class="col-5 font-weight-bold">
-                                100 credits
-                              </td>
-                              <td class="col-5 text-gray-700">
-                                $0.10/credit
-                              </td>
-                              <td class="col-2 text-right pr-9 font-weight-bold">
-                                $10
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="font-weight-bold">
-                                834 credits
-                              </td>
-                              <td class="text-gray-700">
-                                $0.06/credit
-                              </td>
-                              <td class="text-right font-weight-bold pr-9 font-weight-bold">
-                                $50
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="font-weight-bold">
-                                3,788 credits
-                              </td>
-                              <td class="text-gray-700">
-                                $0.0264/credit
-                              </td>
-                              <td class="text-right pr-9 font-weight-bold">
-                                $100
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="font-weight-bold">
-                                20,834 credits
-                              </td>
-                              <td class="text-gray-700">
-                                $0.024/credit
-                              </td>
-                              <td class="text-right pr-9 font-weight-bold">
-                                $500
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="font-weight-bold">
-                                46,297 credits
-                              </td>
-                              <td class="text-gray-700">
-                                $0.0216/credit
-                              </td>
-                              <td class="text-right pr-9 font-weight-bold">
-                                $1,000
-                              </td>
-                            </tr>
-
-                          </tbody>
-
-                        </table>
-
-                        <p class="text-muted h6 mb-0">
-                          <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after
-                          18 months of payment inactivity.
-                        </p>
-                      </div>
-
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3 pl-md-2">
-
-                      <!-- Card Plan -->
-                      <div class="card card-body border bg-light shadow-light-md text-center px-2 pb-2 h-100">
-                        <span class="badge badge-pill badge-primary-soft mb-4 mb-md-6">
-                          <span class="h6 text-uppercase">Pay-As-You-Go</span>
-                        </span>
-
-                        <div class="d-flex justify-content-center pb-4">
-                          <span class="h2 mb-0 mt-2">$</span>
-                          <span class="display-2 font-weight-bold">10</span>
-                        </div>
-
-                        <p class="mb-0 font-weight-bold">
-                          100 credits
-                        </p>
-
-                        <p class="mb-3 text-gray-700 small font-weight-bold">
-                          $0.10/credits
-                        </p>
-
-                        <p class="mb-6 small text-muted">
-                          Credits do not expire*
-                        </p>
-
-                        <a href="#!" class="btn btn-sm btn-block btn-primary">
-                          Start now
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="linkdb.html">
+                          Public LinkedIn Profile Dataset
                         </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet Addon
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                          Sapiengraph - B2B Enrichment <br class="d-block">
+                          in Google Sheets
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free Tools
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="#!">
+                          Profile Picture API
+                        </a>
+
+                        <!-- List -->
+                        <a class="dropdown-item mb-5 mb-lg-0" href="disposable-email.html">
+                          Disposable Email Checker API
+                        </a>
+
+                      </div>
+
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Person API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Company API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Search API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Contact API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          School API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          Jobs API
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                          API Documentation <i class="fe fe-arrow-right"></i>
+                        </a>
+                        <a class="dropdown-item text-primary font-weight-bold mb-5 mb-md-0" href="products.html">
+                          See all products <i class="fe fe-arrow-right"></i>
+                        </a>
+
                       </div>
 
                     </div>
                   </div>
-
                 </div>
+              </div> <!-- / .row -->
+            </li>
 
-                <!-- Mobile -->
-                <div class="d-block d-lg-none">
+            <!-- Solution -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Solutions <i class="fe fe-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <div class="row no-gutters">
 
-                  <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
+                      <div class="col-12 col-lg-6">
 
-                    <p>
-                      100 credits
-                    </p>
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg"> Use Cases
+                        </h6>
 
-                    <p class="text-gray-700 mb-0">
-                      $0.10/credit
-                    </p>
+                        <!-- List -->
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="person-profile-api.html">
+                            LinkedIn Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Crunchbase Scraper API
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                            Investment Signals
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Accelerating Growth Startups
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="hr-tech.html">
+                            Data for HR Tech
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Automated Recruitment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                            Sales and Marketing Automation
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            Identifying Buyer Intent Data
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="#!">
+                            CRM Data Enrichment
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="clearbit-alternative.html">
+                            Clearbit Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright">
+                          <a class="dropdown-link" href="">
+                            People Data Labs Alternative
+                          </a>
+                        </div>
+                        <div class="dropdown-item dropright mt-4">
+                          <a class="text-primary font-weight-bold" href="use-cases.html">
+                            See all use-cases <i class="fe fe-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
 
-                    <p class="small text-muted">
-                      Credits do not expire*
-                    </p>
+                      <div class="col-12 col-lg-6">
 
-                    <p class="display-2 mb-4">
-                      $ 10
-                    </p>
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z" fill="#335EEA"></path></g></svg> Demos
+                        </h6>
 
-                    <a class="btn btn-sm btn-primary w-100" href="#!">
-                      Start now
-                    </a>
+                        <!-- List -->
+                        <a class="dropdown-item" href="#!">
+                          Track Job Changes
+                        </a>
 
-                    <p class="h6 text-muted d-block mt-4 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
-                      months of payment
-                      inactivity.
-                    </p>
+                        <!-- List -->
+                        <a class="dropdown-item mb-5" href="#!">
+                          Reverse Email Lookup
+                        </a>
 
+                      </div>
+
+                    </div>
                   </div>
-
-                  <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                    <p>
-                      834 credits
-                    </p>
-
-                    <p class="text-gray-700 mb-0">
-                      $0.06/credit
-                    </p>
-
-                    <p class="small text-muted">
-                      Credits do not expire*
-                    </p>
-
-                    <p class="display-2 mb-4">
-                      $ 50
-                    </p>
-
-                    <a class="btn btn-sm btn-primary w-100" href="#!">
-                      Start now
-                    </a>
-
-                    <p class="h6 text-muted d-block mt-4 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
-                      months of payment
-                      inactivity.
-                    </p>
-
-                  </div>
-
-                  <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                    <p>
-                      3,788 credits
-                    </p>
-
-                    <p class="text-gray-700 mb-0">
-                      $0.0264/credit
-                    </p>
-
-                    <p class="small text-muted">
-                      Credits do not expire*
-                    </p>
-
-                    <p class="display-2 mb-4">
-                      $ 100
-                    </p>
-
-                    <a class="btn btn-sm btn-primary w-100" href="#!">
-                      Start now
-                    </a>
-
-                    <p class="h6 text-muted d-block mt-4 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
-                      months of payment
-                      inactivity.
-                    </p>
-
-                  </div>
-
-                  <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                    <p>
-                      20,834 credits
-                    </p>
-
-                    <p class="text-gray-700 mb-0">
-                      $0.024/credit
-                    </p>
-
-                    <p class="small text-muted">
-                      Credits do not expire*
-                    </p>
-
-                    <p class="display-2 mb-4">
-                      $ 500
-                    </p>
-
-                    <a class="btn btn-sm btn-primary w-100" href="#!">
-                      Start now
-                    </a>
-
-                    <p class="h6 text-muted d-block mt-4 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
-                      months of payment
-                      inactivity.
-                    </p>
-
-                  </div>
-
-                  <div class="card card-body border shadow-light lift font-weight-bold mb-6 text-center">
-
-                    <p>
-                      46,297 credits
-                    </p>
-
-                    <p class="text-gray-700 mb-0">
-                      $0.0216/credit
-                    </p>
-
-                    <p class="small text-muted">
-                      Credits do not expire*
-                    </p>
-
-                    <p class="display-2 mb-4">
-                      $ 1000
-                    </p>
-
-                    <a class="btn btn-sm btn-primary w-100" href="#!">
-                      Start now
-                    </a>
-
-                    <p class="h6 text-muted d-block mt-4 mb-0">
-                      <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
-                      months of payment
-                      inactivity.
-                    </p>
-
-                  </div>
-
                 </div>
+              </div> <!-- / .row -->
+            </li>
 
-              </div>
+            <!-- Pricing -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pricing <i class="fe fe-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="pricing.html">
+                    Proxycurl API
+                  </a>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link" href="#!">
+                    LinkDB
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-            </div>
+            <!-- Blog -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                Blog
+              </a>
+            </li>
 
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a class="nav-link" id="navbarAccount" href="#!">
+                FAQ
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="text-center ml-auto">
+            <!-- Button -->
+            <a class="btn btn-sm btn-link" href="login.html">
+              Log in
+            </a>
           </div>
 
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+            Sign up
+          </a>
+
         </div>
+
       </div>
+    </nav>
 
+     <!-- Welcome
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+              <stop stop-color="currentColor" stop-opacity=".075" />
+              <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+  
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-11 col-lg-8 text-center">
+  
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Pricing Plans
+            </h1>
+  
+            <!-- Text -->
+            <p class="lead text-white-80 mb-6 mb-md-4">
+              We have pricing plans for every level of usage.
+            <p class="small text-white-80">The Monthly and Annual subscription plans are for businesses with predictable use of
+              credits. Credits purchased via subscriptions are priced at a lower rate and expire at the end of every month/year. The
+              best pricing requires commitment and volume. Our Pay-as-you-go credits are perfect for casual API users because they
+              do not expire*, however they cost more.</p>
+            </p>
+  
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+  
+    </section>
+  
+    <!-- SHAPE
+      ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+        </svg>
+      </div>
     </div>
+  
+    <!-- FIRST FOLD-->
+    <section class="mt-n8 mt-md-n14 pb-8 pb-md-11 border-bottom">
+      <div class="container">
 
-  </section>
+        <div class="card shadow-lg card-body bg-white">
+          <div class="row pr-md-0 pr-lg-5">
 
-  <section class="py-8 py-md-11 bg-white border-bottom">
-    <div class="container">
-      <h2 class="text-center pb-6 pb-md-8">
-        Credit Cost per API Endpoint
-      </h2>
-      <div class="form-row">
-        <div class="col-12">
-          <div class="card shadow-lg mb-5">
-            <div class="card-body">
+            <!-- pricing -->
+            <div class="col-12 col-md-12 col-lg-9 mb-4 mb-md-4 mb-lg-0 pr-md-6">
 
-              <!-- Table -->
-              <div class="row">
-                <div class="col-12">
-                  <table class="table table-responsive table-borderless table-hover table-striped">
+              <!-- Nav-->
+              <nav class="pb-md-6 pb-4">
+                <div class="nav nav-pills nav-fill flex-column flex-sm-row" id="nav-tab" role="tablist">
+                 
+                  <a class="lead font-weight-bold nav-item nav-link active" id="nav-subs-tab" data-toggle="tab"
+                    href="#nav-subs" role="tab" aria-controls="nav-subs" aria-selected="false">Subscription
+                    <p class="h6">
+                      Credits expire every month/year
+                    </p>
+                  </a>
 
-                    <thead class="text-primary lead">
-                      <tr>
-                        <th scope="col" class="text-black col-8">API Endpoint</th>
-                        <th scope="col" class="col-4">Credit cost</th>
-                      </tr>
-                    </thead>
+                  <a class="lead font-weight-bold nav-item nav-link" id="nav-payg-tab" data-toggle="tab"
+                    href="#nav-payg" role="tab" aria-controls="nav-payg" aria-selected="true">
+                    Pay-as-you-go
+                    <p class="h6">
+                      Credits do not expire*
+                    </p>
+                  </a>
+                  
+                </div>
+              </nav>
+              <!-- content-->
+              <div class="tab-content" id="nav-tabContent">
 
+                <!-- Subscription-->
+                <div class=" tab-pane fade show active" id="nav-subs" role="tabpanel"
+                  aria-labelledby="nav-subs-tab">
+
+                  <!-- Toggle -->
+                  <div class="row justify-content-md-center pl-5 pl-xl-0 mb-6 mb-md-6 mt-1 " style="overflow-x: auto;">
+                                    
+                    <div class="d-flex ">
+                  
+                      <span class="text-opacity-80 text-nowrap small">
+                       Annual plan, paid monthly
+                      </span>
+                  
+                      <div class="custom-control custom-switch mx-3">
+                        <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price"
+                          checked>
+                        <label class="custom-control-label" for="billingSwitch"></label>
+                      </div>
+                  
+                      <span class="text-opacity-80 d-flex ml-n2 text-nowrap small">
+                        <div class="">Annual plan, paid annually</div>
+                        <span class="badge badge-pill badge-warning ml-3 text-left font-weight-bold text-uppercase mt-0 py-2"
+                          data-toggle="tooltip" data-placement="bottom"
+                          title="All 12+2 months credits issued at one go upon subscription of an Annual Plan"><i class="neu neu-info"></i> +2 MONTHS FREE
+                          CREDITS</span>
+                      </span>
+                  
+                    </div>
+                  
+                  </div>
+                  
+
+                  <table class="d-none d-lg-block table table-hover">
                     <tbody>
-                      <tr>
-                        <th scope="row">Person API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#people-api-person-profile-endpoint">Person Profile
-                            Endpoint</a></th>
-                        <td> 1 credit <span class="text-gray-700"> + (credit cost of optional parameters)</span></td>
+
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="pr-9 small-padding font-weight-bold vertical-align-middle">
+                          Starter
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle text-nowrap small-padding">
+                          <span class="price mb-0" data-annual="2500" data-monthly="35000">35,000 credits 
+                            <p class="h6 text-muted pt-1">30,000 + 5,000 </p> </span>
+                          
+                        </td>
+                        <td class="text-gray-700 vertical-align-middle small-padding">$0.017/credit</td>
+                        <td class="text-right   font-weight-bold vertical-align-middle">
+                          $<span class="price mb-0" data-annual="49" data-monthly="588">588/yr</span>
+                        </td>
                       </tr>
-                      <tr>
-                        <th scope="row">Person API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#people-api-role-lookup-endpoint">Role Lookup
-                            Endpoint</a></th>
-                        <td> 3 credits </td>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 small-padding font-weight-bold vertical-align-middle">
+                          Growth
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle text-nowrap small-padding">
+                          <span class="price mb-0" data-annual="25000" data-monthly="350000">350,000 credits
+                            <p class="h6 text-muted pt-1">300,000 + 50,000 </p>
+                          </span>
+                        </td>
+                        <td class="text-gray-700 vertical-align-middle small-padding">$0.010/credit</td>
+                        <td class="text-right   font-weight-bold vertical-align-middle">
+                          $<span class="price mb-0" data-annual="299" data-monthly="3588">3,588/yr</span>
+                        </td>
                       </tr>
-                      <tr>
-                        <th scope="row">Person API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">Person
-                            Profile Picture Endpoint</a></th>
-                        <td> FREE </td>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 small-padding font-weight-bold vertical-align-middle">
+                          Pro
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle text-nowrap small-padding">
+                          <span class="price mb-0" data-annual="89900" data-monthly="1258600">1,258,600 credits
+                            <p class="h6 text-muted pt-1">1,078,000 + 179,800 </p>
+                          </span>
+                        </td>
+                        <td class="text-gray-700 vertical-align-middle small-padding">$0.09/credit</td>
+                        <td class="text-right   font-weight-bold vertical-align-middle">
+                          $<span class="price mb-0" data-annual="899" data-monthly="10788">10,788/yr</span>
+                        </td>
                       </tr>
-                      <tr>
-                        <th scope="row">Person API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#people-api-person-lookup-endpoint">Person Lookup
-                            Endpoint</a></th>
-                        <td> 2 credits </td>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 small-padding font-weight-bold vertical-align-middle">
+                          Ultra
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle text-nowrap small-padding">
+                          <span class="price mb-0" data-annual="211000" data-monthly="2954000">2,954,000 credits
+                            <p class="h6 text-muted pt-1">2,532,000 + 422,000 </p>
+                          </span>
+                        </td>
+                        <td class="text-gray-700 vertical-align-middle small-padding">$0.008/credit</td>
+                        <td class="text-right   font-weight-bold vertical-align-middle">
+                          $<span class="price mb-0" data-annual="1899" data-monthly="22788">22,788/yr</span>
+                        </td>
                       </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-employee-count-endpoint">Employee Count
-                            Endpoint</a></th>
-                        <td> 1 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-employee-search-api-endpoint">Employee
-                            Search Endpoint</a></th>
-                        <td> 10 credits <span class="text-gray-700"> / successful request. </span> + 6 credits <span
-                            class="text-gray-700">/ employee returned </span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">Company
-                            Profile Picture Endpoint</a></th>
-                        <td> FREE </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-employee-listing-endpoint">Employee
-                            Listing Endpoint</a></th>
-                        <td> 3 credits <span class="text-gray-700">/ employee returned </span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-company-lookup-endpoint">Company Lookup
-                            Endpoint</a></th>
-                        <td> 2 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Company API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint">Company Profile
-                            Endpoint</a></th>
-                        <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Jobs API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-count-endpoint">Jobs Listing
-                            Count Endpoint</a></th>
-                        <td> 2 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Jobs API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-endpoint">Jobs Listing
-                            Endpoint</a></th>
-                        <td> 2 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Jobs API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#jobs-api-job-profile-endpoint">Jobs Profile
-                            Endpoint</a></th>
-                        <td> 2 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Contact API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#contact-api-reverse-work-email-lookup-endpoint">Reverse
-                            Work Email Lookup Endpoint</a></th>
-                        <td> 3 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Contact API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#contact-api-work-email-lookup-endpoint">Work Email
-                            Lookup Endpoint</a></th>
-                        <td> 3 credits </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Contact API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#contact-api-personal-contact-number-lookup-endpoint">Personal
-                            Contact Number Lookup Endpoint</a></th>
-                        <td> 1 credit <span class="text-gray-700">/ contact number returned </span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Contact API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal
-                            Email Lookup Endpoint</a></th>
-                        <td> 1 credit <span class="text-gray-700"> / email returned </span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Contact API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#contact-api-disposable-email-address-check-endpoint">Disposable
-                            Email Address Check Endpoint</a></th>
-                        <td> FREE </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">School API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#school-api-student-listing-endpoint">Student Listing
-                            Endpoint</a></th>
-                        <td> 3 credits <span class="text-gray-700">/ student returned</span> </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">School API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#school-api-school-profile-endpoint">School Profile
-                            Endpoint</a></th>
-                        <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Reveal API - <a class="text-primary"
-                            href="https://nubela.co/proxycurl/docs#reveal-api-reveal-endpoint">Reveal Endpoint</a></th>
-                        <td> 2 credits <span class="text-gray-700"> / successful requests</span> </td>
+
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="pr-9 small-padding font-weight-bold vertical-align-middle">
+                          Enterprise
+                        </td>
+                        <td class="font-weight-bold vertical-align-middle text-nowrap small-padding">
+                          <span class="price mb-0" data-annual="211000" data-monthly="2954000"> > 2,954,000</span>
+                          credits
+                        </td>
+                        <td class="text-gray-700 text-nowrap vertical-align-middle small-padding"> < $0.008/credit</td>
+                        <td class="text-right   font-weight-bold vertical-align-middle">
+                         <span class="small text-gray-700">Starts from</span> <br> $<span class="price mb-0" data-annual="1899" data-monthly="24000">24,000/yr</span>
+                        </td>
                       </tr>
 
                     </tbody>
                   </table>
+                  
+                  <!-- Mobile -->
+                  <div class="d-block d-lg-none">
+                  
+                    <div>
+                  
+                      <div class="card card-body border lift mb-6 text-center bg-light">
+                  
+                        <span class="badge badge-pill badge-primary-soft mb-6">
+                          <span class="h6 text-uppercase">Starter</span>
+                        </span>
+                  
+                        <p class="font-weight-bold mb-2">
+                          <span class="price mb-0" data-annual="2500" data-monthly="35000">35,000</span> credits 
+                          <span class="text-muted d-block small">(30,000 + 5,000)</span>
+                        </p>
+                  
+                        <p class="font-weight-bold text-gray-700 mb-4">
+                          $0.<span class="price mb-0" data-annual="020" data-monthly="017">017</span> /credit
+                        </p>
+                  
+                        <p class="display-2 font-weight-bold mb-0">
+                          $<span class="price mb-0 text-black" data-annual="49" data-monthly="588">588</span> <span class="h5 text-gray-700">/year</span>
+                        </p>
+                  
+                        <span class="badge badge-info-soft badge-pill mb-5" style="font-size: 11px;">
+                          Annual plan, paid annually
+                        </span>
+                  
+                        <small class="text-muted d-block mb-6">
+                          12+2 months credits issued immediately, expire in a year
+                        </small>
+                  
+                        <a class="btn btn-sm btn-primary w-100" href="#!">
+                          Start now
+                        </a>
+                  
+                      </div>
+                  
+                      <div class="card card-body border lift mb-6 text-center bg-light">
+                  
+                        <span class="badge badge-pill badge-primary-soft mb-6">
+                          <span class="h6 text-uppercase">Growth</span>
+                        </span>
+                  
+                        <p class="font-weight-bold mb-2">
+                          <span class="price mb-0" data-annual="25000" data-monthly="350000">350,000</span> credits 
+                          <span class="text-muted d-block small">(300,000 + 50,000)</span>
+                        </p>
+                  
+                        <p class="font-weight-bold text-gray-700 mb-4">
+                          $0.<span class="price mb-0" data-annual="012" data-monthly="010">010</span> /credit
+                        </p>
+                  
+                        <p class="display-2 font-weight-bold mb-0">
+                          $<span class="price mb-0 text-black" data-annual="299" data-monthly="3588">3,588</span> <span class="h5 text-gray-700">/year</span>
+                        </p>
+                  
+                        <span class="badge badge-info-soft badge-pill mb-5" style="font-size: 11px;">
+                          Annual plan, paid annually
+                        </span>
+                  
+                        <small class="text-muted d-block mb-6">
+                          12+2 months credits issued immediately, expire in a year
+                        </small>
+                  
+                        <a class="btn btn-sm btn-primary w-100" href="#!">
+                          Start now
+                        </a>
+                  
+                      </div>
+                  
+                      <div class="card card-body border lift mb-6 text-center bg-light">
+                  
+                        <span class="badge badge-pill badge-primary-soft mb-6">
+                          <span class="h6 text-uppercase">Pro</span>
+                        </span>
+                  
+                        <p class="font-weight-bold mb-2">
+                          <span class="price mb-0" data-annual="89900" data-monthly="1258600">1,258,600</span> credits 
+                          <span class="text-muted d-block small">(1,078,000 + 179,800)</span>
+                        </p>
+                  
+                        <p class="font-weight-bold text-gray-700 mb-4">
+                          $0.<span class="price mb-0" data-annual="010" data-monthly="09">09</span> /credit
+                        </p>
+                  
+                        <p class="display-2 font-weight-bold mb-0">
+                          $<span class="price mb-0 text-black" data-annual="899" data-monthly="10788">10,788</span> <span class="h5 text-gray-700">/year</span>
+                        </p>
+                  
+                        <span class="badge badge-info-soft badge-pill mb-5" style="font-size: 11px;">
+                          Annual plan, paid annually
+                        </span>
+                  
+                        <small class="text-muted d-block mb-6">
+                          12+2 months credits issued immediately, expire in a year
+                        </small>
+                  
+                        <a class="btn btn-sm btn-primary w-100" href="#!">
+                          Start now
+                        </a>
+                  
+                      </div>
+                  
+                      <div class="card card-body border lift mb-6 text-center bg-light">
+                  
+                        <span class="badge badge-pill badge-primary-soft mb-6">
+                          <span class="h6 text-uppercase">Ultra</span>
+                        </span>
+                  
+                        <p class="font-weight-bold mb-2">
+                          <span class="price mb-0" data-annual="211000" data-monthly="2954000">2,954,000</span> credits 
+                          <span class="text-muted d-block small">(2,532,000 + 422,000)</span>
+                        </p>
+                  
+                        <p class="font-weight-bold text-gray-700 mb-4">
+                          $0.<span class="price mb-0" data-annual="09" data-monthly="08">08</span> /credit
+                        </p>
+                  
+                        <p class="display-2 font-weight-bold mb-0">
+                          $<span class="price mb-0 text-black" data-annual="1899" data-monthly="22788">22,788</span> <span class="h5 text-gray-700">/year</span>
+                        </p>
+                  
+                        <span class="badge badge-info-soft badge-pill mb-5" style="font-size: 11px;">
+                          Annual plan, paid annually
+                        </span>
+                  
+                        <small class="text-muted d-block mb-6">
+                          12+2 months credits issued immediately, expire in a year
+                        </small>
+                  
+                        <a class="btn btn-sm btn-primary w-100" href="#!">
+                          Start now
+                        </a>
+                  
+                      </div>
+                  
+                      <div class="card card-body border lift text-center bg-light">
+                  
+                        <span class="badge badge-pill badge-primary-soft mb-6">
+                          <span class="h6 text-uppercase">Enterprise</span>
+                        </span>
+                  
+                        <p class="font-weight-bold mb-2">
+                          ><span class="price mb-0" data-annual="211000" data-monthly="2954000">2,954,000</span> credits 
+                          <span class="text-muted d-block small">(TBD)</span>
+                        </p>
+                  
+                        <p class="font-weight-bold text-gray-700 mb-0">
+                          < $0.<span class="price mb-0" data-annual="009" data-monthly="008">008</span> /credit
+                        </p>
+                  
+                        <p class="display-2 font-weight-bold mb-0">
+                          <span class=" h3 font-weight-normal text-gray-700">Starts from</span>
+                          <br>
+                          $<span class="price mb-0 text-black" data-annual="2000" data-monthly="24000">24,000</span> <span class="h5 text-gray-700">/year</span>
+                        </p>
+                  
+                        <span class="badge badge-info-soft badge-pill mb-5" style="font-size: 11px;">
+                          Annual plan, paid annually
+                        </span>
+                  
+                        <small class="text-muted d-block mb-6">
+                          12+2 months credits issued immediately, expire in a year
+                        </small>
+                  
+                        <a class="btn btn-sm btn-primary w-100" href="#!">
+                          Start now
+                        </a>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
                 </div>
+
+                <!-- PAYG-->
+                <div class="table-responsive tab-pane fade" id="nav-payg" role="tabpanel"
+                  aria-labelledby="nav-payasyougo-tab">
+
+                  <table class="table table-hover d-none d-lg-block">
+                    <tbody>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="col-5 font-weight-bold">100 credits</td>
+                        <td class="col-5 text-gray-700">$0.1000/credit</td>
+                        <td class="col-2 text-right pr-9 font-weight-bold">$10</td>
+                      </tr>
+                      <tr class="clickable table-primary" onclick="window.location='#!'">
+                        <td class="font-weight-bold">834 credits</td>
+                        <td class="text-gray-700">$0.0600/credit</td>
+                        <td class="text-right font-weight-bold pr-9 font-weight-bold">$50</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">3,788 Credits</td>
+                        <td class="text-gray-700">$0.0264/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$100</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">20,834 credits</td>
+                        <td class="text-gray-700">$0.0240/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$500</td>
+                      </tr>
+                      <tr class="clickable" onclick="window.location='#!'">
+                        <td class="font-weight-bold">46,297 credits </td>
+                        <td class="text-gray-700">$0.0216/credit</td>
+                        <td class="text-right pr-9 font-weight-bold">$1,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <!-- Mobile -->
+                  <div class="d-block d-lg-none mt-4">
+                  
+                    <div class="card card-body border bg-light lift font-weight-bold mb-6 text-center">
+                  
+                      <span class="badge badge-pill badge-primary-soft mb-6">
+                        <span class="h6 text-uppercase">Pay-as-you-go</span>
+                      </span>                      
+
+                      <p class="font-weight-bold mb-2">
+                        100 credits
+                      </p>
+                  
+                      <p class="font-weight-bold text-gray-700 mb-4">
+                        $0.1000/credit
+                      </p>
+                  
+                      <p class="display-2 font-weight-bold mb-4">
+                        $10
+                      </p>
+
+                      <p class="small text-muted mb-5">
+                        Credits do not expire*
+                      </p>
+                  
+                      <a class="btn btn-sm btn-primary w-100" href="#!">
+                        Start now
+                      </a>
+                  
+                      <p class="h6 text-muted d-block mt-4 mb-0">
+                        <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
+                        months of payment
+                        inactivity.
+                      </p>
+                  
+                    </div>
+                  
+                    <div class="card card-body border bg-light lift font-weight-bold mb-6 text-center">
+                  
+                      <span class="badge badge-pill badge-primary-soft mb-6">
+                        <span class="h6 text-uppercase">Pay-as-you-go</span>
+                      </span>                      
+
+                      <p class="font-weight-bold mb-2">
+                        834 credits
+                      </p>
+                  
+                      <p class="font-weight-bold text-gray-700 mb-4">
+                        $0.600/credit
+                      </p>
+                  
+                      <p class="display-2 font-weight-bold mb-4">
+                        $50
+                      </p>
+
+                      <p class="small text-muted mb-5">
+                        Credits do not expire*
+                      </p>
+                  
+                      <a class="btn btn-sm btn-primary w-100" href="#!">
+                        Start now
+                      </a>
+                  
+                      <p class="h6 text-muted d-block mt-4 mb-0">
+                        <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
+                        months of payment
+                        inactivity.
+                      </p>
+                  
+                    </div>
+                  
+                    <div class="card card-body border bg-light lift font-weight-bold mb-6 text-center">
+                  
+                      <span class="badge badge-pill badge-primary-soft mb-6">
+                        <span class="h6 text-uppercase">Pay-as-you-go</span>
+                      </span>                      
+
+                      <p class="font-weight-bold mb-2">
+                        3,788 credits
+                      </p>
+                  
+                      <p class="font-weight-bold text-gray-700 mb-4">
+                        $0.0264/credit
+                      </p>
+                  
+                      <p class="display-2 font-weight-bold mb-4">
+                        $100
+                      </p>
+
+                      <p class="small text-muted mb-5">
+                        Credits do not expire*
+                      </p>
+                  
+                      <a class="btn btn-sm btn-primary w-100" href="#!">
+                        Start now
+                      </a>
+                  
+                      <p class="h6 text-muted d-block mt-4 mb-0">
+                        <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
+                        months of payment
+                        inactivity.
+                      </p>
+                  
+                    </div>
+                  
+                    <div class="card card-body border bg-light lift font-weight-bold mb-6 text-center">
+                  
+                      <span class="badge badge-pill badge-primary-soft mb-6">
+                        <span class="h6 text-uppercase">Pay-as-you-go</span>
+                      </span>                      
+
+                      <p class="font-weight-bold mb-2">
+                        20,834 credits
+                      </p>
+                  
+                      <p class="font-weight-bold text-gray-700 mb-4">
+                        $0.0240/credit
+                      </p>
+                  
+                      <p class="display-2 font-weight-bold mb-4">
+                        $500
+                      </p>
+
+                      <p class="small text-muted mb-5">
+                        Credits do not expire*
+                      </p>
+                  
+                      <a class="btn btn-sm btn-primary w-100" href="#!">
+                        Start now
+                      </a>
+                  
+                      <p class="h6 text-muted d-block mt-4 mb-0">
+                        <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
+                        months of payment
+                        inactivity.
+                      </p>
+                  
+                    </div>
+                  
+                    <div class="card card-body border bg-light lift font-weight-bold text-center">
+                  
+                      <span class="badge badge-pill badge-primary-soft mb-6">
+                        <span class="h6 text-uppercase">Pay-as-you-go</span>
+                      </span>                      
+
+                      <p class="font-weight-bold mb-2">
+                        46,297 credits
+                      </p>
+                  
+                      <p class="font-weight-bold text-gray-700 mb-4">
+                        $0.216/credit
+                      </p>
+                  
+                      <p class="display-2 font-weight-bold mb-4">
+                        $1,000
+                      </p>
+
+                      <p class="small text-muted mb-5">
+                        Credits do not expire*
+                      </p>
+                  
+                      <a class="btn btn-sm btn-primary w-100" href="#!">
+                        Start now
+                      </a>
+                  
+                      <p class="h6 text-muted d-block mt-4 mb-0">
+                        <span class="text-danger">*</span> PAYG Credits expire when an account is made inactive after 18
+                        months of payment
+                        inactivity.
+                      </p>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <p class="h6 text-gray-700 mt-md-6 mt-4 d-none d-lg-block"><span class="text-danger">*</span>PAYG Credits expire when an account is made inactive after 18 months of payment inactivity.</p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- right card Subs -->
+            <div class="col-12 col-md-12 col-lg-3 d-none d-lg-block text-center py-lg-11 pt-6 pb-0 border bg-light shadow-light-md rounded" id="nav-tabContent"
+            style="background-color: #F9FBFD !important;">
+
+              <div class="tab-pane fade show active" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
+
+              <span class="badge badge-pill badge-primary-soft mb-6">
+                <span class="h6 text-uppercase">Starter</span>
+              </span>
+
+              <div class="d-flex justify-content-center pb-4">
+                <span class="h3 mb-0 mt-2">$</span>
+                <span class="display-3 font-weight-bold">588</span>
+                 <span class="h3 align-self-end mb-1">/yr</span>
+              </div>
+
+              <p class="mb-0 font-weight-bold">
+                35,000 credits
+              </p>
+
+              <p class="mb-4 text-gray-700 small font-weight-bold">
+                $0.17/credit
+              </p>
+
+              <p class="mb-4 small text-muted">
+                <span class=" badge badge-info-soft badge-pill py-2">Annual plan, paid annually
+                </span>
+              </p>
+
+              <p class="mb-6 small text-muted">
+                12+2 months credits issued immediately, expire in a year
+              </p>
+
+              <a href="#!" class="btn btn-sm btn-block btn-primary mb-5 mb-lg-0">
+                Start now
+              </a>
+
               </div>
 
             </div>
@@ -1980,9 +973,174 @@
         </div>
 
       </div>
-    </div> <!-- / .container -->
-  </section>
+  
+    </section>
 
+    <!-- SECOND FOLD-->
+    <section class="py-8 py-md-11 bg-white border-bottom">
+      <div class="container">
+        <h2 class="text-center pb-6 pb-md-8">
+          Credit Cost per API Endpoint
+        </h2>
+        <div class="form-row">
+          <div class="col-12">
+            <div class="card shadow-lg mb-5">
+              <div class="card-body">
+    
+                <!-- Table -->
+                <div class="row">
+                  <div class="col-12">
+                    <table class="table table-responsive table-borderless table-hover table-striped">
+    
+                      <thead class="text-primary lead">
+                        <tr>
+                          <th scope="col" class="text-black col-8">API Endpoint</th>
+                          <th scope="col" class="col-4">Credit cost</th>
+                        </tr>
+                      </thead>
+    
+                      <tbody class="">
+                        <tr>
+                          <th scope="row">Person API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#people-api-person-profile-endpoint">Person Profile
+                              Endpoint</a></th>
+                          <td> 1 credit <span class="text-gray-700"> + (credit cost of optional parameters)</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Person API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#people-api-role-lookup-endpoint">Role Lookup
+                              Endpoint</a></th>
+                          <td> 3 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Person API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">Person
+                              Profile Picture Endpoint</a></th>
+                          <td> FREE </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Person API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#people-api-person-lookup-endpoint">Person Lookup
+                              Endpoint</a></th>
+                          <td> 2 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-employee-count-endpoint">Employee Count
+                              Endpoint</a></th>
+                          <td> 1 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-employee-search-api-endpoint">Employee
+                              Search Endpoint</a></th>
+                          <td> 10 credits <span class="text-gray-700"> / successful request. </span> + 6 credits <span
+                              class="text-gray-700">/ employee returned </span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">Company
+                              Profile Picture Endpoint</a></th>
+                          <td> FREE </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-employee-listing-endpoint">Employee
+                              Listing Endpoint</a></th>
+                          <td> 3 credits <span class="text-gray-700">/ employee returned </span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-company-lookup-endpoint">Company Lookup
+                              Endpoint</a></th>
+                          <td> 2 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Company API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint">Company Profile
+                              Endpoint</a></th>
+                          <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Jobs API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-count-endpoint">Jobs Listing
+                              Count Endpoint</a></th>
+                          <td> 2 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Jobs API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#jobs-api-jobs-listing-endpoint">Jobs Listing
+                              Endpoint</a></th>
+                          <td> 2 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Jobs API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#jobs-api-job-profile-endpoint">Jobs Profile
+                              Endpoint</a></th>
+                          <td> 2 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contact API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#contact-api-reverse-work-email-lookup-endpoint">Reverse
+                              Work Email Lookup Endpoint</a></th>
+                          <td> 3 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contact API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#contact-api-work-email-lookup-endpoint">Work Email
+                              Lookup Endpoint</a></th>
+                          <td> 3 credits </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contact API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#contact-api-personal-contact-number-lookup-endpoint">Personal
+                              Contact Number Lookup Endpoint</a></th>
+                          <td> 1 credit <span class="text-gray-700">/ contact number returned </span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contact API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#contact-api-personal-email-lookup-endpoint">Personal
+                              Email Lookup Endpoint</a></th>
+                          <td> 1 credit <span class="text-gray-700"> / email returned </span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contact API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#contact-api-disposable-email-address-check-endpoint">Disposable
+                              Email Address Check Endpoint</a></th>
+                          <td> FREE </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">School API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#school-api-student-listing-endpoint">Student Listing
+                              Endpoint</a></th>
+                          <td> 3 credits <span class="text-gray-700">/ student returned</span> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">School API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#school-api-school-profile-endpoint">School Profile
+                              Endpoint</a></th>
+                          <td> 1 credit <span class="text-gray-700">+ (credit cost of optional parameters)</span> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Reveal API - <a class="text-primary"
+                              href="https://nubela.co/proxycurl/docs#reveal-api-reveal-endpoint">Reveal Endpoint</a></th>
+                          <td> 2 credits <span class="text-gray-700"> / successful requests</span> </td>
+                        </tr>
+    
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </div> <!-- / .container -->
+    </section>
+  
   <!-- THIRD FOLD-->
   <section class="pt-md-9 pt-8 pb-md-5 pb-2 bg-light border-bottom">
     <div class="container">
@@ -2011,16 +1169,17 @@
             LinkDB is a Postgresql database of 472,880,151 public Linkedin profiles
           </div>
 
-          <!-- Button -->
-          <a href="https://proxycurl-website-revamp-aji.vercel.app/linkdb_pricing.html" class="btn btn-primary">
-            See LinkDB Pricing Table <i class="fe fe-arrow-right ml-3"></i>
-          </a>
+                <!-- Button -->
+                <a href="https://proxycurl-website-revamp-aji.vercel.app/linkdb_pricing.html" class="btn btn-primary">
+                  See LinkDB Pricing Table <i class="fe fe-arrow-right ml-3"></i>
+                </a>          
+          
 
         </div>
       </div> <!-- / .row -->
-    </div>
+      </div>
   </section>
-
+  
   <!-- FAQ -->
   <section class="bg-white pt-8 pt-md-9 pb-6 pb-md-8 border-bottom">
     <div class="container">
@@ -2046,35 +1205,30 @@
 
                   <!-- toggle-->
                   <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqOne" role="button" aria-expanded="false" aria-controls="faqOne">
+                  href="#faqOne" role="button" aria-expanded="false" aria-controls="faqOne">
+                  
+                  <div class="mr-auto">
 
-                    <div class="mr-auto">
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    Which plan is the best to use?
+                  </p>
 
-                      <!-- title-->
-                      <p class="font-weight-bold">
-                        Which plan is the best to use?
-                      </p>
+                  </div>
 
-                    </div>
-
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
 
                   </a> <!-- toggle-->
 
                   <!-- collapse-->
                   <div class="collapse" id="faqOne" data-parent="#faqAccordion">
                     <div class="pt-2">
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet
-                        perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa
-                        provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur.
-                        Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate
-                        fugiat!
-                      </p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                    </p>
                     </div>
                   </div>
 
@@ -2085,132 +1239,117 @@
 
                   <!-- toggle-->
                   <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqOne">
+                  href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqOne">
+                  
+                  <div class="mr-auto">
 
-                    <div class="mr-auto">
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    How do I pay for the ProxyCURL service?                  
+                  </p>
 
-                      <!-- title-->
-                      <p class="font-weight-bold">
-                        How do I pay for the ProxyCURL service?
-                      </p>
+                  </div>
 
-                    </div>
-
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
 
                   </a> <!-- toggle-->
 
                   <!-- collapse-->
                   <div class="collapse" id="faqTwo" data-parent="#faqAccordion">
                     <div class="pt-2">
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet
-                        perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa
-                        provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur.
-                        Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate
-                        fugiat!
-                      </p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                    </p>
                     </div>
                   </div>
 
-                </div> <!-- list group item-->
-
+                </div> <!-- list group item-->   
+                
                 <!-- list group item 3-->
                 <div class="list-group-item">
 
                   <!-- toggle-->
                   <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
+                  href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
+                  
+                  <div class="mr-auto">
 
-                    <div class="mr-auto">
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    Is there a limit on the amount of data that can be received per request?
+                  </p>
 
-                      <!-- title-->
-                      <p class="font-weight-bold">
-                        Is there a limit on the amount of data that can be received per request?
-                      </p>
+                  </div>
 
-                    </div>
-
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
 
                   </a> <!-- toggle-->
 
                   <!-- collapse-->
                   <div class="collapse" id="faqThree" data-parent="#faqAccordion">
                     <div class="pt-2">
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet
-                        perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa
-                        provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur.
-                        Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate
-                        fugiat!
-                      </p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                    </p>
                     </div>
                   </div>
 
-                </div> <!-- list group item-->
-
+                </div> <!-- list group item-->     
+                
                 <!-- list group item 4-->
                 <div class="list-group-item">
 
                   <!-- toggle-->
                   <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse"
-                    href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
+                  href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
+                  
+                  <div class="mr-auto">
 
-                    <div class="mr-auto">
+                  <!-- title-->
+                  <p class="font-weight-bold">
+                    Is there a money-back guarantee?
+                  </p>
 
-                      <!-- title-->
-                      <p class="font-weight-bold">
-                        Is there a money-back guarantee?
-                      </p>
+                  </div>
 
-                    </div>
-
-                    <!-- chevron-->
-                    <span class="collapse-chevron text-muted ml-4">
-                      <i class="fe fe-lg fe-chevron-down"></i>
-                    </span>
+                  <!-- chevron-->
+                  <span class="collapse-chevron text-muted ml-4">
+                    <i class="fe fe-lg fe-chevron-down"></i>
+                  </span>
 
                   </a> <!-- toggle-->
 
                   <!-- collapse-->
                   <div class="collapse" id="faqFour" data-parent="#faqAccordion">
                     <div class="pt-2">
-                      <p class="text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet
-                        perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa
-                        provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur.
-                        Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate
-                        fugiat!
-                      </p>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                    </p>
                     </div>
                   </div>
 
-                </div> <!-- list group item-->
+                </div> <!-- list group item-->                   
 
               </div> <!-- list group-->
 
             </div> <!-- card-body-->
 
-          </div> <!-- card accordion-->
+          </div>  <!-- card accordion-->
         </div> <!-- col-->
       </div> <!-- row-->
-
+      
     </div> <!-- container-->
-  </section>
+  </section> <!-- FAQ-->
 
   <!-- OUR CUSTOMERS
     ================================================== -->
-  <section class="pb-8 pb-md-9 pt-md-11 pt-8 bg-light border-bottom">
+  <section class="pb-8 pb-md-9 pt-md-11 pt-10 bg-light border-bottom">
     <div class="container">
       <div class="row justify-content-center">
 
@@ -2228,53 +1367,50 @@
 
         </div>
 
-        <div class="col-12">
+        <div class="row align-items-center justify-content-center px-4 px-md-9 px-lg-13 px-xl-0 
+        pb-0 pb-xl-4 pt-0 pt-xl-4">
 
-          <div class="row align-items-center justify-content-center px-lg-13 px-xl-0">
-
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
 
               <!-- IBM -->
               <img class="svg-shim img-fluid" alt="IBM logo SVG" src="assets/img/Misc/ibm.png">
-
+  
             </div>
-
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
-
+  
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
               <!-- Rightbound -->
               <img class="svg-shim img-fluid" alt="Rightbound logo SVG" src="assets/img/Misc/rightbound.com_logo.svg">
-
+  
             </div>
-
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
-
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-8 mb-md-0">
+  
               <!-- Linux -->
               <img class="svg-shim img-fluid" alt="Linux logo SVG" src="assets/img/Misc/LinuxFoundation.png">
-
+  
             </div>
-
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
-
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-8 mb-md-0">
+  
               <!-- HP -->
               <img class="svg-shim img-fluid" alt="HP logo PNG" src="assets/img/Misc/hp.png">
-
+  
             </div>
-
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
-
+            
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
               <!-- Agicap -->
               <img class="svg-shim img-fluid" alt="Agicap logo SVG" src="assets/img/Misc/agicap.svg">
-
+  
             </div>
 
-            <div class="col-4 col-xl-2 mb-4 mb-md-0">
-
+            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+  
               <!-- Dover -->
               <img class="svg-shim img-fluid" alt="Dover logo SVG" src="assets/img/Misc/dover.io_logo.svg">
-
-            </div> <!---->
-
-          </div>
+  
+            </div>
 
         </div>
 
@@ -2282,471 +1418,327 @@
     </div> <!-- / .container -->
   </section>
 
-  <!-- ARTICLES
+   <!-- FOOTER
     ================================================== -->
-  <section class="pb-md-10 pt-md-10 py-7 bg-white border-bottom">
-    <div class="container">
-      <div class="align-items-center mb-5 row">
-        <div class="col-12 col-md">
-          <h3 class="mb-0">Featured Articles</h3>
-          <p class="mb-0 text-muted"> Here's what we've been up to recently. </p>
-        </div>
-        <div class="col-12 col-md-auto">
-          <a href="https://nubela.co/blog/" target="_blank" class="btn btn-outline-gray-300 btn-sm d-md-inline d-none">
-            View all </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-4 col-md-6 d-flex">
-          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
-              class="card-img-top">
-              <img
-                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/11/TLC_Linkedin_API.png"
-                alt="..." class="card-img-top">
-              <div class="position-relative">
-                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                  <svg fill="none" viewBox="0 0 2880 480">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
-              class="card-body">
-              <h3> Ultimate Guide To The LinkedIn API: People Profile API (with Python Examples) </h3>
-              <p class="mb-0 text-muted"> Let&#39;s kick off this article with a demo. Run the following command to see
-                what an enriched LinkedIn profile looks like when accessed through a 3rd-party LinkedIn API:
-                $ curl \
-                -G \
-                -H &#34;Authorization: Bearer demo-bearer-token&#34; \
-                &#39;https://nubela.co/proxycurl/api/v2/linkedin&#39; \
-                --data-urlencode &#39;linkedin_profile_url=https://www.linkedin.com/in/ </p>
-            </a>
-            <a href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
-              class="card-meta mt-auto">
-              <hr class="card-meta-divider">
-              <div class="avatar avatar-sm mr-2">
-                <img
-                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
-                  alt="..." class="avatar-img rounded-circle">
-              </div>
-              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
-              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 13 MIN READ </p>
-            </a>
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container-fluid" style="max-width: 1080px;">
+        <div class="row">
+
+          <div class="col-12 col-md-3 col-lg-3">
+
+            <img src="./assets/img/Proxycurl-Logotype-Primary@1x.png" alt="proxycurl logo" class="footer-brand img-fluid mb-2">
+
           </div>
-        </div>
-        <div class="col-12 col-lg-4 col-md-6 d-flex">
-          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-img-top">
-              <img
-                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Comparison_API.png"
-                alt="..." class="card-img-top">
-              <div class="position-relative">
-                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                  <svg fill="none" viewBox="0 0 2880 480">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-body">
-              <h3> The 19 Best Data Enrichment APIs of 2024 </h3>
-              <p class="mb-0 text-muted"> Learn the purpose of a data enrichment API and the best ones currently
-                available. </p>
-            </a>
-            <a href="https://nubela.co/blog/best-data-enrichment-apis/" class="card-meta mt-auto">
-              <hr class="card-meta-divider">
-              <div class="avatar avatar-sm mr-2">
-                <img src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/08/cr.jpg"
-                  alt="..." class="avatar-img rounded-circle">
-              </div>
-              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Colton Randolph </h6>
-              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 79 MIN READ </p>
-            </a>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Products
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Proxycurl API</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="person-api.html" class="text-reset">
+                  Person API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="company-api.html" class="text-reset">
+                  Company API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/search-api" class="text-reset">
+                  Search API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="jobs-api.html" class="text-reset">
+                  Jobs API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="contact-api.html" class="text-reset">
+                  Contact API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="school-api.html" class="text-reset">
+                  School API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="proxycurl-free-tools.html" class="text-reset">
+                  Free API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="pricing.html" class="text-reset">
+                  API Pricing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset" target="_blank">
+                  Documentation <i class="fe fe-arrow-right"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://twitter.com/proxycurl" class="text-reset" target="_blank">
+                  API Status <span class="badge rounded-pill badge-primary-soft"><i class="neu-br-twitter"></i>@Proxycurl</span>
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">LinkDB</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="linkdb.html" class="text-reset">
+                  LinkDB Datasets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="linkdb_pricing.html" class="text-reset">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
+
           </div>
-        </div>
-        <div class="col-12 col-lg-4 col-md-6 d-flex">
-          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg">
-            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
-              class="card-img-top">
-              <img
-                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/05/TLC_Announcing-Fresh-Facebook-and-XTwitter-Profile-Data.png"
-                alt="..." class="card-img-top">
-              <div class="position-relative">
-                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                  <svg fill="none" viewBox="0 0 2880 480">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
-              class="card-body">
-              <h3> Announcing Fresh Facebook and X/Twitter Profile Data in Person Profile Endpoint </h3>
-              <p class="mb-0 text-muted"> In the heels of our recent announcement of the all-new Customer API, I am
-                happy to share that we will now return fresh profile data for Facebook or Twitter/X profiles via the
-                Person Profile Endpoint (provided that the use_cache=if-recent parameter is included).
-                Here is a quick demo </p>
-            </a>
-            <a href="https://nubela.co/blog/announcing-fresh-facebook-and-x-twitter-profile-data-in-person-profile-endpoint/"
-              class="card-meta mt-auto">
-              <hr class="card-meta-divider">
-              <div class="avatar avatar-sm mr-2">
-                <img
-                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
-                  alt="..." class="avatar-img rounded-circle">
-              </div>
-              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
-              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 3 MIN READ </p>
-            </a>
+
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-5">
+              Solutions
+            </p>
+
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Use-cases</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="people-linkedin-profile.html" class="text-reset">
+                  LinkedIn Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Crunchbase Scraper API
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="data-teams-in-investment-firms.html" class="text-reset">
+                  Investment Signals
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/solutions/accelerate-growth" class="text-reset">
+                  Accelerating Growth Startups
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="hr-tech.html" class="text-reset">
+                  Data for HR Tech
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Automated Recruitment
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="sales-and-marketing-automation.html" class="text-reset">
+                  Sales and Marketing Automation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Identifying Buyer Intent Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  CRM Data Enrichment
+                </a>
+              </li>
+            </ul>
+            
+            <h6 class="font-weight-bold text-uppercase text-gray-700">Demos</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li>
+                <a href="#!" class="text-reset">
+                  Track Job Changes
+                </a>
+              </li>
+            </ul>            
+
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FOOTER
-    ================================================== -->
-  <footer class="bg-white py-8 py-md-11">
+          <div class="col-6 col-md-4 offset-md-3 col-lg-2 offset-lg-0 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Resources
+            </p>
 
-    <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset">
+                  Home
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="blog.html" class="text-reset">
+                  Blog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://sapiengraph.com" target="_blank" class="text-reset">
+                  Sapiengraph - B2B Enrichment in Google Sheets
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Free Resources
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/build-in-public/" class="text-reset">
+                  Building in Public
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/changelog/" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/company/employees/directory/" class="text-reset">
+                  Company Employee Listing Directory
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="team.html" class="text-reset">
+                  Affiliate Program
+                </a>
+              </li>
+            </ul>
 
-      <div class="row justify-content-end" bis_skin_checked="1">
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Comparisons
+            </p>
 
-        <div class="col-12 col-lg-3 col-md-4">
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/" class="text-reset">
+                  Proxycurl VS People Data Labs
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-coresignal/" class="text-reset">
+                  Proxycurl VS Coresignal
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl vs Bright Data
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/" class="text-reset">
+                  Proxycurl VS PhantomBuster
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Proxycurl VS Clearbit
+                </a>
+              </li>
+            </ul>            
 
-          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo"
-            class="footer-brand img-fluid mb-4">
+          </div>
 
-        </div>
+          <div class="col-6 col-md-4 col-lg-2 pt-2">
+        
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Company
+            </p>
 
-        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-7">
+              <li class="mb-3">
+                <a href="about-us.html" class="text-reset">
+                  About Proxycurl
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/team" class="text-reset">
+                  Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="terms-of-use.html" class="text-reset">
+                  Term of Use
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/proxycurl/privacy-policy" class="text-reset">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
 
-          <!-- Heading -->
-          <h6 class="font-weight-bold text-gray-700 text-uppercase">
-            Proxycurl API
-          </h6>
+            <!-- Heading -->
+            <p class="font-weight-bold text-uppercase text-gray-700 mb-4">
+              Help
+            </p>
 
-          <!-- List -->
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="people-api.html">
-                Person API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="company-api.html">
-                Company API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="search-api.html">
-                Search API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="jobs-api.html">
-                Jobs API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="contact-api.html">
-                Contact API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="school-api.html">
-                School API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="customer-api.html">
-                Customer API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                Free API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="pricing.html">
-                API Pricing
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="documentation.html">
-                Documentation
-                <i class="fe fe-arrow-right"></i>
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
-                API Status
-                <span class="badge badge-primary-soft rounded-pill">
-                  <i class="neu-br-twitter"></i>
-                  @Proxycurl
-                </span>
-              </a>
-            </li>
-          </ul>
-          <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
-          <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="linkdb.html">
-                LinkDB Datasets
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="pricing-linkdb.html">
-                LinkDB Pricing
-              </a>
-            </li>
-          </ul>
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="mailto:hello@nubela.co" class="text-reset">
+                  Email Us
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://nubela.co/blog/tag/faq/" class="text-reset">
+                  FAQ
+                </a>
+              </li>
+            </ul> 
 
-        </div>
+          </div>
 
-        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
+        </div> <!-- / .row -->
+        <br>
 
-          <!-- Heading -->
-          <h6 class="font-weight-bold text-gray-700 text-uppercase">
-            Use Cases
-          </h6>
+        <hr class="text-gray-400">
+        <br>
 
-          <!-- List -->
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="linkedin.html">
-                Linkedin Scraper API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="linkedin.html">
-                Crunchbase Scraper API
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
-                Investment Signals
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="solution-growth.html">
-                Accelerating Growth Startups
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
-                Data for HR Tech
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
-                Automated Recruitment
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
-                Sales and Marketing Automation
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
-                Identifying Buyer Intent Data
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
-                CRM Data Enrichment <i class="fe fe-arrow-right"></i>
-              </a>
-            </li>
-          </ul>
-          <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li>
-              <a class="small text-reset" href="monitoring-job-changes.html"> Track Job Changes </a>
-            </li>
-          </ul>
+        <div class="text-center">
+          <p class="caption">Nubela Pte Ltd. All rights reserved.</p>
         </div>
 
-        <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
-
-
-          <!-- List -->
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/">
-                Home
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog">
-                Blog
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text"
-                target="_blank">
-                Sapiengraph - B2B Enrichment in Google Sheets
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
-                Free Resources
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
-                Building in Public
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
-                Changelog
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="employee-listing-directory.html">
-                Company Employee Listing Directory
-              </a>
-            </li>
-          </ul>
-
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
-
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
-                Proxycurl VS People Data Labs
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
-                Proxycurl VS Coresignal
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
-                Proxycurl VS Bright Data
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset"
-                href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
-                Proxycurl VS PhantomBusters
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
-                Proxycurl VS Clearbit
-              </a>
-            </li>
-          </ul>
-
-
-        </div>
-
-        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
-
-          <!-- List -->
-          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="about.html">
-                About Proxycurl
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="team.html">
-                Our Team
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="terms-of-use.html">
-                Term of Use
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="gom-privacy.html">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-
-          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
-
-          <!-- List -->
-          <ul class="list-unstyled mb-0 text-muted">
-            <li class="mb-2">
-              <a class="small text-reset" href="mailto:hello@nubela.co">
-                Email Us
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/blog/tag/faq/">
-                FAQ
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class="small text-reset" href="https://nubela.co/proxycurl/data-removal">
-                Remove My Data
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div> <!-- / .row -->
-
-      <hr class="my-6">
-
-      <div class="text-center mb-4">
-
-        <h6 class="font-weight-bold text-uppercase text-gray-700">
-          Follow us
-        </h6>
-
-        <div class="mr-2">
-          <a href="https://twitter.com/proxycurl" target="_blank">
-            <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
-          </a>
-
-          <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
-            <img class="img-fluid" width="36" height="auto" alt="YouTube logo"
-              src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
-          </a>
-
-          <a href="https://github.com/nubelaco/" target="_blank">
-            <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
-          </a>
-        </div>
-
-      </div>
-
-      <div class="text-center">
-        <p class="caption mb-0">
-          Proxycurl LLC. All rights reserved.
-        </p>
-      </div>
-
-    </div>
-
-  </footer>
+      </div> <!-- / .container -->
+    </footer>
 
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
   <script src="./assets/libs/aos/dist/aos.js"></script>
   <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
@@ -2770,7 +1762,6 @@
   <!-- Theme JS -->
   <script src="./assets/js/theme.min.js"></script>
 
-  <script src="./assets/js/pricingPlan.js"></script>
 
 </body>
 
