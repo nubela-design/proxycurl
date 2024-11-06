@@ -426,17 +426,15 @@
                 <div class="tab-pane fade show active" id="nav-subs" role="tabpanel"
                   aria-labelledby="nav-subs-tab">
 
-                  <!-- Toggle -->
-                  <div class="row justify-content-md-center pl-5 pl-xl-0 mb-6 mb-md-6 mt-1 overflow-small-screen">
-                                    
-                    <div class="d-flex ">
-                  
+                  <!-- Toggle MD-XL -->
+                  <div class="row justify-content-md-center ml-0 ml-xl-5 mb-6 mb-md-6 mt-1 overflow-small-screen d-none d-md-block">
+                    <div class="d-flex">
                       <span class="text-opacity-80 text-nowrap small">
-                       Annual plan, paid monthly
+                        Annual plan, paid monthly
                       </span>
                   
                       <div class="custom-control custom-switch mx-3">
-                        <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price"
+                        <input type="checkbox" class="custom-control-input pricing-toggle" id="billingSwitch" data-toggle="price" data-target=".price"
                           checked>
                         <label class="custom-control-label" for="billingSwitch"></label>
                       </div>
@@ -449,6 +447,25 @@
                           CREDITS</span>
                       </span>
                   
+                    </div>
+                  
+                  </div>                
+
+                  <div class="row ml-0 ml-xl-5 mb-6 mb-md-6 mt-1 d-block d-md-none">
+                    <div class="custom-control custom-radio small">
+                      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input pricing-toggle" data-toggle="price" data-target=".price"> 
+                      <label class="custom-control-label" for="customRadio1">Annual plan, paid monthly</label>
+                    </div>
+                    <hr>
+                  
+                    <div class="custom-control custom-radio small d-flex text-nowrap" style="overflow-x: auto;">
+                      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input pricing-toggle" data-toggle="price" data-target=".price" checked>
+                      <label class="custom-control-label" for="customRadio2">Annual plan, paid annualy</label>
+                      <div class="badge badge-pill badge-warning text-left font-weight-bold text-uppercase ml-3 py-2"
+                        data-toggle="tooltip" data-placement="bottom"
+                        title="All 12+2 months credits issued at one go upon subscription of an Annual Plan"><i class="neu neu-info"></i>
+                        +2 MONTHS FREE
+                        CREDITS</div>
                     </div>
                   
                   </div>
@@ -1761,6 +1778,41 @@
 
   <!-- Theme JS -->
   <script src="./assets/js/theme.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all pricing toggle inputs
+      const pricingToggles = document.querySelectorAll('.pricing-toggle');
+    
+      // Add change event listener to each toggle
+      pricingToggles.forEach(toggle => {
+        toggle.addEventListener('change', function() {
+          // Get the checked state from the changed input
+          const isAnnual = this.type === 'checkbox' ? this.checked : this.id === 'customRadio2';
+          
+          // Sync all other toggles
+          pricingToggles.forEach(otherToggle => {
+            if (otherToggle !== this) {
+              if (otherToggle.type === 'checkbox') {
+                otherToggle.checked = isAnnual;
+              } else if (otherToggle.type === 'radio') {
+                otherToggle.checked = (isAnnual && otherToggle.id === 'customRadio2') || 
+                                    (!isAnnual && otherToggle.id === 'customRadio1');
+              }
+            }
+          });
+    
+          // Update all price elements
+          const priceElements = document.querySelectorAll('.price');
+          priceElements.forEach(element => {
+            const annualPrice = element.dataset.annual;
+            const monthlyPrice = element.dataset.monthly;
+            element.textContent = isAnnual ? annualPrice : monthlyPrice;
+          });
+        });
+      });
+    });
+    </script>
 
 
 </body>
