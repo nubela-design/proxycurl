@@ -1,0 +1,2710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+  <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="qube.css" type="text/css" />
+
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <title>Proxycurl's - Company Data</title>
+
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT
+    ================================================== -->
+  <section class="bg-dark">
+
+    <div class="container">
+
+      <div class="row justify-content-center align-items-center pt-4">
+
+        <div class="col-12 text-center">
+
+          <!-- Text -->
+          <p class="font-size-md text-white">
+            Enrich companies with funding, categories, emails, exits/acquisitions data
+            <a class="text-warning font-weight-bold ml-2"
+              href="https://nubela.co/blog/enrich-companies-with-funding-categories-emails-exits-acquisitions-data"
+              target="_blank">
+              Learn more <i class="neu-arrow"></i>
+            </a>
+          </p>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+    </div>
+
+  </section>
+
+  <!-- NAVBAR
+    ================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.svg" class="navbar-brand-img" alt="proxycurl logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a href="products.html" class="nav-link mb-5 mb-lg-0" id="navbarPages">
+              Products <i class="fe fe-chevron-down"></i>
+            </a>
+            <button class="dropdown-toggle dropdown-toggle-split" style="display: none;" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="database icon" src="assets/img/logos/database icon.svg">
+                        LinkDB
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="linkdb.html">
+                        Database of public<br>
+                        LinkedIn profiles
+                      </a>
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="20" alt="table icon" src="assets/img/logos/table.svg"> Spreadsheet
+                        Addon
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5" href="https://sapiengraph.com" target="_blank">
+                        Sapiengraph - B2B Enrichment <br class="d-block">
+                        in Google Sheets
+                      </a>
+
+                      <!-- Heading -->
+                      <a class="h6 dropdown-header" href="https://nubela.co/proxycurl/free-tools">
+                        <img class="icon mb-1" width="24" alt="emoji icon" src="assets/img/logos/emoji smiley.svg"> Free
+                        Tools
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="disposable-email.html">
+                        Disposable Email Checker
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item"
+                        href="https://nubela.co/proxycurl/docs#people-api-person-profile-picture-endpoint">
+                        Person Profile Picture API
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item mb-5 mb-lg-0"
+                        href="https://nubela.co/proxycurl/docs#company-api-company-profile-picture-endpoint">
+                        Company Profile Picture API
+                      </a>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo"
+                          src="assets/img/logos/proxycurl logo blue.svg"> Proxycurl API
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="people-api.html">
+                        People API
+                      </a>
+                      <a class="dropdown-item" href="company-api.html">
+                        Company API
+                      </a>
+                      <a class="dropdown-item" href="contact-api.html">
+                        Contact API
+                      </a>
+                      <a class="dropdown-item" href="reverse-email-lookup.html">
+                        ᴸ Reverse Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="email-lookup-api-endpoint.html">
+                        ᴸ Work Email Lookup API
+                      </a>
+                      <a class="dropdown-item" href="jobs-api.html">
+                        Jobs API
+                      </a>
+                      <a class="dropdown-item" href="school-api.html">
+                        School API
+                      </a>
+                      <a class="dropdown-item" href="search-api.html">
+                        Search API
+                      </a>
+                      <a class="dropdown-item" href="customer-api.html">
+                        Customer API
+                      </a>
+
+
+                      <a class="dropdown-item mb-5" href="https://nubela.co/proxycurl/docs">
+                        API Documentation <i class="fe fe-arrow-right"></i>
+                      </a>
+                      <a class="dropdown-item text-primary font-weight-bold" href="products.html">
+                        See all products <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / .row -->
+          </li>
+
+          <!-- Solution -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarSolutions" data-toggle="dropdown" href="#"
+              aria-haspopup="true" aria-expanded="false">
+              Solutions <i class="fe fe-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarSolutions">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="row no-gutters">
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <img class="icon mb-1" width="24" alt="Proxycurl logo" src="assets/icons/network-spread.svg">
+                        Use
+                        Cases
+                      </h6>
+
+                      <!-- List -->
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          LinkedIn Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="linkedin.html">
+                          Crunchbase Scraper API
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="data-teams-in-investment-firms.html">
+                          Investment Signals
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-growth.html">
+                          Accelerating Growth Startups
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="hr-tech.html">
+                          Data for HR Tech
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                          Automated Recruitment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="sales-and-marketing-automation.html">
+                          Sales and Marketing Automation
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                          Identifying Buyer Intent Data
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link"
+                          href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                          CRM Data Enrichment
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="clearbit-alternative.html">
+                          Clearbit Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright">
+                        <a class="dropdown-link" href="solution-peopledatalabs-pdl-alternative.html">
+                          People Data Labs Alternative
+                        </a>
+                      </div>
+                      <div class="dropdown-item dropright mt-5 mb-6 mb-lg-0">
+                        <a class="text-primary font-weight-bold" href="use-cases.html">
+                          See all use-cases <i class="fe fe-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                      <!-- Heading -->
+                      <h6 class="dropdown-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12.374 19.939l5.849-8.773A.75.75 0 0017.599 10H13V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 006.401 14H11v5.523a.75.75 0 001.374.416z"
+                              fill="#335EEA"></path>
+                          </g>
+                        </svg> Demos
+                      </h6>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="monitoring-job-changes.html">
+                        Track Job Changes
+                      </a>
+
+                      <!-- List -->
+                      <a class="dropdown-item" href="reverse-email-lookup-demo.html">
+                        Reverse Email Lookup
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / .row -->
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true"
+              aria-expanded="false">
+              Pricing <i class="fe fe-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing.html">
+                  Proxycurl API Pricing
+                </a>
+              </li>
+              <li class="dropdown-item dropright">
+                <a class="dropdown-link" href="pricing-linkdb.html">
+                  LinkDB Pricing
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <!-- FAQ -->
+          <li class="nav-item">
+            <a class="nav-link" id="navbarAccount" href="#!">
+              FAQ
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center ml-auto">
+          <!-- Button -->
+          <a class="btn btn-sm btn-link" href="login.html">
+            Log in
+          </a>
+        </div>
+
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift" href="register.html">
+          Sign up
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- FIRST FOLD
+    ================================================== -->
+  <section class="pt-8 pt-md-10 pb-10 pb-md-12 border-bottom">
+
+    <div class="container">
+      <div class="row justify-content-center mb-4" data-aos="fade-up">
+
+        <div class="col-12 col-md-10 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-2 font-weight-bold text-dark">
+            <span class="text-primary">20M+ Company Data Profiles</span><br> From 200+ Countries
+          </h1>
+
+          <p class="lead text-muted mb-6 mb-md-9">
+            Access over 100+ data points of regularly-updated company data profiles sourced from LinkedIn <span
+              class="text-danger">*</span>, Crunchbase<span class="text-danger">*</span>, Apollo<span
+              class="text-danger">*</span> & more.
+          </p>
+
+          <div class="row mb-4 mb-lg-8">
+            <div class="col-12 col-lg-4 d-flex mb-4">
+              <div class="card bg-light shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-body d-flex flex-column p-5">
+                  <h3 class="h4 font-weight-bold text-primary">
+                    LinkDB Database
+                  </h3>
+                  <p class="small text-gray-700 mt-auto">
+                    Full Global Company Database
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex mb-4">
+              <div class="card bg-light shadow-sm" data-aos="fade-up" data-aos-delay="700">
+                <div class="card-body d-flex flex-column p-5">
+                  <h3 class="h4 font-weight-bold text-primary">
+                    Company Profile Endrichment API
+                  </h3>
+                  <p class="small text-gray-700 mt-auto">
+                    Company Data Enrichment
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex mb-4">
+              <div class="card bg-light shadow-sm" data-aos="fade-up" data-aos-delay="900">
+                <div class="card-body d-flex flex-column p-5">
+                  <h3 class="h4 font-weight-bold text-primary">
+                    Company Profile Search API
+                  </h3>
+                  <p class="small text-gray-700 mt-auto">
+                    Past/present Employee Data
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row mb-4">
+            <a class="btn btn-primary lift w-100 w-lg-auto mb-3 mb-md-0 mr-md-3" href="#">
+              Book a call
+            </a>
+            <a class="btn btn-primary-soft lift w-100 w-lg-auto" href="#">
+              See pricing
+            </a>
+          </div>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-12 col-md-8">
+          <p class="small text-center text-muted mb-0">
+            <span class="text-danger">*</span> Disclaimer: These are registered trademarks of the respective companies.
+            Proxycurl or LinkDB is not affiliated with, endorsed by, or sponsored by these companies.
+
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- container heading-->
+
+  </section>
+
+  <!-- SECOND FOLD
+    ================================================== -->
+  <!-- List of company Fold-->
+  <section class="pt-8 pt-md-11 pb-11 pb-md-14 bg-light">
+    <div class="container">
+
+      <div class="row justify-content-center mb-md-8 md-8">
+
+        <div class="col-12 col-md-8 col-lg-10">
+
+          <h2 class="display-4 mb-2 text-center">
+            See the data points we have of <br>your favourite companies
+          </h2>
+
+          <p class="text-muted lead text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam animi totam distinctio doloremque.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="logo-scroll-wrapper">
+            <div class="logo-scroll">
+              <div class="logos-container">
+                <!-- First set of logos -->
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="IBM logo SVG" src="assets/img/brands/ibm.png">
+                </div>
+                <div class="logo-item col-md-2 ml-n8">
+                  <img class="svg-shim img-fluid logo" style="height: 50px;" alt="Rightbound logo SVG"
+                    src="assets/img/brands/rightbound.com_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Linux logo SVG" src="assets/img/brands/LinuxFoundation.png">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="HP logo PNG" src="assets/img/brands/hp.png">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Agicap logo SVG" src="assets/img/brands/agicap.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Dover logo SVG" src="assets/img/brands/dover.io_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Meetfrank logo SVG"
+                    src="assets/img/brands/meetfrank.com_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Replyio logo SVG" src="assets/img/brands/replyio.svg">
+                </div>
+
+                <!-- Second set of logos (exact duplicate) -->
+                <div class="logo-item col-md-2 ml-n7">
+                  <img class="svg-shim img-fluid logo" alt="IBM logo SVG" src="assets/img/brands/ibm.png">
+                </div>
+                <div class="logo-item col-md-2 ml-n8">
+                  <img class="svg-shim img-fluid logo" style="height: 50px;" alt="Rightbound logo SVG"
+                    src="assets/img/brands/rightbound.com_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Linux logo SVG" src="assets/img/brands/LinuxFoundation.png">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="HP logo PNG" src="assets/img/brands/hp.png">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Agicap logo SVG" src="assets/img/brands/agicap.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Dover logo SVG" src="assets/img/brands/dover.io_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Meetfrank logo SVG"
+                    src="assets/img/brands/meetfrank.com_logo.svg">
+                </div>
+                <div class="logo-item col-md-2">
+                  <img class="svg-shim img-fluid logo" alt="Replyio logo SVG" src="assets/img/brands/replyio.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- container Company Lookup Endpoint-->
+  </section>
+
+  <!-- THIRD FOLD
+    ================================================== -->
+  <!-- Sample Data Fold-->
+  <section class="pt-8 pt-md-12 pb-8 pb-md-12 border-bottom">
+
+    <div class="container">
+      <div class="row justify-content-center mb-6 mb-md-8">
+
+        <div class="col-12 col-md-8 col-lg-10">
+
+          <h2 class="display-4 mb-2 text-center">
+            Try It Yourself - <br>Sample Company Data
+          </h2>
+
+          <p class="text-muted lead text-center">
+            See the full suite of company data solutions available at your disposal
+          </p>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card">
+            <div class="card-body p-0">
+              <div class="btn btn-primary-soft w-100 mb-3">
+                LinkDB
+              </div>
+              <p class="small text-gray-700 mt-auto">
+                Get the full company profile database of all 20M+ global companies, then enrich further with <a href="#">Company Profile API Endpoint</a>
+              </p>
+              <!-- Code block -->
+              <div class="highlight-block text-left mb-3">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+    "linkedin_internal_id": "162479",
+    "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
+    "website": "http://www.apple.com/careers",
+    "industry": "Consumer Electronics",
+    "company_size": [10001, null],
+    "company_size_on_linkedin": 567686,
+    "hq": {
+        "country": "US",
+        "city": "Cupertino",
+        "postal_code": "95014",
+        "line_1": "1 Apple Park Way",
+        "is_hq": true,
+        "state": "California"
+    },
+    "company_type": "PUBLIC_COMPANY",
+    "founded_year": 1976,
+    "specialities": [
+        "Innovative Product Development",
+        "World-Class Operations",
+        "Retail",
+        "Telephone Support"
+    ],
+    "locations": [
+        {
+            "country": "US",
+            "city": "Cupertino",
+            "postal_code": "95014",
+            "line_1": "1 Apple Park Way",
+            "is_hq": true,
+            "state": "California"
+        }
+    ],
+    "name": "Apple",
+    "tagline": null,
+    "universal_name_id": "apple",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
+    "search_id": "162479",
+    "similar_companies": [],
+    "updates": [],
+    "follower_count": 17494129,
+    "acquisitions": {
+        "acquired": [
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
+                "announced_date": {
+                    "day": 7,
+                    "month": 2,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
+                "announced_date": {
+                    "day": 23,
+                    "month": 3,
+                    "year": 2022
+                },
+                "price": 150000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
+                "announced_date": {
+                    "day": 24,
+                    "month": 6,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
+                "announced_date": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
+                "announced_date": {
+                    "day": 1,
+                    "month": 4,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
+                "announced_date": {
+                    "day": 1,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
+                "announced_date": {
+                    "day": 4,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
+                "announced_date": {
+                    "day": 30,
+                    "month": 8,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
+                "announced_date": {
+                    "day": 24,
+                    "month": 9,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
+                "announced_date": {
+                    "day": 6,
+                    "month": 5,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
+                "announced_date": {
+                    "day": 24,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
+                "announced_date": {
+                    "day": 31,
+                    "month": 3,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
+                "announced_date": {
+                    "day": 27,
+                    "month": 10,
+                    "year": 2020
+                },
+                "price": 50000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
+                "announced_date": {
+                    "day": 3,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": null
+            }
+        ],
+        "acquired_by": null
+    },
+    "exit_data": [
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
+            "name": "Adobe"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
+            "name": "Apple"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/3678",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
+            "name": "Corning"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
+            "name": "Didi"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
+            "name": "ELAN Microelectronics"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
+            "name": "eMagin"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/163813",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
+            "name": "Finisar"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
+            "name": "God-i"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
+            "name": "II-VI"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
+            "name": "Imagination Technologies"
+        },
+        {
+            "linkedin_profile_url": null,
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
+            "name": "Kanisa"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
+            "name": "Zomato"
+        }
+    ],
+    "extra": {
+        "ipo_status": "Public",
+        "crunchbase_rank": 23,
+        "founding_date": {
+            "day": 1,
+            "month": 4,
+            "year": 1976
+        },
+        "operating_status": "Active",
+        "company_type": "For Profit",
+        "contact_email": null,
+        "phone_number": "408-996-1010",
+        "facebook_id": "apple",
+        "twitter_id": "apple",
+        "number_of_funding_rounds": null,
+        "total_funding_amount": 6200000000,
+        "stock_symbol": "NASDAQ:AAPL",
+        "ipo_date": null,
+        "number_of_lead_investors": 3,
+        "number_of_investors": 7,
+        "total_fund_raised": 375000000,
+        "number_of_investments": null,
+        "number_of_lead_investments": null,
+        "number_of_exits": null,
+        "number_of_acquisitions": null
+    },
+    "funding_data": [
+        {
+            "funding_type": "Post-IPO Debt",
+            "money_raised": 5000000000,
+            "announced_date": {
+                "day": 6,
+                "month": 9,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 1000000000,
+            "announced_date": {
+                "day": 16,
+                "month": 5,
+                "year": 2016
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
+                    "name": "Berkshire Hathaway",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 150000000,
+            "announced_date": {
+                "day": 1,
+                "month": 8,
+                "year": 1997
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+                    "name": "Microsoft",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Pre Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 1,
+                "month": 1,
+                "year": 2022
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+                    "name": "Apple",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Confidential Confidential",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": 30000000,
+            "announced_date": {
+                "day": 15,
+                "month": 6,
+                "year": 2022
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
+                    "name": "Interscope Records",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": null,
+            "announced_date": {
+                "day": 12,
+                "month": 7,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 80000,
+            "announced_date": {
+                "day": 15,
+                "month": 5,
+                "year": 1977
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
+                    "name": "Matrix Partners",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Mike Markkula",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 4,
+                "month": 5,
+                "year": 1978
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
+                    "name": "Sequoia Capital",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
+                    "name": "Venrock",
+                    "type": "organization"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        "consumer-electronics",
+        "electronics",
+        "hardware",
+        "mobile-devices",
+        "operating-systems",
+        "retail",
+        "software",
+        "wearables"
+    ]
+}
+                  
+                                    </code></pre>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card">
+            <div class="card-body p-0">
+              <div class="btn btn-primary-soft w-100 mb-3">
+                Company Profile API
+              </div>
+              <p class="small text-gray-700 mt-auto">
+                Get the full company profile database of any company individually, then enrich at the same time
+              </p>
+              <!-- Code block -->
+              <div class="highlight-block text-left mb-3">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+    "linkedin_internal_id": "162479",
+    "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
+    "website": "http://www.apple.com/careers",
+    "industry": "Consumer Electronics",
+    "company_size": [10001, null],
+    "company_size_on_linkedin": 567686,
+    "hq": {
+        "country": "US",
+        "city": "Cupertino",
+        "postal_code": "95014",
+        "line_1": "1 Apple Park Way",
+        "is_hq": true,
+        "state": "California"
+    },
+    "company_type": "PUBLIC_COMPANY",
+    "founded_year": 1976,
+    "specialities": [
+        "Innovative Product Development",
+        "World-Class Operations",
+        "Retail",
+        "Telephone Support"
+    ],
+    "locations": [
+        {
+            "country": "US",
+            "city": "Cupertino",
+            "postal_code": "95014",
+            "line_1": "1 Apple Park Way",
+            "is_hq": true,
+            "state": "California"
+        }
+    ],
+    "name": "Apple",
+    "tagline": null,
+    "universal_name_id": "apple",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
+    "search_id": "162479",
+    "similar_companies": [],
+    "updates": [],
+    "follower_count": 17494129,
+    "acquisitions": {
+        "acquired": [
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
+                "announced_date": {
+                    "day": 7,
+                    "month": 2,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
+                "announced_date": {
+                    "day": 23,
+                    "month": 3,
+                    "year": 2022
+                },
+                "price": 150000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
+                "announced_date": {
+                    "day": 24,
+                    "month": 6,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
+                "announced_date": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
+                "announced_date": {
+                    "day": 1,
+                    "month": 4,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
+                "announced_date": {
+                    "day": 1,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
+                "announced_date": {
+                    "day": 4,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
+                "announced_date": {
+                    "day": 30,
+                    "month": 8,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
+                "announced_date": {
+                    "day": 24,
+                    "month": 9,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
+                "announced_date": {
+                    "day": 6,
+                    "month": 5,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
+                "announced_date": {
+                    "day": 24,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
+                "announced_date": {
+                    "day": 31,
+                    "month": 3,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
+                "announced_date": {
+                    "day": 27,
+                    "month": 10,
+                    "year": 2020
+                },
+                "price": 50000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
+                "announced_date": {
+                    "day": 3,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": null
+            }
+        ],
+        "acquired_by": null
+    },
+    "exit_data": [
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
+            "name": "Adobe"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
+            "name": "Apple"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/3678",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
+            "name": "Corning"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
+            "name": "Didi"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
+            "name": "ELAN Microelectronics"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
+            "name": "eMagin"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/163813",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
+            "name": "Finisar"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
+            "name": "God-i"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
+            "name": "II-VI"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
+            "name": "Imagination Technologies"
+        },
+        {
+            "linkedin_profile_url": null,
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
+            "name": "Kanisa"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
+            "name": "Zomato"
+        }
+    ],
+    "extra": {
+        "ipo_status": "Public",
+        "crunchbase_rank": 23,
+        "founding_date": {
+            "day": 1,
+            "month": 4,
+            "year": 1976
+        },
+        "operating_status": "Active",
+        "company_type": "For Profit",
+        "contact_email": null,
+        "phone_number": "408-996-1010",
+        "facebook_id": "apple",
+        "twitter_id": "apple",
+        "number_of_funding_rounds": null,
+        "total_funding_amount": 6200000000,
+        "stock_symbol": "NASDAQ:AAPL",
+        "ipo_date": null,
+        "number_of_lead_investors": 3,
+        "number_of_investors": 7,
+        "total_fund_raised": 375000000,
+        "number_of_investments": null,
+        "number_of_lead_investments": null,
+        "number_of_exits": null,
+        "number_of_acquisitions": null
+    },
+    "funding_data": [
+        {
+            "funding_type": "Post-IPO Debt",
+            "money_raised": 5000000000,
+            "announced_date": {
+                "day": 6,
+                "month": 9,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 1000000000,
+            "announced_date": {
+                "day": 16,
+                "month": 5,
+                "year": 2016
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
+                    "name": "Berkshire Hathaway",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 150000000,
+            "announced_date": {
+                "day": 1,
+                "month": 8,
+                "year": 1997
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+                    "name": "Microsoft",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Pre Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 1,
+                "month": 1,
+                "year": 2022
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+                    "name": "Apple",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Confidential Confidential",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": 30000000,
+            "announced_date": {
+                "day": 15,
+                "month": 6,
+                "year": 2022
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
+                    "name": "Interscope Records",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": null,
+            "announced_date": {
+                "day": 12,
+                "month": 7,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 80000,
+            "announced_date": {
+                "day": 15,
+                "month": 5,
+                "year": 1977
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
+                    "name": "Matrix Partners",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Mike Markkula",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 4,
+                "month": 5,
+                "year": 1978
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
+                    "name": "Sequoia Capital",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
+                    "name": "Venrock",
+                    "type": "organization"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        "consumer-electronics",
+        "electronics",
+        "hardware",
+        "mobile-devices",
+        "operating-systems",
+        "retail",
+        "software",
+        "wearables"
+    ]
+}
+                  
+                                    </code></pre>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card">
+            <div class="card-body p-0">
+              <div class="btn btn-primary-soft w-100 mb-3">
+                Employee Count API
+              </div>
+              <p class="small text-gray-700 mt-auto">
+                Get employee count of a company in any point of time, and track it’s growth in that period
+              </p>
+              <!-- Code block -->
+              <div class="highlight-block text-left mb-3">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ml-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+                <pre style="max-height: 256px;">
+    <code class="language-python">                        
+{
+    "linkedin_internal_id": "162479",
+    "description": "We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we love in new ways. And the same innovation that goes into our products also applies to our practices — strengthening our commitment to leave the world better than we found it. This is where your work can make a difference in people’s lives. Including your own.Apple is an equal opportunity employer that is committed to inclusion and diversity. Visit apple.com/careers to learn more.",
+    "website": "http://www.apple.com/careers",
+    "industry": "Consumer Electronics",
+    "company_size": [10001, null],
+    "company_size_on_linkedin": 567686,
+    "hq": {
+        "country": "US",
+        "city": "Cupertino",
+        "postal_code": "95014",
+        "line_1": "1 Apple Park Way",
+        "is_hq": true,
+        "state": "California"
+    },
+    "company_type": "PUBLIC_COMPANY",
+    "founded_year": 1976,
+    "specialities": [
+        "Innovative Product Development",
+        "World-Class Operations",
+        "Retail",
+        "Telephone Support"
+    ],
+    "locations": [
+        {
+            "country": "US",
+            "city": "Cupertino",
+            "postal_code": "95014",
+            "line_1": "1 Apple Park Way",
+            "is_hq": true,
+            "state": "California"
+        }
+    ],
+    "name": "Apple",
+    "tagline": null,
+    "universal_name_id": "apple",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a306840fe781fc10965efd0a7d9b483b5fa56d71f8322547d8703ff636685da5",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/apple/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20221110%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20221110T024602Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0080adf94bb4eac3dbb1e24669809f95b8b61e6f18326be14e524174b731acc",
+    "search_id": "162479",
+    "similar_companies": [],
+    "updates": [],
+    "follower_count": 17494129,
+    "acquisitions": {
+        "acquired": [
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/ai-music",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/ai-music",
+                "announced_date": {
+                    "day": 7,
+                    "month": 2,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/credit-kudos",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/credit-kudos",
+                "announced_date": {
+                    "day": 23,
+                    "month": 3,
+                    "year": 2022
+                },
+                "price": 150000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/fleetsmith",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/fleetsmith",
+                "announced_date": {
+                    "day": 24,
+                    "month": 6,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/inductiv",
+                "announced_date": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/joby-aviation",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/joby-aviation",
+                "announced_date": {
+                    "day": 1,
+                    "month": 4,
+                    "year": 2022
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/mobeewave",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/mobeewave",
+                "announced_date": {
+                    "day": 1,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/nextvr",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/nextvr",
+                "announced_date": {
+                    "day": 4,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": 100000000
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/paws-inc",
+                "announced_date": {
+                    "day": 30,
+                    "month": 8,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": null,
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/scout-fm",
+                "announced_date": {
+                    "day": 24,
+                    "month": 9,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/sourcedna",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/sourcedna",
+                "announced_date": {
+                    "day": 6,
+                    "month": 5,
+                    "year": 2021
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/7943613",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/spaces-6",
+                "announced_date": {
+                    "day": 24,
+                    "month": 8,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/the-dark-sky-company",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/the-dark-sky-company",
+                "announced_date": {
+                    "day": 31,
+                    "month": 3,
+                    "year": 2020
+                },
+                "price": null
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/vilynx",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/vilynx",
+                "announced_date": {
+                    "day": 27,
+                    "month": 10,
+                    "year": 2020
+                },
+                "price": 50000000
+            },
+            {
+                "linkedin_profile_url": "https://www.linkedin.com/company/scream-technologies",
+                "crunchbase_profile_url": "https://www.crunchbase.com/organization/voysis",
+                "announced_date": {
+                    "day": 3,
+                    "month": 4,
+                    "year": 2020
+                },
+                "price": null
+            }
+        ],
+        "acquired_by": null
+    },
+    "exit_data": [
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/adobe",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/adobe-systems",
+            "name": "Adobe"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/apple",
+            "name": "Apple"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/3678",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/corning",
+            "name": "Corning"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/didiglobal",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/didi-dache",
+            "name": "Didi"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/elan-microelectronics",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/elan-microelectronics",
+            "name": "ELAN Microelectronics"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/1328664",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/emagin",
+            "name": "eMagin"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/163813",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/finisar",
+            "name": "Finisar"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/global-online-devices",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/global-online-devices",
+            "name": "God-i"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/ii-vi-incorporated",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/ii-vi",
+            "name": "II-VI"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/imagination-technologies",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/imagination-technologies",
+            "name": "Imagination Technologies"
+        },
+        {
+            "linkedin_profile_url": null,
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/kanisa-inc",
+            "name": "Kanisa"
+        },
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/company/zomato",
+            "crunchbase_profile_url": "https://www.crunchbase.com/organization/zomato",
+            "name": "Zomato"
+        }
+    ],
+    "extra": {
+        "ipo_status": "Public",
+        "crunchbase_rank": 23,
+        "founding_date": {
+            "day": 1,
+            "month": 4,
+            "year": 1976
+        },
+        "operating_status": "Active",
+        "company_type": "For Profit",
+        "contact_email": null,
+        "phone_number": "408-996-1010",
+        "facebook_id": "apple",
+        "twitter_id": "apple",
+        "number_of_funding_rounds": null,
+        "total_funding_amount": 6200000000,
+        "stock_symbol": "NASDAQ:AAPL",
+        "ipo_date": null,
+        "number_of_lead_investors": 3,
+        "number_of_investors": 7,
+        "total_fund_raised": 375000000,
+        "number_of_investments": null,
+        "number_of_lead_investments": null,
+        "number_of_exits": null,
+        "number_of_acquisitions": null
+    },
+    "funding_data": [
+        {
+            "funding_type": "Post-IPO Debt",
+            "money_raised": 5000000000,
+            "announced_date": {
+                "day": 6,
+                "month": 9,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 1000000000,
+            "announced_date": {
+                "day": 16,
+                "month": 5,
+                "year": 2016
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/berkshire-hathaway",
+                    "name": "Berkshire Hathaway",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Post-IPO Equity",
+            "money_raised": 150000000,
+            "announced_date": {
+                "day": 1,
+                "month": 8,
+                "year": 1997
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/microsoft",
+                    "name": "Microsoft",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Pre Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 1,
+                "month": 1,
+                "year": 2022
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/apple",
+                    "name": "Apple",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Confidential Confidential",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": 30000000,
+            "announced_date": {
+                "day": 15,
+                "month": 6,
+                "year": 2022
+            },
+            "number_of_investor": 1,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/interscoperecords",
+                    "name": "Interscope Records",
+                    "type": "organization"
+                }
+            ]
+        },
+        {
+            "funding_type": "Private Equity Round",
+            "money_raised": null,
+            "announced_date": {
+                "day": 12,
+                "month": 7,
+                "year": 2017
+            },
+            "number_of_investor": null,
+            "investor_list": []
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 80000,
+            "announced_date": {
+                "day": 15,
+                "month": 5,
+                "year": 1977
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/matrix-partners",
+                    "name": "Matrix Partners",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": null,
+                    "name": "Mike Markkula",
+                    "type": "person"
+                }
+            ]
+        },
+        {
+            "funding_type": "Seed Round",
+            "money_raised": 150000,
+            "announced_date": {
+                "day": 4,
+                "month": 5,
+                "year": 1978
+            },
+            "number_of_investor": 2,
+            "investor_list": [
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/sequoia",
+                    "name": "Sequoia Capital",
+                    "type": "organization"
+                },
+                {
+                    "linkedin_profile_url": "https://www.linkedin.com/company/venrock",
+                    "name": "Venrock",
+                    "type": "organization"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        "consumer-electronics",
+        "electronics",
+        "hardware",
+        "mobile-devices",
+        "operating-systems",
+        "retail",
+        "software",
+        "wearables"
+    ]
+}
+                  
+                                    </code></pre>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-10">
+          <div class="p-3 border border-primary rounded shadow">
+            <div class="row align-items-center">
+              <div class="col">
+                <p class="h5 mb-0">
+                  See actual company data of these companies: 
+                </p>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex">
+                  <a href="#" class="btn btn-primary btn-sm mr-2">
+                    Apple
+                  </a>
+                  <a href="#" class="btn btn-primary btn-sm mr-2">
+                    Tesla
+                  </a>
+                  <a href="#" class="btn btn-primary btn-sm">
+                    Nvidia
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- container heading-->
+
+  </section>
+
+  <!-- FOURTH FOLD
+    ================================================== -->
+  <!-- Why choose Proxycurl Fold-->
+  <section class="pt-8 pt-md-12 pb-8 pb-md-12 border-bottom">
+
+    <div class="container">
+      <div class="row justify-content-center mb-6 mb-md-8">
+
+        <div class="col-12 col-md-8 col-lg-10">
+
+          <h2 class="display-4 mb-2 text-center">
+            Why Choose Our Company Data
+          </h2>
+
+          <p class="text-muted lead text-center">
+            Check out these geeky specs all about our company data.
+          </p>
+
+        </div>
+
+      </div> <!-- / .row -->
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Data subscription
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Subscribe to access datasets at a significantly reduced cost.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                File output formats
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                JSON, NDJSON, JSON Lines, CSV, Parquet. Optional .gz compression.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Flexible delivery
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Snowflake, Amazon S3 bucket, Google Cloud, Azure, and SFTP.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Scalable data
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Scale without worrying about infra, proxy servers, or blocks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Cost savings
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Customize any dataset using filters and formatting options.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Code maintenance
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Datasets are maintained based on website structure changes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Simplified integrations
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Benefit from integrations with Snowflake and AWS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                24/7 support
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                A dedicated team of data professionals is here to help.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 mb-6">
+          <div class="card bg-light shadow-sm">
+            <div class="card-body">
+              <div class="bg-primary mb-3" style="width: 40px; height: 40px;"></div>
+              <h3 class="h4 font-weight-bold text-primary">
+                Leaders in compliance
+              </h3>
+              <p class="small text-gray-700 mt-auto">
+                Data is ethically obtained and compliant with all privacy laws.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- / .row -->
+    </div> <!-- container heading-->
+
+  </section>
+
+  <!-- ARTICLES
+    ================================================== -->
+  <section class="bg-light pb-md-10 pt-md-10 py-7">
+    <div class="container">
+      <div class="align-items-center mb-5 row">
+        <div class="col-12 col-md">
+          <h3 class="mb-0">Featured Articles</h3>
+          <p class="mb-0 text-muted"> Here's what we've been up to recently. </p>
+        </div>
+        <div class="col-12 col-md-auto"> <a href="https://nubela.co/blog/" target="_blank"
+            class="btn btn-outline-gray-300 btn-sm d-md-inline d-none"> View all </a> </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg"> <a
+              href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-img-top"> <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/11/TLC_Linkedin_API.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white"> <svg fill="none"
+                    viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path>
+                  </svg> </div>
+              </div>
+            </a> <a
+              href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-body">
+              <h3> Ultimate Guide To The LinkedIn API: People Profile API (with Python Examples) </h3>
+              <p class="mb-0 text-muted"> Let's kick off this article with a demo. Run the following command to see what
+                an enriched LinkedIn profile looks like when accessed through a 3rd-party LinkedIn API:
+                $ curl \
+                -G \
+                -H "Authorization: Bearer demo-bearer-token" \
+                'https://nubela.co/proxycurl/api/v2/linkedin' \
+                --data-urlencode 'linkedin_profile_url=https://www.linkedin.com/in/ </p>
+            </a> <a
+              href="https://nubela.co/blog/ultimate-guide-to-linkedin-api_people-profile-api_with-python-examples/"
+              class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2"> <img
+                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
+                  alt="..." class="avatar-img rounded-circle"> </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 13 MIN READ </p>
+            </a> </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg"> <a
+              href="https://nubela.co/blog/how-do-i-change-or-cancel-my-subscription-plan/" class="card-img-top"> <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/07/Plans.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white"> <svg fill="none"
+                    viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path>
+                  </svg> </div>
+              </div>
+            </a> <a href="https://nubela.co/blog/how-do-i-change-or-cancel-my-subscription-plan/" class="card-body">
+              <h3> How Do I Change or Cancel My Subscription Plan? </h3>
+              <p class="mb-0 text-muted"> We get it - flexibility is key when it comes to managing your subscription.
+                Whether you're looking to upgrade, downgrade, or even cancel your plan, we've streamlined the process to
+                be as painless as smooth as possible.
+                Here’s a quick guide to help you with each of these options. </p>
+            </a> <a href="https://nubela.co/blog/how-do-i-change-or-cancel-my-subscription-plan/"
+              class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2"> <img
+                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2019/05/square.jpg"
+                  alt="..." class="avatar-img rounded-circle"> </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Steven Goh </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 1 MIN READ </p>
+            </a> </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 d-flex">
+          <div class="card lift lift-lg mb-6 mb-lg-0 shadow-light-lg"> <a
+              href="https://nubela.co/blog/how-lior-neu-ner-grew-his-job-board-remote-rocketship/" class="card-img-top">
+              <img
+                src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2024/06/TLC_Remote-Rocketship-interview.png"
+                alt="..." class="card-img-top">
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white"> <svg fill="none"
+                    viewBox="0 0 2880 480">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path>
+                  </svg> </div>
+              </div>
+            </a> <a href="https://nubela.co/blog/how-lior-neu-ner-grew-his-job-board-remote-rocketship/"
+              class="card-body">
+              <h3> How Lior Neu-ner Bootstrapped His Job Board, Remote Rocketship, to Over 350,000 Unique Visitors per
+                Month </h3>
+              <p class="mb-0 text-muted"> Learn how Lior profitably bootstrapped his niche job board, Remote Rocketship,
+                to over 350,000 monthly unique visitors. </p>
+            </a> <a href="https://nubela.co/blog/how-lior-neu-ner-grew-his-job-board-remote-rocketship/"
+              class="card-meta mt-auto">
+              <hr class="card-meta-divider">
+              <div class="avatar avatar-sm mr-2"> <img
+                  src="https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/nubelaco_ghost/2023/08/cr.jpg"
+                  alt="..." class="avatar-img rounded-circle"> </div>
+              <h6 class="mb-0 mr-2 text-muted text-uppercase"> Colton Randolph </h6>
+              <p class="h6 mb-0 ml-auto text-muted text-uppercase"> 9 MIN READ </p>
+            </a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING
+    ================================================== -->
+  <section class="bg-primary pb-10 pb-md-15 pt-8 pt-md-11">
+    <div class="shape shape-blur-3 svg-shim text-white">
+      <svg fill="none" viewBox="0 0 1738 487">
+        <path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)" />
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" stop-opacity=".075" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="justify-content-center row">
+        <div class="col-12 col-lg-8 col-md-10 text-center">
+          <h1 class="display-2 text-white">Simple, fair pricing.</h1>
+          <p class="lead mb-6 mb-md-8 text-white-80"> Companies of all sizes need access to Proxycurl, so we have a
+            flexible pricing system for any size of project or company. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHAPE
+      ================================================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <svg fill="none" viewBox="0 0 2880 48">
+        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- PRICING
+      ================================================== -->
+  <section class="mt-n8 mt-md-n14">
+    <div class="container">
+      <div class="form-row">
+        <div class="col-12 col-md-6">
+          <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card-body">
+
+              <div class="text-center mb-5">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">Pay as you go</span>
+                </span>
+              </div>
+
+              <div class="text-center">
+                <h5 class="mb-0 text-gray-700"> Starts from</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <span class="h2 mb-0 mt-2">$</span>
+                <span class="price display-2 mb-0">0.009</span>
+                <span class="h2 align-self-end mb-1">/ credit</span>
+              </div>
+
+              <div class="d-flex justify-content-center mb-3 mt-2">
+
+                <div class="badge badge-rounded-circle badge-info-soft mt-1 mr-3">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <p>
+                  <span class="text-info">3 credits</span>
+                  <span class="text-muted">/ request</span>
+                </p>
+              </div>
+
+              <a href="/proxycurl/pricing" class="btn btn-block btn-primary">
+
+                See Pricing Table
+                <i class="fe fe-arrow-right ml-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card shadow-lg mb-6 mb-md-0">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <span class="badge badge-pill badge-primary-soft">
+                  <span class="h6 text-uppercase">
+                    Enterprise
+                  </span>
+                </span>
+              </div>
+              <div class="d-flex justify-content-center" ">
+                                  <h2 class=" mb-0 mt-2 font-weight-bold">
+                Volume pricing available
+                </h2>
+              </div>
+              <p class="text-center text-muted mb-5">
+                Annual contracts
+              </p>
+              <a href="/cdn-cgi/l/email-protection#f182859487949fb19f8493949d90df929e"
+                class="btn btn-block btn-primary-soft">
+
+                Send Email
+                <i class="fe fe-arrow-right ml-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER
+    ================================================== -->
+  <footer class="bg-white py-8 py-md-11">
+
+    <div class="container-fluid" style="max-width: 1080px;" bis_skin_checked="1">
+
+      <div class="row justify-content-end" bis_skin_checked="1">
+
+        <div class="col-12 col-lg-3 col-md-4">
+
+          <img src="./assets/img/Proxycurl-Logotype-Primary-No Nubela.png" alt="proxycurl logo"
+            class="footer-brand img-fluid mb-4">
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Products</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Proxycurl API
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="people-api.html">
+                Person API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="company-api.html">
+                Company API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="search-api.html">
+                Search API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="jobs-api.html">
+                Jobs API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="contact-api.html">
+                Contact API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="school-api.html">
+                School API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="customer-api.html">
+                Customer API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="pricing.html">
+                API Pricing
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="documentation.html">
+                Documentation
+                <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://twitter.com/proxycurl" target="_blank">
+                API Status
+                <span class="badge badge-primary-soft rounded-pill">
+                  <i class="neu-br-twitter"></i>
+                  @Proxycurl
+                </span>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">LinkDB</h6>
+          <ul class="list-unstyled mb-6 mb-lg-0 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkdb.html">
+                LinkDB Datasets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="pricing-linkdb.html">
+                LinkDB Pricing
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-5 text-gray-700 text-uppercase">Solutions</p>
+
+          <!-- Heading -->
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">
+            Use Cases
+          </h6>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Linkedin Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="linkedin.html">
+                Crunchbase Scraper API
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-alternative-data-for-investment-firms.html">
+                Investment Signals
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="solution-growth.html">
+                Accelerating Growth Startups
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/hr-tech">
+                Data for HR Tech
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/the-proxycurl-success-story-hiring-a-marketing-manager-through-automated-recruitment-and-executive-search/">
+                Automated Recruitment
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/sales-marketing-automation-api">
+                Sales and Marketing Automation
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/how-to-automatically-track-linkedin-job-changes/">
+                Identifying Buyer Intent Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/crm-data-enrichment-the-easiest-way-to-increase-your-sales-conversion-rates/">
+                CRM Data Enrichment <i class="fe fe-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+          <h6 class="font-weight-bold text-gray-700 text-uppercase">Demos</h6>
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li>
+              <a class="small text-reset" href="monitoring-job-changes.html"> Track Job Changes </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 offset-lg-0 offset-md-3 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Resources</p>
+
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/">
+                Home
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog">
+                Blog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://sapiengraph.com/?utm_campaign=own_platforms&utm_source=proxycurl_website&utm_medium=platforms&utm_content=promo_text"
+                target="_blank">
+                Sapiengraph - B2B Enrichment in Google Sheets
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/free-tools">
+                Free Resources
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/build-in-public/">
+                Building in Public
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/changelog/">
+                Changelog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="employee-listing-directory.html">
+                Company Employee Listing Directory
+              </a>
+            </li>
+          </ul>
+
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Comparison</p>
+
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-vs-peopledatalabs-pdl/">
+                Proxycurl VS People Data Labs
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/proxycurl-api-vs-coresignal/">
+                Proxycurl VS Coresignal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-brightdatas-linkedin-profile-scraper/">
+                Proxycurl VS Bright Data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset"
+                href="https://nubela.co/blog/proxycurl-api-vs-phantombusters-linkedin-profile-scraper/">
+                Proxycurl VS PhantomBusters
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/solutions/clearbit-alternative">
+                Proxycurl VS Clearbit
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-4 pt-2" bis_skin_checked="1">
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Company</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-6 mb-lg-7 mb-md-8 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="about.html">
+                About Proxycurl
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="team.html">
+                Our Team
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="terms-of-use.html">
+                Term of Use
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="gom-privacy.html">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+
+          <p class="font-weight-bold mb-4 text-gray-700 text-uppercase">Help</p>
+
+          <!-- List -->
+          <ul class="list-unstyled mb-0 text-muted">
+            <li class="mb-2">
+              <a class="small text-reset" href="mailto:hello@nubela.co">
+                Email Us
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/blog/tag/faq/">
+                FAQ
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="small text-reset" href="https://nubela.co/proxycurl/data-removal">
+                Remove My Data
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div> <!-- / .row -->
+
+      <hr class="my-6">
+
+      <div class="text-center mb-4">
+
+        <h6 class="font-weight-bold text-uppercase text-gray-700">
+          Follow us
+        </h6>
+
+        <div class="mr-2">
+          <a href="https://twitter.com/proxycurl" target="_blank">
+            <img class="img-fluid" width="48" height="auto" alt="Twitter X logo" src="assets/img/logos/twitter-x.svg">
+          </a>
+
+          <a class="mr-2" href="https://www.youtube.com/@Proxycurl" target="_blank">
+            <img class="img-fluid" width="36" height="auto" alt="YouTube logo"
+              src="assets/img/logos/YOUTUBE_icon-icons.com_65487.svg">
+          </a>
+
+          <a href="https://github.com/nubelaco/" target="_blank">
+            <img class="img-fluid" width="30" height="auto" alt="Github logo" src="assets/img/logos/github-mark.svg">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <p class="caption mb-0">
+          Proxycurl LLC. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  <!-- Libs JS -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/aos/dist/aos.js"></script>
+  <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/libs/quill/dist/quill.min.js"></script>
+  <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+  <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
+
+
+</body>
+
+</html>
