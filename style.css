@@ -332,11 +332,17 @@ pre {
   background: linear-gradient(to left, #F9FBFD 20%, rgba(255, 255, 255, 0) 100%);
 }
 
-
 .logos-container {
   display: flex;
   animation: scroll 20s linear infinite;
   width: fit-content;
+}
+
+.logos-container-reverse {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: fit-content;
+  animation-direction: reverse;
 }
 
 .logo-item {
@@ -362,11 +368,13 @@ pre {
   }
 }
 
-.logo-scroll:hover .logos-container {
+.logo-scroll:hover .logos-container,
+.logo-scroll:hover .logos-container-reverse {
   animation-play-state: paused;
 }
 
-.logo-scroll-light:hover .logos-container {
+.logo-scroll-light:hover .logos-container,
+.logo-scroll-light:hover .logos-container-reverse {
   animation-play-state: paused;
 }
 
