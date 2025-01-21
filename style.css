@@ -431,7 +431,7 @@ pre {
 }
 
 .nav-usecases .nav-item #investment-tab.nav-link.active {
-  background-color: #CCF4FA !important;
+  background-color: #E6FFC6 !important;
   font-weight: 900 !important;
 }
 
@@ -454,7 +454,7 @@ pre {
 }
 
 #use-cases-wrapper:has(#investment-tab.nav-link.active) {
-  background-color: #CCF4FA !important;
+  background-color: #E6FFC6 !important;
 }
 
 #use-cases-wrapper:has(#sales-tab.nav-link.active) {
