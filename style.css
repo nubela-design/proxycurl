@@ -426,12 +426,12 @@ pre {
 }
 
 .nav-usecases .nav-item #hr-recruitment-tab.nav-link.active {
-  background-color: #DDDEFF !important;
+  background-color: #EAEEFD !important;
   font-weight: 900 !important;
 }
 
 .nav-usecases .nav-item #investment-tab.nav-link.active {
-  background-color: #EAEEFD !important;
+  background-color: #DDDEFF !important;
   font-weight: 900 !important;
 }
 
@@ -450,11 +450,11 @@ pre {
 }
 
 #use-cases-wrapper:has(#hr-recruitment-tab.nav-link.active) {
-  background-color: #DDDEFF !important;
+  background-color: #EAEEFD !important;
 }
 
 #use-cases-wrapper:has(#investment-tab.nav-link.active) {
-  background-color: #EAEEFD !important;
+  background-color: #DDDEFF !important;
 }
 
 #use-cases-wrapper:has(#sales-tab.nav-link.active) {
