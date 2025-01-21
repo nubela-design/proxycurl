@@ -419,3 +419,49 @@ pre {
 }
 
 /* End added by Rifki - 20 Jan 2025 */
+
+/* Start added by Rifki - 21 Jan 2025 */
+.nav-usecases .nav-item .nav-link {
+  color: #373939 !important;
+}
+
+.nav-usecases .nav-item #hr-recruitment-tab.nav-link.active {
+  background-color: #DDDEFF !important;
+  font-weight: 900 !important;
+}
+
+.nav-usecases .nav-item #investment-tab.nav-link.active {
+  background-color: #CCF4FA !important;
+  font-weight: 900 !important;
+}
+
+.nav-usecases .nav-item #sales-tab.nav-link.active {
+  background-color: #F9E9FF !important;
+  font-weight: 900 !important;
+}
+
+.nav-usecases .nav-item #due-diligence-tab.nav-link.active {
+  background-color: #FEF1BA !important;
+  font-weight: 900 !important;
+}
+
+#use-cases-wrapper {
+  background-color: #ffffff !important;
+}
+
+#use-cases-wrapper:has(#hr-recruitment-tab.nav-link.active) {
+  background-color: #DDDEFF !important;
+}
+
+#use-cases-wrapper:has(#investment-tab.nav-link.active) {
+  background-color: #CCF4FA !important;
+}
+
+#use-cases-wrapper:has(#sales-tab.nav-link.active) {
+  background-color: #F9E9FF !important;
+}
+
+#use-cases-wrapper:has(#due-diligence-tab.nav-link.active) {
+  background-color: #FEF1BA !important;
+}
+/* End added by Rifki - 21 Jan 2025 */

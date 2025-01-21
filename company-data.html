@@ -473,7 +473,7 @@
 
       </div> <!-- / .row -->
 
-      <div class="row justify-content-center" data-aos="fade-up">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="1200">
         <div class="col-12 col-md-8">
           <p class="small text-center text-muted mb-0">
             <span class="text-danger">*</span> Disclaimer: These are registered trademarks of the respective companies.
@@ -768,21 +768,6 @@
                   </li>
                 </ul>
 
-                <!-- <div class="d-flex justify-content-center justify-content-lg-start" id="sample-data-tabs"
-                  role="tablist">
-                  <a href="#apple-data" class="btn btn-primary btn-sm mr-2" data-toggle="tab" data-target="#apple-data"
-                    role="tab" aria-controls="apple-data" aria-selected="true">
-                    Apple
-                  </a>
-                  <a href="#tesla-data" class="btn text-primary btn-sm mr-2" data-toggle="tab" data-target="#tesla-data"
-                    role="tab" aria-controls="tesla-data" aria-selected="false">
-                    Tesla
-                  </a>
-                  <a href="#nvidia-data" class="btn text-primary btn-sm" data-toggle="tab" data-target="#nvidia-data"
-                    role="tab" aria-controls="nvidia-data" aria-selected="false">
-                    Nvidia
-                  </a>
-                </div> -->
               </div>
             </div>
           </div>
@@ -7550,12 +7535,14 @@
   <section class="py-8 border-bottom">
     <div class="container">
 
-      <div class="row justify-content-center mb-0">
-        <div class="col-12 col-lg-10">
+      <div id="use-cases-wrapper" class="p-8 rounded-16">
 
+      <div class="row justify-content-center mb-0">
+
+        <div class="col-12 col-lg-10">
           <!-- Pills -->
-          <ul class="nav nav-pills nav-justified mb-6 border border-primary rounded shadow p-3 flex-column flex-md-row"
-            id="useCaseTabs" role="tablist">
+          <ul class="nav nav-usecases nav-pills nav-justified mb-8 border rounded p-3 flex-column flex-md-row bg-white shadow"
+          id="useCaseTabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="hr-recruitment-tab" data-toggle="pill" href="#hr-recruitment" role="tab"
                 aria-controls="hr-recruitment" aria-selected="true">
@@ -7581,22 +7568,25 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="col-12 col-lg-10">
 
           <!-- Pill content -->
           <div class="tab-content" id="useCaseTabsContent">
 
             <div class="tab-pane fade show active" id="hr-recruitment" role="tabpanel"
               aria-labelledby="hr-recruitment-tab">
-              <div class="text-center p-4">
+              <div class="text-center">
                 <div class="row justify-content-center mb-6 mb-md-8">
                   <div class="col-12 col-lg-12">
-                    <h2 class="display-4 mb-4 text-center">
+                    <h2 class="display-4 mb-4 text-center text-dark font-weight-bold">
                       Track funding status as signal for recruitment service
                     </h2>
-                    <p class="text-muted lead text-center">
+                    <p class="text-dark lead text-center font-weight-light">
                       POV: You’re a recruitment firm, and you track your target companies’ funding using <a
                         href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint" target="_blank"
-                        rel="noopener noreferrer">Proxycurl’s Company Profile Endpoint</a>. When a company gets funding,
+                        rel="noopener noreferrer" class="font-weight-bold">Proxycurl’s Company Profile Endpoint</a>. When a company gets funding,
                       they’re likely going on a hiring spree. It’s your chance to pitch your recruitment service.
                     </p>
                   </div>
@@ -7610,7 +7600,7 @@
                   </div>
                   <div class="col-auto mb-4 mb-lg-0 px-lg-0">
                     <div class="d-lg-none">
-                      <div class="icon text-primary">
+                      <div class="icon text-white">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M12 16.586l-7.293-7.293a1 1 0 011.414-1.414L12 13.758l5.879-5.879a1 1 0 011.414 1.414L12 16.586z"
@@ -7619,7 +7609,7 @@
                       </div>
                     </div>
                     <div class="d-none d-lg-block">
-                      <div class="icon text-primary">
+                      <div class="icon text-white">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M14.586 12L7.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 01-1.414-1.414L14.586 12z"
@@ -7636,7 +7626,7 @@
                   </div>
                   <div class="col-auto mb-4 mb-lg-0 px-lg-0">
                     <div class="d-lg-none">
-                      <div class="icon text-primary">
+                      <div class="icon text-white">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M12 16.586l-7.293-7.293a1 1 0 011.414-1.414L12 13.758l5.879-5.879a1 1 0 011.414 1.414L12 16.586z"
@@ -7645,7 +7635,7 @@
                       </div>
                     </div>
                     <div class="d-none d-lg-block">
-                      <div class="icon text-primary">
+                      <div class="icon text-white">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M14.586 12L7.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 01-1.414-1.414L14.586 12z"
@@ -7662,7 +7652,7 @@
                   </div>
                 </div>
                 <article
-                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0">
+                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0 bg-white">
                   <div class="col-12 col-lg-auto p-0">
                     <figure class="mb-lg-0 avatar avatar-xxl avatar-4by3">
                       <img class="avatar-img rounded img-fluid rounded shadow-lg"
@@ -7688,10 +7678,10 @@
               <div class="text-center">
                 <div class="row justify-content-center mb-6 mb-md-8">
                   <div class="col-12 col-lg-10">
-                    <h2 class="display-4 mb-4 text-center">
+                    <h2 class="display-4 mb-4 text-center text-dark font-weight-bold">
                       Investment Intelligence
                     </h2>
-                    <p class="text-muted lead text-center">
+                    <p class="text-dark lead text-center font-weight-light">
                       POV: You’re an investment firm, specialising in fast rising startups in India. You use <a
                         href="https://nubela.co/proxycurl/docs#search-api-company-search-endpoint"
                         target="_blank">Proxycurl’s Company Search Endpoint</a> to find startups with < 10 employees
@@ -7700,7 +7690,7 @@
                 </div> <!-- / .row -->
 
                 <article
-                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0">
+                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0 bg-white">
                   <div class="col-12 col-lg-auto p-0">
                     <figure class="mb-lg-0 avatar avatar-xxl avatar-4by3">
                       <img class="avatar-img rounded img-fluid rounded shadow-lg"
@@ -7726,10 +7716,10 @@
               <div class="text-center">
                 <div class="row justify-content-center mb-6 mb-md-8">
                   <div class="col-12 col-lg-10">
-                    <h2 class="display-4 mb-4 text-center">
+                    <h2 class="display-4 mb-4 text-center text-dark font-weight-bold">
                       Sales Intelligence
                     </h2>
-                    <p class="text-muted lead text-center">
+                    <p class="text-dark lead text-center font-weight-light">
                       POV: You’re in B2B SaaS sales, and you track the headcount growth of your prospective companies
                       using <a href="https://nubela.co/proxycurl/docs#company-api-employee-count-endpoint"
                         target="_blank" rel="noopener noreferrer">Proxycurl’s Employee Count Endpoint</a>. As a company
@@ -7739,7 +7729,7 @@
                 </div> <!-- / .row -->
 
                 <article
-                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0">
+                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0 bg-white">
                   <div class="col-12 col-lg-auto p-0">
                     <figure class="mb-lg-0 avatar avatar-xxl avatar-4by3">
                       <img class="avatar-img rounded img-fluid rounded shadow-lg"
@@ -7765,10 +7755,10 @@
               <div class="text-center">
                 <div class="row justify-content-center mb-6 mb-md-8">
                   <div class="col-12 col-lg-10">
-                    <h2 class="display-4 mb-4 text-center">
+                    <h2 class="display-4 mb-4 text-center text-dark font-weight-bold">
                       Due Diligence
                     </h2>
-                    <p class="text-muted lead text-center">
+                    <p class="text-dark lead text-center font-weight-light">
                       POV: You’re in the bank’s KYC team, and you use <a href="https://nubela.co/proxycurl/linkdb"
                         target="_blank" rel="noopener noreferrer">Proxycurl’s LinkDB Company Database</a> to carry out
                       due diligence of all leads and customers based off your custom search parameters.
@@ -7777,7 +7767,7 @@
                 </div> <!-- / .row -->
 
                 <article
-                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0">
+                  class="row justify-content-center align-items-center border rounded shadow p-4 flex-column flex-lg-row m-0 bg-white">
                   <div class="col-12 col-lg-auto p-0">
                     <figure class="mb-lg-0 avatar avatar-xxl avatar-4by3">
                       <img class="avatar-img rounded img-fluid rounded shadow-lg"
@@ -7802,6 +7792,8 @@
           </div>
 
         </div>
+      </div>
+
       </div>
 
     </div>
