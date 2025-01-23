@@ -415,33 +415,46 @@ pre {
 }
 
 .highlight-block-prism pre code {
-    font-size: 0.875rem !important;
+    font-size: .8125rem !important;
 }
 
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
 /* End added by Rifki - 20 Jan 2025 */
 
 /* Start added by Rifki - 21 Jan 2025 */
+
+.nav-usecases{
+    border: 1px solid #161c2d !important;
+}
+
 .nav-usecases .nav-item .nav-link {
-    color: #373939 !important;
+    color: #161c2d !important;
+    font-weight: 900 !important;
 }
 
 .nav-usecases .nav-item #hr-recruitment-tab.nav-link.active {
-    background-color: #eaeefd !important;
+    background-color: #068A52 !important;
+    color: #ffffff !important;
     font-weight: 900 !important;
 }
 
 .nav-usecases .nav-item #investment-tab.nav-link.active {
-    background-color: #dddeff !important;
+    background-color: #8B045C !important;
+    color: #ffffff !important;
     font-weight: 900 !important;
 }
 
 .nav-usecases .nav-item #sales-tab.nav-link.active {
-    background-color: #f9e9ff !important;
+    background-color: #0053B5 !important;
+    color: #ffffff !important;
     font-weight: 900 !important;
 }
 
 .nav-usecases .nav-item #due-diligence-tab.nav-link.active {
-    background-color: #fef1ba !important;
+    background-color: #C34E1A !important;
+    color: #ffffff !important;
     font-weight: 900 !important;
 }
 
@@ -449,20 +462,36 @@ pre {
     background-color: #ffffff !important;
 }
 
-#use-cases-wrapper:has(#hr-recruitment-tab.nav-link.active) {
-    background-color: #eaeefd !important;
+#use-cases-wrapper:has(#hr-recruitment.active) {
+    background-color: #068A52 !important;
 }
 
-#use-cases-wrapper:has(#investment-tab.nav-link.active) {
-    background-color: #dddeff !important;
+#use-cases-wrapper:has(#hr-recruitment.active) article a {
+    background-color: #068A52 !important;
 }
 
-#use-cases-wrapper:has(#sales-tab.nav-link.active) {
-    background-color: #f9e9ff !important;
+#use-cases-wrapper:has(#investment.active) {
+    background-color: #8B045C !important;
 }
 
-#use-cases-wrapper:has(#due-diligence-tab.nav-link.active) {
-    background-color: #fef1ba !important;
+#use-cases-wrapper:has(#investment.active) article a {
+    background-color: #8B045C !important;
+}
+
+#use-cases-wrapper:has(#sales.active) {
+    background-color: #0053B5 !important;
+}
+
+#use-cases-wrapper:has(#sales.active) article a {
+    background-color: #0053B5 !important;
+}
+
+#use-cases-wrapper:has(#due-diligence.active) {
+    background-color: #C34E1A !important;
+}
+
+#use-cases-wrapper:has(#due-diligence.active) article a {
+    background-color: #C34E1A !important;
 }
 /* End added by Rifki - 21 Jan 2025 */
 
@@ -618,3 +647,28 @@ pre {
     }
 }
 /* End added by Rifki - 23 Jan 2025 */
+
+/* Start added by Rifki for company data - 23 Jan 2025 */
+.bg-brown-light {
+    background-color: #F9F8F7 !important;
+}
+
+.nav-sample-data .nav-link {
+    color: #161c2d !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px;
+}
+
+.nav-sample-data .nav-link img {
+    color: #161c2d !important;
+}
+
+.nav-sample-data .nav-link.active {
+    background-color: #161c2d !important;
+    color: #ffffff !important;
+}
+
+.nav-sample-data .nav-link.active img {
+    filter: invert(100%) sepia(10%) saturate(538%) hue-rotate(328deg) brightness(105%) contrast(106%);
+}
+/* End added by Rifki for company data - 23 Jan 2025 */
