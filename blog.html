@@ -376,16 +376,31 @@
 
         <div class="col-12 col-md-10 col-lg-7 text-center">
 
-          <!-- Nav pills -->
-          <div class="nav nav-pills nav-fill nav-blog-categories" id="categories-tabs" role="tablist">
-            <a class="nav-item nav-link text-dark mr-3 active" id="all-tab" data-toggle="pill" href="#all" role="tab"
-              aria-controls="all" aria-selected="true">
-              All
-            </a>
-            <a class="nav-item nav-link text-dark" id="wip-tab" data-toggle="pill" href="#wip" role="tab"
-              aria-controls="wip" aria-selected="false">
-              WIP
-            </a>
+          <!-- Add collapse toggle button for mobile only -->
+          <button class="btn btn-primary w-100 d-lg-none text-decoration-none" type="button"
+            data-toggle="collapse" data-target="#categoriesCollapse" aria-expanded="true" aria-controls="categoriesCollapse">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="small mb-0 font-weight-bold">Categories</span>
+              <span class="fe fe-chevron-down"></span>
+            </div>
+          </button>
+
+          <!-- Modify collapse div to stay expanded on desktop -->
+          <div class="collapse d-lg-block" id="categoriesCollapse">
+            <hr class="d-lg-none" />
+
+            <!-- Nav pills -->
+            <div class="nav nav-pills nav-fill nav-blog-categories d-flex flex-column flex-lg-row" id="categories-tabs" role="tablist">
+              <a class="nav-item nav-link text-dark mb-2 mr-lg-3 active" id="all-tab" data-toggle="pill" href="#all" role="tab"
+                aria-controls="all" aria-selected="true">
+                All
+              </a>
+              <a class="nav-item nav-link text-dark mb-2" id="wip-tab" data-toggle="pill" href="#wip" role="tab"
+                aria-controls="wip" aria-selected="false">
+                WIP
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -405,313 +420,286 @@
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
 
               <!-- Featured All Content -->
-              <div class="featured-content rounded p-8 mb-6">
+              <div class="featured-content rounded p-6 p-lg-8 mb-6">
 
                 <h3 class="h3 mb-4">
                   All Featured articles
                 </h3>
 
-                <div class="line mb-3"></div>
+                <div class="line mb-5"></div>
 
                 <div id="all-carousel" class="w-100">
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img
+                          src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png"
+                          alt="..." class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          Enrich companies with funding, categories, emails, exits/acquisitions data
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Ab Hadley
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png"
+                          alt="..." class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          How stable is Proxycurl for scraping LinkedIn?
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Adolfo Hess
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-md-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..."
+                          class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          Introducing Role Lookup API endpoint
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/photos/steven picture.jpeg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Steven Goh
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png"
+                          alt="..." class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          How stable is Proxycurl for scraping LinkedIn?
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Adolfo Hess
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
                 </div>
@@ -1161,238 +1149,286 @@
             <div class="tab-pane fade" id="wip" role="tabpanel" aria-labelledby="wip-tab">
 
               <!-- Featured WIP Content -->
-              <div class="featured-content rounded p-8 mb-6">
+              <div class="featured-content rounded p-6 p-lg-8 mb-6">
 
                 <h3 class="h3 mb-4">
                   WIP Featured articles
                 </h3>
 
-                <div class="line mb-3"></div>
+                <div class="line mb-5"></div>
 
                 <div id="wip-carousel" class="w-100">
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img
+                          src="assets/img/photos/TLC_Proxycurl Enrich companies with funding, categories, emails, exits-acquisitions data_color.png"
+                          alt="..." class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          Enrich companies with funding, categories, emails, exits/acquisitions data
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Ab Hadley
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png"
+                          alt="..." class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          How stable is Proxycurl for scraping LinkedIn?
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Adolfo Hess
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
-                  <div class="d-block col-12 px-1">
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
                     <!-- Card -->
-                    <div class="card card-row my-3">
-                      <div class="row no-gutters">
+                    <div class="card card-fill mb-6 mb-md-0" style="height: 500px;">
 
-                        <a class="col-12 col-md-6 order-md-2 bg-cover card-img-right"
-                          style="background-image: url(assets/img/photos/TLC_15M\ UK\ profiles\ added\ to\ LinkDB_color.png);"
-                          href="blog-post.html">
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
 
-                          <!-- Image (placeholder) -->
-                          <img src="assets/img/photos/TLC_15M UK profiles added to LinkDB_color.png" alt="..."
-                            class="img-fluid invisible">
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_Introducing Role Search API endpoint_color.png" alt="..."
+                          class="card-img-top">
 
-                          <!-- Shape -->
-                          <div class="shape shape-left shape-fluid-y svg-shim text-white d-none d-md-block">
-                            <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
                             </svg>
                           </div>
-
-                        </a>
-
-                        <div class="col-12 col-md-6 order-md-1">
-
-                          <!-- Body -->
-                          <a class="card-body" href="blog-post.html">
-
-                            <!-- Tag -->
-                            <h2 class="text-uppercase small text-muted mb-1">
-                              Proxycurl
-                            </h2>
-
-                            <!-- Heading -->
-                            <h3>
-                              15+M UK profiles added to LinkDB
-                            </h3>
-
-                            <!-- Text -->
-                            <p class="mb-0 text-muted">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce
-                              pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus
-                              proin
-                              erat purus.
-                            </p>
-
-                          </a>
-
-                          <!-- Meta -->
-                          <a class="card-meta" href="blog-author.html">
-
-                            <!-- Divider -->
-                            <hr class="card-meta-divider">
-
-                            <!-- Avatar -->
-                            <div class="avatar avatar-sm mr-2">
-                              <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </div>
-
-                            <!-- Author -->
-                            <h6 class="text-uppercase text-muted mr-2 mb-0">
-                              Ab Hadley
-                            </h6>
-
-                            <!-- Time -->
-                            <p class="h6 text-uppercase text-muted mb-0 ml-auto">
-                              <time>1 min read</time>
-                            </p>
-
-                          </a>
-
                         </div>
 
-                      </div> <!-- / .row -->
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          Introducing Role Lookup API endpoint
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/photos/steven picture.jpeg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Steven Goh
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="d-flex col-12 col-md-6 col-lg-4 px-1">
+                    <!-- Card -->
+                    <div class="card card-fill mb-6 mb-lg-0" style="height: 500px;">
+
+                      <!-- Image -->
+                      <a class="card-img-top" href="blog-post.html">
+
+                        <!-- Image -->
+                        <img src="assets/img/photos/TLC_How stable is Proxycurl for scraping LinkedIn_color.png"
+                          alt="..." class="card-img-top">
+
+                        <!-- Shape -->
+                        <div class="position-relative">
+                          <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                            <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                            </svg>
+                          </div>
+                        </div>
+
+                      </a>
+
+                      <!-- Body -->
+                      <a class="card-body" href="blog-post.html">
+
+                        <!-- Tag -->
+                        <h2 class="text-uppercase small text-muted mb-1">
+                          Proxycurl
+                        </h2>
+
+                        <!-- Heading -->
+                        <h3>
+                          How stable is Proxycurl for scraping LinkedIn?
+                        </h3>
+
+                        <!-- Text -->
+                        <p class="mb-0 text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam.
+                        </p>
+
+                      </a>
+
+                      <!-- Meta -->
+                      <a class="card-meta mt-auto" href="blog-author.html">
+
+                        <!-- Divider -->
+                        <hr class="card-meta-divider">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm mr-2">
+                          <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                        </div>
+
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mr-2 mb-0">
+                          Adolfo Hess
+                        </h6>
+
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                          <time>1 min read</time>
+                        </p>
+
+                      </a>
+
                     </div>
                   </div>
                 </div>
