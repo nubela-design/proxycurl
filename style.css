@@ -458,8 +458,16 @@ pre {
     font-weight: 900 !important;
 }
 
-#use-cases-wrapper {
-    background-color: #ffffff !important;
+#use-cases-wrapper article figure img {
+    aspect-ratio: auto 2048/1040 !important;
+}
+
+@media (min-width: 992px) {
+    #use-cases-wrapper article figure img {
+        aspect-ratio: auto 2048/1040 !important;
+        height: 70px;
+        width: auto;
+    }
 }
 
 #use-cases-wrapper:has(#hr-recruitment.active) {
